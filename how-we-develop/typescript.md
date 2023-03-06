@@ -67,7 +67,9 @@
             acc.push(curr.author3.id);
           }
           return acc;
-        }
+        },
+    []
+  );
     ```
 
     Better
