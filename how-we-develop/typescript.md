@@ -68,8 +68,8 @@
           }
           return acc;
         },
-    []
-  );
+        []
+    );
     ```
 
     Better
