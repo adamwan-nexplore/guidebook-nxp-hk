@@ -29,6 +29,8 @@
 
 3. Consider Auto-Merge
 
+4. Branch out from default branch, merge back to default branch
+
 ---
 ## Reference
 
