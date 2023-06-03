@@ -1,5 +1,13 @@
 # A guidebook for Nexplore HK Engineers
 
+## Who we are
+
+(Nexplore)[https://www.nexplore.com] is a software innovation leader that understands how the construction industry really works. With the help of our partners at (HOCHTIEF)[https://www.hochtief.de], we build tailor-made technologies for the modern-day job site. 
+
+### What we do
+
+In 2019, Life as a Service (LAAS) was initiated by Nexplore acting as the collaborative network and research platform to invent tomorrow’s cities, villages and landscapes by holistically connecting digital services to human values.
+
 ## What we use
 
 You know what tools to be used. You know what access you need to have. And you know our Tech Stack.
