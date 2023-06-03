@@ -21,7 +21,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [PR Checklist](how-we-develop/pr-checklist.md)
 - [Unit Testing](how-we-develop/unit-test.md)
 - [Application Logging](how-we-develop/app-log.md)
-- [DevOps- The Three Ways](how-we-develop/devops.md)
+- [DevOps - The Three Ways](how-we-develop/devops.md)
 - [Deployment](how-we-develop/deployment.md)
 
 ## How we learn and share
