@@ -54,11 +54,11 @@ To set up a new channel from scratch, please check it [here](https://github.com/
 
 -------
 ### 3. Jira Cloud
-####  Channels
+####  Apps
 - Jira Cloud
 
 #### Setup
-- Go to `Jira Cloud`
+- Search `Jira Cloud`
 - Sign in your Atlassian account
 - Pin Jira Cloud in MS Teams
     

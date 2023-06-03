@@ -1,4 +1,4 @@
-# Deployment
+# Change Management
 
 
 ## Risk Analysis
@@ -26,7 +26,6 @@ The last one is super risky in all cases!
 Normal Risk
 - Production Cross Check
 - Health Check
-- [Trunk based development](https://trunkbaseddevelopment.com)
 
 Medium Risk
 - Test Cases Demonstration (Either manual or automated)
@@ -36,3 +35,9 @@ Medium Risk
 High Risk
 - [Blue Green Deployment](https://www.redhat.com/en/topics/devops/what-is-blue-green-deployment)
 - [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
+
+## Deployment Check
+
+- An engineer who deploy the change should do at least a health check in the test entity on the production environments
+- Please make sure you have the access to the test entity before the deployment
+- If you do not have it, please approach your engineering lead

@@ -4,17 +4,7 @@
 
 ## 1. Concepts
 
-- Uniform Interface
-
-- Layered System
-
-- Cacheable
-
 - Safe API
-
-- API is Idempotent
-
-- API is Statelessness
 
 ### 1.1 Six Constraints
 
@@ -36,7 +26,7 @@ Resource must be noun, no verbs in URI
 
 - GET https://api.control.nexplore.com/core/ + getEntity/:id
 - HTTP Verb: (no use)
-- URI: action + (directory) + resource + identifier
+- URI: (directory) + action + resource + identifier
 
 #### 2.1.2 REST (1)
 - GET https://api.control.nexplore.com/core/ + entities/:id
@@ -88,7 +78,7 @@ Resource must be noun, no verbs in URI
 - mPUT ?
 ### 3.3 If supporting multiple resources in a single call, think about:
 - How to manage transaction when more than one resources?
-- how to manage failures? / rollback? / atomic? / best effort?
+- How to manage failures? / rollback? / atomic? / best effort?
 
 ## 4. Standard & Frameworks
 ### 4.1 [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
@@ -129,5 +119,4 @@ and query parameter is hard to specify data with types (null vs 'null' vs undefi
 ## 7. Reference 
 - [API Design Patterns](https://www.manning.com/books/api-design-patterns)
 - [Web API的设计与开发(Chinese)](https://book.douban.com/subject/27054104) or [Web API: The Good Parts (Japanese)](https://www.amazon.co.jp/Web-API-Parts-%E6%B0%B4%E9%87%8E-%E8%B2%B4%E6%98%8E/dp/4873116864)
-- https://docs.oracle.com/en/cloud/saas/marketing/eloqua-develop/Developers/GettingStarted/APIRequests/HTTP-verbs.htm
 - [REST API Tutorial](https://restfulapi.net)

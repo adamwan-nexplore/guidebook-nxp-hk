@@ -65,7 +65,7 @@ You can check the manual [here](https://github.com/mockapi-io/docs/wiki)
 
 - Please share your Git repository link to us
 - Avoid words `nexplore` and `challenge`
-- Do not copy-paste any parts of this README so that your work will not be searchable by other candidates
+- Do not copy-paste any parts of this README
 
 ---
 ## Others

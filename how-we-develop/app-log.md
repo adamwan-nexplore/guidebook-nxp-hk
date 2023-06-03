@@ -23,7 +23,7 @@
 
 - All log entries in the cluster will sit into DataDog (Europe) due to [GDPR](https://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018)
 
-- Each application log entry should have at least one key attributes to match the data
+- Each log entry should have at least one key attributes to match the data
 
 - Each log entry should avoid to have too many attributes (i.e. keep it less than 10)
 

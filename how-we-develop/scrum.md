@@ -92,7 +92,7 @@ There is also a possibility that the task has regarded as `spike`. Which means w
 - Release Ready
     => Scheduled to deployment
 - Done
-    => DoD has fulfilled. Now DONE means `deployment to UAT site`
+    => DoD has fulfilled
 
 ### Special Stages
 - Draft

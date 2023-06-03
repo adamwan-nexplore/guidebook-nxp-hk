@@ -23,8 +23,8 @@
 
 ------
 # :books: Resources
-- SmartBear (Swagger) - [https://smartbear.com/learn/code-review/best-practices-for-peer-code-review](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review)
+- [SmartBear - Best Practices for Code Review](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review)
 
-- Google - [https://google.github.io/eng-practices/review](https://google.github.io/eng-practices/review)
+- [Google - Code Review Developer Guide](https://google.github.io/eng-practices/review)
 
-- GitLab - [https://docs.gitlab.com/ee/development/code_review.html](https://docs.gitlab.com/ee/development/code_review.html)
+- [GitLab - Code Review Guidelines](https://docs.gitlab.com/ee/development/code_review.html)

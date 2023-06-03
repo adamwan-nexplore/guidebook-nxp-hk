@@ -53,7 +53,7 @@ As a user, I want to use a web-based to-do list application to note what I have 
 
 - Please share your Git repository link to us
 - Avoid words `nexplore` and `challenge`
-- Do not copy-paste any parts of this README so that your work will not be searchable by other candidates
+- Do not copy-paste any parts of this README
 
 ---
 ## Others

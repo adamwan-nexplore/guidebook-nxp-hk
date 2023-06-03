@@ -1,10 +1,10 @@
-# Unit Testing with Jest
+#  Developer Testing (1)
 
 Before it starts, can you tell
 
 - Why do you test your code?
 - What is a unit in unit testing?
-- Why unit testing rather than other tests?
+- Why unit tests rather than other tests?
 - What do you test?
 - What are the tricks using Jest to write unit tests?
 - What are testable codes?
@@ -22,29 +22,29 @@ Exit Point(s) - The effect / output after the input was applied to the SUT
 
 ---
 ```
-We should `write more pure functions`. It will help making our codes to be more testable.
+We should `write more pure functions`. It will help making our codes to be more testable
 ```
 
 a. pure functions
 
-    -> return value / error (the easiest to notice the change)
+    -> return value / error (the easiest way to observe the change)
 
 b. impure functions
 
-    -> change in global state (need to check the implementation to find out the state) -> by stricter scoping
+    -> change of states (need to check the implementation to find out the state) -> by stricter scoping
 
     -> call third party dependencies (very hard to observe)
 
 ```
 ## Rephrase the statement 
 
-We should reduce the number of impure functions.
-We should group those impure functions together, or at least in a managed way.
-Do not dream of eliminate those entirely. We need to store the data in our disk by the use of impure functions.
+We should reduce the number of impure functions
+We should group those impure functions together, or at least in a managed way
+Do not dream of eliminate those entirely. We need to store the data in our disk by the use of impure functions
 ```
 ---
 
-## 12 Tips to write Unit Tests in Jest
+## 13 Tips to write Unit Tests in Jest
 
 1. Should test one exit point per test case
 
@@ -52,11 +52,9 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
 
 3. What we prefer to have test case files - the filename ending with `.spec.ts`
    
-    (Plugin Recommended for VSCode: `Jest Runner` - it will run the spec files immediately when you save the `.spec.ts` file.)
+    (Plugin Recommended for VSCode: `Jest Runner` - it will run the spec files immediately when you save the `.spec.ts` file)
 
-4. Consider trying `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
-
-    https://jestjs.io/docs/snapshot-testing
+4. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing) - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
 
 5. Arrange Act Assert
 
@@ -118,9 +116,7 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
     });
     ```
 
-10. Nock Recording (Setting the real secret to run aginst the apis, and then capture the response for mock testing)
-   
-   https://github.com/nock/nock#recording
+10. [Nock Recording](https://github.com/nock/nock#recording) (Setting the real secret to run aginst the apis, and then capture the response for mock testing)
 
 11. How to mock data (OOP vs Functional)
 
@@ -142,7 +138,11 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
 
 12. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
 
+13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca).
+
 ## Reference
-- [The Art of Unit Testing - 3rd Edition (In Javascript)](https://www.manning.com/books/the-art-of-unit-testing-third-edition)
+- [The Art of Unit Testing - 3rd Edition (with examples in JavaScript)](https://www.manning.com/books/the-art-of-unit-testing-third-edition)
 - [Xunit Patterns.com](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html)
 - [The Art of Unit Testing • Roy Osherove & Dave Farley • GOTO 2021](https://www.youtube.com/watch?v=6ndAWzc2F-I)
+- [Better Spec](https://www.betterspecs.org)
+

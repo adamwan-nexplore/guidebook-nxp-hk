@@ -34,5 +34,6 @@
 ---
 ## Reference
 
+- [Git - Book](https://git-scm.com/book)
 - [Git: How to Squash all commit on branch](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch)
 - [Atomic Git Commit](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits)

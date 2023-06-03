@@ -8,9 +8,9 @@
 
 ### Old School Definition
 
-- DevOps is the practice of operations and development engineers participating together in the entire service lifecycle, from design through the development process to production support. - from (the agile admin)[https://theagileadmin.com/what-is-devops]
+- DevOps is the practice of operations and development engineers participating together in the entire service lifecycle, from design through the development process to production support. - quoted from [the agile admin](https://theagileadmin.com/what-is-devops)
 
-### Methodology - The Three Way
+### Methodology - The Three Ways
 
 - Flow
 - Feedback
@@ -25,14 +25,14 @@
 
 DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
-## Three way
+## The Three ways
 
 ### Flow
 
 - System thinking
 
-- Know the process / steps to deliver value to your client (value stream)[https://en.wikipedia.org/wiki/Value_stream]
-- Name them and map them to stages (value stream mapping)[https://en.wikipedia.org/wiki/Value-stream_mapping]
+- Know the process / steps to deliver value to your client [value stream](https://en.wikipedia.org/wiki/Value_stream)
+- Name them and map them to stages [value stream mapping](https://en.wikipedia.org/wiki/Value-stream_mapping)
 - Reduce lead time to client
 - Embrace necessary waste / focus on unnecessary overhead 
   * Divide each task to be minimal enough to allow FAST flow
@@ -71,7 +71,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 - Trust and Share
 - Embrace failure and Share
 
-## 4 domains (Roles) on DevOps
+## 4 Domains (Roles) on DevOps
 
 - Site Reliability
   - (Passive) Set up metrics and alerts for system monitoring
@@ -98,7 +98,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 - [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations, 2nd Edition](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
 - [The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win](https://www.goodreads.com/book/show/17255186-the-phoenix-project)
 - [The Unicorn Project](https://www.goodreads.com/book/show/44333183-the-unicorn-project)
-- https://resources.github.com/devops/
+- [What is DevOps?](https://resources.github.com/devops)
 - [Site Reliability Engineering: How Google Runs Production Systems](https://www.goodreads.com/book/show/27968891-site-reliability-engineering)
 - [The Lean Startup](https://theleanstartup.com)
 - [GutLab and the three ways](https://about.gitlab.com/blog/2022/06/15/gitlab-and-the-three-ways-of-devops)
