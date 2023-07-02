@@ -10,7 +10,7 @@ In 2019, Life as a Service (LAAS) was initiated by Nexplore acting as the collab
 
 ## What we use
 
-You know what tools to be used. You know what access you need to have. And you know our Tech Stack.
+You know what tools to be used. You know what access you need to have. And you know our tech stack.
 
 - [Software Needed](what-we-use/software.md)
 - [Platform Access](what-we-use/platform.md)
@@ -37,6 +37,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [Developer Testing](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
 - [Application Logging](how-we-develop/app-log.md)
+- [Diagram as Code](how-we-develop/diagram-as-code.md)
 
 ## How we learn and share
 
@@ -47,6 +48,8 @@ You know how to learn from others, give your feedback and share what you have le
 
 Catch-up Material
 - [REST API](how-we-share/rest-api.md)
+- [Tacit Programming](how-we-share/tacit-programming.md)
+
 
 ## How we hire
 
@@ -57,7 +60,7 @@ You know how to evaluate candidates applying to engineering positions.
 
 
 ### Assignments
-- [Software Engineer (Web)](how-we-hire/web-assignment.md)
+- [Software Engineer (Backend)](how-we-hire/web-assignment.md)
 - [Software Engineer (Mobile)](how-we-hire/mobile-assignment.md)
 
 (As a placeholder)

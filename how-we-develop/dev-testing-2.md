@@ -1,12 +1,12 @@
 # Developer Testing (2)
 
-## 1. Objectives
+## 1. Objective of writing test cases
 - Verify things are working as `EXPECTED`
 
 ## 2. The bottom line
 - Verify things through output
 - Avoid to test any internal structures or workings
-  - Test with Stubbing for non-configurations
+  - Test with stubbing for non-configurations
   - Test the data by accessing into database or cache directly
 
 ## 3. Simulating behaviours
@@ -23,7 +23,7 @@
   - [Mocks Aren't Stub](https://martinfowler.com/articles/mocksArentStubs.html)
   - [Best Practices for Spies, Stubs and Mocks in Sinon.js](https://semaphoreci.com/community/tutorials/best-practices-for-spies-stubs-and-mocks-in-sinon-js)
 
-## 4. Testing strategies 
+## 4. Test strategies 
 
 ### 4.1 Unit Test
 - `When` test against the pure functions (on our own setup)

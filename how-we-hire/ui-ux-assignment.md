@@ -7,8 +7,6 @@ As a construction inspector, I need a photo management application to help my da
 - When I am at the construction site, I want to use a photo management `mobile` app to take site photos and find some relevant photos to compare with the sites
 - When I am in the office, I want a web based application to manage the photos, add proper descriptions and share to my colleagues and external subcontractors
 
----
-
 ## Requirements
 
 ### User Requirements

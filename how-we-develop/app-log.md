@@ -2,6 +2,8 @@
 
 ## Objectives
 
+- Structural logging is prefered
+
 - Each log entry should be traceable
 
   1. when
@@ -36,3 +38,7 @@
 ## Implementation
 
 -  [Pino](https://github.com/pinojs/pino). It is one of the most popular log libraries supporting `nestjs`
+
+# Reference
+
+- [What Is Structured Logging?](https://sematext.com/glossary/structured-logging)

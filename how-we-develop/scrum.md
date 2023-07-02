@@ -52,7 +52,7 @@ In Nexplore, DoD is `NOT universal`. Each project needs to define its own DoD be
 ## Story points
     
 ```
-We should `NOT` start any development if there are no story points in the tasks
+We should `NOT` start any development if there are no estimation in the tasks
 ```
 
 `Fibonacci number` will be a [good](https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating) tool to follow:

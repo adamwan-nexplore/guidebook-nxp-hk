@@ -92,7 +92,7 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
     ```
     describe('#funcA', () => {
         it('returns the correct structure', () => {
-            expect(funcA('abc')).expect({
+            expect(funcA('abc')).toEqual({
                abc: 'abc',
                id: 'id',
                createdOn: '2023-01-31' // keeping changing
@@ -101,9 +101,9 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
     });
     ```
 
-8. scroll fatigue
+8. scrolling fatigue
    
-   Using `beforeEach` function, reader needs to scroll up a lot to understand the set up.
+   With the use of `beforeEach` function, reader needs to scroll up a lot to understand the set up.
    To be more intuitively, consider creating a setup function with a proper name for readability.
 
 9. how to test a throwing error

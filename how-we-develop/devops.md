@@ -31,8 +31,8 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
 - System thinking
 
-- Know the process / steps to deliver value to your client [value stream](https://en.wikipedia.org/wiki/Value_stream)
-- Name them and map them to stages [value stream mapping](https://en.wikipedia.org/wiki/Value-stream_mapping)
+- Know the process / steps to deliver value to your client ([value stream](https://en.wikipedia.org/wiki/Value_stream))
+- Name them and map them to stages ([value stream mapping](https://en.wikipedia.org/wiki/Value-stream_mapping))
 - Reduce lead time to client
 - Embrace necessary waste / focus on unnecessary overhead 
   * Divide each task to be minimal enough to allow FAST flow
@@ -44,12 +44,12 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
 #### System Generated
 
-- Automated Testing (Unit Testing / Integration Testing / e2e Testing)
+- Automated Testing (with Unit Tests / Integration Tests / End-to-End Tests)
 - CI Build – Across Different Env
 - Data Migration Test
 - Error Alert - APM
 
-** Ways to improve - automatic, standardize, clear, FAST
+** Ways to improve - automate, standardize, specify, FAST
 
 #### Human Generated
 - Code Review

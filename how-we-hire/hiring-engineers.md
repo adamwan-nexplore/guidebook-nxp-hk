@@ -22,7 +22,7 @@ Candidates should expect there will be 2 interviews + 1 take home assignment
 #### Technical Discussion
 - The interviewer(s) will go through some of the technical topics with the candidate
   - focuses on both technical breadth and technical depth of the candidate
-- The interviewer(s) will NOT expect the candidate knows anything. Neither the interviewer(s)!
+- The interviewer(s) will NOT expect the candidate will know everything. Neither the interviewer(s)!
   - Relex!
 
 #### Non-technical Discussion
@@ -35,13 +35,13 @@ Candidates should expect there will be 2 interviews + 1 take home assignment
 - The take-home assignment should be simple and straight-forward
   - Although a working software will be the primary measure,
   - Good engineering practices will show the engineers to be proficient:
-    - good quality
+    - concise
     - future proof
     - developer favour
 
 ### 2) Video - Feedback & Deep Dive Interview (1 hour)
 - Review and discuss on the assignment the candidate worked on
-- Focus more on the behaviours of the candidate, the candidate might expect there can be some case studies or non-engineering discussion on
+- Focus more on the behaviours of the candidate, the candidate might expect that there can be some case studies or non-engineering discussion on
     - team communications
     - engineering processes
     - product requirement & quality

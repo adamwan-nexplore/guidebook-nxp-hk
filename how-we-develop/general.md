@@ -12,7 +12,7 @@
     - extract constants
     - extract enums
     - name some complicated anonymous functions
-    - leave some application log
+    - leave some application logs
     - tidy up the content of application log
 
 2. Deliver your change with quality and confidence
@@ -20,7 +20,7 @@
     `Write more pure functions and automated tests`
 
     - `functions` expects that inputs and outputs are always present.
-    - `pure` describes a function that is no change to `non-inputs`. In JS/TS, be aware of `Promise` and `async/await`, reading current time, or generating a random stuff.
+    - `pure` describes a function that is no change to `non-outputs`. In JS/TS, be aware of `Promise` and `async/await`, reading current time, or generating some random stuff.
 
 ---
 ## Resources

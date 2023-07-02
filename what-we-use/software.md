@@ -16,6 +16,7 @@
 - Postico (Mac) - https://eggerapps.at/postico2
 - DBeaver - https://dbeaver.io
 - pgAdmin - https://https://www.pgadmin.org
+- Azure Data Studio - https://azure.microsoft.com/en-us/products/data-studio
 
 ## Editor
 - Visual Studio Code - https://code.visualstudio.com
@@ -44,3 +45,4 @@
 - Postman - https://www.postman.com
 - MS Teams - https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
 - Act (Testing GitHub Action locally) - https://github.com/nektos/act
+- Terraform - https://www.terraform.io

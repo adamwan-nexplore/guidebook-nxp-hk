@@ -2,6 +2,7 @@
 
 ## General
 - Typescript - https://www.typescriptlang.org
+- Dart - https://dart.dev
 - yarn - https://yarnpkg.com
 
 ## Backend
