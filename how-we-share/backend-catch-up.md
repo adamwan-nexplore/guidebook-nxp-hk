@@ -34,4 +34,4 @@ Every 1 month
 - typescript / javascript / v8 engine
 
 ### Extra (optional)
-- (both) topics outside this
+- the topics not mentioned above

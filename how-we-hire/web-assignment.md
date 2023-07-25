@@ -43,11 +43,13 @@ As a user, I want to use a web-based to-do list application to note what I have 
 ## Assessment Criteria
 
 - A functional App
-- Easy-to-follow implementation (proper design of components, state management, architecture)
+- Easy-to-follow implementation
+    - proper design of components, state management, architecture
 - Good coding styles and formatting
 - (Senior) Quality of test cases
-- If you have applied to the backend position, we will mainly review your backend implementation
-- If you have applied to the frontend position, we will mainly review your frontend implementation
+
+- *If you have applied to the backend position, we will mainly review your backend implementation*
+- *If you have applied to the frontend position, we will mainly review your frontend implementation*
 
 ## Submission
 

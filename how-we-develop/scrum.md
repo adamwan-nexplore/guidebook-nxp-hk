@@ -82,25 +82,28 @@ There is also a possibility that the task has regarded as `spike`. Which means w
 ### Development Workflow
 - To Do
 - In Progress
-    => Development
+    - Development
 - Ready for Review
-    => Ready for Code Review
+    - Ready for Code Review
 - Deployed to Dev
-    => Deployed to Dev
+    - Deployed to Dev
 - QA Testing
-    => QA Testing and Developer Bug Fixing
+    - QA Testing and Developer Bug Fixing
 - Release Ready
-    => Scheduled to deployment
+    - Scheduled to deploy to UAT
+- Deployed to UAT
+    - Deployed to UAT
+    - Acceptance Testing and sign off by clients / delivery team
 - Done
-    => DoD has fulfilled
+    - DoD has fulfilled
 
 ### Special Stages
 - Draft
-    => Placeholders for incomplete ticket details
+    - Placeholders for incomplete ticket details
 - Cancelled
-    => No longer valid
+    - No longer valid
 - Blocked
-    => Blocked from progressing
+    - Blocked from progressing
 
 ### Board 1 - Development Board
 

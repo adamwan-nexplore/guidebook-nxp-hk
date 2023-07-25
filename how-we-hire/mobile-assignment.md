@@ -42,7 +42,7 @@ You can check the manual [here](https://github.com/mockapi-io/docs/wiki)
 ### Technical Requirements
 
 - It must be production-ready to compile to Android and iOS
-- You should implement your solution using `Dart 2` and `Flutter 3`
+- You should implement your solution using `Dart 3` and `Flutter 3.13`
 - You are free to use any third-party libraries
 - Source codes should be stored in GitHub as a public repository
 - You should provide a README explaining your work

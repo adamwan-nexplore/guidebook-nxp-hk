@@ -6,8 +6,8 @@
 - GitHub (Leighton Asia) - https://github.com/leightonasia
 - Figma - https://www.figma.com
 - Azure - https://portal.azure.com
+- Nexplore Intranet - https://nexploreworld.sharepoint.com/sites/NexploreIntranet
 - Office 365 (Nexplore) - https://outlook.office365.com
-- Office 365 (Leighton Asia) - https://outlook.office365.com
 - SonarQube - (???)
 - Datadog - https://app.datadoghq.eu
 - 1Password - https://1password.com

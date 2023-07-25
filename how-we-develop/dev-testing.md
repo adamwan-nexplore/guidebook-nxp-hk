@@ -79,8 +79,8 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
           // mark expected output ONLY
           it('returns errors', () => {
             const fakeRule = input => ({ passed: false, reason: ‘fake reason’ });
-            const errors = verifyPassword('any value', [fakeRule]);
-            expect(errors[0]).toContain('fake reason');
+            const [firstError] = verifyPassword('any value', [fakeRule]);
+            expect(firstError).toContain('fake reason');
           });
         });
       });

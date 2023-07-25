@@ -29,6 +29,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [PR Checklist](how-we-develop/pr-checklist.md)
 - [DevOps - The Three Ways](how-we-develop/devops.md)
 - [Git Workflow](how-we-develop/git-workflow.md)
+- [Data Management](how-we-develop/data-management.md)
 - [Change Management](how-we-develop/change-management.md)
 
 ### Engineering Practices
@@ -55,8 +56,8 @@ Catch-up Material
 
 You know how to evaluate candidates applying to engineering positions.
 
-- [Hiring Process](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-hire/hiring-engineers.md)
-- [Openings - JobsDB](https://hk.jobsdb.com/hk/search-jobs/nexplore/1)
+- [The Process](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-hire/hiring-engineers.md)
+- [Job Openings](https://hk.jobsdb.com/hk/search-jobs/nexplore/1)
 
 
 ### Assignments

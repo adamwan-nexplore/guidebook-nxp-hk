@@ -7,7 +7,7 @@ As a construction inspector, I need a photo management application to help my da
 - When I am at the construction site, I want to use a photo management `mobile` app to take site photos and find some relevant photos to compare with the sites
 - When I am in the office, I want a web based application to manage the photos, add proper descriptions and share to my colleagues and external subcontractors
 
-## Requirements
+## Requirement
 
 ### User Requirements
 
@@ -25,10 +25,10 @@ As a construction inspector, I need a photo management application to help my da
 
 ### Technical Requirements
 
-- It must be development-ready (i.e. engineers should be able to develop the applications based on your wireframes)
+- It must be development-ready (i.e. engineers should be able to develop the applications based on your mockups)
 - You are free to use any resources
-- Your wireframes should be in `Figma`
-- You can consider providing some descriptions on each wireframe
+- Your mockups should be in `Figma`
+- You can consider providing some descriptions on each mockups
 
 ---
 

@@ -1,6 +1,6 @@
 # Developer Testing (2)
 
-## 1. Objective of writing test cases
+## 1. The objective of writing test cases
 - Verify things are working as `EXPECTED`
 
 ## 2. The bottom line
@@ -26,7 +26,7 @@
 ## 4. Test strategies 
 
 ### 4.1 Unit Test
-- `When` test against the pure functions (on our own setup)
+- `When` test against the pure functions
 - `Verify` the output, period
 - Give you `confidence` on logics
 
@@ -42,7 +42,7 @@
 
 ### 4.4 Acceptance Test (Integration Test)
 - `When` test against the features
-- `Verify` API outputs and Web the visual change
+- `Verify` API outputs and the visual change of FE Terminals
 - Give you `confidence` on part of logics, part of database query, part of cache and usability
 
 ## Reference
