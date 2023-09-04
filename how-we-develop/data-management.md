@@ -17,7 +17,7 @@ begin;
 
 SELECT * FROM "users" where id IN ('1111', '2222', '3333');
 
-UPDATE "users" SET name = name || '-SMART' where id IN ('1111', '2222', '3333');
+UPDATE "users" SET name = name || '-SMART' where id IN ('1111', '2222', '3333') RETURNING *;
 
 SELECT * FROM "users" where id IN ('1111', '2222', '3333');
 commit;

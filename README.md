@@ -29,6 +29,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [PR Checklist](how-we-develop/pr-checklist.md)
 - [DevOps - The Three Ways](how-we-develop/devops.md)
 - [Git Workflow](how-we-develop/git-workflow.md)
+- [Database Design](how-we-develop/database-design.md)
 - [Data Management](how-we-develop/data-management.md)
 - [Change Management](how-we-develop/change-management.md)
 
@@ -39,6 +40,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
 - [Application Logging](how-we-develop/app-log.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
+- [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 
 ## How we learn and share
 
@@ -50,6 +52,7 @@ You know how to learn from others, give your feedback and share what you have le
 Catch-up Material
 - [REST API](how-we-share/rest-api.md)
 - [Tacit Programming](how-we-share/tacit-programming.md)
+- [Microservices](how-we-share/microservices.md)
 
 
 ## How we hire

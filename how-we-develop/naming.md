@@ -35,3 +35,4 @@ There are only two hard things in Computer Science: cache invalidation and namin
 # Reference
 
 - [TwoHardThings](https://martinfowler.com/bliki/TwoHardThings.html)
+- [Linguistic Antipatterns](https://www.linguistic-antipatterns.com/?tab=%22Confusable-methods%22)

@@ -19,10 +19,12 @@
 - The alternative approach to Monolithic architecture 
 - Multiple services vs Big-bang service
 - Microservices is a collection of opinionated practices to do SOA `well`
-> Monolith
+
+## Comparison
+- Monolith
     - Big Bang (Can be Bad)
     - Modular Monolith
-> SOA
+- SOA
     - Distributed Monolith (Bad)
     - Microservices
 
@@ -35,7 +37,7 @@
     - O Big Teams -> Automonous teams can work concurrently
     - X Small Teams -> Set up things need to do repeatedly 
 
-### Service Boundary
+## Service Boundary
 - Domain coupling (Lowest)
     - consume functionality from another independent service
 - Pass-Through coupling
@@ -44,6 +46,29 @@
     - shared data, .e.g flipping global state 
 - Content Coupling (Highest)
     - shared logic together
+
+## Communication Protocols
+
+### Ideally
+- Make backward compatibility
+- Explicit interface
+- Technology neutral
+- Simple
+- No details leaked
+
+### Choices
+- Remote Procedural Calls
+    - SOAP
+    - gRPC
+- REST
+    - Richardson Maturity Model Level 2
+    - JSON::API -> HATEOAS ?
+
+- GraphQL
+- Message Broker
+    - webhook?
+
+### Reference
 
 - [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
 - [Building Microservices](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018)
