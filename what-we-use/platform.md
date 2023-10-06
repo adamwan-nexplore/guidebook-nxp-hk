@@ -1,15 +1,15 @@
 # Software Access
-- Jira - https://nexplore.atlassian.net/jira
-- Confluence - https://nexplore.atlassian.net/wiki
-- Service Desk - https://nexplore.atlassian.net/servicedesk/customer/portals
-- GitHub (Nexplore) - https://github.com/NexploreTechnology
-- GitHub (Leighton Asia) - https://github.com/leightonasia
-- Figma - https://www.figma.com
-- Azure - https://portal.azure.com
-- Nexplore Intranet - https://nexploreworld.sharepoint.com/sites/NexploreIntranet
-- Office 365 (Nexplore) - https://outlook.office365.com
+- [Jira](https://nexplore.atlassian.net/jira "https://nexplore.atlassian.net/jira")
+- [Confluence](https://nexplore.atlassian.net/wiki "https://nexplore.atlassian.net/wiki")
+- [Service Desk](https://nexplore.atlassian.net/servicedesk/customer/portals "https://nexplore.atlassian.net/servicedesk/customer/portals")
+- [GitHub (Nexplore)](https://github.com/NexploreTechnology "https://github.com/NexploreTechnology")
+- [GitHub (Leighton Asia)](https://github.com/leightonasia "https://github.com/leightonasia")
+- [Figma](https://www.figma.com "https://www.figma.com")
+- [Azure](https://portal.azure.com "https://portal.azure.com")
+- [Nexplore Intranet](https://nexploreworld.sharepoint.com/sites/NexploreIntranet "https://nexploreworld.sharepoint.com/sites/NexploreIntranet")
+- [Office 365 (Nexplore)](https://outlook.office365.com "https://outlook.office365.com")
 - SonarQube - (???)
-- Datadog - https://app.datadoghq.eu
-- 1Password - https://1password.com
-- O'Reilly Online Learning - https://www.oreilly.com/online-learning
-- Coursera - https://www.coursera.org
+- [Datadog](https://app.datadoghq.eu "https://app.datadoghq.eu")
+- [1Password](https://1password.com "https://1password.com")
+- [O'Reilly Online Learning](https://www.oreilly.com/online-learning "https://www.oreilly.com/online-learning")
+- [Coursera](https://www.coursera.org "https://www.coursera.org")

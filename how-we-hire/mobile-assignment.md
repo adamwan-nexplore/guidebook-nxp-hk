@@ -26,21 +26,17 @@ Get a list of photos
 
 We are using mockAPI to provide the mock response
 
-You can check the manual [here](https://github.com/mockapi-io/docs/wiki)
-
----
+You can check the manual [here](https://github.com/mockapi-io/docs/wiki "https://github.com/mockapi-io/docs/wiki")
 
 ## Requirements
 
 ### User Requirements
-
 - The user can see a list of photos with the location in chronological order
 - In the listing page, the user can search the photos using a keyword
 - In the listing page, the user can click each photo to see it individually with location, description and the name of creator
 - You are free to design the UI
 
 ### Technical Requirements
-
 - It must be production-ready to compile to Android and iOS
 - You should implement your solution using `Dart 3` and `Flutter 3.13`
 - You are free to use any third-party libraries
@@ -48,28 +44,21 @@ You can check the manual [here](https://github.com/mockapi-io/docs/wiki)
 - You should provide a README explaining your work
 
 ### Bonus Points
-
 - Photo Caching (either use local database or local persistent storage)
 - Automated Tests
 - Paginations
 
----
-
 ## Assessment Criteria
-
 - A functional App
 - Easy-to-follow implementations (state management, widgets, etc)
 - Good coding styles and formatting
 
 ## Submission
-
 - Please share your Git repository link to us
 - Avoid words `nexplore` and `challenge`
 - Do not copy-paste any parts of this README
 
----
 ## Others
-
 - We are happy to answer any questions
 - We expect the assignment will take you no more than 4 hours. You can always request for more time
 - We value quality over speed

@@ -9,40 +9,34 @@ Before it starts, can you tell
 - What are the tricks using Jest to write unit tests?
 - What are testable codes?
 
----
 ## Some important terms 
 
-SUT - System Under Test
+**SUT** - System Under Test  
+**Unit test** - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common  
+**Entry Point** - The way we `use` the unit to work. Usually, it refers to the input parameters of a function  
+**Exit Point(s)** - The effect / output after the input was applied to the SUT
 
-Unit test - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common
-
-Entry Point - The way we `use` the unit to work. Usually, it refers to the input parameters of a function
-
-Exit Point(s) - The effect / output after the input was applied to the SUT
-
----
-```
+## The Ultimate Goal
 We should `write more pure functions`. It will help making our codes to be more testable
-```
 
 a. pure functions
-
-    -> return value / error (the easiest way to observe the change)
+> return value / error (the easiest way to observe the change)
 
 b. impure functions
 
-    -> change of states (need to check the implementation to find out the state) -> by stricter scoping
+> change of states (need to check the implementation to find out the state)  
 
-    -> call third party dependencies (very hard to observe)
+> by stricter scoping
 
-```
+> call third party dependencies (very hard to observe)
+
 ## Rephrase the statement 
+> We should reduce the number of impure functions
 
-We should reduce the number of impure functions
-We should group those impure functions together, or at least in a managed way
-Do not dream of eliminate those entirely. We need to store the data in our disk by the use of impure functions
-```
----
+> We should group those impure functions together, or at least in a managed way
+
+> Do not dream of eliminate those entirely.  
+> We need to store the data in our disk by the use of impure functions
 
 ## 13 Tips to write Unit Tests in Jest
 
@@ -54,7 +48,7 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
    
     (Plugin Recommended for VSCode: `Jest Runner` - it will run the spec files immediately when you save the `.spec.ts` file)
 
-4. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing) - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
+4. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing "https://jestjs.io/docs/snapshot-testing") - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
 
 5. Arrange Act Assert
 
@@ -66,7 +60,7 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
 
     - `Expectation` (expected observed change to be)
 
-    ```
+    ```typescript
     // describe file
     describe('@password.ts', () => {
 
@@ -89,7 +83,7 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
 
 7. Make use of Arbitrary Matcher (Try `jest.any(Date)`)
 
-    ```
+    ```typescript
     describe('#funcA', () => {
         it('returns the correct structure', () => {
             expect(funcA('abc')).toEqual({
@@ -107,7 +101,7 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
    To be more intuitively, consider creating a setup function with a proper name for readability.
 
 9. how to test a throwing error
-    ```
+    ```typescript
     test('verify, with no rules, throws exception', () => {
       const verifier = makeVerifier();
       expect(() => verifier
@@ -116,33 +110,25 @@ Do not dream of eliminate those entirely. We need to store the data in our disk 
     });
     ```
 
-10. [Nock Recording](https://github.com/nock/nock#recording) (Setting the real secret to run aginst the apis, and then capture the response for mock testing)
+10. [Nock Recording](https://github.com/nock/nock#recording "https://github.com/nock/nock#recording") (Set up the real integration to call the APIs, and then capture the response for mock testing)
 
 11. How to mock data (OOP vs Functional)
-
     a. Functional approaches
-
-        - Function as Parameter
-
-        - Factory Functions (a.k.a Higher Order Functions)
-
-        - Constructor Functions
+    - Function as Parameter
+    - Factory Functions (a.k.a Higher Order Functions)
+    - Constructor Functions
 
     b. Object Oriented Approaches
-
-        - Class Constructor Injection
-
-        - Object as Parameter (a.k.a ‘duck typing’)
-
-        - Common Interface as Parameter (for this we’ll use TypeScript)”
+    - Class Constructor Injection
+    - Object as Parameter (a.k.a ‘duck typing’)
+    - Common Interface as Parameter (for this we’ll use TypeScript)”
 
 12. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
 
-13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca).
+13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
 
 ## Reference
-- [The Art of Unit Testing - 3rd Edition (with examples in JavaScript)](https://www.manning.com/books/the-art-of-unit-testing-third-edition)
-- [Xunit Patterns.com](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html)
-- [The Art of Unit Testing • Roy Osherove & Dave Farley • GOTO 2021](https://www.youtube.com/watch?v=6ndAWzc2F-I)
-- [Better Spec](https://www.betterspecs.org)
-
+- [The Art of Unit Testing](https://www.manning.com/books/the-art-of-unit-testing-third-edition "https://www.manning.com/books/the-art-of-unit-testing-third-edition")  
+- [The Art of Unit Testing (GOTO 2021)](https://www.youtube.com/watch?v=6ndAWzc2F-I "https://www.youtube.com/watch?v=6ndAWzc2F-I")  
+- [Xunit Patterns.com](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html "http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html")  
+- [Better Spec](https://www.betterspecs.org "https://www.betterspecs.org")

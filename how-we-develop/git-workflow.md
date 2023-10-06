@@ -1,30 +1,43 @@
 # Git Workflow
 
-- We are transiting to `trunk-based development`, you can check [here](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development), [here](https://trunkbaseddevelopment.com/) and [here](https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development)
-- We promote and aim at transiting against a linear flow based on `dev-qc-deployment`
-- The change from `dev-qc-deployment` to all `uat-*-deployment` MUST be done through `git merge`
-- If the client does not have its own UAT site, the source will go from `uat-anz-deployment`
+- We are using `trunk-based development`, you can check [here](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development "Trunk-based development - Learn why this version control management practice is common practice among DevOps teams."), [here](https://trunkbaseddevelopment.com "Trunk Based Development: Introduction") and [here](https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development "Prevent merge-conflict hassles with trunk-based development practices")
+- We promote and aim at transiting to a linear flow based on `dev-deployment`
+- The change from `dev-deployment` to all `uat-deployment` MUST be done through `git merge`
 
 ### Development
 
 ```mermaid
+---
+title: Flowchart on Submitting a Feature / Fix
+---
 flowchart LR
-    base(dev-qc-deployment) -->|branch out| feature(feature/XXX)
-    feature -->|rebase| newbase(dev-qc-deployment)
-    newbase -->|merge| candidate(uat-*-deployment)
+    base(dev-deployment)
+    feature(feature/XXX)
+    newbase(dev-deployment)
+    candidate(uat-deployment)
+
+    base -->|branch out| feature -->|rebase| newbase -->|merge| candidate(uat-deployment)
 ```
 
-### Fix
+### Hotfix
 ```mermaid
+---
+title: Flowchart on Hotfix
+---
 flowchart LR
-    base(dev-qc-deployment) -->|branch out| fix(fix/XXX)
-    fix -->|rebase| base
-    fix -->|cherry-pick| candidate(uat-*-deployment)
-    candidate -->|merge| base
+    base(dev-deployment)
+    hotfix(hotfix/XXX)
+    candidate(uat-deployment)
+
+    base -->|branch out| hotfix -->|cherry-pick| candidate -->|merge| base
+    hotfix -->|rebase| base
 ```
 
 ### Deployment
 ```mermaid
+---
+title: Flowchart on deploying change
+---
 flowchart LR
-    candidate(uat-*-deployment) -->|sign-off & merge| production(prod-*-deployment)
+    candidate(uat-deployment) -->|sign-off & merge| production(prod-*-deployment)
 ```

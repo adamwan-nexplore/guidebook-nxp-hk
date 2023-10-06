@@ -1,7 +1,5 @@
 # Data Management
-
 ## Handle production data
-
 - ANY data patches should be prepared as a query script
 - All query scripts should be reviewed before executed
 - The original records should be backup in some kind
@@ -15,11 +13,12 @@
 ```sql
 begin;
 
-SELECT * FROM "users" where id IN ('1111', '2222', '3333');
+SELECT * FROM "users" where id IN ('user1', 'user2', 'user3');
 
-UPDATE "users" SET name = name || '-SMART' where id IN ('1111', '2222', '3333') RETURNING *;
+UPDATE "users" SET name = name || '-SMART' where id IN ('user1', 'user2', 'user3') RETURNING *;
 
-SELECT * FROM "users" where id IN ('1111', '2222', '3333');
+SELECT * FROM "users" where id IN ('user1', 'user2', 'user3');
+
 commit;
 rollback;
 ```

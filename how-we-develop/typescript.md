@@ -25,7 +25,7 @@
     ```
  
    Discussion: [The advantage of the Destructuring assignment in JavaScript/React
-](https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871)
+](https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871 "https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871")
 
 2. Avoid to mutate objects
     ```typescript

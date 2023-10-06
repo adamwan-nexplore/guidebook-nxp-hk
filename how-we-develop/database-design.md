@@ -10,19 +10,19 @@
     - Free text column can often set with a default empty string
 - For performance concern, store the key/id of the module
     - eliminate the joins to the very upper level tables
-- High precision data types (like numeric) often returns as a `string`, make sure the type in the programming language does use the appropriate casting
+- High precision data types (like numeric) often return as`string`. Make sure the values in the programming language cast to the correct types (big decimal / number)
 
 # Performance
 - Create an index separately to foreign key columns
-- Check Performance Tips from [PG Documentations](https://www.postgresql.org/docs/16/performance-tips.html)
+- Check Performance Tips from [PG Documentations](https://www.postgresql.org/docs/16/performance-tips.html "https://www.postgresql.org/docs/16/performance-tips.html")
 - B-Tree Index can help both sorting & range search
 - To index text for prefix search, use pattern operator
-  ```
+  ```sql
   CREATE INDEX ON customer.customers (name text_pattern_ops);
   ```
 
 ## Reference
-- [SQL Antipatterns, Volume 1](https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1)
-- [SQL Performance Explained](https://sql-performance-explained.com/)
-- [Modern SQL](https://modern-sql.com/)
-- [Use the Index, Luke](https://use-the-index-luke.com/)
+- [SQL Antipatterns, Volume 1](https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1 "https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1")
+- [SQL Performance Explained](https://sql-performance-explained.com "https://sql-performance-explained.com")
+- [Modern SQL](https://modern-sql.com "https://modern-sql.com")
+- [Use the Index, Luke](https://use-the-index-luke.com "https://use-the-index-luke.com")

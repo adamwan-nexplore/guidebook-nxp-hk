@@ -8,8 +8,8 @@
 ## Pull Request & Branching
 
 1. `rebase` rather than `merge`
-    ```
-    $ git rebase <target-branch>
+    ```bash
+    git rebase <target-branch>
     ```
 
 2. Less than 5 commits per Pull Request.
@@ -17,23 +17,31 @@
 
     a. Keep amending your first commit
 
-        $ git commit --amend
-        $ git push origin --force <your-branch>
+        ```bash
+        git commit --amend
+        ```
+
+        ```bash
+        git push origin --force <your-branch>
+        ```
 
     b. (GitHub PR) Squash your Pull Request when merged
- 
+
     c. (local) Squash against your target branch
 
-        $ git reset $(git merge-base <target-branch> $(git rev-parse --abbrev-ref HEAD))
-        $ git commit -m 'chore: I go to school by bus'
+        ```bash
+        git reset $(git merge-base <target-branch> $(git rev-parse --abbrev-ref HEAD))
+        ```
+
+        ```bash
+        git commit -m 'chore: I go to school by bus'
+        ```
 
 3. Consider Auto-Merge
-
 4. Branch out from default branch, merge back to default branch
 
----
 ## Reference
 
-- [Git - Book](https://git-scm.com/book)
-- [Git: How to Squash all commit on branch](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch)
-- [Atomic Git Commit](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits)
+- [Git - Book](https://git-scm.com/book "https://git-scm.com/book")
+- [Git: How to Squash all commit on branch](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch "https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch")
+- [Atomic Git Commit](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits "https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits")

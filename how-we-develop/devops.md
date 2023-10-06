@@ -4,11 +4,11 @@
 
 ### Simple Definition
 
-- Dev + Ops = DevOps
+Dev + Ops = DevOps
 
 ### Old School Definition
 
-- DevOps is the practice of operations and development engineers participating together in the entire service lifecycle, from design through the development process to production support. - quoted from [the agile admin](https://theagileadmin.com/what-is-devops)
+DevOps is the practice of operations and development engineers participating together in the entire service lifecycle, from design through the development process to production support. - quoted from [the agile admin](https://theagileadmin.com/what-is-devops)
 
 ### Methodology - The Three Ways
 
@@ -27,7 +27,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
 ## The Three ways
 
-### Flow
+### 1. Flow
 
 - System thinking
 
@@ -38,40 +38,40 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
   * Divide each task to be minimal enough to allow FAST flow
   * Visualize flow so that everyone knows the pace
 
-### Feedback
+### 2. Feedback
 
 - Amplify Feedback Loops
 
-#### System Generated
+#### 2.1 System Generated
 
 - Automated Testing (with Unit Tests / Integration Tests / End-to-End Tests)
 - CI Build – Across Different Env
 - Data Migration Test
 - Error Alert - APM
 
-** Ways to improve - automate, standardize, specify, FAST
+**Ways to improve** - automate, standardize, specify, FAST
 
-#### Human Generated
+#### 2.2 Human Generated
 - Code Review
 - Usability Testing
 
-** Ways to improve - promote a standard, practice, notify, communicate
+**Ways to improve** - promote a standard, practice, notify, communicate
 
-### Experimentation and Learning
+### 3. Experimentation and Learning
 
 - Culture of Continual Experimentation and Learning
 
-### Culture of Continual Experimentation
+#### 3.1 Culture of Continual Experimentation
 - Identify and Understand Risk before the experiments
 - Trust and experiment
 - Reduce risk to experiment
 
-#### Learning
+#### 3.2 Learning
 - Seek for good resources and Share
 - Trust and Share
 - Embrace failure and Share
 
-## 4 Domains (Roles) on DevOps
+## FOUR Domains (Roles) on DevOps
 
 - Site Reliability
   - (Passive) Set up metrics and alerts for system monitoring
@@ -92,13 +92,13 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
 ## Side Note
 
-- The CALMS (Culture, Automation, Lean, Measurement, Sharing) framework will be another approach to set up the DevOps Culture. 
+The CALMS (Culture, Automation, Lean, Measurement, Sharing) framework will be another approach to set up the DevOps Culture.
 
 ## Reference
-- [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations, 2nd Edition](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
-- [The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win](https://www.goodreads.com/book/show/17255186-the-phoenix-project)
-- [The Unicorn Project](https://www.goodreads.com/book/show/44333183-the-unicorn-project)
-- [What is DevOps?](https://resources.github.com/devops)
-- [Site Reliability Engineering: How Google Runs Production Systems](https://www.goodreads.com/book/show/27968891-site-reliability-engineering)
-- [The Lean Startup](https://theleanstartup.com)
-- [GutLab and the three ways](https://about.gitlab.com/blog/2022/06/15/gitlab-and-the-three-ways-of-devops)
+- [The DevOps Handbook, 2nd Edition](https://www.goodreads.com/book/show/26083308-the-devops-handbook "https://www.goodreads.com/book/show/26083308-the-devops-handbook")
+- [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project "https://www.goodreads.com/book/show/17255186-the-phoenix-project")
+- [The Unicorn Project](https://www.goodreads.com/book/show/44333183-the-unicorn-project "https://www.goodreads.com/book/show/44333183-the-unicorn-project")
+- [What is DevOps?](https://resources.github.com/devops "https://resources.github.com/devops")
+- [Site Reliability Engineering](https://www.goodreads.com/book/show/27968891-site-reliability-engineering "https://www.goodreads.com/book/show/27968891-site-reliability-engineering")
+- [The Lean Startup](https://theleanstartup.com "https://theleanstartup.com")
+- [GutLab and the three ways](https://about.gitlab.com/blog/2022/06/15/gitlab-and-the-three-ways-of-devops "https://about.gitlab.com/blog/2022/06/15/gitlab-and-the-three-ways-of-devops")

@@ -50,4 +50,4 @@ Candidates should expect there will be 2 interviews + 1 take home assignment
     - (Senior) resource planning
 
 ## Reference
-- [GoJek - Why we ask for code](https://www.gojek.io/blog/why-we-ask-for-code)
+- [GoJek - Why we ask for code](https://www.gojek.io/blog/why-we-ask-for-code "https://www.gojek.io/blog/why-we-ask-for-code")

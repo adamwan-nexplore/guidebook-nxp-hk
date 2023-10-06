@@ -2,7 +2,7 @@
 
 ## Unpopular Opinion
 
-- One new system should start from monolith unless you are 100% sure you have enough engineers and [C10k](https://en.wikipedia.org/wiki/C10k_problem) traffic when you launch the system  
+- One new system should start from monolith unless you are 100% sure you have enough engineers and [C10k](https://en.wikipedia.org/wiki/C10k_problem "https://en.wikipedia.org/wiki/C10k_problem") traffic when you launch the system  
 
 ## Introduction
 
@@ -63,12 +63,10 @@
 - REST
     - Richardson Maturity Model Level 2
     - JSON::API -> HATEOAS ?
-
 - GraphQL
 - Message Broker
     - webhook?
 
 ### Reference
-
-- [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
-- [Building Microservices](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018)
+- [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing "https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing")
+- [Building Microservices](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018 "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018")

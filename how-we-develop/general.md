@@ -22,8 +22,7 @@
     - `functions` expects that inputs and outputs are always present.
     - `pure` describes a function that is no change to `non-outputs`. In JS/TS, be aware of `Promise` and `async/await`, reading current time, or generating some random stuff.
 
----
 ## Resources
-- [Functional-light Javascript](https://github.com/getify/Functional-Light-JS)
-- [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS)
-- [O'Reilly for Public Libraries](https://www.hkpl.gov.hk/tc/e-resources/e-books/disclaimer/180265/o-reilly-for-public-libraries)
+- [Functional-light Javascript](https://github.com/getify/Functional-Light-JS "https://github.com/getify/Functional-Light-JS")
+- [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS "https://github.com/getify/You-Dont-Know-JS")
+- [O'Reilly for Public Libraries](https://www.hkpl.gov.hk/tc/e-resources/e-books/disclaimer/180265/o-reilly-for-public-libraries "https://www.hkpl.gov.hk/tc/e-resources/e-books/disclaimer/180265/o-reilly-for-public-libraries")
