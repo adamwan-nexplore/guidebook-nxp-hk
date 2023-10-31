@@ -12,12 +12,14 @@ You know what tools to be used. You know what access you need to have. And you k
 - [Platform Access](what-we-use/platform.md)
 - [Tech Stack](what-we-use/techstack.md)
 
-## How we support clients
+## How we support our clients
 - [Escalation Procedure](how-we-operate/escalation.md)
 
 ## How we develop
 You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
 - [General](how-we-develop/general.md)
+- [Application Devleopment](how-we-develop/application-development.md)
+- [Application Architecture](how-we-develop/application-architecture.md)
 
 ### Development Cycle
 - [GitHub](how-we-develop/github.md)
@@ -43,11 +45,12 @@ You know our development process, our conventions, and the ways we communicate b
 You know how to learn from others, give your feedback and share what you have learnt with peers.
 - [30-30](how-we-share/30-30.md)
 - [Backend Catch-up](how-we-share/backend-catch-up.md)
+- Technology & Product Reviews
 
 Catch-up Material
-- [REST API](how-we-share/rest-api.md)
-- [Tacit Programming](how-we-share/tacit-programming.md)
-- [Microservices](how-we-share/microservices.md)
+- [REST API](what-we-share/rest-api.md)
+- [Tacit Programming](what-we-share/tacit-programming.md)
+- [Microservices](what-we-share/microservices.md)
 
 ## How we hire
 You know how to evaluate candidates applying to engineering positions.

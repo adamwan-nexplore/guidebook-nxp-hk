@@ -94,3 +94,4 @@ and query parameter is hard to specify data with types (null vs 'null' vs undefi
 - [API Design Patterns](https://www.manning.com/books/api-design-patterns "https://www.manning.com/books/api-design-patterns")
 - [Web API的设计与开发(Chinese)](https://book.douban.com/subject/27054104 "https://book.douban.com/subject/27054104") or [Web API: The Good Parts (Japanese)](https://www.amazon.co.jp/Web-API-Parts-%E6%B0%B4%E9%87%8E-%E8%B2%B4%E6%98%8E/dp/4873116864 "https://www.amazon.co.jp/Web-API-Parts-%E6%B0%B4%E9%87%8E-%E8%B2%B4%E6%98%8E/dp/4873116864")
 - [REST API Tutorial](https://restfulapi.net "https://restfulapi.net")
+- [Dissertation - Architectural Styles and the Design of Network-based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf "https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf")

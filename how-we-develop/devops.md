@@ -82,8 +82,11 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
   - integrate and develop tools to enable feedbacks
   - CI / CD
   - ChatOps
+  - Helmchart / Kustomize (Application Orchestration)
 - Cloud Engineering
   - Cloud Native (Azure, AWS, GCP)
+  - Containization (Docker, Podman, rkt)
+  - Pulumni / CDK / Terraform (Infrastructure Provisioning)
   - Infrastructure as Code
   - Zero Trust Architecture
   - etc...

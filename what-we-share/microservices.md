@@ -13,7 +13,7 @@
 - Business domain - focus on one business function
 - Own state - the state can only *manipulate* by itself
 - Size - meaningless
-- Flexibility / Alignment of Architecture & Organization - reduce Work Fiction
+- Flexibility / Alignment of Architecture & Organization - reduce Work Friction
 
 ## Relationship with Software-oriented Architecture
 - The alternative approach to Monolithic architecture 
