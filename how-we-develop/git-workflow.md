@@ -9,36 +9,68 @@
 
 ```mermaid
 ---
-title: Flowchart on Submitting a Feature / Fix
+title: Branch Transition on Submitting a Feature / Fix
 ---
-flowchart LR
-    base(dev-deployment)
+flowchart TD
+    develop(dev-deployment)
     feature(feature/XXX)
-    newbase(dev-deployment)
-    candidate(uat-deployment)
+    uat(uat-deployment)
+    prod(prod-*-deployment)
+    start([Start])
+    finish([finish])
 
-    base -->|branch out| feature -->|rebase| newbase -->|merge| candidate(uat-deployment)
+    dev-env[DEV ENV]
+    uat-env[UAT ENV]
+    prod-env[PROD ENVs]
+
+    style develop stroke:#f00
+    style uat stroke:#A020F0
+    style prod stroke:#00f
+
+    style dev-env fill:#f00
+    style uat-env fill:#A020F0
+    style prod-env fill:#00f
+
+    start --> feature
+    develop -->|branch out| feature -->|rebase| develop -->|merge| uat -->|sign-off & merge| prod --> finish
+
+    develop -..->|deploy| dev-env
+    uat -..->|deploy| uat-env
+    prod -..->|deploy| prod-env
 ```
 
 ### Hotfix
 ```mermaid
 ---
-title: Flowchart on Hotfix
+title: Branch Transition on Hotfix
 ---
-flowchart LR
-    base(dev-deployment)
+flowchart TD
+    develop(dev-deployment)
     hotfix(hotfix/XXX)
-    candidate(uat-deployment)
+    uat(uat-deployment)
+    prod(prod-*-deployment)
+    start([Start])
+    finish([finish])
 
-    base -->|branch out| hotfix -->|cherry-pick| candidate -->|merge| base
-    hotfix -->|rebase| base
-```
+    dev-env[DEV ENV]
+    uat-env[UAT ENV]
+    prod-env[PROD ENVs]
 
-### Deployment
-```mermaid
----
-title: Flowchart on deploying change
----
-flowchart LR
-    candidate(uat-deployment) -->|sign-off & merge| production(prod-*-deployment)
+    style develop stroke:#f00
+    style uat stroke:#A020F0
+    style prod stroke:#00f
+
+    style dev-env fill:#f00
+    style uat-env fill:#A020F0
+    style prod-env fill:#00f
+
+    start --> hotfix
+    develop -->|branch out| hotfix -->|cherry-pick| uat -->|merge| develop
+    hotfix -->|rebase| develop
+
+    uat -->|sign-off & merge| prod --> finish
+
+    develop -..->|deploy| dev-env
+    uat -..->|deploy| uat-env
+    prod -..->|deploy| prod-env
 ```

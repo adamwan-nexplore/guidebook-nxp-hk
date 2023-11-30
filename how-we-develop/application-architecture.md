@@ -6,12 +6,23 @@
 - Test components with a clear definition
 - Provide a foundation on refactoring code the same way
 
+## Constraints
+- Do not cross import the same level of logic components
+- Be avoid to cross import constants, enums, types and interfaces
+
+## Recommendations
+- Always write unit tests for helper files
+
+## Types of Component
+
 ### Mandatory
 * filename = resource name
 - messages.module.ts (plural, single class)
 - messages.controller.ts (plural, single class)
 - messages.service.ts (plural, single class)
 - message.entity.ts (singlar, single class)
+- messages.types.ts (plural, multiple types)
+- messages.interfaces.ts (plural, multiple interfaces)
 
 ### Mandatory (II)
 * filename = same to the class inside
@@ -34,23 +45,23 @@
 - langguage-switches.component.ts (one function, filename = name of function name)
 - subjects.enum.ts (one enum, filename = enum name)
 
-# When to have a new...
+## When to have a new...
 
-## Controller
+### Controller
 - Manipulate ONLY ONE resource
 - Create a new one if there are some additional requirements
     - specific access right
     - specific checking
 - No of functions = No of routes
 
-## Service
+### Service
 - Ideal case, one controller of `resource A`, one service of `resource A`
 - No of functions IN that service = No of functions IN that controller
 
-## Helper
+### Helper
 - Contain multiple pure functions
 - Can be tested without any mocks
 
-## Component
-- Is an extension to certain service
-- Simplify the logic in service
+### Component
+- Is an extension to certain services
+- Simplify the logic in services
