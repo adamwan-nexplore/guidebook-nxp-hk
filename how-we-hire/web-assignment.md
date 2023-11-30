@@ -29,7 +29,6 @@ As a user, I want to use a web-based to-do list application to note what I have 
 
 ### Bonus Points
 - (Junior) Automated tests
-- Caching mechanism
 - Traceability
 - Realtime subscriptions 
 - Any other additional features (Please specify)

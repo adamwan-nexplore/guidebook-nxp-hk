@@ -7,7 +7,7 @@
    https://{DOMAIN}/api (Swagger Documentation)
 2. Generate locally
    ```bash
-   yarn run generate:openapi
+   yarn generate:openapi
    ```    
    A json file will be generated in openapi/swagger.spec.json
 

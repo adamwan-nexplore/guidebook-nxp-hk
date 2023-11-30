@@ -133,4 +133,3 @@ Treat the name of the function as a little comment
     Do you know what is `transducer`?
 
 6. Return something meaningful when writing a function
-

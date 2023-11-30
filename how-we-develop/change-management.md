@@ -1,5 +1,16 @@
 # Change Management
 
+## The Key Person
+
+**Release Manager** is a role that everyone should act.
+
+### Responsibilities
+
+- make sure CD is working as expected (green)
+- in charge of the release flow from UAT to Production
+- health check after the release to production has done
+- make sure the tasks in JIRA do flow if they have stayed without any reasons (usually less than two days)
+- handle and communicate between the operators if necessary
 
 ## Risk Analysis
 
@@ -34,8 +45,11 @@ High Risk
 - [Blue Green Deployment](https://www.redhat.com/en/topics/devops/what-is-blue-green-deployment "https://www.redhat.com/en/topics/devops/what-is-blue-green-deployment")
 - [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html "https://martinfowler.com/bliki/CanaryRelease.html")
 
-## Deployment Check
+### Deployment Check
 
 - An engineer who deploy the change should do at least a health check in the test entity on the production environments
 - Please make sure you have the access to the test entity before the deployment
 - If you do not have it, please ask your engineering lead
+
+## Reference
+- [How can rotating release managers improve a project's velocity and stability?](https://softwareengineering.stackexchange.com/questions/159789/how-can-rotating-release-managers-improve-a-projects-velocity-and-stability "https://softwareengineering.stackexchange.com/questions/159789/how-can-rotating-release-managers-improve-a-projects-velocity-and-stability")
