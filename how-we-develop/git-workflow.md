@@ -8,6 +8,38 @@
 ### Development
 
 ```mermaid
+%%{
+    init: { 
+      "gitGraph": {
+        "showBranches": true,
+        "showCommitLabel": true,
+        "mainBranchName": "dev-deployment"
+      }
+    }
+}%%
+gitGraph
+   commit
+   commit
+   branch "Feature D"
+   commit id: "atomic commit"
+
+   checkout dev-deployment
+   commit id: "Feature A" type: HIGHLIGHT
+   commit id: "Feature B" type: HIGHLIGHT
+   commit id: "Feature C" type: HIGHLIGHT
+   merge "Feature D" type: HIGHLIGHT
+
+   checkout dev-deployment
+   
+   checkout "uat-deployment" 
+   commit
+   commit
+   commit
+   commit
+   commit
+```
+
+```mermaid
 ---
 title: Branch Transition on Submitting a Feature / Fix
 ---
