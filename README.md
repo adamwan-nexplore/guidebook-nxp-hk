@@ -14,6 +14,7 @@ You know what tools to be used. You know what access you need to have. And you k
 
 ## How we support our clients
 - [Escalation Procedure](how-we-operate/escalation.md)
+- [Change Management](how-we-operate/change-management.md)
 
 ## How we develop
 You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
@@ -30,7 +31,6 @@ You know our development process, our conventions, and the ways we communicate b
 - [Git Workflow](how-we-develop/git-workflow.md)
 - [Database Design](how-we-develop/database-design.md)
 - [Data Management](how-we-develop/data-management.md)
-- [Change Management](how-we-develop/change-management.md)
 
 ### Engineering Practices
 - [TypeScript](how-we-develop/typescript.md)

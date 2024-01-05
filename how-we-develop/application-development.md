@@ -1,6 +1,6 @@
 # Application Development
 
-## Interface
+## 1. Interface
 - interface IS very IMPORTANT. Keep it clean, un-surprised, focused
     - REST is NOT necessary. However, we should apply some of constraints to make our APIs consistent
     - If you do not know what is REST, check [here](../what-we-share/rest-api.md)
@@ -20,22 +20,22 @@
     - connection errors
     - logic
 
-## Database
+## 2. Database
 - review your database table structure, indexing, and queries carefully, check [here](database-design.md)
 
-## Quality Assurance
+## 3. Quality Assurance
 - unit tests are helpful, check [here](dev-testing.md)
 - integration tests can expose a lot of issues
 
-## Pull Request & Code Review
+## 4. Pull Request & Code Review
 - discover something you do not know
 - audit the change of code
 
-## Refactoring
+## 5. Refactoring
 - split logics into smaller pieces
 - more manageable and easier to write
 
-## Reference
+## 6. Reference
 - [Refactoring Guru](https://refactoring.guru "https://refactoring.guru")
 - [Refactoring](https://martinfowler.com/books/refactoring.html "https://martinfowler.com/books/refactoring.html")
 - [Tidy First?](https://www.oreilly.com/library/view/tidy-first/9781098151232 "https://www.oreilly.com/library/view/tidy-first/9781098151232")  

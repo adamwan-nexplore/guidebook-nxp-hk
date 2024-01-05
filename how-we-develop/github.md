@@ -17,29 +17,34 @@
 
     a. Keep amending your first commit
 
-        ```bash
-        git commit --amend
-        ```
-
-        ```bash
-        git push origin --force <your-branch>
-        ```
+        git commit --amend && git push origin --force <your-branch>
 
     b. (GitHub PR) Squash your Pull Request when merged
 
     c. (local) Squash against your target branch
 
-        ```bash
-        git reset $(git merge-base <target-branch> $(git rev-parse --abbrev-ref HEAD))
-        ```
-
-        ```bash
-        git commit -m 'chore: I go to school by bus'
-        ```
+        git reset $(git merge-base <target-branch> $(git rev-parse --abbrev-ref HEAD)) # way 1
+        git commit -m 'chore: I go to school by bus' # way 2
 
 3. Consider Auto-Merge
 4. Branch out from default branch, merge back to default branch
-
+5. Follow [Conventional Commits](https://www.conventionalcommits.org/)
+    - FORMAT: `type: [TICKET-NUMBER] commmit messages`
+    - REGEX: `^(promote|back|build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: \[CPCS\-[0-9]+\] ([\w ])+([\s\S]*)`
+    - e.g. `feat: [CPCS-1234] add user endpoint`
+6. Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources) for tracking back JIRA Tasks
+7. Continuous Integration
+    - Pull Request
+        - App Build Check
+        - Style Check
+            - Code Style
+            - Commit Message Format
+        - Migration Check
+        - Code Check
+            - Unit Test
+            - Integration Test
+    - Daily
+        - Vulnerability Test
 ## Reference
 
 - [Git - Book](https://git-scm.com/book "https://git-scm.com/book")
