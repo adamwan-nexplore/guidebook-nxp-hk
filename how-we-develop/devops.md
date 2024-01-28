@@ -21,7 +21,7 @@ DevOps is the practice of operations and development engineers participating tog
 - (Ideally) SOME IT operators need to code and need to set up different tools before the products release
 - (Ideally) SOME developers need to involve in operations
 
-- (In Reality) Some Engineers switch their duties from Application Development to Operational Excellence with automation​
+- (In Reality) Some developers switch their duties from Application Development to Operational Excellence with automation​
 
 DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 

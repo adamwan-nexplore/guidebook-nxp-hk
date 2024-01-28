@@ -39,31 +39,6 @@
 
 In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD before it starts
 
-## Story points
-**We should `NOT` start any development if there are no estimation in the tasks**
-
-`Fibonacci number` will be a [good](https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating "https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating") tool to follow:
-
-We decide the number of story points based on the followings:
-
-1. the amount of understanding of the task
-2. the effort to implement
-3. the testing effort on `developers`
-
-### Meaning of each number
-
-- 1 (very easy, can be done in less than 1 hour)
-- 2 (easy, but need time to implement and verify, maybe need to spend 1 to several hours)
-- 3 (medium, expected to spend around 1 day to finish it)
-- 5 (complicated, expected days)
-- 8 (very complicated, expected a week)
-- 13 (it will be super huge at an idea that we cannot imagine, even cant estiamte the timeline)
-- [spike](https://www.visual-paradigm.com/scrum/what-is-scrum-spike "https://www.visual-paradigm.com/scrum/what-is-scrum-spike")
-
-We need to break down the task into several sub-tasks if the task has more than 8 story points
-
-There is also a possibility that the task has regarded as `spike`. Which means we do not have any ideas how it is going to implement.
-
 ## Kanban in JIRA
 ### Development Workflow
 - To Do
@@ -94,8 +69,11 @@ There is also a possibility that the task has regarded as `spike`. Which means w
 ### Board 1 - Development Board
 - It is a Scrum board
 - Designed for development
+- Visualize every movement of tasks across system
 
-<img width="1463" alt="Screenshot 2023-05-25 at 5 31 49 PM" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/3d2b1ef4-0690-4a76-a521-6de103e7a317">
+<img width="1467" alt="Screenshot 2024-01-31 at 6 59 18 AM" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/2f12dc3a-07d3-4fdd-9a55-1b33694a6b5c">
+
+
 
 ### Board 2 - Product Board
 - It is a Kanban board

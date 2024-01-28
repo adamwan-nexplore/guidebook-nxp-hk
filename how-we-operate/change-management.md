@@ -2,15 +2,15 @@
 
 ## The Key Person
 
-**Release Manager** is a role that everyone should act.
+**Release Manager** is a role that everyone should work on.
 
 ### Responsibilities
 
-- make sure CD is working as expected (green)
-- in charge of the release flow from UAT to Production
-- health check after the release to production has done
-- make sure the tasks in JIRA do flow if they have stayed without any reasons (usually less than two days)
-- handle and communicate between the operators if necessary
+- Make sure CD is working as expected (green)
+- Be in charge of the release flow from UAT to Production
+- Health check after the release to production has done
+- Make sure the tasks in JIRA do flow if they have stayed without any reasons (usually less than two days)
+- Handle and communicate between the operators if necessary
 
 ## Risk Analysis
 

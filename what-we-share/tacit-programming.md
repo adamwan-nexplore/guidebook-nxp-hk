@@ -22,6 +22,8 @@
 
   ```typescript
   ### Currying and name it
+  import * as R from 'ramda'
+
   const curriedIsCertainMultiples = R.curry(isCertainMultiples);
   const curriedDivideBy = R.curry(divideBy);
   const curriedIncrement = R.curry(increment);

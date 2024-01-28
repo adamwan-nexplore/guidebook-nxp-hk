@@ -9,7 +9,11 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 [mermerd](https://github.com/KarnerTh/mermerd "https://github.com/KarnerTh/mermerd") - ERD from Database
 
 ```bash
-./mermerd -c "postgresql://{USERNAME}:{PASSWORDD}@{PATH}/{DATABASE}" -s public
+./mermerd \
+    --useAllTables \
+    --schema public \
+    --outputFileName "erd.mmd" \
+    --connectionString "postgresql://{USERNAME}:{PASSWORDD}@{PATH}/{DATABASE}"
 ```
 
 ## Before drawing, ask:
@@ -138,15 +142,15 @@ flowchart
 title: Typical Use of Edges
 ---
 flowchart
-    C --> C1 & C2 --> A %% Chaining & Cross Mapping
-    A --> B1 %% arrow, data / process flow
-    A -.-> B2 %% dash, optional
-    A --- B3 %% open, assoication between events
-    A --x B4 %% not reachable
-    A ~~~ B5 %% positioning, hidden
-    A <--> B6 %% bidrectional, save space
-    A ==> B7 %% thicker version, major flow
-    A ---> B8 %% longer edge
+    C --> C1 & C2 --> A 
+    A --> B1
+    A -.-> B2
+    A --- B3
+    A --x B4
+    A ~~~ B5
+    A <--> B6
+    A ==> B7
+    A ---> B8
 ```
 
 ```markdown

@@ -26,6 +26,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [GitHub](how-we-develop/github.md)
 - [ChatOps](how-we-develop/chatops.md)
 - [Scrum](how-we-develop/scrum.md)
+    - [Backlog Refinement](how-we-develop/backlog-refinement.md)
 - [PR Checklist](how-we-develop/pr-checklist.md)
 - [DevOps - The Three Ways](how-we-develop/devops.md)
 - [Git Workflow](how-we-develop/git-workflow.md)
@@ -51,6 +52,7 @@ Catch-up Material
 - [REST API](what-we-share/rest-api.md)
 - [Tacit Programming](what-we-share/tacit-programming.md)
 - [Microservices](what-we-share/microservices.md)
+- [Schema First API Design](what-we-share/schema-first-api-design.md)
 
 ## How we hire
 You know how to evaluate candidates applying to engineering positions.

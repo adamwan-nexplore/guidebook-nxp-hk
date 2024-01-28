@@ -65,3 +65,24 @@
 ### 5.4 Component
 - Is an extension to certain services
 - Simplify the logic in services
+
+## 6. Design Principles
+- Orthogonality
+- Functional Paradigms
+- Clean Architecture / Hexagonal Architecture
+- (Not) Domain Driven Design at development
+    - can be verified only after launched
+    - refactor if necessary
+
+## 7. Checklist
+- [ ] Are Business logics resolved as pure functions?
+- [ ] Are the dependencies resolved among interfaces of the functions?
+- [ ] Is Side Effect applied at the end?
+- [ ] Is Side Effect visible?
+- [ ] Does the code with similar Business Logics grouped in the similar way?
+
+## 8. Reference
+- [Orthogonality in Software Engineering](https://www.freecodecamp.org/news/orthogonality-in-software-engineering "https://www.freecodecamp.org/news/orthogonality-in-software-engineering")
+- [The Pragmatic Programmer, 20th Anniversary Edition](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition")
+- [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html")
+- [Get Your Hands Dirty on Clean Architecture (2nd edition)](https://thombergs.gumroad.com/l/gyhdoca "https://thombergs.gumroad.com/l/gyhdoca")

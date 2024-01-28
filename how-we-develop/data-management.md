@@ -1,4 +1,5 @@
 # Data Management
+
 ## Handle production data
 - ANY data patches should be prepared as a query script
 - All query scripts should be reviewed before executed
@@ -11,14 +12,24 @@
 - `commit` should be invoked until the observers AGREE to do so
   
 ```sql
-begin;
+BEGIN;
 
-SELECT * FROM "users" where id IN ('user1', 'user2', 'user3');
+SELECT * FROM "users" WHERE id IN ('user1', 'user2', 'user3');
 
-UPDATE "users" SET name = name || '-SMART' where id IN ('user1', 'user2', 'user3') RETURNING *;
+UPDATE "users" SET name = name || '-SMART' WHERE id IN ('user1', 'user2', 'user3') RETURNING *;
 
-SELECT * FROM "users" where id IN ('user1', 'user2', 'user3');
+SELECT * FROM "users" WHERE id IN ('user1', 'user2', 'user3');
 
-commit;
-rollback;
+COMMIT;
+ROLLBACK;
 ```
+
+## Data Backup
+
+### 1. If the patch only affects a couple of records, simply export the whole rows in a CSV file
+### 2. If the patch affects a whole table or several tables, try to back up the original data in-place
+```sql
+CREATE TABLE users_20240227 AS
+SELECT * FROM users;
+```
+### 3. If it is a complicated than that, dump the whole database

@@ -33,7 +33,7 @@
 
 ## 5. Refactoring
 - split logics into smaller pieces
-- more manageable and easier to write
+- be more manageable and easier to write
 
 ## 6. Reference
 - [Refactoring Guru](https://refactoring.guru "https://refactoring.guru")
