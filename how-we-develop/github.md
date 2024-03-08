@@ -39,7 +39,7 @@
         - Style Check
             - Code Style
             - Commit Message Format
-        - Migration Check
+        - Database Schema Migration Check
         - Code Check
             - Unit Test
             - Integration Test
