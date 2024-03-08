@@ -38,7 +38,7 @@ Normal Risk
 
 Medium Risk
 - Test Cases Demonstration (Either manual or automated)
-- [Feature Toggling](https://martinfowler.com/articles/feature-toggles.html "https://martinfowler.com/articles/feature-toggles.html")
+- [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html "https://martinfowler.com/articles/feature-toggles.html")
 - Always [Dark Launch](https://martinfowler.com/bliki/DarkLaunching.html "https://martinfowler.com/bliki/DarkLaunching.html") first
 
 High Risk

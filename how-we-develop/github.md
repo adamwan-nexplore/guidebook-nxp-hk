@@ -33,13 +33,13 @@
     - REGEX: `^(promote|back|build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: \[CPCS\-[0-9]+\] ([\w ])+([\s\S]*)`
     - e.g. `feat: [CPCS-1234] add user endpoint`
 6. Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources) for tracking back JIRA Tasks
-7. Continuous Exploratory
+7. Continuous Integrations
     - Pull Request
         - App Build Check
         - Style Check
             - Code Style
             - Commit Message Format
-        - Migration Check
+        - Database Schema Migration Check
         - Code Check
             - Unit Test
             - Integration Test
