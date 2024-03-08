@@ -35,8 +35,8 @@ The important elements of Continous Delivery are
 
 Two Important Pipelines
 
-- Lint / Test (Continuous Exploration)
-- Build + Publish (Continuous Integration) + Deploy (Continuous Deployment)
+- Explore the needs & Extract data for further development (Continuous Exploration)
+- Lint / Test + Build + Publish (Continuous Integration) + Deploy (Continuous Deployment)
 
 To reduce the lead time and get the feedback as fast as possible, chanage has published should be visiable in actual environments (either, development, test or production)
 

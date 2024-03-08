@@ -113,6 +113,7 @@ b. impure functions
 10. [Nock Recording](https://github.com/nock/nock#recording "https://github.com/nock/nock#recording") (Set up the real integration to call the APIs, and then capture the response for mock testing)
 
 11. How to mock data (OOP vs Functional)
+    
     a. Functional approaches
     - Function as Parameter
     - Factory Functions (a.k.a Higher Order Functions)
@@ -123,9 +124,9 @@ b. impure functions
     - Object as Parameter (a.k.a ‘duck typing’)
     - Common Interface as Parameter (for this we’ll use TypeScript)”
 
-12. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
+13. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
 
-13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
+14. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
 
 ## Reference
 - [The Art of Unit Testing](https://www.manning.com/books/the-art-of-unit-testing-third-edition "https://www.manning.com/books/the-art-of-unit-testing-third-edition")  

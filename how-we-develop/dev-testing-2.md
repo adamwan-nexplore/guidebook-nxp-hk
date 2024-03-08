@@ -49,4 +49,4 @@
 
 ## Reference
 - [Unit Testing Principles, Practices, and Patterns](https://www.manning.com/books/unit-testing "https://www.manning.com/books/unit-testing")
-- [Test your Micro-servies](https://loopback.io/doc/en/lb4/Testing-your-application.html "https://loopback.io/doc/en/lb4/Testing-your-application.html")
+- [Test your Micro-services](https://loopback.io/doc/en/lb4/Testing-your-application.html "https://loopback.io/doc/en/lb4/Testing-your-application.html")

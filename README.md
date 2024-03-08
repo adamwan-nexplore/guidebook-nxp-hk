@@ -53,6 +53,7 @@ Catch-up Material
 - [Tacit Programming](what-we-share/tacit-programming.md)
 - [Microservices](what-we-share/microservices.md)
 - [Schema First API Design](what-we-share/schema-first-api-design.md)
+- [Data Migration](what-we-share/data-migration.md)
 
 ## How we hire
 You know how to evaluate candidates applying to engineering positions.

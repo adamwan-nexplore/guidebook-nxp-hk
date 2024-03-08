@@ -26,7 +26,7 @@ One story can split into three types of tasks
 
 1. Mock APIs
     - new APIs added
-    - make sure the interfaces are discussed
+    - make sure the interfaces are agreed
 2. DB
     - how the fields changed
     - what indices added
