@@ -13,6 +13,19 @@
 - comparsion from logs `newData` & `originalData`
 
 ## Functions
+
+### Interact with databases / cache
+- `findSomething`
+- `deleteSomething`
+- `updateSomething`
+- `createSomething
+
+### Transform data from record
+- `transformSomething`
+
+### Fetch Records from list
+- `fetchSomething`
+
 ### Async Job Creation
 - `doSomethingLater`
 
