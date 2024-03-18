@@ -18,7 +18,13 @@
 - `findSomething`
 - `deleteSomething`
 - `updateSomething`
-- `createSomething
+- `createSomething`
+
+```
+Very confusing part
+
+`get` vs `fetch` vs `find`
+```
 
 ### Transform data from record
 - `transformSomething`
