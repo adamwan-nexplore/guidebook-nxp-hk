@@ -54,6 +54,7 @@ Catch-up Material
 - [Microservices](what-we-share/microservices.md)
 - [Schema First API Design](what-we-share/schema-first-api-design.md)
 - [Data Migration](what-we-share/data-migration.md)
+- [Lean Software Development](what-we-share/lean.md)
 
 ## How we hire
 You know how to evaluate candidates applying to engineering positions.
