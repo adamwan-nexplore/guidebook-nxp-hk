@@ -44,7 +44,7 @@ You know our development process, our conventions, and the ways we communicate b
 
 ## How we learn and share
 You know how to learn from others, give your feedback and share what you have learnt with peers.
-- [30-30](how-we-share/30-30.md)
+- [30/30 Meeting](how-we-share/30-30.md)
 - [Backend Catch-up](how-we-share/backend-catch-up.md)
 - Technology & Product Reviews
 
@@ -54,6 +54,7 @@ Catch-up Material
 - [Microservices](what-we-share/microservices.md)
 - [Schema First API Design](what-we-share/schema-first-api-design.md)
 - [Data Migration](what-we-share/data-migration.md)
+- [Learn Software Development](what-we-share/lean.md)
 
 ## How we hire
 You know how to evaluate candidates applying to engineering positions.
