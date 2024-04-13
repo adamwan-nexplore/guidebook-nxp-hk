@@ -25,6 +25,7 @@ You know our development process, our conventions, and the ways we communicate b
 ### Development Cycle
 - [GitHub](how-we-develop/github.md)
 - [ChatOps](how-we-develop/chatops.md)
+- [Code Review](how-we-develop/code-review.md)
 - [Scrum](how-we-develop/scrum.md)
     - [Backlog Refinement](how-we-develop/backlog-refinement.md)
 - [PR Checklist](how-we-develop/pr-checklist.md)
