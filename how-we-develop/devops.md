@@ -34,7 +34,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 - Know the process / steps to deliver values to your clients ([value stream](https://en.wikipedia.org/wiki/Value_stream))
 - Name the steps and map those to stages ([value stream mapping](https://en.wikipedia.org/wiki/Value-stream_mapping))
 - Reduce lead time to clients
-- Embrace necessary waste / focus on unnecessary overhead 
+- Embrace necessary waste / focus on reducing unnecessary overhead 
   * Divide each task to be minimal enough to allow FAST flow
   * Visualize flow so that everyone knows the pace
 

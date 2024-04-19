@@ -70,7 +70,7 @@
 * Level 2 - HTTP Verbs
 * Level 3 - Hypermedia Controls
 ### 4.2 [JSON::API](https://jsonapi.org "https://jsonapi.org")
-- A complete specifications on how to implement Rest API Level 3
+- A complete specifications on how to implement REST API Level 3
 
 ## 5. Discussion (2)
 ### 5.1 Singular resource vs Plural resource(s)?

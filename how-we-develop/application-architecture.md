@@ -52,11 +52,11 @@
 - Create a new one if there are some additional requirements
     - specific access right
     - specific checking
-- No of functions = No of routes
+- Number of functions = Number of routes
 
 ### 5.2 Service
-- Ideal case, one controller of `resource A`, one service of `resource A`
-- No of functions IN that service = No of functions IN that controller
+- Ideally, one controller of `resource A`, one service of `resource A`
+- Number of functions IN that service = Number of functions IN that controller
 
 ### 5.3 Helper
 - Contain multiple pure functions
@@ -75,11 +75,11 @@
     - refactor if necessary
 
 ## 7. Checklist
-- [ ] Are Business logics resolved as pure functions?
+- [ ] Are `Business Logics` resolved as pure functions?
 - [ ] Are the dependencies resolved among interfaces of the functions?
 - [ ] Is Side Effect applied at the end?
 - [ ] Is Side Effect visible?
-- [ ] Does the code with similar Business Logics grouped in the similar way?
+- [ ] Does the code with similar `Business Logics` grouped in the similar way?
 
 ## 8. Reference
 - [Orthogonality in Software Engineering](https://www.freecodecamp.org/news/orthogonality-in-software-engineering "https://www.freecodecamp.org/news/orthogonality-in-software-engineering")

@@ -33,13 +33,13 @@
 ### 4.2 End-to-End Test (Integration Test)
 - `When` test against the APIs
 - `Verify` the output and sometimes the cache hit
-- DO NOT stub ANY implementations, if needed, DO NO WRITE
+- DO NOT mock ANY implementations other than configurations. if needed, DO NO WRITE
 - Give you `confidence` on part of logics, database query, cache
 
 ### 4.3 Component Test (Integration Test)
 - `When` test against the functions that are NOT exposed to APIs, e.g. background jobs
 - `Verify` the output and sometimes the cache hit
-- Avoid to stub the implementations
+- Avoid to mock the implementations
 - Give you `confidence` on part of logics, database query, cache
 
 ### 4.4 Acceptance Test (Integration Test)
