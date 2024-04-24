@@ -23,7 +23,6 @@
 
 ## Reference
 - [SQL Antipatterns, Volume 1](https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1 "https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1")
-- [SQL Performance Explained](https://sql-performance-explained.com "https://sql-performance-explained.com")
 - [Modern SQL](https://modern-sql.com "https://modern-sql.com")
 - [Do't Do This - PostgresSQK Wiki](https://wiki.postgresql.org/wiki/Don't_Do_This)
-- [Use the Index, Luke](https://use-the-index-luke.com "https://use-the-index-luke.com")
+- [PostgreSQL Mistakes and How to Avoid Them](https://www.manning.com/books/postgresql-mistakes-and-how-to-avoid-them "https://www.manning.com/books/postgresql-mistakes-and-how-to-avoid-them")
