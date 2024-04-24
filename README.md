@@ -56,6 +56,7 @@ Catch-up Material
 - [Schema First API Design](what-we-share/schema-first-api-design.md)
 - [Data Migration](what-we-share/data-migration.md)
 - [Learn Software Development](what-we-share/lean.md)
+- [Introduction to Query Performance](what-we-share/database-query-performance.md)
 
 ## How we hire
 You know how to evaluate candidates applying to engineering positions.
