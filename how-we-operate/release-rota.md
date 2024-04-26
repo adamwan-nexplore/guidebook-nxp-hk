@@ -1,7 +1,9 @@
 # Continuous Delivery & Release Rota
 
 ## Continuous Delivery
+
 > Continuous Delivery is achieved by working so that our software is always in a releasable state
+>
 > - Quote from Continuous Delivery Pipelines
 
 ## Old School Jargons
@@ -15,15 +17,17 @@ You might check the full explanation by SAFe Studio [here](https://scaledagilefr
 ### Practical Considerations
 
 We can simply define the whole processes by two parts
+
 - Continuous Delivery Pipelines
-    - Machine handling all the repeated tasks
+  - Machine handling all the repeated tasks
 - Release ROTA
-    - The person compensates on non-repeated tasks and irregular blockers
+  - The person compensates on non-repeated tasks and irregular blockers
 
 The important elements of Continous Delivery are
+
 - Lean Mentality
 - Agile Practices
--> DevOps Culture
+  -> DevOps Culture
 
 - The practices are Delivery Pipelines (Machines)
 - Is a workflow to delivery a Qualified Software to Users
@@ -45,16 +49,17 @@ To reduce the lead time and get the feedback as fast as possible, chanage has pu
 The only meaningful definition of done to us is to delivery the features to ACTUAL users
 
 There are many cases to cause the delivery blocking
+
 - Bugs
 - Vulnerability Update
 - Database Migration failed
 
 - Although we have a variety of components to detect those
-    - Daily Regular Build
-    - Automated Test Cases
-    - Automated Data Migration Tests
-    - Realtime Monitoring on Production Environments
-    - Code Review from Peers
+  - Daily Regular Build
+  - Automated Test Cases
+  - Automated Data Migration Tests
+  - Realtime Monitoring on Production Environments
+  - Code Review from Peers
 - We might probably need further investigation, confirmation and deployment to promote the features
 - That is why we have release manager to focus on those stuff.
 
@@ -63,5 +68,5 @@ There are many cases to cause the delivery blocking
 - A diffused responsiblitiy of Release Manager, every engineer should take part of it on ROTA
 
 ## Reference
-- [Continuous Delivery Pipelines](https://leanpub.com/cd-pipelines "https://leanpub.com/cd-pipelines")
 
+- [Continuous Delivery Pipelines](https://leanpub.com/cd-pipelines "https://leanpub.com/cd-pipelines")

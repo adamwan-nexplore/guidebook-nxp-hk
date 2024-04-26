@@ -40,6 +40,7 @@ flowchart TD
 ```
 
 ### Hotfix
+
 ```mermaid
 ---
 title: Branch Transition on Hotfix

@@ -1,6 +1,7 @@
 # Application Logging
 
 ## Objectives
+
 - Structural logging is prefered
 - Each log entry should be traceable
   1. when
@@ -10,6 +11,7 @@
 - Each log entry should be searchable
 
       Besides the attribute `msg`, please provide some key attributes for searching / filtering.
+
 - Each log entry should set the log level properly
 
       It will help any further analysis and in case there are something abnormal
@@ -21,7 +23,9 @@
 - Sensitive Information like `password` and `JWT token` should be redacted
 
 ## Implementation
+
 - [Pino](https://github.com/pinojs/pino "https://github.com/pinojs/pino"). It is one of the most popular log libraries supporting `nestjs`
 
 # Reference
+
 - [What Is Structured Logging?](https://sematext.com/glossary/structured-logging "https://sematext.com/glossary/structured-logging")

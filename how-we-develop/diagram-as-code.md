@@ -3,6 +3,7 @@
 For compatibility / auditing reasons, we should draw our diagrams by code
 
 ## Choice of toolings
+
 [MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview  
 [PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams  
 [Structurizr DSL](https://structurizr.com "https://structurizr.com")  
@@ -17,21 +18,23 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 ```
 
 ## Before drawing, ask:
-- (People) Who read the digrams?  
-- (People) Who can help maintaining the diagrams?  
-- (Context) Technical vs Business?  
-- (Context) How much information?  
-- (Metholodogies) What diagrams?  
-    - Context Diagrams  
-    - State Diagrams  
-    - Sequence Diagrams  
-    - Use Case Diagrams  
-    - Flow Charts
+
+- (People) Who read the digrams?
+- (People) Who can help maintaining the diagrams?
+- (Context) Technical vs Business?
+- (Context) How much information?
+- (Metholodogies) What diagrams?
+  - Context Diagrams
+  - State Diagrams
+  - Sequence Diagrams
+  - Use Case Diagrams
+  - Flow Charts
 
 ## After drawn, think about:
-- (People) Who can help reviewing the diagrams?  
-- (Context) Can readers search the context?  
-- (Context) Check typos  
+
+- (People) Who can help reviewing the diagrams?
+- (Context) Can readers search the context?
+- (Context) Check typos
 - (Context) Avoid to have more than 50 nodes & assoications
 - (Context) Provide title if possible
 - (Context) Provide comments in CODE if necessary
@@ -40,10 +43,10 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 ---
 title: Hello Title
 ---
-flowchart
-	Hello --> World
-```
 
+flowchart
+Hello --> World
+```
 
 ```mermaid
 ---
@@ -54,30 +57,33 @@ flowchart
 ```
 
 ## Advanced Use
+
 - themes
-    - default - good in most cases
-    - base - for customisation
-    - dark - good for dark mode
-    - forest - green gradient palette
-    - neutral - printing on paper
+  - default - good in most cases
+  - base - for customisation
+  - dark - good for dark mode
+  - forest - green gradient palette
+  - neutral - printing on paper
 
 ## Legends
+
 ### Flowcharts
 
 - Directions
-    - LR (->)
-    - RL (<-)
-    - TB (v)
-    - BT (^)
+  - LR (->)
+  - RL (<-)
+  - TB (v)
+  - BT (^)
 
 ## Shapes
-
 
 ```markdown
 ---
 title: Typical Use of Shapes
 ---
+
 flowchart
+
     rectangle[Process]
     diamond{Decision}
     stadium([Start or End Point])
@@ -116,16 +122,20 @@ flowchart
 ```
 
 ### Remarks
+
 **Diamond**: Should make the text short  
 **Rounded Rectangle**: Dashed edge to the shape  
-**Hexagon**: Alternate shape for decsion - a longer text is provided  
+**Hexagon**: Alternate shape for decsion - a longer text is provided
 
 ## Edges
+
 ```markdown
 ---
 title: Typical Use of Edges
 ---
+
 flowchart
+
     C --> C1 & C2 --> A %% Chaining & Cross Mapping
     A --> B1 %% arrow, data / process flow
     A -.-> B2 %% dash, optional
@@ -142,7 +152,8 @@ flowchart
 title: Typical Use of Edges
 ---
 flowchart
-    C --> C1 & C2 --> A 
+
+    C --> C1 & C2 --> A
     A --> B1
     A -.-> B2
     A --- B3
@@ -154,14 +165,14 @@ flowchart
 ```
 
 ```markdown
-A -->|go| B %% more flexible
-A --|go|--> B %% more natural
+    A -->|go| B %% more flexible
+    A --|go|--> B %% more natural
 ```
 
 - subgraph - alternative to subroutine, respresent something different from flowcharts
 
-
 Style
+
 - If it is a SMALL diagram, just code whatever you think it is the most efficient
 - If it is a LARGE diagram, usually more than 15 nodes, manage your CODE structurally
 
@@ -169,6 +180,7 @@ Style
 ---
 title: Flowchart on Support & Operation Escalation
 ---
+
 %% 1. Events
 
 %% start point / termination points
@@ -188,6 +200,7 @@ issue --> support-ticket
 ```
 
 ## Reference
-- [Diagram as Code](https://blog.bytebytego.com/p/diagram-as-code "https://blog.bytebytego.com/p/diagram-as-code")  
-- [The Official Guide to Mermaid.js](https://mermaid.js.org/landing "https://mermaid.js.org/landing")  
+
+- [Diagram as Code](https://blog.bytebytego.com/p/diagram-as-code "https://blog.bytebytego.com/p/diagram-as-code")
+- [The Official Guide to Mermaid.js](https://mermaid.js.org/landing "https://mermaid.js.org/landing")
 - [Creating Software with Modern Diagramming Techniques](https://pragprog.com/titles/apdiag/creating-software-with-modern-diagramming-techniques "https://pragprog.com/titles/apdiag/creating-software-with-modern-diagramming-techniques")

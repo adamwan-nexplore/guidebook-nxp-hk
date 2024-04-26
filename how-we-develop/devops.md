@@ -34,9 +34,9 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 - Know the process / steps to deliver values to your clients ([value stream](https://en.wikipedia.org/wiki/Value_stream))
 - Name the steps and map those to stages ([value stream mapping](https://en.wikipedia.org/wiki/Value-stream_mapping))
 - Reduce lead time to clients
-- Embrace necessary waste / focus on reducing unnecessary overhead 
-  * Divide each task to be minimal enough to allow FAST flow
-  * Visualize flow so that everyone knows the pace
+- Embrace necessary waste / focus on reducing unnecessary overhead
+  - Divide each task to be minimal enough to allow FAST flow
+  - Visualize flow so that everyone knows the pace
 
 ### 2. Feedback
 
@@ -52,6 +52,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 **Ways to improve** - automate, standardize, specify, FAST
 
 #### 2.2 Human Generated
+
 - Code Review
 - Usability Testing
 
@@ -62,11 +63,13 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 - Culture of Continual Experimentation and Learning
 
 #### 3.1 Culture of Continual Experimentation
+
 - Identify and Understand Risk before the experiments
 - Trust and experiment
 - Reduce risk to experiment
 
 #### 3.2 Learning
+
 - Seek for good resources and Share
 - Trust and Share
 - Embrace failure and Share
@@ -98,6 +101,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 The CALMS (Culture, Automation, Lean, Measurement, Sharing) framework will be another approach to set up the DevOps Culture.
 
 ## Reference
+
 - [The DevOps Handbook, 2nd Edition](https://www.goodreads.com/book/show/26083308-the-devops-handbook "https://www.goodreads.com/book/show/26083308-the-devops-handbook")
 - [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project "https://www.goodreads.com/book/show/17255186-the-phoenix-project")
 - [The Unicorn Project](https://www.goodreads.com/book/show/44333183-the-unicorn-project "https://www.goodreads.com/book/show/44333183-the-unicorn-project")
