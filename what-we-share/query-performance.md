@@ -123,6 +123,26 @@
 3. [N+1 Queries](https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries "https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries")
    - Affect Concurrent Connections, Randomly-Slow Queries
    - when doing CRUD to the grand-children tables (companies -> projects -> records)
+
+   ```sql
+   SELECT id, "name" FROM classes WHERE school_code = 'LSC';
+   -- | id     | name |  
+   -- | 200101 | 1A   |
+   -- | 200102 | 1B   |
+   -- | 200103 | 1C   |
+   -- | 200104 | 1D   |
+   -- | 200105 | 1E   |
+   -- | 200106 | 1F   |
+   -- ...
+   SELECT id, "name" FROM students WHERE class_id = '200101';
+   SELECT id, "name" FROM students WHERE class_id = '200102';
+   SELECT id, "name" FROM students WHERE class_id = '200103';
+   SELECT id, "name" FROM students WHERE class_id = '200104';
+   SELECT id, "name" FROM students WHERE class_id = '200105';
+   SELECT id, "name" FROM students WHERE class_id = '200106';
+   -- ...
+   ```
+
 4. Store huge records (>500KB each)
    - Always-Slow Queries on itself, Randomly-Slow Queries
    - Unstructured JSON

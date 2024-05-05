@@ -1,6 +1,6 @@
 # Lean Software Development
 
-## 1. Introduction
+## 1. In short
 
 - Everything should be Just-in-Time
 - Eliminate `waste` (Muda, in Japanese - 無駄)
@@ -46,7 +46,8 @@
 
 ## 5. Opinion & Clarification
 
-- Human waiting is one of the most expensive waste. People practicing lean will try to KEEP people busy. Therefore, CYCLE time has introduced. Slack time is needed to review and improve the process
+- Human waiting is one of the most expensive waste. People practicing lean will try to KEEP people busy.
+- CYCLE time has introduced. Slack time is needed to review and improve the process
 - Measurements & Metrices are IMPORTANT indicators. Those expose:
   - overburden
   - scope change
