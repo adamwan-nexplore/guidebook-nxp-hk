@@ -241,7 +241,7 @@ CREATE INDEX IF NOT EXISTS project_directory_idx ON "projects"(SUBSTRING(directo
 
 - Query the replica
 - Cache the result in application
-- Do not store the static configuration data
+- Do not store static configuration data
   - store in the services providing `strong consistency`
     - [S3](https://aws.amazon.com/tw/s3/consistency "https://aws.amazon.com/tw/s3/consistency")
     - [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/concurrency-manage "https://learn.microsoft.com/en-us/azure/storage/blobs/concurrency-manage")

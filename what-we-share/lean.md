@@ -29,7 +29,7 @@
 3. Relearning - Revisit and do small
 4. Task switching - No multitasking
 5. Waiting - Human waiting is a PURE waste
-6. Handoffs
+6. Handoffs - Let the actor find and solve the issues without extra people jump-ed in
 7. Defects - Do better Quality Assurance, which is a necessary waste
 8. Management activities - Be avoid to actively track the statuses
 

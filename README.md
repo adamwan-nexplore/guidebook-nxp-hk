@@ -20,6 +20,7 @@ You know what tools to be used. You know what access you need to have. And you k
 
 - [Escalation Procedure](how-we-operate/escalation.md)
 - [Change Management](how-we-operate/change-management.md)
+- [krew plugins recommended](how-we-operate/kubernetes-admin.md)
 
 ## How we develop
 

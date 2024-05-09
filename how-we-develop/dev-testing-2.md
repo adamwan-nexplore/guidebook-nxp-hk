@@ -7,7 +7,7 @@
 ## 2. The bottom line
 
 - Verify things through output
-- Avoid to test any internal structures or workings
+- Be avoid to test any internal structures or workings
   - Test with mocking for non-configurations (No good, consider MOCK)
   - Test the data by accessing into database or cache directly (No good, please review your interfaces)
 

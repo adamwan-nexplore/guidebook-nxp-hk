@@ -22,7 +22,7 @@
 
    ## Where,
    ## `--amend` is a FLAG
-   ## `-m` is an option, which uses only IF typing a command, NOT scriptings
+   ## `-m` is an option, which uses only IF typing a command, NOT scripts
    ```
 
 2. Prefer `${}`
@@ -39,7 +39,7 @@
    EXPORT BAR=bar ## environment variable
    ```
 
-4. A separate script should ALWAYS have [SHEBANG](https://zh.wikipedia.org/wiki/Shebang "https://zh.wikipedia.org/wiki/Shebang") at the first line
+4. A separate script should ALWAYS have [SHEBANG](https://en.wikipedia.org/wiki/Shebang_(Unix) "https://en.wikipedia.org/wiki/Shebang_(Unix)") at the first line
 
    ```bash
    #!/bin/bash
@@ -53,7 +53,7 @@
 
 ### 3.2 Python
 
-    - Be avoid to use in Helmcharts as inline script
+    - Be avoid to use Python in Helmcharts as inline script
         - both use indentations
         - can be error prone
         - no syntax highlight and static analyzing on editors
