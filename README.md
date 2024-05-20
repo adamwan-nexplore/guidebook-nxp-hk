@@ -6,7 +6,7 @@
 
 ## What we do
 
-In 2019, Life as a Service (LAAS) was initiated by Nexplore acting as the collaborative network and research platform to invent tomorrow’s cities, villages and landscapes by holistically connecting digital services to human values.
+In 2019, Life as a Service (LaaS) was initiated by NEXPLORE acting as the collaborative network and research platform to invent tomorrow’s cities, villages and landscapes by holistically connecting digital services to human values.
 
 ## What we use
 
@@ -15,6 +15,7 @@ You know what tools to be used. You know what access you need to have. And you k
 - [Software Needed](what-we-use/software.md)
 - [Platform Access](what-we-use/platform.md)
 - [Tech Stack](what-we-use/techstack.md)
+- [VS Code Plugins](what-we-use/vs-code.md)
 
 ## How we support our clients
 
@@ -27,7 +28,7 @@ You know what tools to be used. You know what access you need to have. And you k
 You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
 
 - [General](how-we-develop/general.md)
-- [Application Devleopment](how-we-develop/application-development.md)
+- [Application Development](how-we-develop/application-development.md)
 - [Application Architecture](how-we-develop/application-architecture.md)
 
 ### Development Cycle
