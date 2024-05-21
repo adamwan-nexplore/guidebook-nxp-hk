@@ -2,7 +2,7 @@
 
 **Table of Contents**
 
-- [1. Extensions Recommended](#1-plugins-recommended)
+- [1. Extensions](#1-extensions)
   - [1.1. Code Spell Checker](#11-code-spell-checker)
   - [1.2. Batch Rename](#12-batch-rename)
   - [1.3. Error Lens](#13-error-lens)
