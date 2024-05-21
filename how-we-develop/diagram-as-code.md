@@ -14,16 +14,16 @@ For compatibility / auditing reasons, we should draw our diagrams by code
     --useAllTables \
     --schema public \
     --outputFileName "erd.mmd" \
-    --connectionString "postgresql://{USERNAME}:{PASSWORDD}@{PATH}/{DATABASE}"
+    --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
 ```
 
 ## Before drawing, ask:
 
-- (People) Who read the digrams?
+- (People) Who read the diagrams?
 - (People) Who can help maintaining the diagrams?
 - (Context) Technical vs Business?
 - (Context) How much information?
-- (Metholodogies) What diagrams?
+- (Methodologies) What diagrams?
   - Context Diagrams
   - State Diagrams
   - Sequence Diagrams
@@ -35,7 +35,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 - (People) Who can help reviewing the diagrams?
 - (Context) Can readers search the context?
 - (Context) Check typos
-- (Context) Avoid to have more than 50 nodes & assoications
+- (Context) Avoid to have more than 50 nodes & associations
 - (Context) Provide title if possible
 - (Context) Provide comments in CODE if necessary
 
@@ -125,7 +125,7 @@ flowchart
 
 **Diamond**: Should make the text short  
 **Rounded Rectangle**: Dashed edge to the shape  
-**Hexagon**: Alternate shape for decsion - a longer text is provided
+**Hexagon**: Alternate shape for decision - a longer text is provided
 
 ## Edges
 
@@ -139,10 +139,10 @@ flowchart
     C --> C1 & C2 --> A %% Chaining & Cross Mapping
     A --> B1 %% arrow, data / process flow
     A -.-> B2 %% dash, optional
-    A --- B3 %% open, assoication between events
+    A --- B3 %% open, association between events
     A --x B4 %% not reachable
     A ~~~ B5 %% positioning, hidden
-    A <--> B6 %% bidrectional, save space
+    A <--> B6 %% bidirectional, save space
     A ==> B7 %% thicker version, major flow
     A ---> B8 %% longer edge
 ```
@@ -169,7 +169,7 @@ flowchart
     A --|go|--> B %% more natural
 ```
 
-- subgraph - alternative to subroutine, respresent something different from flowcharts
+- subgraph - alternative to subroutine, represent something different from flowcharts
 
 Style
 
@@ -195,7 +195,7 @@ categorize{Categorize}
 %% 2. Style
 style ops-escalate fill:blue,color:#fff
 
-%% 3. Assoications
+%% 3. Associations
 issue --> support-ticket
 ```
 

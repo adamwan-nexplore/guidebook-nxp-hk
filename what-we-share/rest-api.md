@@ -11,7 +11,7 @@
 - Uniform interface
 - Client–server
 - Stateless
-- Cacheable
+- Cache-able
 - Layered system
 - Code on demand (optional)
 
@@ -68,7 +68,7 @@
 - Retrieve all: GET /entities
 - Create: POST /entities
 - Update/Replace: PATCH or PUT /entities/:id
-- Remove: DELETE /entites/:id
+- Remove: DELETE /entities/:id
 
 ## 3. Discussion (1)
 
@@ -114,7 +114,7 @@ Put those information to header
 
 ## 6. Issues on REST
 
-### 6.1 If working for mutliple resources
+### 6.1 If working for multiple resources
 
 how to make it transactional?
 

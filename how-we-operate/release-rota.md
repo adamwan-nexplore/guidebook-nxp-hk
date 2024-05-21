@@ -23,7 +23,7 @@ We can simply define the whole processes by two parts
 - Release ROTA
   - The person compensates on non-repeated tasks and irregular blockers
 
-The important elements of Continous Delivery are
+The important elements of Continuous Delivery are
 
 - Lean Mentality
 - Agile Practices
@@ -32,7 +32,7 @@ The important elements of Continous Delivery are
 - The practices are Delivery Pipelines (Machines)
 - Is a workflow to delivery a Qualified Software to Users
 - Some parts can be automated by machine, it often provides FAST, repeatable, standardized and unified response
-- We use Microsoft Teams (ChatOps) as our uniformed platfrom to aggregate it
+- We use Microsoft Teams (ChatOps) as our uniformed platform to aggregate it
 - Some parts require human involvement, it is often more flexible, complicated and mirror the reality
 
 ### What kinds of pipelines we should have
@@ -42,7 +42,7 @@ Two Important Pipelines
 - Explore the needs & Extract data for further development (Continuous Exploration)
 - Lint / Test + Build + Publish (Continuous Integration) + Deploy (Continuous Deployment)
 
-To reduce the lead time and get the feedback as fast as possible, chanage has published should be visiable in actual environments (either, development, test or production)
+To reduce the lead time and get the feedback as fast as possible, change has published should be visible in actual environments (either, development, test or production)
 
 ## Release Rota
 
@@ -64,8 +64,8 @@ There are many cases to cause the delivery blocking
 - That is why we have release manager to focus on those stuff.
 
 - Dedicated to review the issues from APM, Pipelines sit in ChatOps
-- Once issues appeared and blocked the delivery flow, make sure engineer responsibles aware of those and fix those ASAP
-- A diffused responsiblitiy of Release Manager, every engineer should take part of it on ROTA
+- Once issues appeared and blocked the delivery flow, make sure engineer responsible aware of those and fix those ASAP
+- A diffused responsibility of Release Manager, every engineer should take part of it on ROTA
 
 ## Reference
 

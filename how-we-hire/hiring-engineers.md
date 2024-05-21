@@ -26,7 +26,7 @@ Candidates should expect there will be 2 interviews + 1 take home assignment
 - The interviewer(s) will go through some of the technical topics with the candidate
   - focuses on both technical breadth and technical depth of the candidate
 - The interviewer(s) will NOT expect the candidate will know everything. Neither the interviewer(s)!
-  - Relex!
+  - Relax!
 
 #### Non-technical Discussion
 

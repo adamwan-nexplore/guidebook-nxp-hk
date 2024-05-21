@@ -24,7 +24,7 @@
 
 ## Reference
 
-- [SQL Antipatterns, Volume 1](https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1 "https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1")
+- [SQL Anti-patterns, Volume 1](https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1 "https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1")
 - [Modern SQL](https://modern-sql.com "https://modern-sql.com")
 - [Do't Do This - PostgresSQK Wiki](https://wiki.postgresql.org/wiki/Don't_Do_This)
 - [PostgreSQL Mistakes and How to Avoid Them](https://www.manning.com/books/postgresql-mistakes-and-how-to-avoid-them "https://www.manning.com/books/postgresql-mistakes-and-how-to-avoid-them")

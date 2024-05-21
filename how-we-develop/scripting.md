@@ -7,7 +7,7 @@
 
 ## 2. Bear in mind
 
-- A script is acutally a program
+- A script is actually a program
 - It should be good enough so that you can maintain it, and read it later
 
 ## 3. Tips
@@ -53,11 +53,11 @@
 
 ### 3.2 Python
 
-    - Be avoid to use Python in Helmcharts as inline script
+    - Be avoid to use Python in HelmCharts as inline script
         - both use indentations
         - can be error prone
         - no syntax highlight and static analyzing on editors
 
 ## 4. Reference
 
-- [When Procedural Is Better Than Declarative Programing](https://medium.com/hackernoon/when-procedural-is-better-than-declarative-51b24aaaf227 "https://medium.com/hackernoon/when-procedural-is-better-than-declarative-51b24aaaf227")
+- [When Procedural Is Better Than Declarative Programming](https://medium.com/hackernoon/when-procedural-is-better-than-declarative-51b24aaaf227 "https://medium.com/hackernoon/when-procedural-is-better-than-declarative-51b24aaaf227")

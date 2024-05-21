@@ -27,10 +27,10 @@
 
 ### Scrum VS Hybrid Waterfall
 
-- Fixed Timeboxing VS Fixed Scope
+- Fixed Time-boxing VS Fixed Scope
 - Controllable Scope OR Resources VS Controllable Resources OR Time
 - Give up non-core features VS Delay deliveries
-- [What is timeboxing](https://www.scruminc.com/what-is-timeboxing "https://www.scruminc.com/what-is-timeboxing")
+- [What is time-boxing](https://www.scruminc.com/what-is-timeboxing "https://www.scruminc.com/what-is-timeboxing")
 
 ## [Definition of Done (DoD)](https://www.productplan.com/learn/agile-definition-of-done/#:~:text=Defining%20the%20definition%20of%20done,progress%E2%80%9D%20to%20%E2%80%9Cdone.%E2%80%9D "https://www.productplan.com/learn/agile-definition-of-done/#:~:text=Defining%20the%20definition%20of%20done,progress%E2%80%9D%20to%20%E2%80%9Cdone.%E2%80%9D")
 
@@ -45,7 +45,7 @@
 
 In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD before it starts
 
-## Kanban in JIRA
+## KanBan in JIRA
 
 ### Development Workflow
 
@@ -85,6 +85,6 @@ In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD be
 
 ### Board 2 - Product Board
 
-- It is a Kanban board
+- It is a KanBan board
 - Designed for product end-to-end journey from ideas to completion
   <img width="1500" alt="Screenshot 2023-05-25 at 5 31 30 PM" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/26caa680-e86c-4d10-981c-c958736b4571">

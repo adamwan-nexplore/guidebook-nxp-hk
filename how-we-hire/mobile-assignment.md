@@ -49,7 +49,7 @@ You can check the manual [here](https://github.com/mockapi-io/docs/wiki "https:/
 
 - Photo Caching (either use local database or local persistent storage)
 - Automated Tests
-- Paginations
+- Pagination
 
 ## Assessment Criteria
 

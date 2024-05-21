@@ -2,7 +2,7 @@
 
 ## Objectives
 
-- Structural logging is prefered
+- Structural logging is preferred
 - Each log entry should be traceable
   1. when
   2. whom
@@ -24,7 +24,7 @@
 
 ## Implementation
 
-- [Pino](https://github.com/pinojs/pino "https://github.com/pinojs/pino"). It is one of the most popular log libraries supporting `nestjs`
+- [Pino](https://github.com/pinojs/pino "https://github.com/pinojs/pino"). It is one of the most popular log libraries supporting `NestJS`
 
 # Reference
 

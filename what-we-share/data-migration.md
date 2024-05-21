@@ -80,7 +80,7 @@
 - Good and stable NETWORK
 - Start ahead
 
-  - ANY static / old data can be DONE beforehead
+  - ANY static / old data can be DONE beforehand
     - files half year from NOW
 
 - Let the stakeholders know when

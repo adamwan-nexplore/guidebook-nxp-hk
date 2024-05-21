@@ -9,7 +9,7 @@
   - `returning *`
   - all additional select statements
 - There MUST be at least one engineers as observers
-- A trasnaction is ALWAYS required
+- A transaction is ALWAYS required
 - `commit` should be invoked until the observers AGREE to do so
 
 ```sql

@@ -25,7 +25,7 @@
 * messages.module.ts (plural, single class)
 * messages.controller.ts (plural, single class)
 * messages.service.ts (plural, single class)
-* message.entity.ts (singlar, single class)
+* message.entity.ts (singular, single class)
 * messages.types.ts (plural, multiple types)
 * messages.interfaces.ts (plural, multiple interfaces)
 
@@ -34,7 +34,7 @@
 - filename = same to the class inside
 
 * create-message-request.dto.ts (single class)
-* create-messsage-response.dto.ts (single class)
+* create-message-response.dto.ts (single class)
 
 ### 4.3 Complimentary (I)
 

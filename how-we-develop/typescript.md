@@ -56,15 +56,15 @@
 
     ```typescript
         reversedData.reduce(
-            (acc: string[], curr) => {
-              if (!acc.includes(curr.author.id)) {
-                acc.push(curr.author.id);
+            (acc: string[], currentVal) => {
+              if (!acc.includes(currentVal.author.id)) {
+                acc.push(currentVal.author.id);
               }
-              if (!acc.includes(curr.author2.id)) {
-                acc.push(curr.author2.id);
+              if (!acc.includes(currentVal.author2.id)) {
+                acc.push(currentVal.author2.id);
               }
-              if (!acc.includes(curr.author3.id)) {
-                acc.push(curr.author3.id);
+              if (!acc.includes(currentVal.author3.id)) {
+                acc.push(currentVal.author3.id);
               }
               return acc;
             },
@@ -75,15 +75,15 @@
     Better
 
     ```typescript
-    reversedData.reduce(function mapAuthorId(acc: string[], curr) {
-      if (!acc.includes(curr.author.id)) {
-        acc.push(curr.author.id);
+    reversedData.reduce(function mapAuthorId(acc: string[], currentVal) {
+      if (!acc.includes(currentVal.author.id)) {
+        acc.push(currentVal.author.id);
       }
-      if (!acc.includes(curr.author2.id)) {
-        acc.push(curr.author2.id);
+      if (!acc.includes(currentVal.author2.id)) {
+        acc.push(currentVal.author2.id);
       }
-      if (!acc.includes(curr.author3.id)) {
-        acc.push(curr.author3.id);
+      if (!acc.includes(currentVal.author3.id)) {
+        acc.push(currentVal.author3.id);
       }
       return acc;
     }, []);

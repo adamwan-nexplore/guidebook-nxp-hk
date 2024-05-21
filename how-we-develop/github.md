@@ -2,7 +2,7 @@
 
 ## General Recommendation
 
-1. Use your own avatar. The orignal one is too hard to know who you are.
+1. Use your own avatar. The original one is too hard to know who you are.
 2. Make sure your username / name can show who you are.
 
 ## Pull Request & Branching
@@ -30,7 +30,7 @@
 3.  Consider Auto-Merge
 4.  Branch out from default branch, merge back to default branch
 5.  Follow [Conventional Commits](https://www.conventionalcommits.org/)
-    - FORMAT: `type: [TICKET-NUMBER] commmit messages`
+    - FORMAT: `type: [TICKET-NUMBER] commit messages`
     - REGEX: `^(promote|back|build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: \[CPCS\-[0-9]+\] ([\w ])+([\s\S]*)`
     - e.g. `feat: [CPCS-1234] add user endpoint`
 6.  Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources) for tracking back JIRA Tasks

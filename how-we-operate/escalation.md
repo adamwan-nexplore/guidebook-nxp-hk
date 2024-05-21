@@ -53,7 +53,7 @@ flowchart
     style fix-resolution fill:green,color:#fff
     style not-found-resolution fill:gray,color:#fff
 
-    %% assoications
+    %% associations
     issue --> support-ticket
     support-ticket --> ops-escalate
     ops-escalate --> categorize

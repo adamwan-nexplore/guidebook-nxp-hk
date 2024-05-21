@@ -12,7 +12,7 @@
 - before validation `rawData`
 - after validation `data`
 - after updated `newData`
-- comparsion from logs `newData` & `originalData`
+- comparison from logs `newData` & `originalData`
 
 ## Functions
 
@@ -49,4 +49,4 @@ Very confusing part
 # Reference
 
 - [TwoHardThings](https://martinfowler.com/bliki/TwoHardThings.html "https://martinfowler.com/bliki/TwoHardThings.html")
-- [Linguistic Antipatterns](https://www.linguistic-antipatterns.com/?tab=%22Confusable-methods%22 "https://www.linguistic-antipatterns.com/?tab=%22Confusable-methods%22")
+- [Linguistic Anti-patterns](https://www.linguistic-antipatterns.com/?tab=%22Confusable-methods%22 "https://www.linguistic-antipatterns.com/?tab=%22Confusable-methods%22")

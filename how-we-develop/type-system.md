@@ -7,8 +7,8 @@
    - Write a library
    - Have more than one `return`
    - Be very slow on TS compilation level
-   - Expose a OpenAPI response with recurisve nature
-   - Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt Pocock
+   - Expose a OpenAPI response with recursive nature
+   - Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt 
 
 2. When to Type
 
@@ -18,11 +18,11 @@
 - Be avoid to use `Pick` or `Omit`. You might tempt to use class functions that might not work
 - Prefer generics rather than type annotation
 - Prefer type inference rather than type annotation, if not `any`
-- Use narrow down the type scope by type annotation, e.g. tuple, or value collections
+- Narrow down the scope by type annotation, e.g. tuple, or value collections
 
 3. Discriminated Union Types
 
-- make use of an additonal properpty to match the struct
+- make use of an additional property to match `struct`
 - `kind` is a popular attribute name
 
 4. Protect compile level types by strict checking from external sourcing
@@ -31,7 +31,7 @@
 - Fetch data from remote call
 - Fetch data from database
 
-5. Use Javascript Feature to differentiate objects / structs
+5. Use Javascript Feature to differentiate objects / `structs`
 
 - `isInstanceof` for class naming
 - `typeOf` for primitive types

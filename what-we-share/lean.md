@@ -48,7 +48,7 @@
 
 - Human waiting is one of the most expensive waste. People practicing lean will try to KEEP people busy.
 - CYCLE time has introduced. Slack time is needed to review and improve the process
-- Measurements & Metrices are IMPORTANT indicators. Those expose:
+- Measurements & Metrics are IMPORTANT indicators. Those expose:
   - overburden
   - scope change
   - low velocity
@@ -62,7 +62,7 @@
 - Just-In-Time to prevent `overproduction` is GOOD, how about `under-production`? Need to align
 - Eliminate waste is the core concept on Lean, but who to execute?
 - In practice a lot of work expects to be necessary waste. That is why we do it. How to figure out those are actually PURE waste?
-- The stakeholder can delay the decision making ONLY IF the system is FLEXIBLE. Flexbility introduces complexity. Who and by What to decide?
+- The stakeholder can delay the decision making ONLY IF the system is FLEXIBLE. Flexibility introduces complexity. Who and by What to decide?
 
 ## Reference
 

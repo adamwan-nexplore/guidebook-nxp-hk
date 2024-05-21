@@ -11,5 +11,5 @@
    - orWhere should be avoided (you need bracket sometime)
    - Bracket should be avoided
    - andWhere / orWhere use only if you have some conditions to work with
-6. [API] Promise.all should NOT be used with undeterminted array (e.g. `map()`)
-7. [API] Functions with too many arguements - consider changing from `positional arguments` to `keyword arguments`
+6. [API] Promise.all should NOT be used with un-determinate array (e.g. `map()`)
+7. [API] Functions with too many arguments - consider changing from `positional arguments` to `keyword arguments`

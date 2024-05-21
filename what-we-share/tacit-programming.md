@@ -4,8 +4,8 @@
 
   > A popular style of coding in the FP world aims to reduce some of the visual clutter by removing unnecessary parameter-argument mapping
 
-- Point = Arguement
-- Point Free = No arguements to use a function (Only one arguement but we consume through functional chain)
+- Point = Argument
+- Point Free = No arguments to use a function (Only one argument but we consume through functional chain)
 
   ```typescript
   const sumOfValues = sum(

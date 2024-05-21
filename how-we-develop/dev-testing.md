@@ -138,5 +138,5 @@ b. impure functions
 
 - [The Art of Unit Testing](https://www.manning.com/books/the-art-of-unit-testing-third-edition "https://www.manning.com/books/the-art-of-unit-testing-third-edition")
 - [The Art of Unit Testing (GOTO 2021)](https://www.youtube.com/watch?v=6ndAWzc2F-I "https://www.youtube.com/watch?v=6ndAWzc2F-I")
-- [Xunit Patterns.com](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html "http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html")
+- [XUnit Patterns.com](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html "http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html")
 - [Better Spec](https://www.betterspecs.org "https://www.betterspecs.org")

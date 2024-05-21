@@ -39,7 +39,7 @@
   - X Startup / MVP / New Projects
 
 - More Services
-  - O Big Teams -> Automonous teams can work concurrently
+  - O Big Teams -> Autonomous teams can work concurrently
   - X Small Teams -> Same piece of work need to do repeatedly
 
 ## Service Boundary

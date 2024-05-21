@@ -26,5 +26,5 @@
 ## Resources
 
 - [Functional-light Javascript](https://github.com/getify/Functional-Light-JS "https://github.com/getify/Functional-Light-JS")
-- [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS "https://github.com/getify/You-Dont-Know-JS")
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS "https://github.com/getify/You-Dont-Know-JS")
 - [O'Reilly for Public Libraries](https://www.hkpl.gov.hk/tc/e-resources/e-books/disclaimer/180265/o-reilly-for-public-libraries "https://www.hkpl.gov.hk/tc/e-resources/e-books/disclaimer/180265/o-reilly-for-public-libraries")

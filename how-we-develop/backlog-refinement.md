@@ -4,10 +4,10 @@
 
 - Review what tasks remain
 - Review sprint statistics
-  - `Burnup Chart`
+  - `BurnUp Chart`
   - `Velocity Chart`
   - `Control Chart`
-  - To To understsand _scope change_, _velocity shift_ and _reasons why not starting some tasks_
+  - To To understand _scope change_, _velocity shift_ and _reasons why not starting some tasks_
 - Introduce, discuss and estimate the tasks
 - Note uncertain things and assign someone responsible to clarify the requirements
 - AGREE on the [sprint goal(s)](https://www.scrum.org/resources/what-sprint-goal) - no more than three
@@ -35,7 +35,7 @@ Assign the number of story points to a task by:
 ** Break down the task if larger than 5 **
 
 - 8 (very complicated, expected a week)
-- 13 (it will be super huge that we cannot imagine, even cant estiamte the timeline)
+- 13 (it will be super huge that we cannot imagine, even cant estimate the timeline)
 - [spike](https://www.visual-paradigm.com/scrum/what-is-scrum-spike "https://www.visual-paradigm.com/scrum/what-is-scrum-spike")
 
 It is possible we say it is a `spike`, which means we do not have any ideas how it is going to implement.

@@ -80,12 +80,12 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
   - (Passive) Set up metrics and alerts for system monitoring
   - (Active) Simulate extreme conditions to find issues in advance / promote system evolutions
   - Prometheus / Grafana / Loki
-  - Choas Engineering
+  - Chaos Engineering
 - Platform Engineering
   - integrate and develop tools to enable feedbacks
   - CI / CD
   - ChatOps
-  - Helmchart / Kustomize (Application Orchestration)
+  - HelmChart / Kustomize (Application Orchestration)
 - Cloud Engineering
   - Cloud Native (Azure, AWS, GCP)
   - Containization (Docker)

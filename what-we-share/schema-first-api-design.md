@@ -49,7 +49,7 @@ One story can split into three types of tasks
 ## Challenges
 
 - Cannot guarantee the mock interfaces the same to the final products
-  - Uncertainies on wrong work
+  - Uncertainties on wrong work
 - Overlook some tasks
   - Mock APIs cannot reflect all the interactions
 - Introduce more communication overhead

@@ -122,7 +122,7 @@ k kubescape scan
 - temporarily add more libraries to the pod for debugging
 
 ```bash
-kubectl spy myapp -n app
+kubectl spy my-app -n app
 ```
 
 

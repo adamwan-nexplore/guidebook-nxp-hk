@@ -100,7 +100,7 @@ Check [here](https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Mi
 
 - Illustrations
   <img width="1000" alt="figma set up" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/8ba28515-17a7-403f-a8db-37e4a8333ea0">
-  <img width="1000" alt="figma chatops" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/f0a5dc82-a73a-4208-ae59-c0a454f66058">
+  <img width="1000" alt="figma ChatOps" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/f0a5dc82-a73a-4208-ae59-c0a454f66058">
 
 ## Reference
 

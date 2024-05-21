@@ -87,7 +87,7 @@
 
   - design the schema so that any change of one field only affect one record
 
-- Denormalization
+- De-normalization
 
   - store module key on tables under the module
   - store the number of sum / average result of certain tables in parent table
