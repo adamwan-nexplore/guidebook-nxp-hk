@@ -1,15 +1,33 @@
-# Data Migration
+# Data Migration <!-- omit in toc -->
+
+**Table of Contents**
+
+- [1. Requirements](#1-requirements)
+  - [1.1. Types of Data](#11-types-of-data)
+  - [1.2. Source \& Destination](#12-source--destination)
+  - [1.3. Scope](#13-scope)
+- [2. Preparation](#2-preparation)
+  - [2.1. Scripting](#21-scripting)
+  - [2.2. Actual amount of work](#22-actual-amount-of-work)
+  - [2.3. Time](#23-time)
+  - [2.4. Engineers input](#24-engineers-input)
+  - [2.5. Data Quality](#25-data-quality)
+  - [2.6. Drill](#26-drill)
+  - [2.7. Manual Data \& Configuration](#27-manual-data--configuration)
+  - [2.8. Execution agenda](#28-execution-agenda)
+- [3. Execution](#3-execution)
+- [4. Follow-ups](#4-follow-ups)
 
 ## 1. Requirements
 
-### 1.1 Types of Data
+### 1.1. Types of Data
 
 - Records in Database
 - Files
   - Any convenient tools to transfer directly?
 - Hardcoded data in old system
 
-### 1.2 Source & Destination
+### 1.2. Source & Destination
 
 - same kind of database?
 - same table structure?
@@ -19,7 +37,7 @@
 - same folder structure?
 - same filename?
 
-### 1.3 Scope
+### 1.3. Scope
 
 - All Records vs Selected Set of data
 - Confirmed Scope
@@ -28,7 +46,7 @@
 
 ## 2. Preparation
 
-### 2.1 Scripting
+### 2.1. Scripting
 
 - for Data Migration
 - for File Migration
@@ -37,37 +55,37 @@
 - Code Review on scripts
 - SINGLE Document on EACH script
 
-### 2.2 Actual amount of work
+### 2.2. Actual amount of work
 
-### 2.3 Time
+### 2.3. Time
 
 - Estimate the execution time
 
-### 2.4 Engineers input
+### 2.4. Engineers input
 
 - Enough engineers
 
-### 2.5 Data Quality
+### 2.5. Data Quality
 
 - whether data cleanup is needed
   - normalize emails
   - duplicate data
   - corrupted data
 
-### 2.6 Drill
+### 2.6. Drill
 
 - who to test
 - what to test
 - use real project(s)
 - Measure the time needed for each step
 
-### 2.7 Manual Data & Configuration
+### 2.7. Manual Data & Configuration
 
 - who is going to do
 - when can be complete
 - block the normal use?
 
-### 2.8 Execution agenda
+### 2.8. Execution agenda
 
 - Start date & time
 - (Expected) Finish date & time

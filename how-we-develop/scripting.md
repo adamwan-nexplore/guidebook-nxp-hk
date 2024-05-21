@@ -1,4 +1,13 @@
-# Scripting
+# Scripting <!-- omit in toc -->
+
+**Table of Contents**
+
+- [1. The Nature](#1-the-nature)
+- [2. Bear in mind](#2-bear-in-mind)
+- [3. Tips](#3-tips)
+  - [3.1. Bash](#31-bash)
+  - [3.2. Python](#32-python)
+- [4. Reference](#4-reference)
 
 ## 1. The Nature
 
@@ -12,7 +21,7 @@
 
 ## 3. Tips
 
-### 3.1 Bash
+### 3.1. Bash
 
 1. Prefer `FLAG` rather than `OPTION`. It is about readability
 
@@ -39,7 +48,7 @@
    EXPORT BAR=bar ## environment variable
    ```
 
-4. A separate script should ALWAYS have [SHEBANG](https://en.wikipedia.org/wiki/Shebang_(Unix) "https://en.wikipedia.org/wiki/Shebang_(Unix)") at the first line
+4. A separate script should ALWAYS have [SHEBANG](<https://en.wikipedia.org/wiki/Shebang_(Unix)> "https://en.wikipedia.org/wiki/Shebang_(Unix)") at the first line
 
    ```bash
    #!/bin/bash
@@ -51,7 +60,7 @@
    - double quotes - expand variables
    - single quotes - does not expand variables
 
-### 3.2 Python
+### 3.2. Python
 
     - Be avoid to use Python in HelmCharts as inline script
         - both use indentations

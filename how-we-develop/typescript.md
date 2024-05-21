@@ -1,4 +1,4 @@
-# Typescript
+# Typescript <!-- omit in toc -->
 
 1.  Use object destruction
 

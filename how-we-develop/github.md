@@ -1,11 +1,17 @@
-# Github
+# Github <!-- omit in toc -->
 
-## General Recommendation
+**Table of Contents**
+
+- [1. General Recommendation](#1-general-recommendation)
+- [2. Pull Request \& Branching](#2-pull-request--branching)
+- [3. Reference](#3-reference)
+
+## 1. General Recommendation
 
 1. Use your own avatar. The original one is too hard to know who you are.
 2. Make sure your username / name can show who you are.
 
-## Pull Request & Branching
+## 2. Pull Request & Branching
 
 1.  `rebase` rather than `merge`
 
@@ -47,7 +53,7 @@
     - Daily
       - Vulnerability Test
 
-## Reference
+## 3. Reference
 
 - [Git - Book](https://git-scm.com/book "https://git-scm.com/book")
 - [Git: How to Squash all commit on branch](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch "https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch")

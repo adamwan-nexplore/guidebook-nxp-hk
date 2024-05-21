@@ -1,6 +1,6 @@
-# Application Logging
+# Application Logging <!-- omit in toc -->
 
-## Objectives
+## 1. Objectives
 
 - Structural logging is preferred
 - Each log entry should be traceable
@@ -22,10 +22,10 @@
 - It is fine to log something randomly for investigation but please make sure the log level is in `debug` / `verbose`
 - Sensitive Information like `password` and `JWT token` should be redacted
 
-## Implementation
+## 2. Implementation
 
 - [Pino](https://github.com/pinojs/pino "https://github.com/pinojs/pino"). It is one of the most popular log libraries supporting `NestJS`
 
-# Reference
+## 3. Reference
 
 - [What Is Structured Logging?](https://sematext.com/glossary/structured-logging "https://sematext.com/glossary/structured-logging")

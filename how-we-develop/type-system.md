@@ -1,4 +1,6 @@
-# Type System
+# Type System <!-- omit in toc -->
+
+## 1. Tips
 
 0. Structural Typing vs Nominal Typing vs Duck Typing
 
@@ -8,7 +10,7 @@
    - Have more than one `return`
    - Be very slow on TS compilation level
    - Expose a OpenAPI response with recursive nature
-   - Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt 
+   - Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt Pocock
 
 2. When to Type
 
@@ -40,7 +42,7 @@
 
 7. Prefer Pattern Matching rather than Index Signature
 
-# Reference
+## 2. Reference
 
 - [Typescript Cookbook](https://www.oreilly.com/library/view/typescript-cookbook/9781098136642)
 - [Programming with Types](https://www.manning.com/books/programming-with-types)

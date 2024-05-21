@@ -1,4 +1,4 @@
-# Code Review
+# Code Review <!-- omit in toc -->
 
 - This is NOT a universal guide
 

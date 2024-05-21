@@ -1,4 +1,8 @@
-# Tacit Programming / Point Free Style
+# Tacit Programming / Point Free Style <!-- omit in toc -->
+
+**Table of Contents**
+
+## 1. Introduction
 
 - Functional Light Javascript
 
@@ -7,33 +11,35 @@
 - Point = Argument
 - Point Free = No arguments to use a function (Only one argument but we consume through functional chain)
 
-  ```typescript
-  const sumOfValues = sum(
-    values.filter(isEven).map(divideByTwo).map(incrementByThree),
-  );
-  ```
+## 2. A Simple Example
 
-  ```typescript
-  ### General functions
-  const isCertainMultiples = (value: number,  mod: number) => value % mod === 0;
-  const divideBy = (value: number, divider: number) => value / divider;
-  const increment = (value: number, incrementValue: number) => value + incrementValue;
-  ```
+```typescript
+const sumOfValues = sum(
+  values.filter(isEven).map(divideByTwo).map(incrementByThree),
+);
+```
 
-  ```typescript
-  ### Currying and name it
-  import * as R from 'ramda'
+```typescript
+### General functions
+const isCertainMultiples = (value: number,  mod: number) => value % mod === 0;
+const divideBy = (value: number, divider: number) => value / divider;
+const increment = (value: number, incrementValue: number) => value + incrementValue;
+```
 
-  const curriedIsCertainMultiples = R.curry(isCertainMultiples);
-  const curriedDivideBy = R.curry(divideBy);
-  const curriedIncrement = R.curry(increment);
+```typescript
+### Currying and name it
+import * as R from 'ramda'
 
-  const isEven = curriedIsCertainMultiples(2)
-  const divideByTwo = curriedDivideBy(2)
-  const incrementByThree = curriedIncrement(3)
-  ```
+const curriedIsCertainMultiples = R.curry(isCertainMultiples);
+const curriedDivideBy = R.curry(divideBy);
+const curriedIncrement = R.curry(increment);
 
-# Reference
+const isEven = curriedIsCertainMultiples(2)
+const divideByTwo = curriedDivideBy(2)
+const incrementByThree = curriedIncrement(3)
+```
+
+## 3. Reference
 
 - [Tacit Programming - Wiki](https://en.wikipedia.org/wiki/Tacit_programming "https://en.wikipedia.org/wiki/Tacit_programming")
 - [Tacit Programming - APL Wiki](https://aplwiki.com/wiki/Tacit_programming "https://aplwiki.com/wiki/Tacit_programming")

@@ -1,4 +1,4 @@
-# :star: Change Description
+# :star: Change Description <!-- omit in toc -->
 
 (Put here)
 

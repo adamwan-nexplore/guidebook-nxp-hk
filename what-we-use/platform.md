@@ -1,4 +1,4 @@
-# Software Access
+# Software Access <!-- omit in toc -->
 
 - [Jira](https://nexplore.atlassian.net/jira "https://nexplore.atlassian.net/jira")
 - [Confluence](https://nexplore.atlassian.net/wiki "https://nexplore.atlassian.net/wiki")
@@ -9,7 +9,6 @@
 - [Azure](https://portal.azure.com "https://portal.azure.com")
 - [Nexplore Intranet](https://nexploreworld.sharepoint.com/sites/NexploreIntranet "https://nexploreworld.sharepoint.com/sites/NexploreIntranet")
 - [Office 365 (Nexplore)](https://outlook.office365.com "https://outlook.office365.com")
-- SonarQube - (???)
 - [Datadog](https://app.datadoghq.eu "https://app.datadoghq.eu")
 - [1Password](https://1password.com "https://1password.com")
 - [O'Reilly Online Learning](https://www.oreilly.com/online-learning "https://www.oreilly.com/online-learning")

@@ -1,4 +1,12 @@
-# Developer Testing (1)
+# Developer Testing (1) <!-- omit in toc -->
+
+**Table of Contents**
+
+- [1. Some important terms](#1-some-important-terms)
+- [2. The Ultimate Goal](#2-the-ultimate-goal)
+- [3. Rephrase the statement](#3-rephrase-the-statement)
+- [4. 13 Tips to write Unit Tests in Jest](#4-13-tips-to-write-unit-tests-in-jest)
+- [5. Reference](#5-reference)
 
 Before it starts, can you tell
 
@@ -9,14 +17,14 @@ Before it starts, can you tell
 - What are the tricks using Jest to write unit tests?
 - What are testable codes?
 
-## Some important terms
+## 1. Some important terms
 
 **SUT** - System Under Test  
 **Unit test** - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common  
 **Entry Point** - The way we `use` the unit to work. Usually, it refers to the input parameters of a function  
 **Exit Point(s)** - The effect / output after the input was applied to the SUT
 
-## The Ultimate Goal
+## 2. The Ultimate Goal
 
 We should `write more pure functions`. It will help making our codes to be more testable
 
@@ -32,7 +40,7 @@ b. impure functions
 
 > call third party dependencies (very hard to observe)
 
-## Rephrase the statement
+## 3. Rephrase the statement
 
 > We should reduce the number of impure functions
 
@@ -41,7 +49,7 @@ b. impure functions
 > Do not dream of eliminate those entirely.  
 > We need to store the data in our disk by the use of impure functions
 
-## 13 Tips to write Unit Tests in Jest
+## 4. 13 Tips to write Unit Tests in Jest
 
 1. Should test one exit point per test case
 
@@ -134,7 +142,7 @@ b. impure functions
 
 13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
 
-## Reference
+## 5. Reference
 
 - [The Art of Unit Testing](https://www.manning.com/books/the-art-of-unit-testing-third-edition "https://www.manning.com/books/the-art-of-unit-testing-third-edition")
 - [The Art of Unit Testing (GOTO 2021)](https://www.youtube.com/watch?v=6ndAWzc2F-I "https://www.youtube.com/watch?v=6ndAWzc2F-I")

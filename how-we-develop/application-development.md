@@ -1,10 +1,19 @@
-# Application Development
+# Application Development <!-- omit in toc -->
+
+**Table of Contents**
+
+- [1. Interface](#1-interface)
+- [2. Database](#2-database)
+- [3. Quality Assurance](#3-quality-assurance)
+- [4. Pull Request \& Code Review](#4-pull-request--code-review)
+- [5. Refactoring](#5-refactoring)
+- [6. Reference](#6-reference)
 
 ## 1. Interface
 
 - interface IS very IMPORTANT. Keep it clean, un-surprised, focused
   - REST is NOT necessary. However, we should apply some of constraints to make our APIs consistent
-  - If you do not know what is REST, check [here](../what-we-share/rest-api.md)
+  - If you do not know what is REST - check [here](../what-we-share/rest-api.md)
 - input validation IS very very IMPORTANT (sanitization). Wrong interfaces can crash the app and introduce un-expected bugs
   - set default values if necessary
   - In REST, PUT is often simpler to implement than PATCH
@@ -23,11 +32,11 @@
 
 ## 2. Database
 
-- review your database table structure, indexing, and queries carefully, check [here](database-design.md)
+- review your database table structure, indexing, and queries carefully - check [here](database-design.md)
 
 ## 3. Quality Assurance
 
-- unit tests are helpful, check [here](dev-testing.md)
+- unit tests are helpful - check [here](dev-testing.md)
 - integration tests can expose a lot of issues
 
 ## 4. Pull Request & Code Review

@@ -1,8 +1,21 @@
-# Diagram as Code
+# Diagram as Code <!-- omit in toc -->
+
+**Table of Contents**
+
+- [1. Choice of toolings](#1-choice-of-toolings)
+- [2. Before drawing, ask:](#2-before-drawing-ask)
+- [3. After drawn, think about:](#3-after-drawn-think-about)
+- [4. Advanced Use](#4-advanced-use)
+- [5. Legends](#5-legends)
+  - [5.1. Flowcharts](#51-flowcharts)
+- [6. Shapes](#6-shapes)
+  - [6.1. Remarks](#61-remarks)
+- [7. Edges](#7-edges)
+- [8. Reference](#8-reference)
 
 For compatibility / auditing reasons, we should draw our diagrams by code
 
-## Choice of toolings
+## 1. Choice of toolings
 
 [MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview  
 [PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams  
@@ -17,7 +30,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
     --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
 ```
 
-## Before drawing, ask:
+## 2. Before drawing, ask:
 
 - (People) Who read the diagrams?
 - (People) Who can help maintaining the diagrams?
@@ -30,7 +43,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
   - Use Case Diagrams
   - Flow Charts
 
-## After drawn, think about:
+## 3. After drawn, think about:
 
 - (People) Who can help reviewing the diagrams?
 - (Context) Can readers search the context?
@@ -56,7 +69,7 @@ flowchart
 	Hello --> World
 ```
 
-## Advanced Use
+## 4. Advanced Use
 
 - themes
   - default - good in most cases
@@ -65,9 +78,9 @@ flowchart
   - forest - green gradient palette
   - neutral - printing on paper
 
-## Legends
+## 5. Legends
 
-### Flowcharts
+### 5.1. Flowcharts
 
 - Directions
   - LR (->)
@@ -75,7 +88,7 @@ flowchart
   - TB (v)
   - BT (^)
 
-## Shapes
+## 6. Shapes
 
 ```markdown
 ---
@@ -121,13 +134,13 @@ flowchart
     circle ~~~ hexagon
 ```
 
-### Remarks
+### 6.1. Remarks
 
 **Diamond**: Should make the text short  
 **Rounded Rectangle**: Dashed edge to the shape  
 **Hexagon**: Alternate shape for decision - a longer text is provided
 
-## Edges
+## 7. Edges
 
 ```markdown
 ---
@@ -199,7 +212,7 @@ style ops-escalate fill:blue,color:#fff
 issue --> support-ticket
 ```
 
-## Reference
+## 8. Reference
 
 - [Diagram as Code](https://blog.bytebytego.com/p/diagram-as-code "https://blog.bytebytego.com/p/diagram-as-code")
 - [The Official Guide to Mermaid.js](https://mermaid.js.org/landing "https://mermaid.js.org/landing")

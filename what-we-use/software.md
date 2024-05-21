@@ -1,4 +1,4 @@
-# Software
+# Software <!-- omit in toc -->
 
 ## Software Installation tools
 
@@ -49,8 +49,9 @@
 ## Miscellaneous
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop "https://www.docker.com/products/docker-desktop")
-- [Andriod Studio](https://developer.android.com/studio "https://developer.android.com/studio")
+- [Android Studio](https://developer.android.com/studio "https://developer.android.com/studio")
 - [Postman](https://www.postman.com "https://www.postman.com")
 - [MS Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software")
 - [Act](https://github.com/nektos/act "https://github.com/nektos/act") (Testing GitHub Action locally)
 - [Terraform](https://www.terraform.io "https://www.terraform.io")
+- [SonarQube(Docker Version)](https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker "https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker")

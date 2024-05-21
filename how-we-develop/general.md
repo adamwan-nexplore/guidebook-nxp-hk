@@ -1,6 +1,6 @@
-# General
+# General <!-- omit in toc -->
 
-## Philosophy
+## 1. Philosophy
 
 1. [Boy/Girl-scout Engineer](https://www.stepsize.com/blog/how-to-be-an-effective-boy-girl-scout-engineer)
 
@@ -21,9 +21,9 @@
    `Write more pure functions and automated tests`
 
    - `functions` expects that inputs and outputs are always present.
-   - `pure` describes a function that is no change to `non-outputs`. In JS/TS, be aware of `Promise` and `async/await`, reading current time, or generating some random stuff.
+   - `pure` describes a function that will not change those `non-outputs`. In JS/TS, be aware of `Promise` and `async/await`, reading current time, or generating some random stuff.
 
-## Resources
+## 2. Resources
 
 - [Functional-light Javascript](https://github.com/getify/Functional-Light-JS "https://github.com/getify/Functional-Light-JS")
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS "https://github.com/getify/You-Dont-Know-JS")

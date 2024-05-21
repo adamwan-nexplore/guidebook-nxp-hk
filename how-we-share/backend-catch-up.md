@@ -1,4 +1,4 @@
-# Backend Catch Up
+# Backend Catch Up <!-- omit in toc -->
 
 ## Style
 

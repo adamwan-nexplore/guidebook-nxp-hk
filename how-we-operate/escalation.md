@@ -1,4 +1,4 @@
-# Escalation
+# Escalation <!-- omit in toc -->
 
 ```mermaid
 ---
