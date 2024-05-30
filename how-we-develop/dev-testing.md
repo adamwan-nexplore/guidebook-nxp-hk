@@ -2,11 +2,11 @@
 
 **Table of Contents**
 
-- [1. Some important terms](#1-some-important-terms)
-- [2. The Ultimate Goal](#2-the-ultimate-goal)
-- [3. Rephrase the statement](#3-rephrase-the-statement)
-- [4. 13 Tips to write Unit Tests in Jest](#4-13-tips-to-write-unit-tests-in-jest)
-- [5. Reference](#5-reference)
+- [Some important terms](#some-important-terms)
+- [The Ultimate Goal](#the-ultimate-goal)
+- [Rephrase the statement](#rephrase-the-statement)
+- [13 Tips to write Unit Tests in Jest](#13-tips-to-write-unit-tests-in-jest)
+- [Reference](#reference)
 
 Before it starts, can you tell
 
@@ -17,14 +17,14 @@ Before it starts, can you tell
 - What are the tricks using Jest to write unit tests?
 - What are testable codes?
 
-## 1. Some important terms
+## Some important terms
 
 **SUT** - System Under Test  
 **Unit test** - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common  
 **Entry Point** - The way we `use` the unit to work. Usually, it refers to the input parameters of a function  
 **Exit Point(s)** - The effect / output after the input was applied to the SUT
 
-## 2. The Ultimate Goal
+## The Ultimate Goal
 
 We should `write more pure functions`. It will help making our codes to be more testable
 
@@ -40,7 +40,7 @@ b. impure functions
 
 > call third party dependencies (very hard to observe)
 
-## 3. Rephrase the statement
+## Rephrase the statement
 
 > We should reduce the number of impure functions
 
@@ -49,78 +49,76 @@ b. impure functions
 > Do not dream of eliminate those entirely.  
 > We need to store the data in our disk by the use of impure functions
 
-## 4. 13 Tips to write Unit Tests in Jest
+## 13 Tips to write Unit Tests in Jest
 
 1. Should test one exit point per test case
 
-2. if the tests are not fast enough or those parts require extra setup, those should not be regarded as unit tests
+2. Definition of Unit Test
+   - fast
+   - no extra setup
 
 3. What we prefer to have test case files - the filename ending with `.spec.ts`
-
-   (Plugin Recommended for VSCode: `Jest Runner` - it will run the spec files immediately when you save the `.spec.ts` file)
+   - Plugin Recommended for VSCode: `Jest Runner`
+   - Can run the spec files immediately when you save the `.spec.ts` files
 
 4. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing "https://jestjs.io/docs/snapshot-testing") - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
 
 5. Arrange Act Assert
 
 6. U.S.E. the way to describe the test
-
    - Describing the `unit` (filename + function name)
-
    - `Situation` (the input you are going for)
-
    - `Expectation` (expected observed change to be)
 
-   ```typescript
-   // describe file
-   describe('@password.ts', () => {
+```typescript
+// describe file
+describe('@password.ts', () => {
 
-     // describe function
-     describe('#verifyPassword', () => {
+  // describe function
+  describe('#verifyPassword', () => {
 
-       // describe condition
-       describe('given a failing rule', () => {
+    // describe condition
+    describe('given a failing rule', () => {
 
-         // mark expected output ONLY
-         it('returns errors', () => {
-           const fakeRule = input => ({ passed: false, reason: ‘fake reason’ });
-           const [firstError] = verifyPassword('any value', [fakeRule]);
-           expect(firstError).toContain('fake reason');
-         });
-       });
-     });
-   });
-   ```
+      // mark expected output ONLY
+      it('returns errors', () => {
+        const fakeRule = input => ({ passed: false, reason: ‘fake reason’ });
+        const [firstError] = verifyPassword('any value', [fakeRule]);
+        expect(firstError).toContain('fake reason');
+      });
+    });
+  });
+});
+```
 
 7. Make use of Arbitrary Matcher (Try `jest.any(Date)`)
 
-   ```typescript
-   describe("#funcA", () => {
-     it("returns the correct structure", () => {
-       expect(funcA("abc")).toEqual({
-         abc: "abc",
-         id: "id",
-         createdOn: "2023-01-31", // keeping changing
-       });
-     });
-   });
-   ```
+```typescript
+describe("#funcA", () => {
+  it("returns the correct structure", () => {
+    expect(funcA("abc")).toEqual({
+      abc: "abc",
+      id: "id",
+      createdOn: "2023-01-31", // keeping changing
+    });
+  });
+});
+```
 
 8. scrolling fatigue
-
-   With the use of `beforeEach` function, reader needs to scroll up a lot to understand the set up.
+   - With the use of `beforeEach` function, reader needs to scroll up a lot to understand the set up.
    To be more intuitively, consider creating a setup function with a proper name for readability.
 
 9. how to test a throwing error
 
-   ```typescript
-   test("verify, with no rules, throws exception", () => {
-     const verifier = makeVerifier();
-     expect(() => verifier.verify("any input")).toThrowError(
-       /no rules configured/,
-     );
-   });
-   ```
+```typescript
+test("verify, with no rules, throws exception", () => {
+  const verifier = makeVerifier();
+  expect(() => verifier.verify("any input")).toThrowError(
+    /no rules configured/,
+  );
+});
+```
 
 10. [Nock Recording](https://github.com/nock/nock#recording "https://github.com/nock/nock#recording") (Set up the real integration to call the APIs, and then capture the response for mock testing)
 
@@ -142,7 +140,7 @@ b. impure functions
 
 13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
 
-## 5. Reference
+## Reference
 
 - [The Art of Unit Testing](https://www.manning.com/books/the-art-of-unit-testing-third-edition "https://www.manning.com/books/the-art-of-unit-testing-third-edition")
 - [The Art of Unit Testing (GOTO 2021)](https://www.youtube.com/watch?v=6ndAWzc2F-I "https://www.youtube.com/watch?v=6ndAWzc2F-I")

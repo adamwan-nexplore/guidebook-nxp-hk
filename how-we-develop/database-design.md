@@ -2,11 +2,11 @@
 
 **Table of Contents**
 
-- [1. General Advice](#1-general-advice)
-- [2. Performance](#2-performance)
-- [3. Reference](#3-reference)
+- [General Advice](#general-advice)
+- [Performance](#performance)
+- [Reference](#reference)
 
-## 1. General Advice
+## General Advice
 
 - `createdAt` should present in each table
 - A primary key should present in each table
@@ -18,7 +18,7 @@
   - eliminate the joins to the very upper level tables
 - High precision data types (like numeric) often return as`string`. Make sure the values in the programming language cast to the correct types (big decimal / number)
 
-## 2. Performance
+## Performance
 
 - Create an index separately to foreign key columns
 - Check Performance Tips from [PG Documentations](https://www.postgresql.org/docs/16/performance-tips.html "https://www.postgresql.org/docs/16/performance-tips.html")
@@ -28,7 +28,7 @@
   CREATE INDEX ON customer.customers (name text_pattern_ops);
   ```
 
-## 3. Reference
+## Reference
 
 - [SQL Anti-patterns, Volume 1](https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1 "https://pragprog.com/titles/bksap1/sql-antipatterns-volume-1")
 - [Modern SQL](https://modern-sql.com "https://modern-sql.com")

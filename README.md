@@ -2,26 +2,26 @@
 
 **Table of Contents**
 
-- [1. Who we are](#1-who-we-are)
-- [2. What we do](#2-what-we-do)
-- [3. What we use](#3-what-we-use)
-- [4. How we support our clients](#4-how-we-support-our-clients)
-- [5. How we develop](#5-how-we-develop)
-  - [5.1. Development Cycle](#51-development-cycle)
-  - [5.2. Engineering Practices](#52-engineering-practices)
-- [6. How we learn and share](#6-how-we-learn-and-share)
-- [7. How we hire](#7-how-we-hire)
-  - [7.1. Assignments](#71-assignments)
+- [Who we are](#who-we-are)
+- [What we do](#what-we-do)
+- [What we use](#what-we-use)
+- [How we support our clients](#how-we-support-our-clients)
+- [How we develop](#how-we-develop)
+  - [Development Cycle](#development-cycle)
+  - [Engineering Practices](#engineering-practices)
+- [How we learn and share](#how-we-learn-and-share)
+- [How we hire](#how-we-hire)
+  - [Assignments](#assignments)
 
-## 1. Who we are
+## Who we are
 
-[Nexplore](https://www.nexplore.com "https://www.nexplore.com") is a software innovation leader that understands how the construction industry really works. With the help of our partners at [HOCHTIEF](https://www.hochtief.de "https://www.hochtief.de"), we build tailor-made technologies for the modern-day job site.
+[NEXPLORE](https://www.nexplore.com "https://www.nexplore.com") is a software innovation leader that understands how the construction industry really works. With the help of our partners at [HOCHTIEF](https://www.hochtief.de "https://www.hochtief.de"), we build tailor-made technologies for the modern-day job site.
 
-## 2. What we do
+## What we do
 
 In 2019, Life as a Service (LaaS) was initiated by NEXPLORE acting as the collaborative network and research platform to invent tomorrow’s cities, villages and landscapes by holistically connecting digital services to human values.
 
-## 3. What we use
+## What we use
 
 You know what tools to be used. You know what access you need to have. And you know our tech stack.
 
@@ -30,13 +30,13 @@ You know what tools to be used. You know what access you need to have. And you k
 - [Tech Stack](what-we-use/techstack.md)
 - [Visual Studio Code](what-we-use/vs-code.md)
 
-## 4. How we support our clients
+## How we support our clients
 
 - [Escalation Procedure](how-we-operate/escalation.md)
 - [Change Management](how-we-operate/change-management.md)
 - [krew plugins recommended](how-we-operate/kubernetes-admin.md)
 
-## 5. How we develop
+## How we develop
 
 You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
 
@@ -44,7 +44,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [Application Development](how-we-develop/application-development.md)
 - [Application Architecture](how-we-develop/application-architecture.md)
 
-### 5.1. Development Cycle
+### Development Cycle
 
 - [GitHub](how-we-develop/github.md)
 - [ChatOps](how-we-develop/chatops.md)
@@ -57,9 +57,10 @@ You know our development process, our conventions, and the ways we communicate b
 - [Database Design](how-we-develop/database-design.md)
 - [Data Management](how-we-develop/data-management.md)
 
-### 5.2. Engineering Practices
+### Engineering Practices
 
 - [TypeScript](how-we-develop/typescript.md)
+- [Type System](how-we-develop/type-system.md)
 - [NestJS](how-we-develop/nestjs.md)
 - [Developer Testing](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
@@ -67,7 +68,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 
-## 6. How we learn and share
+## How we learn and share
 
 You know how to learn from others, give your feedback and share what you have learnt with peers.
 
@@ -84,15 +85,16 @@ Catch-up Material
 - [Data Migration](what-we-share/data-migration.md)
 - [Learn Software Development](what-we-share/lean.md)
 - [Introduction to Query Performance](what-we-share/query-performance.md)
+- [Developer Productivity](what-we-share/developer-productivity.md)
 
-## 7. How we hire
+## How we hire
 
 You know how to evaluate candidates applying to engineering positions.
 
 - [The Process](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-hire/hiring-engineers.md)
 - [Job Openings](https://hk.jobsdb.com/hk/search-jobs/nexplore/1)
 
-### 7.1. Assignments
+### Assignments
 
 - [Software Engineer (Backend)](how-we-hire/web-assignment.md)
 - [Software Engineer (Mobile)](how-we-hire/mobile-assignment.md)

@@ -1,48 +1,71 @@
 # Type System <!-- omit in toc -->
 
-## 1. Tips
+**Table of Contents**
 
-0. Structural Typing vs Nominal Typing vs Duck Typing
+- [Type Systems](#type-systems)
+- [Specify the return type when](#specify-the-return-type-when)
+- [When to bypass typing](#when-to-bypass-typing)
+- [Tips](#tips)
+- [Reference](#reference)
 
-1. Specify the return type when
+## Type Systems
 
-   - Write a library
-   - Have more than one `return`
-   - Be very slow on TS compilation level
-   - Expose a OpenAPI response with recursive nature
-   - Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt Pocock
+- Structural Typing
+- Nominal Typing
+- Duck Typing
 
-2. When to Type
+## Specify the return type when
 
-- Be permissive to use `unknown` + `type guard` rather than `any` / type assertion
-- Be avoid to use type assertion in production code (test files are fine)
-- Be avoid to use `!`
-- Be avoid to use `Pick` or `Omit`. You might tempt to use class functions that might not work
-- Prefer generics rather than type annotation
-- Prefer type inference rather than type annotation, if not `any`
-- Narrow down the scope by type annotation, e.g. tuple, or value collections
+- Write a library
+- Have more than one `return`
+- Be very slow on TS compilation level
+- Expose a OpenAPI response with recursive nature
+- Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt Pocock
 
-3. Discriminated Union Types
+## When to bypass typing
 
-- make use of an additional property to match `struct`
-- `kind` is a popular attribute name
+1. the original type is `unknown`
+   1. it is very `complex`
+   2. you are 100% about the structure
 
-4. Protect compile level types by strict checking from external sourcing
+2. the input of test cases and 
+   1. it is very complex
+   2. the other attributes are `irrelevant` to the output
 
-- Receive data from interfaces
-- Fetch data from remote call
-- Fetch data from database
+## Tips
 
-5. Use Javascript Feature to differentiate objects / `structs`
+1. Be permissive to use `unknown` + `type guard` rather than `any` / type assertion
 
-- `isInstanceof` for class naming
-- `typeOf` for primitive types
+2. Be avoid to use type assertion in production code (test files are fine)
 
-6. Use branded types to differentiate classes with same attributes (nominal types)
+3. Be avoid to use `Pick` or `Omit`. You might tempt to use class functions that might not work
 
-7. Prefer Pattern Matching rather than Index Signature
+4. Prefer generics rather than type annotation
 
-## 2. Reference
+5. Prefer type inference rather than type annotation, if not `any`
+
+6. Narrow down the scope by type annotation, e.g. tuple, or value collections
+
+7. Discriminated Union Types
+   - make use of an additional property to match `struct`
+   - `kind` is a popular attribute name
+
+8. Align types in runtime by validation
+   - Receive data from interfaces
+   - Fetch data from remote call
+   - Fetch data from database
+
+9. Use Javascript Feature to differentiate objects / `structs`
+    - `isInstanceof` for class naming
+    - `typeOf` for primitive types
+
+10. Use branded types to differentiate classes with same attributes (nominal types)
+
+11. Prefer Pattern Matching rather than Index Signature
+
+12. Be avoid to use `!`
+ 
+## Reference
 
 - [Typescript Cookbook](https://www.oreilly.com/library/view/typescript-cookbook/9781098136642)
 - [Programming with Types](https://www.manning.com/books/programming-with-types)

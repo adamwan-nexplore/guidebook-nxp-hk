@@ -2,18 +2,18 @@
 
 **Table of Contents**
 
-- [0. Introduction](#0-introduction)
-- [1. Development](#1-development)
-- [2. Hotfix](#2-hotfix)
+- [Introduction](#introduction)
+- [Development](#development)
+- [Hotfix](#hotfix)
 
-## 0. Introduction
+## Introduction
 
 - We are using `trunk-based development`, you can check [here](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development "Trunk-based development - Learn why this version control management practice is common practice among DevOps teams."), [here](https://trunkbaseddevelopment.com "Trunk Based Development: Introduction") and [here](https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development "Prevent merge-conflict hassles with trunk-based development practices")
 - We promote and aim at transiting to a linear flow based on `dev-deployment`
 - The change from `dev-deployment` to all `uat-deployment` MUST be done through `git merge`
 - The change from `uat-deployment` to all `prod-deployment` MUST be done through `git merge`
 
-## 1. Development
+## Development
 
 ```mermaid
 ---
@@ -47,7 +47,7 @@ flowchart TD
     prod -..->|deploy| prod-env
 ```
 
-## 2. Hotfix
+## Hotfix
 
 ```mermaid
 ---

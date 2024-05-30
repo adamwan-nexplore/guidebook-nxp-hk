@@ -1,135 +1,136 @@
 # Typescript <!-- omit in toc -->
 
-1.  Use object destruction
+## Use object destruction
 
-    ```typescript
-    const values = param.values;
-    const key = param.attribute.key;
-    const combinedExtras = param.combinedExtras;
-    const rounding = combinedExtras.rounding;
-    const multipleOf = combinedExtras.multipleOf;
-    ```
+```typescript
+const values = param.values;
+const key = param.attribute.key;
+const combinedExtras = param.combinedExtras;
+const rounding = combinedExtras.rounding;
+const multipleOf = combinedExtras.multipleOf;
+```
 
-    (Might be) Better
+> (Might be) Better
 
-    ```typescript
-    const {
-      values,
-      attribute: { key },
-      combinedExtras: { rounding, multipleOf, formula },
-    } = param;
-    ```
+```typescript
+const {
+  values,
+  attribute: { key },
+  combinedExtras: { rounding, multipleOf, formula },
+} = param;
+```
 
 > Discussion: [The advantage of the Destructuring assignment in JavaScript/React](https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871 "https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871")
 
-2.  Avoid to mutate objects
+## Avoid to mutate objects
 
-    ```typescript
-    delete group.id;
-    delete group.createTime;
-    delete group.modifyTime;
-    delete group.children;
-    return group;
-    ```
+```typescript
+delete group.id;
+delete group.createTime;
+delete group.modifyTime;
+delete group.children;
+return group;
+```
 
-    Better
+> Better
 
-    ```typescript
-    const { id, createTime, modifyTime, children, ...newGroup } = group;
-    return newGroup;
-    ```
+```typescript
+const { id, createTime, modifyTime, children, ...newGroup } = group;
+return newGroup;
+```
 
-    Or
+- Or
 
-    ```typescript
-    return {
-      ...group,
-      id: undefined,
-      createTime: undefined,
-      modifyTime: undefined,
-      children: undefined,
-    };
-    ```
+```typescript
+return {
+  ...group,
+  id: undefined,
+  createTime: undefined,
+  modifyTime: undefined,
+  children: undefined,
+};
+```
 
-3.  Do not use anonymous function if it is very lengthy.
-    Treat the name of the function as a little comment
+## Do not use anonymous function if it is very lengthy.
 
-    ```typescript
-        reversedData.reduce(
-            (acc: string[], currentVal) => {
-              if (!acc.includes(currentVal.author.id)) {
-                acc.push(currentVal.author.id);
-              }
-              if (!acc.includes(currentVal.author2.id)) {
-                acc.push(currentVal.author2.id);
-              }
-              if (!acc.includes(currentVal.author3.id)) {
-                acc.push(currentVal.author3.id);
-              }
-              return acc;
-            },
-            []
-        );
-    ```
+Treat the name of the function as a little comment
 
-    Better
+```typescript
+reversedData.reduce((acc: string[], currentVal) => {
+  if (!acc.includes(currentVal.author.id)) {
+    acc.push(currentVal.author.id);
+  }
+  if (!acc.includes(currentVal.author2.id)) {
+    acc.push(currentVal.author2.id);
+  }
+  if (!acc.includes(currentVal.author3.id)) {
+    acc.push(currentVal.author3.id);
+  }
+  return acc;
+}, []);
+```
 
-    ```typescript
-    reversedData.reduce(function mapAuthorId(acc: string[], currentVal) {
-      if (!acc.includes(currentVal.author.id)) {
-        acc.push(currentVal.author.id);
-      }
-      if (!acc.includes(currentVal.author2.id)) {
-        acc.push(currentVal.author2.id);
-      }
-      if (!acc.includes(currentVal.author3.id)) {
-        acc.push(currentVal.author3.id);
-      }
-      return acc;
-    }, []);
-    ```
+> Better
 
-4.  Specify the types (especially DB entity)
+```typescript
+reversedData.reduce(function mapAuthorId(acc: string[], currentVal) {
+  if (!acc.includes(currentVal.author.id)) {
+    acc.push(currentVal.author.id);
+  }
+  if (!acc.includes(currentVal.author2.id)) {
+    acc.push(currentVal.author2.id);
+  }
+  if (!acc.includes(currentVal.author3.id)) {
+    acc.push(currentVal.author3.id);
+  }
+  return acc;
+}, []);
+```
 
-    ```typescript
-    return await this.connection.transaction(async (manager) => {
-      const dbRelations = await manager.find(ArtifactRelation, {
-        where: {
-          from: { id: artifactId },
-          isManualCreated: false,
-        },
-        relations: {
-          from: true,
-          to: true,
-        },
-      });
-    ```
+## Specify the types (especially DB entity)
 
-    Better
+```typescript
+return await this.connection.transaction(async (manager) => {
+  const dbRelations = await manager.find(ArtifactRelation, {
+    where: {
+      from: { id: artifactId },
+      isManualCreated: false,
+    },
+    relations: {
+      from: true,
+      to: true,
+    },
+  });
+```
 
-    ```typescript
-    return await this.connection.transaction(async (manager: EntityManager) => {
-      const repo = manager.getRepository(ArtifactRelation);
-      const dbRelations = await repo.find({
-        where: {
-          from: { id: artifactId },
-          isManualCreated: false,
-        },
-        relations: {
-          from: true,
-          to: true,
-        },
-      });
-    ```
+> Better
 
-5.  Iterate using `map`, `reduce` and `filter`:
+```typescript
+return await this.connection.transaction(async (manager: EntityManager) => {
+  const repo = manager.getRepository(ArtifactRelation);
+  const dbRelations = await repo.find({
+    where: {
+      from: { id: artifactId },
+      isManualCreated: false,
+    },
+    relations: {
+      from: true,
+      to: true,
+    },
+  });
+```
 
-    while
+## Iterate across array
 
-    - `map` returns `array`
-    - `reduce` returns `object` / `associative array`
-    - `filter` removes item
+Iterate using `map`, `reduce` and `filter`:
 
-    Do you know what is `transducer`?
+- while
+  - `map` returns `array`
+  - `reduce` returns `object` / `associative array`
+  - `filter` removes item
 
-6.  Return something meaningful when writing a function
+> Do you know what is `transducer`?
+
+## Return something
+
+Return something meaningful when writing a function

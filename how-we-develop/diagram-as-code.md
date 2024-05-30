@@ -2,20 +2,20 @@
 
 **Table of Contents**
 
-- [1. Choice of toolings](#1-choice-of-toolings)
-- [2. Before drawing, ask:](#2-before-drawing-ask)
-- [3. After drawn, think about:](#3-after-drawn-think-about)
-- [4. Advanced Use](#4-advanced-use)
-- [5. Legends](#5-legends)
-  - [5.1. Flowcharts](#51-flowcharts)
-- [6. Shapes](#6-shapes)
-  - [6.1. Remarks](#61-remarks)
-- [7. Edges](#7-edges)
-- [8. Reference](#8-reference)
+- [Choice of toolings](#choice-of-toolings)
+- [Before drawing, ask:](#before-drawing-ask)
+- [After drawn, think about:](#after-drawn-think-about)
+- [Advanced Use](#advanced-use)
+- [Legends](#legends)
+  - [Flowcharts](#flowcharts)
+- [Shapes](#shapes)
+  - [Remarks](#remarks)
+- [Edges](#edges)
+- [Reference](#reference)
 
 For compatibility / auditing reasons, we should draw our diagrams by code
 
-## 1. Choice of toolings
+## Choice of toolings
 
 [MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview  
 [PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams  
@@ -24,13 +24,13 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 
 ```bash
 ./mermerd \
-    --useAllTables \
-    --schema public \
-    --outputFileName "erd.mmd" \
-    --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
+  --useAllTables \
+  --schema public \
+  --outputFileName "erd.mmd" \
+  --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
 ```
 
-## 2. Before drawing, ask:
+## Before drawing, ask:
 
 - (People) Who read the diagrams?
 - (People) Who can help maintaining the diagrams?
@@ -43,7 +43,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
   - Use Case Diagrams
   - Flow Charts
 
-## 3. After drawn, think about:
+## After drawn, think about:
 
 - (People) Who can help reviewing the diagrams?
 - (Context) Can readers search the context?
@@ -56,9 +56,8 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 ---
 title: Hello Title
 ---
-
 flowchart
-Hello --> World
+  Hello --> World
 ```
 
 ```mermaid
@@ -69,7 +68,7 @@ flowchart
 	Hello --> World
 ```
 
-## 4. Advanced Use
+## Advanced Use
 
 - themes
   - default - good in most cases
@@ -78,9 +77,9 @@ flowchart
   - forest - green gradient palette
   - neutral - printing on paper
 
-## 5. Legends
+## Legends
 
-### 5.1. Flowcharts
+### Flowcharts
 
 - Directions
   - LR (->)
@@ -88,29 +87,27 @@ flowchart
   - TB (v)
   - BT (^)
 
-## 6. Shapes
+## Shapes
 
 ```markdown
 ---
 title: Typical Use of Shapes
 ---
-
 flowchart
+  rectangle[Process]
+  diamond{Decision}
+  stadium([Start or End Point])
+  circle((Shortcut to \n another \n flowchart))
 
-    rectangle[Process]
-    diamond{Decision}
-    stadium([Start or End Point])
-    circle((Shortcut to \n another \n flowchart))
+  parallelogram[/Input or output of data/]
+  subroutine[[Refer to\nanother flowchart]]
+  roundedRectangle(Alternate Process)
+  hexagon{{Alternate Decision}}
 
-    parallelogram[/Input or output of data/]
-    subroutine[[Refer to\nanother flowchart]]
-    roundedRectangle(Alternate Process)
-    hexagon{{Alternate Decision}}
-
-    rectangle ~~~ parallelogram
-    diamond ~~~ subroutine
-    stadium ~~~ roundedRectangle
-    circle ~~~ hexagon
+  rectangle ~~~ parallelogram
+  diamond ~~~ subroutine
+  stadium ~~~ roundedRectangle
+  circle ~~~ hexagon
 ```
 
 ```mermaid
@@ -119,45 +116,43 @@ title: Typical Use of Shapes
 ---
 flowchart
 	rectangle[Process]
-    diamond{Decision}
-    stadium([Start or End Point])
-    circle((Shortcut to \n another \n flowchart))
+  diamond{Decision}
+  stadium([Start or End Point])
+  circle((Shortcut to \n another \n flowchart))
 
-    parallelogram[/Input or output of data/]
-    subroutine[[Refer to\nanother flowchart]]
-    roundedRectangle(Alternate Process)
-    hexagon{{Alternate Decision}}
+  parallelogram[/Input or output of data/]
+  subroutine[[Refer to\nanother flowchart]]
+  roundedRectangle(Alternate Process)
+  hexagon{{Alternate Decision}}
 
-    rectangle ~~~ parallelogram
-    diamond ~~~ subroutine
-    stadium ~~~ roundedRectangle
-    circle ~~~ hexagon
+  rectangle ~~~ parallelogram
+  diamond ~~~ subroutine
+  stadium ~~~ roundedRectangle
+  circle ~~~ hexagon
 ```
 
-### 6.1. Remarks
+### Remarks
 
 **Diamond**: Should make the text short  
 **Rounded Rectangle**: Dashed edge to the shape  
 **Hexagon**: Alternate shape for decision - a longer text is provided
 
-## 7. Edges
+## Edges
 
 ```markdown
 ---
 title: Typical Use of Edges
 ---
-
 flowchart
-
-    C --> C1 & C2 --> A %% Chaining & Cross Mapping
-    A --> B1 %% arrow, data / process flow
-    A -.-> B2 %% dash, optional
-    A --- B3 %% open, association between events
-    A --x B4 %% not reachable
-    A ~~~ B5 %% positioning, hidden
-    A <--> B6 %% bidirectional, save space
-    A ==> B7 %% thicker version, major flow
-    A ---> B8 %% longer edge
+  C --> C1 & C2 --> A %% Chaining & Cross Mapping
+  A --> B1 %% arrow, data / process flow
+  A -.-> B2 %% dash, optional
+  A --- B3 %% open, association between events
+  A --x B4 %% not reachable
+  A ~~~ B5 %% positioning, hidden
+  A <--> B6 %% bidirectional, save space
+  A ==> B7 %% thicker version, major flow
+  A ---> B8 %% longer edge
 ```
 
 ```mermaid
@@ -165,21 +160,20 @@ flowchart
 title: Typical Use of Edges
 ---
 flowchart
-
-    C --> C1 & C2 --> A
-    A --> B1
-    A -.-> B2
-    A --- B3
-    A --x B4
-    A ~~~ B5
-    A <--> B6
-    A ==> B7
-    A ---> B8
+  C --> C1 & C2 --> A
+  A --> B1
+  A -.-> B2
+  A --- B3
+  A --x B4
+  A ~~~ B5
+  A <--> B6
+  A ==> B7
+  A ---> B8
 ```
 
 ```markdown
-    A -->|go| B %% more flexible
-    A --|go|--> B %% more natural
+  A -->|go| B %% more flexible
+  A --|go|--> B %% more natural
 ```
 
 - subgraph - alternative to subroutine, represent something different from flowcharts
@@ -193,7 +187,6 @@ Style
 ---
 title: Flowchart on Support & Operation Escalation
 ---
-
 %% 1. Events
 
 %% start point / termination points
@@ -212,7 +205,7 @@ style ops-escalate fill:blue,color:#fff
 issue --> support-ticket
 ```
 
-## 8. Reference
+## Reference
 
 - [Diagram as Code](https://blog.bytebytego.com/p/diagram-as-code "https://blog.bytebytego.com/p/diagram-as-code")
 - [The Official Guide to Mermaid.js](https://mermaid.js.org/landing "https://mermaid.js.org/landing")

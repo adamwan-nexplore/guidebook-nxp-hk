@@ -1,6 +1,6 @@
 # API Design <!-- omit in toc -->
 
-## 1. Resources
+## Resources
 
 - [Google Cloud - API Design Guide](https://cloud.google.com/apis/design "https://cloud.google.com/apis/design")
 - [Azure - API Design](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design")

@@ -2,32 +2,32 @@
 
 **Table of Contents**
 
-- [1. Requirements](#1-requirements)
-  - [1.1. Types of Data](#11-types-of-data)
-  - [1.2. Source \& Destination](#12-source--destination)
-  - [1.3. Scope](#13-scope)
-- [2. Preparation](#2-preparation)
-  - [2.1. Scripting](#21-scripting)
-  - [2.2. Actual amount of work](#22-actual-amount-of-work)
-  - [2.3. Time](#23-time)
-  - [2.4. Engineers input](#24-engineers-input)
-  - [2.5. Data Quality](#25-data-quality)
-  - [2.6. Drill](#26-drill)
-  - [2.7. Manual Data \& Configuration](#27-manual-data--configuration)
-  - [2.8. Execution agenda](#28-execution-agenda)
-- [3. Execution](#3-execution)
-- [4. Follow-ups](#4-follow-ups)
+- [Requirements](#requirements)
+  - [Types of Data](#types-of-data)
+  - [Source \& Destination](#source--destination)
+  - [Scope](#scope)
+- [Preparation](#preparation)
+  - [Scripting](#scripting)
+  - [Actual amount of work](#actual-amount-of-work)
+  - [Time](#time)
+  - [Engineers input](#engineers-input)
+  - [Data Quality](#data-quality)
+  - [Drill](#drill)
+  - [Manual Data \& Configuration](#manual-data--configuration)
+  - [Execution agenda](#execution-agenda)
+- [Execution](#execution)
+- [Follow-ups](#follow-ups)
 
-## 1. Requirements
+## Requirements
 
-### 1.1. Types of Data
+### Types of Data
 
 - Records in Database
 - Files
   - Any convenient tools to transfer directly?
 - Hardcoded data in old system
 
-### 1.2. Source & Destination
+### Source & Destination
 
 - same kind of database?
 - same table structure?
@@ -37,16 +37,16 @@
 - same folder structure?
 - same filename?
 
-### 1.3. Scope
+### Scope
 
 - All Records vs Selected Set of data
 - Confirmed Scope
 - Manual effort
 - User Migration (Login required)
 
-## 2. Preparation
+## Preparation
 
-### 2.1. Scripting
+### Scripting
 
 - for Data Migration
 - for File Migration
@@ -55,37 +55,37 @@
 - Code Review on scripts
 - SINGLE Document on EACH script
 
-### 2.2. Actual amount of work
+### Actual amount of work
 
-### 2.3. Time
+### Time
 
 - Estimate the execution time
 
-### 2.4. Engineers input
+### Engineers input
 
 - Enough engineers
 
-### 2.5. Data Quality
+### Data Quality
 
 - whether data cleanup is needed
   - normalize emails
   - duplicate data
   - corrupted data
 
-### 2.6. Drill
+### Drill
 
 - who to test
 - what to test
 - use real project(s)
 - Measure the time needed for each step
 
-### 2.7. Manual Data & Configuration
+### Manual Data & Configuration
 
 - who is going to do
 - when can be complete
 - block the normal use?
 
-### 2.8. Execution agenda
+### Execution agenda
 
 - Start date & time
 - (Expected) Finish date & time
@@ -93,7 +93,7 @@
   - Define execution order on EACH task
   - Identify if task can execute at the same time
 
-## 3. Execution
+## Execution
 
 - Good and stable NETWORK
 - Start ahead
@@ -115,7 +115,7 @@
   - Fix those only if it a critical blockers
   - Avoid to add something not on the scope
 
-## 4. Follow-ups
+## Follow-ups
 
 - Be mindful for data fix for one week after the migration
 - Discuss the priority and timeline of extra work found

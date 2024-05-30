@@ -1,29 +1,29 @@
 # Backend Catch Up <!-- omit in toc -->
 
-## Style
+# Style
 
 1 ~ 2 presenters speak to the team
 
-## Frequency
+# Frequency
 
 Every 1 month
 
-## Duration
+# Duration
 
 1 hour
 
-## Objectives
+# Objectives
 
 - provide regular updates of the best practices we should follow
 - present one to two engineering topics that can foster the development of engineers
 
-## Preparation
+# Preparation
 
 - presenters should prepare the material before it starts
 
-## Agenda
+# Agenda
 
-### Engineering best practices
+## Engineering best practices
 
 - programming style (naming convention/ file structures)
 - SQL queries / indexing
@@ -32,7 +32,7 @@ Every 1 month
 - ChatOps
 - etc
 
-### Engineering topics (optional)
+## Engineering topics (optional)
 
 - automated testing strategies
 - scrum
@@ -40,6 +40,6 @@ Every 1 month
 - c4 diagram & mermaidJS & PlantUML in markdown
 - typescript / javascript / v8 engine
 
-### Extra (optional)
+## Extra (optional)
 
 - the topics not mentioned above

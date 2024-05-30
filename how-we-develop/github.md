@@ -2,16 +2,16 @@
 
 **Table of Contents**
 
-- [1. General Recommendation](#1-general-recommendation)
-- [2. Pull Request \& Branching](#2-pull-request--branching)
-- [3. Reference](#3-reference)
+- [General Recommendation](#general-recommendation)
+- [Pull Request \& Branching](#pull-request--branching)
+- [Reference](#reference)
 
-## 1. General Recommendation
+## General Recommendation
 
 1. Use your own avatar. The original one is too hard to know who you are.
 2. Make sure your username / name can show who you are.
 
-## 2. Pull Request & Branching
+## Pull Request & Branching
 
 1.  `rebase` rather than `merge`
 
@@ -53,8 +53,11 @@
     - Daily
       - Vulnerability Test
 
-## 3. Reference
+## Reference
 
 - [Git - Book](https://git-scm.com/book "https://git-scm.com/book")
 - [Git: How to Squash all commit on branch](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch "https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch")
 - [Atomic Git Commit](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits "https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits")
+- [Git Internals](https://github.com/pluralsight/git-internals-pdf "https://github.com/pluralsight/git-internals-pdf")
+- [Oh Shit, git!](https://wizardzines.com/zines/oh-shit-git "https://wizardzines.com/zines/oh-shit-git/")
+- [How Git Works](https://wizardzines.com/zines/git "https://wizardzines.com/zines/git")

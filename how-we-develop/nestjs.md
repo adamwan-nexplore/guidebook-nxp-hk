@@ -1,6 +1,6 @@
 # NestJS <!-- omit in toc -->
 
-## 1. OpenAPI Specification
+## OpenAPI Specification
 
 1. Remote Schema
 
@@ -13,7 +13,7 @@
    ```
    A json file will be generated in openapi/swagger.spec.json
 
-## 2. Naming convention
+## Naming convention
 
 - All modules are in plural form.
 - Except `src/migrations`, all file names should be in lowercase, and with `-` as the delimiter between words

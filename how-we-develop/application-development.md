@@ -2,14 +2,14 @@
 
 **Table of Contents**
 
-- [1. Interface](#1-interface)
-- [2. Database](#2-database)
-- [3. Quality Assurance](#3-quality-assurance)
-- [4. Pull Request \& Code Review](#4-pull-request--code-review)
-- [5. Refactoring](#5-refactoring)
-- [6. Reference](#6-reference)
+- [Interface](#interface)
+- [Database](#database)
+- [Quality Assurance](#quality-assurance)
+- [Pull Request \& Code Review](#pull-request--code-review)
+- [Refactoring](#refactoring)
+- [Reference](#reference)
 
-## 1. Interface
+## Interface
 
 - interface IS very IMPORTANT. Keep it clean, un-surprised, focused
   - REST is NOT necessary. However, we should apply some of constraints to make our APIs consistent
@@ -30,26 +30,26 @@
   - connection errors
   - logic
 
-## 2. Database
+## Database
 
 - review your database table structure, indexing, and queries carefully - check [here](database-design.md)
 
-## 3. Quality Assurance
+## Quality Assurance
 
 - unit tests are helpful - check [here](dev-testing.md)
 - integration tests can expose a lot of issues
 
-## 4. Pull Request & Code Review
+## Pull Request & Code Review
 
 - discover something you do not know
 - audit the change of code
 
-## 5. Refactoring
+## Refactoring
 
 - split logics into smaller pieces
 - be more manageable and easier to write
 
-## 6. Reference
+## Reference
 
 - [Refactoring Guru](https://refactoring.guru "https://refactoring.guru")
 - [Refactoring](https://martinfowler.com/books/refactoring.html "https://martinfowler.com/books/refactoring.html")

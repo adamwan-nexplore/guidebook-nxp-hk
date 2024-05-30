@@ -2,34 +2,34 @@
 
 **Table of Contents**
 
-- [1. 3 Keys elements](#1-3-keys-elements)
-  - [1.1. Roles](#11-roles)
-  - [1.2. Artifacts](#12-artifacts)
-  - [1.3. 5 (+1) Events](#13-5-1-events)
-- [2. Differences between Scrum and Hybrid Waterfall](#2-differences-between-scrum-and-hybrid-waterfall)
-  - [2.1. Scrum VS Hybrid Waterfall](#21-scrum-vs-hybrid-waterfall)
-- [3. Definition of Done (DoD)](#3-definition-of-done-dod)
-- [4. KanBan in JIRA](#4-kanban-in-jira)
-  - [4.1. Development Workflow](#41-development-workflow)
-  - [4.2. Special Stages](#42-special-stages)
-  - [4.3. Board 1 - Development Board](#43-board-1---development-board)
-  - [4.4. Board 2 - Product Board](#44-board-2---product-board)
+- [3 Keys elements](#3-keys-elements)
+  - [Roles](#roles)
+  - [Artifacts](#artifacts)
+  - [5 (+1) Events](#5-1-events)
+- [Differences between Scrum and Hybrid Waterfall](#differences-between-scrum-and-hybrid-waterfall)
+  - [Scrum VS Hybrid Waterfall](#scrum-vs-hybrid-waterfall)
+- [Definition of Done (DoD)](#definition-of-done-dod)
+- [KanBan in JIRA](#kanban-in-jira)
+  - [Development Workflow](#development-workflow)
+  - [Special Stages](#special-stages)
+  - [Board 1 - Development Board](#board-1---development-board)
+  - [Board 2 - Product Board](#board-2---product-board)
 
-## 1. 3 Keys elements
+## 3 Keys elements
 
-### 1.1. Roles
+### Roles
 
 - Product Owner
 - Development Team
 - Scrum Master
 
-### 1.2. Artifacts
+### Artifacts
 
 - Product Backlog
 - Sprint Backlog
 - Increment
 
-### 1.3. 5 (+1) Events
+### 5 (+1) Events
 
 - Sprint - Programming
 - Sprint Planning - Meeting
@@ -38,16 +38,16 @@
 - Sprint Retrospectives - Meeting
 - (Refinement)
 
-## 2. Differences between Scrum and Hybrid Waterfall
+## Differences between Scrum and Hybrid Waterfall
 
-### 2.1. Scrum VS Hybrid Waterfall
+### Scrum VS Hybrid Waterfall
 
 - Fixed Time-boxing VS Fixed Scope
 - Controllable Scope OR Resources VS Controllable Resources OR Time
 - Give up non-core features VS Delay deliveries
 - [What is time-boxing](https://www.scruminc.com/what-is-timeboxing "https://www.scruminc.com/what-is-timeboxing")
 
-## 3. [Definition of Done (DoD)](https://www.productplan.com/learn/agile-definition-of-done/#:~:text=Defining%20the%20definition%20of%20done,progress%E2%80%9D%20to%20%E2%80%9Cdone.%E2%80%9D "https://www.productplan.com/learn/agile-definition-of-done/#:~:text=Defining%20the%20definition%20of%20done,progress%E2%80%9D%20to%20%E2%80%9Cdone.%E2%80%9D")
+## [Definition of Done (DoD)](https://www.productplan.com/learn/agile-definition-of-done/#:~:text=Defining%20the%20definition%20of%20done,progress%E2%80%9D%20to%20%E2%80%9Cdone.%E2%80%9D "https://www.productplan.com/learn/agile-definition-of-done/#:~:text=Defining%20the%20definition%20of%20done,progress%E2%80%9D%20to%20%E2%80%9Cdone.%E2%80%9D")
 
 - Code is peer-reviewed
 - Code is checked in
@@ -60,9 +60,9 @@
 
 In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD before it starts
 
-## 4. KanBan in JIRA
+## KanBan in JIRA
 
-### 4.1. Development Workflow
+### Development Workflow
 
 - To Do
 - In Progress
@@ -81,7 +81,7 @@ In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD be
 - Done
   - DoD has fulfilled
 
-### 4.2. Special Stages
+### Special Stages
 
 - Draft
   - Placeholders for incomplete ticket details
@@ -90,7 +90,7 @@ In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD be
 - Blocked
   - Blocked from progressing
 
-### 4.3. Board 1 - Development Board
+### Board 1 - Development Board
 
 - It is a Scrum board
 - Designed for development
@@ -98,7 +98,7 @@ In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD be
 
 <img width="1467" alt="Screenshot 2024-01-31 at 6 59 18 AM" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/2f12dc3a-07d3-4fdd-9a55-1b33694a6b5c">
 
-### 4.4. Board 2 - Product Board
+### Board 2 - Product Board
 
 - It is a KanBan board
 - Designed for product end-to-end journey from ideas to completion

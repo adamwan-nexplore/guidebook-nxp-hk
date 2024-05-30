@@ -2,40 +2,40 @@
 
 **Table of Contents**
 
-- [1. Definition](#1-definition)
-  - [1.1. Simple Definition](#11-simple-definition)
-  - [1.2. Old School Definition](#12-old-school-definition)
-  - [1.3. Methodology - The Three Ways](#13-methodology---the-three-ways)
-- [2. Ideal VS Reality](#2-ideal-vs-reality)
-- [3. The Three ways](#3-the-three-ways)
-  - [3.1. Flow](#31-flow)
-  - [3.2. Feedback](#32-feedback)
-    - [3.2.1. System Generated](#321-system-generated)
-    - [3.2.2. Human Generated](#322-human-generated)
-  - [3.3. Experimentation and Learning](#33-experimentation-and-learning)
-    - [3.3.1. Culture of Continual Experimentation](#331-culture-of-continual-experimentation)
-    - [3.3.2. Learning](#332-learning)
-- [4. FOUR Domains (Roles) on DevOps](#4-four-domains-roles-on-devops)
-- [5. Side Note](#5-side-note)
-- [6. Reference](#6-reference)
+- [Definition](#definition)
+  - [Simple Definition](#simple-definition)
+  - [Old School Definition](#old-school-definition)
+  - [Methodology - The Three Ways](#methodology---the-three-ways)
+- [Ideal VS Reality](#ideal-vs-reality)
+- [The Three ways](#the-three-ways)
+  - [Flow](#flow)
+  - [Feedback](#feedback)
+    - [System Generated](#system-generated)
+    - [Human Generated](#human-generated)
+  - [Experimentation and Learning](#experimentation-and-learning)
+    - [Culture of Continual Experimentation](#culture-of-continual-experimentation)
+    - [Learning](#learning)
+- [FOUR Domains (Roles) on DevOps](#four-domains-roles-on-devops)
+- [Side Note](#side-note)
+- [Reference](#reference)
 
-## 1. Definition
+## Definition
 
-### 1.1. Simple Definition
+### Simple Definition
 
 Dev + Ops = DevOps
 
-### 1.2. Old School Definition
+### Old School Definition
 
 DevOps is the practice of operations and development engineers participating together in the entire service lifecycle, from design through the development process to production support. - quoted from [the agile admin](https://theagileadmin.com/what-is-devops)
 
-### 1.3. Methodology - The Three Ways
+### Methodology - The Three Ways
 
 - Flow
 - Feedback
 - Experimentation and Learning
 
-## 2. Ideal VS Reality
+## Ideal VS Reality
 
 - (Ideally) SOME IT operators need to code and need to set up different tools before the products release
 - (Ideally) SOME developers need to involve in operations
@@ -44,9 +44,9 @@ DevOps is the practice of operations and development engineers participating tog
 
 DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
-## 3. The Three ways
+## The Three ways
 
-### 3.1. Flow
+### Flow
 
 - System thinking
 
@@ -57,11 +57,11 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
   - Divide each task to be minimal enough to allow FAST flow
   - Visualize flow so that everyone knows the pace
 
-### 3.2. Feedback
+### Feedback
 
 - Amplify Feedback Loops
 
-#### 3.2.1. System Generated
+#### System Generated
 
 - Automated Testing (with Unit Tests / Integration Tests / End-to-End Tests)
 - CI Build – Across Different Env
@@ -70,30 +70,30 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 
 **Ways to improve** - automate, standardize, specify, FAST
 
-#### 3.2.2. Human Generated
+#### Human Generated
 
 - Code Review
 - Usability Testing
 
 **Ways to improve** - promote a standard, practice, notify, communicate
 
-### 3.3. Experimentation and Learning
+### Experimentation and Learning
 
 - Culture of Continual Experimentation and Learning
 
-#### 3.3.1. Culture of Continual Experimentation
+#### Culture of Continual Experimentation
 
 - Identify and Understand Risk before the experiments
 - Trust and experiment
 - Reduce risk to experiment
 
-#### 3.3.2. Learning
+#### Learning
 
 - Seek for good resources and Share
 - Trust and Share
 - Embrace failure and Share
 
-## 4. FOUR Domains (Roles) on DevOps
+## FOUR Domains (Roles) on DevOps
 
 - Site Reliability
   - (Passive) Set up metrics and alerts for system monitoring
@@ -107,7 +107,7 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
   - HelmChart / Kustomize (Application Orchestration)
 - Cloud Engineering
   - Cloud Native (Azure, AWS, GCP)
-  - Containization (Docker)
+  - Containerisation (Docker)
   - Pulumni / CDK / Terraform (Infrastructure Provisioning)
   - Infrastructure as Code
   - Zero Trust Architecture
@@ -115,11 +115,11 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 - Process Governance
   - Define the workflows, processes and standards of development and operations
 
-## 5. Side Note
+## Side Note
 
 The CALMS (Culture, Automation, Lean, Measurement, Sharing) framework will be another approach to set up the DevOps Culture.
 
-## 6. Reference
+## Reference
 
 - [The DevOps Handbook, 2nd Edition](https://www.goodreads.com/book/show/26083308-the-devops-handbook "https://www.goodreads.com/book/show/26083308-the-devops-handbook")
 - [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project "https://www.goodreads.com/book/show/17255186-the-phoenix-project")

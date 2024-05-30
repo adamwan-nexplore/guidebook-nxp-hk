@@ -2,13 +2,13 @@
 
 **Table of Contents**
 
-- [1. Handle production data](#1-handle-production-data)
-- [2. Data Backup](#2-data-backup)
-  - [2.1. If the patch only affects a couple of records, simply export the whole rows in a CSV file](#21-if-the-patch-only-affects-a-couple-of-records-simply-export-the-whole-rows-in-a-csv-file)
-  - [2.2. If the patch affects a whole table or a few tables, try to back up the original data in-place](#22-if-the-patch-affects-a-whole-table-or-a-few-tables-try-to-back-up-the-original-data-in-place)
-  - [2.3. If several tables are affected, dump the whole database](#23-if-several-tables-are-affected-dump-the-whole-database)
+- [Handle production data](#handle-production-data)
+- [Data Backup](#data-backup)
+  - [Patch Data: A few Records](#patch-data-a-few-records)
+  - [Patch Data: Whole Table / A few Tables](#patch-data-whole-table--a-few-tables)
+  - [Patch Data: Several Tables](#patch-data-several-tables)
 
-## 1. Handle production data
+## Handle production data
 
 - ANY data patches should be prepared as a query script
 - All query scripts should be reviewed before executed
@@ -33,15 +33,21 @@ COMMIT;
 ROLLBACK;
 ```
 
-## 2. Data Backup
+## Data Backup
 
-### 2.1. If the patch only affects a couple of records, simply export the whole rows in a CSV file
+### Patch Data: A few Records
 
-### 2.2. If the patch affects a whole table or a few tables, try to back up the original data in-place
+simply export the whole rows in a CSV file
+
+### Patch Data: Whole Table / A few Tables
+
+try to back up the original data in-place
 
 ```sql
 CREATE TABLE users_20240227 AS
 SELECT * FROM users;
 ```
 
-### 2.3. If several tables are affected, dump the whole database
+### Patch Data: Several Tables
+
+dump the whole database

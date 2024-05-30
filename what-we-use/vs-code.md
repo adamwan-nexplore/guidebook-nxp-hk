@@ -2,28 +2,43 @@
 
 **Table of Contents**
 
-- [1. Extensions](#1-extensions)
-  - [1.1. Code Spell Checker](#11-code-spell-checker)
-  - [1.2. Batch Rename](#12-batch-rename)
-  - [1.3. Error Lens](#13-error-lens)
-  - [1.4. Pretty TypeScript Errors](#14-pretty-typescript-errors)
-  - [1.5. SonarLint](#15-sonarlint)
-  - [1.6. jwt-decode](#16-jwt-decode)
-  - [1.7. Duplicate Action](#17-duplicate-action)
-  - [1.8. (Typescript) Typescript Import Sort](#18-typescript-typescript-import-sort)
-  - [1.9. GitLens](#19-gitlens)
-  - [1.10. Unix Time Converter](#110-unix-time-converter)
-  - [1.11. TODO Highlight v2](#111-todo-highlight-v2)
-  - [1.12. Live Share](#112-live-share)
-  - [1.13. Polacode](#113-polacode)
-  - [1.14. Auto Rename Tag](#114-auto-rename-tag)
-  - [1.15. Markdown All in One](#115-markdown-all-in-one)
+- [Tutorial](#tutorial)
+- [Extensions](#extensions)
+  - [Code Spell Checker](#code-spell-checker)
+  - [Batch Rename](#batch-rename)
+  - [Error Lens](#error-lens)
+  - [Pretty TypeScript Errors](#pretty-typescript-errors)
+  - [SonarLint](#sonarlint)
+  - [jwt-decode](#jwt-decode)
+  - [Duplicate Action](#duplicate-action)
+  - [(Typescript) Typescript Import Sort](#typescript-typescript-import-sort)
+  - [GitLens](#gitlens)
+  - [Unix Time Converter](#unix-time-converter)
+  - [TODO Highlight v2](#todo-highlight-v2)
+  - [Live Share](#live-share)
+  - [Polacode](#polacode)
+  - [Auto Rename Tag](#auto-rename-tag)
+  - [Markdown All in One](#markdown-all-in-one)
+- [Shortcuts and Features](#shortcuts-and-features)
+- [GitHub Copilot](#github-copilot)
+  - [The Inspiration](#the-inspiration)
+  - [Autocompletion](#autocompletion)
+  - [Chat](#chat)
+    - [Inline Chat](#inline-chat)
+    - [Sidebar Chat](#sidebar-chat)
+    - [Voice Chat](#voice-chat)
+  - [Three Ss](#three-ss)
+- [Reference](#reference)
 
-## 1. Extensions
+## Tutorial
+
+> Open the Welcome page from the Help > Editor Playground menu or use the Help: Interactive Editor Playground command from the Command Palette (⇧⌘P).
+
+## Extensions
 
 - Most of the images are from the original plugin page
 
-### 1.1. [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker")
+### [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker")
 
 ![Code Spell Checker](https://raw.githubusercontent.com/streetsidesoftware/vscode-spell-checker/main/images/suggestions.gif)
 
@@ -31,7 +46,7 @@
 
 ---
 
-### 1.2. [Batch Rename](https://marketplace.visualstudio.com/items?itemName=JannisX11.batch-rename-extension "https://marketplace.visualstudio.com/items?itemName=JannisX11.batch-rename-extension")
+### [Batch Rename](https://marketplace.visualstudio.com/items?itemName=JannisX11.batch-rename-extension "https://marketplace.visualstudio.com/items?itemName=JannisX11.batch-rename-extension")
 
 ![Batch Rename](https://raw.githubusercontent.com/JannisX11/batch-rename/main/media/demo.gif)
 
@@ -39,7 +54,7 @@
 
 ---
 
-### 1.3. [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens")
+### [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens")
 
 ![Error Lens](https://raw.githubusercontent.com/usernamehw/vscode-error-lens/master/img/demo.png)
 
@@ -47,7 +62,7 @@
 
 ---
 
-### 1.4. [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors "https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors")
+### [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors "https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors")
 
 ![Pretty TypeScript Errors](https://raw.githubusercontent.com/yoavbls/pretty-ts-errors/b358fed5b4437be9fe109a836b77c6ca88a273a6/assets/this.png)
 
@@ -55,7 +70,7 @@
 
 ---
 
-### 1.5. [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode")
+### [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode")
 
 ![SonarLint](https://raw.githubusercontent.com/SonarSource/sonarlint-vscode/b446efa174ad1bf03a3c98a2fe68c7fe6c74b45c/images/sonarlint-vscode.gif)
 
@@ -64,7 +79,7 @@
 
 ---
 
-### 1.6. [jwt-decode](https://marketplace.visualstudio.com/items?itemName=jflbr.jwt-decoder "https://marketplace.visualstudio.com/items?itemName=jflbr.jwt-decoder")
+### [jwt-decode](https://marketplace.visualstudio.com/items?itemName=jflbr.jwt-decoder "https://marketplace.visualstudio.com/items?itemName=jflbr.jwt-decoder")
 
 ![jwt-decode](https://raw.githubusercontent.com/jflbr/jwt-decoder/master/images/demo-from-untitled-document.gif)
 
@@ -72,7 +87,7 @@
 
 ---
 
-### 1.7. [Duplicate Action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate "https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate")
+### [Duplicate Action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate "https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate")
 
 ![Duplicate Action](./duplicate-action.png "./duplicate-action.png")
 
@@ -80,14 +95,14 @@
 
 ---
 
-### 1.8. (Typescript) [Typescript Import Sort](https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter "https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter")
+### (Typescript) [Typescript Import Sort](https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter "https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter")
 
 - Sort import libraries alphabetically
 - Recommend to enable `Remove Unused Default Imports` either
 
 ---
 
-### 1.9. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens")
+### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens")
 
 ![GitLens](https://raw.githubusercontent.com/gitkraken/vscode-gitlens/main/images/docs/current-line-blame.png)
 
@@ -95,7 +110,7 @@
 
 ---
 
-### 1.10. [Unix Time Converter](https://marketplace.visualstudio.com/items?itemName=espresso3389.unixtime-converter "https://marketplace.visualstudio.com/items?itemName=espresso3389.unixtime-converter")
+### [Unix Time Converter](https://marketplace.visualstudio.com/items?itemName=espresso3389.unixtime-converter "https://marketplace.visualstudio.com/items?itemName=espresso3389.unixtime-converter")
 
 ![Unix Time Converter](https://raw.githubusercontent.com/espresso3389/unixtime-converter/master/images/intro.gif)
 
@@ -103,7 +118,7 @@
 
 ---
 
-### 1.11. [TODO Highlight v2](https://marketplace.visualstudio.com/items?itemName=jgclark.vscode-todo-highlight)
+### [TODO Highlight v2](https://marketplace.visualstudio.com/items?itemName=jgclark.vscode-todo-highlight)
 
 ![TODO Highlight v2](https://raw.githubusercontent.com/wayou/vscode-todo-highlight/master/assets/material-night-eighties.png)
 
@@ -111,22 +126,106 @@
 
 ---
 
-### 1.12. [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare "https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare")
+### [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare "https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare")
 
 ![Live Share](https://user-images.githubusercontent.com/116461/47793782-4d253500-dcdc-11e8-9c76-3d9d5b474d9d.png)
 
 - Live sharing and collaboration tool on VScode
 
-### 1.13. [Polacode](https://www.syncfusion.com/blogs/post/top-vs-code-extensions "https://www.syncfusion.com/blogs/post/top-vs-code-extensions")
+### [Polacode](https://www.syncfusion.com/blogs/post/top-vs-code-extensions "https://www.syncfusion.com/blogs/post/top-vs-code-extensions")
 
 - Extract code segments as beautiful images
 
-### 1.14. [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag")
+### [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag")
 
 ![Auto Rename Tag](https://raw.githubusercontent.com/formulahendry/vscode-auto-rename-tag/f3039ed7263c5ab94c6e2fa9995d3ad265ebc822/images/usage.gif)
 
 - Rename paired tags by changing either one
 
-### 1.15. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one "https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one")
+### [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one "https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one")
 
 - Extra support on markdown
+
+## Shortcuts and Features
+
+- https://code.visualstudio.com/docs/editor/refactoring
+
+- Extract Variables & Functions
+- Rename Symbols
+
+## GitHub Copilot
+
+### The Inspiration
+
+- It is a tool to help engineers to focus on `ideas` and `testing`
+- Less focus on syntax
+- Copilot does not know something it does not know (Hallucination)
+
+![Hallucination](./hallucination.png "./hallucination.png")
+
+### Autocompletion
+
+1. ghost text
+   - type the function name
+   - type the comment
+     - purpose
+     - input
+     - output
+
+| Usage | Windows | Mac |
+| ----------- | ----------- | ----------- |
+| Accept suggestion      | `tab`       | `tab` |
+| Accept partially   | `ctrl` + `>` | `cmd` + `>` |
+| Alternate suggestions | `alt` + `[` or `]` | `option` + `[` or `]` |
+| All suggestions | `ctrl` + `enter` | `ctrl` + `enter` |
+
+### Chat
+
+- use `@terminal`, `@vscode` and `@workspace`
+- point to files by `#file:someFileName`, `#editor` and `#selection`
+
+#### Inline Chat
+
+- `ctrl` / `cmd` + `I`
+
+```typescript
+// q: what is software engineering?
+```
+
+#### Sidebar Chat
+
+<img width="393" alt="sidebar chat" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/dd9325eb-6988-4a78-94cf-140c36df84f2">
+
+- Code copilot in the terminal
+
+```bash
+/fix
+/tests
+/explain
+/git
+```
+
+#### Voice Chat
+
+<img width="870" alt="voice chat" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/d652878d-ea82-4e35-9042-bd4065cb78a4">
+
+- `ctrl` / `cmd` + `I` AND `ctrl` / `cmd` + `I`
+
+### Three Ss
+
+- Simple
+  - keep the intention simple
+- Specific
+  - keep the expected code generated to produce a few lines
+- Short
+  - only one to two sentences each time and words in each sentence should be minimal
+
+* copilot will give more score to files you open
+* highlight the code
+
+## Reference
+
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview "https://code.visualstudio.com/docs/copilot/overview")
+- [Getting started with GitHub Copilot](https://github.com/features/copilot/getting-started "https://github.com/features/copilot/getting-started")
+- [Learn AI-Assisted Python Programming](https://www.manning.com/books/learn-ai-assisted-python-programming "https://www.manning.com/books/learn-ai-assisted-python-programming")
+

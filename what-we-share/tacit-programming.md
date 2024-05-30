@@ -1,8 +1,6 @@
 # Tacit Programming / Point Free Style <!-- omit in toc -->
 
-**Table of Contents**
-
-## 1. Introduction
+## Introduction
 
 - Functional Light Javascript
 
@@ -11,7 +9,7 @@
 - Point = Argument
 - Point Free = No arguments to use a function (Only one argument but we consume through functional chain)
 
-## 2. A Simple Example
+## A Simple Example
 
 ```typescript
 const sumOfValues = sum(
@@ -39,7 +37,7 @@ const divideByTwo = curriedDivideBy(2)
 const incrementByThree = curriedIncrement(3)
 ```
 
-## 3. Reference
+## Reference
 
 - [Tacit Programming - Wiki](https://en.wikipedia.org/wiki/Tacit_programming "https://en.wikipedia.org/wiki/Tacit_programming")
 - [Tacit Programming - APL Wiki](https://aplwiki.com/wiki/Tacit_programming "https://aplwiki.com/wiki/Tacit_programming")
