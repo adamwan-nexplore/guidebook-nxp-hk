@@ -15,7 +15,7 @@
 
 ## 1. Who we are
 
-[Nexplore](https://www.nexplore.com "https://www.nexplore.com") is a software innovation leader that understands how the construction industry really works. With the help of our partners at [HOCHTIEF](https://www.hochtief.de "https://www.hochtief.de"), we build tailor-made technologies for the modern-day job site.
+[NEXPLORE](https://www.nexplore.com "https://www.nexplore.com") is a software innovation leader that understands how the construction industry really works. With the help of our partners at [HOCHTIEF](https://www.hochtief.de "https://www.hochtief.de"), we build tailor-made technologies for the modern-day job site.
 
 ## 2. What we do
 

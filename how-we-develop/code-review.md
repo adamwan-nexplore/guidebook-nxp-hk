@@ -6,7 +6,7 @@
 2. [DB] Do not include EMAIL actions in transaction
 3. [API] API interface is IMPORTANT. Always discuss with your teammates before you start
 4. [API] Input sanitization is VERY IMPORTANT. Relational KEYS can be a security issue for not handling properly
-5. [API/DB] Typeorm for complicated queries
+5. [API/DB] TypeORM for complicated queries
    - provide raw query
    - orWhere should be avoided (you need bracket sometime)
    - Bracket should be avoided

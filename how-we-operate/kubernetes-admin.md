@@ -116,8 +116,8 @@ k iexec app # will show a list to select
 
 # Use the arrow keys to navigate: ↓ ↑ → ←
 # ? Select Pod:
-#   Namespace: app | Pod: ▸ app-5d4c8755cb-4rrmq
-#   Namespace: app | Pod: app-5d4c8755cb-fwqfc
+#   Namespace: app | Pod: ▸ app-5d4c8755cb-aaaaa
+#   Namespace: app | Pod: app-5d4c8755cb-bbbbb
 # ↓ Namespace: app | Pod: app-background-job-6b577d899f-gnq4s
 ```
 

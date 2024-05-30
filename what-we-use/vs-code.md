@@ -18,6 +18,7 @@
   - [1.13. Polacode](#113-polacode)
   - [1.14. Auto Rename Tag](#114-auto-rename-tag)
   - [1.15. Markdown All in One](#115-markdown-all-in-one)
+- [2. Shortcuts and Features](#2-shortcuts-and-features)
 
 ## 1. Extensions
 
@@ -130,3 +131,10 @@
 ### 1.15. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one "https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one")
 
 - Extra support on markdown
+
+## 2. Shortcuts and Features
+
+- https://code.visualstudio.com/docs/editor/refactoring
+
+- Extract Variables & Functions
+- Rename Symbols
