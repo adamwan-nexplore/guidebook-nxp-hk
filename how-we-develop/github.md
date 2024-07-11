@@ -40,7 +40,19 @@
     - REGEX: `^(promote|back|build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: \[CPCS\-[0-9]+\] ([\w ])+([\s\S]*)`
     - e.g. `feat: [CPCS-1234] add user endpoint`
 6.  Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources) for tracking back JIRA Tasks
-7.  Continuous Integrations
+7.  Each repository has a couple of topics (= #hashtag). It provides accurate information of the nature of the codebase
+
+| **topic**                 | **meaning**       |
+|---------------------------|-------------------|
+| #web                      | web               |
+| #keycloak                 | keycloak (login)  |
+| #qa                       | quality assurance |
+| #devops                   | cloud / pipelines |
+| #mobile                   | mobile            |
+| #api                      | backend           |
+| *topics other than above* | which product     |
+
+1.  Continuous Integrations
     - Pull Request
       - App Build Check
       - Style Check
@@ -52,6 +64,8 @@
         - Integration Test
     - Daily
       - Vulnerability Test
+    - Environment Update
+      - Smoke Tests
 
 ## Reference
 

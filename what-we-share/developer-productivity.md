@@ -6,7 +6,7 @@
 - [Terminal](#terminal)
 - [Git](#git)
 - [Editors](#editors)
-  - [The Soft Parts](#the-soft-parts)
+- [The Soft Parts](#the-soft-parts)
 
 ## Fonts
 
@@ -52,7 +52,7 @@ source ~/.zshrc
   ```
 - [Visual Studio Code](../what-we-use/vs-code.md)
 
-### The Soft Parts
+## The Soft Parts
 
 - [So you want to be a wizard](https://wizardzines.com/zines/wizard "https://wizardzines.com/zines/wizard")
 - [The Pocket Guide to Debugging](https://wizardzines.com/zines/debugging-guide "https://wizardzines.com/zines/debugging-guide")

@@ -83,7 +83,7 @@ Catch-up Material
 - [Microservices](what-we-share/microservices.md)
 - [Schema First API Design](what-we-share/schema-first-api-design.md)
 - [Data Migration](what-we-share/data-migration.md)
-- [Learn Software Development](what-we-share/lean.md)
+- [Lean Software Development](what-we-share/lean.md)
 - [Introduction to Query Performance](what-we-share/query-performance.md)
 - [Developer Productivity](what-we-share/developer-productivity.md)
 

@@ -15,7 +15,7 @@
 
 ## The objective of writing test cases
 
-- Verify things are working as `EXPECTED`
+- Verify things working as `EXPECTED`
 
 ## The bottom line
 
