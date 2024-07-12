@@ -12,11 +12,21 @@
 
 - [Monaspace](https://monaspace.githubnext.com/?fbclid=IwZXh0bgNhZW0CMTEAAR3EO3yFjT9oZzBcmbYgQ7dkhwHOFrXFaCvQpR525xZP11Z--8GXI3r4Yu4_aem_ZmFrZWR1bW15MTZieXRlcw "https://monaspace.githubnext.com/?fbclid=IwZXh0bgNhZW0CMTEAAR3EO3yFjT9oZzBcmbYgQ7dkhwHOFrXFaCvQpR525xZP11Z--8GXI3r4Yu4_aem_ZmFrZWR1bW15MTZieXRlcw")
 
+<img width="983" alt="font-styles" src="./github-monospace.png">
+
 <img width="983" alt="font-styles" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/c84e993a-4c08-47a9-9ebd-27484ed8bd8a">
 
 - [Fira Code](https://github.com/tonsky/FiraCode "https://github.com/tonsky/FiraCode")
 
+<img width="983" alt="font-styles" src="https://github.com/tonsky/FiraCode/blob/master/extras/logo.svg">
+
 - [JetBrains Monospace](https://www.jetbrains.com/lp/mono "https://www.jetbrains.com/lp/mono")
+
+<img width="983" alt="font-styles" src="./jet-brains-mono.png">
+
+- [Vercel - Geist](https://github.com/vercel/geist-font "https://github.com/vercel/geist-font")
+
+<img width="983" alt="font-styles" src="./vercel-geist.png">
 
 ## Terminal
 
