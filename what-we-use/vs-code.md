@@ -11,15 +11,16 @@
   - [SonarLint](#sonarlint)
   - [jwt-decode](#jwt-decode)
   - [Duplicate Action](#duplicate-action)
-  - [(Typescript) Typescript Import Sort](#typescript-typescript-import-sort)
+  - [Typescript Import Sort](#typescript-import-sort)
   - [GitLens](#gitlens)
   - [Unix Time Converter](#unix-time-converter)
   - [TODO Highlight v2](#todo-highlight-v2)
   - [Live Share](#live-share)
-  - [Polacode](#polacode)
-  - [Auto Rename Tag](#auto-rename-tag)
+  - [Polacode 2022](#polacode-2022)
   - [Markdown All in One](#markdown-all-in-one)
-- [Shortcuts and Features](#shortcuts-and-features)
+- [Shortcuts](#shortcuts)
+- [Settings](#settings)
+- [Markdown](#markdown)
 - [GitHub Copilot](#github-copilot)
   - [The Inspiration](#the-inspiration)
   - [Autocompletion](#autocompletion)
@@ -28,6 +29,7 @@
     - [Sidebar Chat](#sidebar-chat)
     - [Voice Chat](#voice-chat)
   - [Three Ss](#three-ss)
+- [Recommended set up in .vscode/settings.json](#recommended-set-up-in-vscodesettingsjson)
 - [Reference](#reference)
 
 ## Tutorial
@@ -95,7 +97,7 @@
 
 ---
 
-### (Typescript) [Typescript Import Sort](https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter "https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter")
+### [Typescript Import Sort](https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter "https://marketplace.visualstudio.com/items?itemName=mike-co.import-sorter")
 
 - Sort import libraries alphabetically
 - Recommend to enable `Remove Unused Default Imports` either
@@ -132,26 +134,96 @@
 
 - Live sharing and collaboration tool on VScode
 
-### [Polacode](https://www.syncfusion.com/blogs/post/top-vs-code-extensions "https://www.syncfusion.com/blogs/post/top-vs-code-extensions")
+### [Polacode 2022](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.polacode-2019 "https://marketplace.visualstudio.com/items?itemName=jeff-hykin.polacode-2019")
 
 - Extract code segments as beautiful images
 
-### [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag")
-
-![Auto Rename Tag](https://raw.githubusercontent.com/formulahendry/vscode-auto-rename-tag/f3039ed7263c5ab94c6e2fa9995d3ad265ebc822/images/usage.gif)
-
-- Rename paired tags by changing either one
+![Polacode 2022](https://github.com/octref/polacode/raw/master/demo/usage.gif)
 
 ### [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one "https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one")
 
 - Extra support on markdown
 
-## Shortcuts and Features
-
-- https://code.visualstudio.com/docs/editor/refactoring
+## Shortcuts
 
 - Extract Variables & Functions
 - Rename Symbols
+- Text Selection
+  - After selected the text and do a right-click, the menu on the selected text and number bar is completely different
+- Dart Refactoring, check [here](https://dartcode.org/docs/refactorings-and-code-fixes "https://dartcode.org/docs/refactorings-and-code-fixes")
+
+- https://code.visualstudio.com/docs/editor/refactoring
+
+## Settings
+
+```json
+{
+  // * TypeScript Inlay Hints
+  // Show inference arguments & types in ghost text
+  
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true, // highly recommended
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true, // highly recommended
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true, // highly recommended
+
+  // * TypeScript Reference Code Lens
+  "typescript.referencesCodeLens.enabled": true,
+
+  // * TypeScript Implementation Code Lens
+  // Useful on OOP Style
+  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
+
+  // * Typescript Path
+  "typescript.preferences.importModuleSpecifier": "non-relative",  
+
+  // * Dart Inlay Hints
+  // Show inference arguments & types in ghost text
+  // Shortcut - `ctrl` + `opt`
+  "[dart]": {
+    // 'off' - never show
+    // 'on' - always show
+    // 'offUnlessPressed' - show only while shortcut keys are held down (default)
+    // 'onUnlessPressed' - show, but hide while shortcut keys are held down
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+
+  // * TypeScript
+  // Auto rename the closing tag when the open tag has updated
+  "editor.linkedEditing": true,
+
+  // * Ruler
+  "editor.rulers": [100], // can have multiple ruler
+
+  // * Auto Save
+  "files.autoSaveWhenNoErrors": true,
+  "files.autoSave": "onFocusChange",  // Save if lose focus
+}
+```
+
+- Inlay Hints
+  ![Settings](./inlay-hinting-settings.png)
+  ![Example](./inlay-hinting-example.png)
+
+- Reference Code Lens
+   ![Reference Code Lens](ts-references-code-lens.png)
+
+- Ruler
+- Word Wrap
+- Autosave
+
+- https://code.visualstudio.com/docs/typescript/typescript-editing
+
+## Markdown
+
+1.
+// bang bang will show all the headers in workspace to be selected
+```markdown
+[here](##)
+```
+
+2.
+Drag the image / video to the editor AND hold `shift` to link it
 
 ## GitHub Copilot
 
@@ -223,9 +295,89 @@
 * copilot will give more score to files you open
 * highlight the code
 
+## Recommended set up in .vscode/settings.json
+
+API
+```json
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "JannisX11.batch-rename-extension",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+    "SonarSource.sonarlint-vscode",
+    "mrmlnc.vscode-duplicate",
+    "mike-co.import-sorter",
+    "eamodio.gitlens",
+    "jgclark.vscode-todo-highlight",
+    "MS-vsliveshare.vsliveshare",
+    "jeff-hykin.polacode-2019",
+    "yzhang.markdown-all-in-one",
+    "GitHub.copilot-chat",
+    "GitHub.copilot",
+    "richie5um2.vscode-sort-json",
+    "dbaeumer.vscode-eslint",
+    "firsttris.vscode-jest-runner",
+    "orta.vscode-jest"
+  ]
+}
+```
+
+Web 
+```json
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "JannisX11.batch-rename-extension",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+    "SonarSource.sonarlint-vscode",
+    "mrmlnc.vscode-duplicate",
+    "mike-co.import-sorter",
+    "eamodio.gitlens",
+    "jgclark.vscode-todo-highlight",
+    "MS-vsliveshare.vsliveshare",
+    "jeff-hykin.polacode-2019",
+    "yzhang.markdown-all-in-one",
+    "GitHub.copilot-chat",
+    "GitHub.copilot",
+    "richie5um2.vscode-sort-json",
+    "dbaeumer.vscode-eslint",
+    "firsttris.vscode-jest-runner",
+    "orta.vscode-jest",
+    "meganrogge.template-string-converter",
+  ]
+}
+```
+
+Mobile
+```json
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "JannisX11.batch-rename-extension",
+    "usernamehw.errorlens",
+    "SonarSource.sonarlint-vscode",
+    "mrmlnc.vscode-duplicate",
+    "eamodio.gitlens",
+    "jgclark.vscode-todo-highlight",
+    "MS-vsliveshare.vsliveshare",
+    "jeff-hykin.polacode-2019",
+    "yzhang.markdown-all-in-one",
+    "GitHub.copilot-chat",
+    "GitHub.copilot",
+    "richie5um2.vscode-sort-json",
+    "dart-code.dart-code",
+    "vscjava.vscode-gradle",
+    "dart-code.flutter"
+  ]
+}
+
+```
+
 ## Reference
 
 - [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview "https://code.visualstudio.com/docs/copilot/overview")
 - [Getting started with GitHub Copilot](https://github.com/features/copilot/getting-started "https://github.com/features/copilot/getting-started")
 - [Learn AI-Assisted Python Programming](https://www.manning.com/books/learn-ai-assisted-python-programming "https://www.manning.com/books/learn-ai-assisted-python-programming")
-
+- [Top 5 Serious Time Savers in VS Code](https://www.youtube.com/watch?v=MLvLiWueESY "https://www.youtube.com/watch?v=MLvLiWueESY")

@@ -106,7 +106,7 @@ describe("#funcA", () => {
 ```
 
 8. scrolling fatigue
-   - With the use of `beforeEach` function, reader needs to scroll up a lot to understand the set up.
+   - If there are a lot of variables initialize in `beforeEach` function, reader needs to scroll up a lot to understand the set up.
    To be more intuitively, consider creating a setup function with a proper name for readability.
 
 9. how to test a throwing error
@@ -134,7 +134,7 @@ test("verify, with no rules, throws exception", () => {
 
     - Class Constructor Injection
     - Object as Parameter (a.k.a ‘duck typing’)
-    - Common Interface as Parameter (for this we’ll use TypeScript)”
+    - Common Interface as Parameter (for this we’ll use TypeScript)
 
 12. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
 

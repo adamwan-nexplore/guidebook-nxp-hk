@@ -3,8 +3,8 @@
 **Table of Contents**
 
 - [Choice of toolings](#choice-of-toolings)
-- [Before drawing, ask:](#before-drawing-ask)
-- [After drawn, think about:](#after-drawn-think-about)
+- [Before drawing, ask](#before-drawing-ask)
+- [After drawn, think about](#after-drawn-think-about)
 - [Advanced Use](#advanced-use)
 - [Legends](#legends)
   - [Flowcharts](#flowcharts)
@@ -30,7 +30,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
   --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
 ```
 
-## Before drawing, ask:
+## Before drawing, ask
 
 - (People) Who read the diagrams?
 - (People) Who can help maintaining the diagrams?
@@ -43,7 +43,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
   - Use Case Diagrams
   - Flow Charts
 
-## After drawn, think about:
+## After drawn, think about
 
 - (People) Who can help reviewing the diagrams?
 - (Context) Can readers search the context?

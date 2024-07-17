@@ -4,6 +4,7 @@
 
 - [General Advice](#general-advice)
 - [Performance](#performance)
+- [Schema Change \& Table Lock](#schema-change--table-lock)
 - [Reference](#reference)
 
 ## General Advice
@@ -27,6 +28,10 @@
   ```sql
   CREATE INDEX ON customer.customers (name text_pattern_ops);
   ```
+
+## Schema Change & Table Lock
+
+- Check [here](https://www.thatguyfromdelhi.com/2020/12/what-postgres-sql-causes-table-rewrite.html "https://www.thatguyfromdelhi.com/2020/12/what-postgres-sql-causes-table-rewrite.html")
 
 ## Reference
 

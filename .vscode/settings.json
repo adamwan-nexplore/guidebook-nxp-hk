@@ -42,5 +42,17 @@
     "structs",
     "Structurizr",
     "vimtutor"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  },
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true, 
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "[dart]": {
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
 }
