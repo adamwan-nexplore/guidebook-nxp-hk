@@ -35,36 +35,36 @@
 
 ## Typical waste in software development
 
-1. Partially done work 
-   * Get things DONE
+1. Partially done work
+   - Get things DONE
 2. Extra features
-   * Go with the verified ones
+   - Go with the verified ones
 3. Relearning
-   * Revisit and do small
+   - Revisit and do small
 4. Task switching
-   * No multitasking
+   - No multitasking
 5. Waiting
-   * Human waiting is a PURE waste
+   - Human waiting is a PURE waste
 6. Handoffs
-   * Let the actor find and solve the issues without extra people jump-ed in
-8. Defects
-   * Do better Quality Assurance, which is a necessary waste
-9. Management activities
-   * Be avoid to actively track the statuses
+   - Let the actor find and solve the issues without extra people jump-ed in
+7. Defects
+   - Do better Quality Assurance, which is a necessary waste
+8. Management activities
+   - Be avoid to actively track the statuses
 
 ## Practices (some are grouped into SCRUM)
 
 1. Eliminate waste (see above)
 2. Value stream mapping
-   * Visualize the software development process
+   - Visualize the software development process
 3. Set-based development
-   * Instead of a definite POINT-based commitment, try to provide a range for better coordination
+   - Instead of a definite POINT-based commitment, try to provide a range for better coordination
 4. Pull systems
-   * NO HARD schedule
+   - NO HARD schedule
 5. Queueing theory
 6. Motivation
 7. Measurements
-   * Local measurement and then local optimization
+   - Local measurement and then local optimization
 8. Test-driven development
 
 ## Opinion & Clarification
@@ -84,13 +84,13 @@
 
 ## Questions
 
-- Just-In-Time to prevent `overproduction` is GOOD. How about `under-production`? 
-   - Need to align
+- Just-In-Time to prevent `overproduction` is GOOD. How about `under-production`?
+  - Need to align
 - Eliminate waste is the core concept on Lean, but who to execute?
-- In practice a lot of work expects to be necessary waste. That is why we do it. 
-   - How to figure out those are actually PURE waste?
+- In practice a lot of work expects to be necessary waste. That is why we do it.
+  - How to figure out those are actually PURE waste?
 - The stakeholder can delay the decision making ONLY IF the system is FLEXIBLE. Flexibility introduces complexity.
-   - Who and by What to decide?
+  - Who and by What to decide?
 
 ## Reference
 

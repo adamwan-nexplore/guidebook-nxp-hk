@@ -18,23 +18,24 @@ const sumOfValues = sum(
 ```
 
 ```typescript
-### General functions
-const isCertainMultiples = (value: number,  mod: number) => value % mod === 0;
+// General functions
+const isCertainMultiples = (value: number, mod: number) => value % mod === 0;
 const divideBy = (value: number, divider: number) => value / divider;
-const increment = (value: number, incrementValue: number) => value + incrementValue;
+const increment = (value: number, incrementValue: number) =>
+  value + incrementValue;
 ```
 
 ```typescript
-### Currying and name it
-import * as R from 'ramda'
+// Currying and name it
+import * as R from "ramda";
 
 const curriedIsCertainMultiples = R.curry(isCertainMultiples);
 const curriedDivideBy = R.curry(divideBy);
 const curriedIncrement = R.curry(increment);
 
-const isEven = curriedIsCertainMultiples(2)
-const divideByTwo = curriedDivideBy(2)
-const incrementByThree = curriedIncrement(3)
+const isEven = curriedIsCertainMultiples(2);
+const divideByTwo = curriedDivideBy(2);
+const incrementByThree = curriedIncrement(3);
 ```
 
 ## Reference

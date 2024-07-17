@@ -16,18 +16,18 @@ flowchart
   not-found-resolution([Resolution])
 
   %% process
-  support-ticket[Create a\nSupport Ticket]
+  support-ticket[Create a<br />Support Ticket]
   usage-solution[Guide the user]
-  patch-ticket[Create a\nData Ticket]
+  patch-ticket[Create a<br />Data Ticket]
   patch-data[Patch data]
-  bug-ticket[Create a \nBug Ticket]
+  bug-ticket[Create a <br />Bug Ticket]
   fix-bug[Fix bug]
   reconfirm[Re-confirm the issue]
 
   %% decision
   categorize{Categorize}
   data-solution{Can fix on UI?}
-  system-bugs{Can replicate\n/illustrate?}
+  system-bugs{Can replicate<br />/illustrate?}
   data-verify{Verify a patch}
   verify{Verify a fix}
 

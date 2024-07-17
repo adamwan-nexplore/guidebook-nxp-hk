@@ -50,7 +50,7 @@ flowchart
   style module fill:blue,stroke:#333,stroke-width:4px
   style controller fill:blue,stroke:#333,stroke-width:4px
   style service fill:blue,stroke:#333,stroke-width:4px
-  
+
   style dto fill:yellow,stroke:#333
   style entity fill:yellow,stroke:#333
 
@@ -117,6 +117,7 @@ flowchart
 ### Complimentary (I)
 
 - filename = resource name
+- might further group helpers / components if necessary
 
 * messages.helpers.ts (plural, multiple functions)
 * messages.queries.ts (plural, multiple functions)
@@ -127,7 +128,7 @@ flowchart
 
 ### Complimentary (II)
 
-- filename = same to the name inside
+- filename = same to the name of constant / enum / function inside
 
 * default-decimal-format.constant.ts (one constant, filename = constant name)
 * get-to-know-who.helper.ts (one function, filename = name of function name)

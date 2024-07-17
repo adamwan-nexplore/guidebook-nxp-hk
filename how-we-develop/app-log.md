@@ -9,10 +9,12 @@
   4. what correlation_id to find those related entries
 
 ## Searchable
+
 - Each log entry should be searchable
   - Besides the attribute `msg`, please provide some key attributes for searching / filtering.
 
 ## Log Level
+
 - Each log entry should set the log level properly
   - Help any further analysis and in case there are something abnormal
 

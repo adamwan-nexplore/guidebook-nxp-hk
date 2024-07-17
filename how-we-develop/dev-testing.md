@@ -5,13 +5,13 @@
 - [Some important terms](#some-important-terms)
 - [The Ultimate Goal](#the-ultimate-goal)
 - [Rephrase the statement](#rephrase-the-statement)
-- [13 Tips to write Unit Tests in Jest](#13-tips-to-write-unit-tests-in-jest)
+- [Tips to write Unit Tests in Jest](#tips-to-write-unit-tests-in-jest)
 - [Reference](#reference)
 
 Before it starts, can you tell
 
 - Why do you test your code?
-- What is a unit in unit testing?
+- What is a unit in unit test?
 - Why unit tests rather than other tests?
 - What do you test?
 - What are the tricks using Jest to write unit tests?
@@ -19,9 +19,12 @@ Before it starts, can you tell
 
 ## Some important terms
 
-**SUT** - System Under Test  
-**Unit test** - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common  
-**Entry Point** - The way we `use` the unit to work. Usually, it refers to the input parameters of a function  
+**SUT** - System Under Test
+
+**Unit test** - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common
+
+**Entry Point** - The way we `use` the unit to work. Usually, it refers to the input parameters of a function
+
 **Exit Point(s)** - The effect / output after the input was applied to the SUT
 
 ## The Ultimate Goal
@@ -46,26 +49,32 @@ b. impure functions
 
 > We should group those impure functions together, or at least in a managed way
 
-> Do not dream of eliminate those entirely.  
+> Do not dream of eliminate those entirely.
 > We need to store the data in our disk by the use of impure functions
 
-## 13 Tips to write Unit Tests in Jest
+## Tips to write Unit Tests in Jest
 
 1. Should test one exit point per test case
 
 2. Definition of Unit Test
+
    - fast
    - no extra setup
 
-3. What we prefer to have test case files - the filename ending with `.spec.ts`
+3. What we prefer to have test case files
+
+   - Filename should end with `.spec.ts`
    - Plugin Recommended for VSCode: `Jest Runner`
    - Can run the spec files immediately when you save the `.spec.ts` files
 
-4. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing "https://jestjs.io/docs/snapshot-testing") - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
+5. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing "https://jestjs.io/docs/snapshot-testing")
 
-5. Arrange Act Assert
+   - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
 
-6. U.S.E. the way to describe the test
+6. Arrange Act Assert
+
+7. U.S.E. the way to describe the test
+
    - Describing the `unit` (filename + function name)
    - `Situation` (the input you are going for)
    - `Expectation` (expected observed change to be)
@@ -91,7 +100,7 @@ describe('@password.ts', () => {
 });
 ```
 
-7. Make use of Arbitrary Matcher (Try `jest.any(Date)`)
+- Make use of Arbitrary Matcher (Try `jest.any(Date)`)
 
 ```typescript
 describe("#funcA", () => {
@@ -105,11 +114,65 @@ describe("#funcA", () => {
 });
 ```
 
-8. scrolling fatigue
-   - With the use of `beforeEach` function, reader needs to scroll up a lot to understand the set up.
-   To be more intuitively, consider creating a setup function with a proper name for readability.
+8. Scrolling fatigue
+   - If there are a lot of variables initialize in `beforeEach` function, reader needs to scroll up a lot to understand the set up.
+     To be more intuitively, consider creating a setup function with a proper name for readability.
 
-9. how to test a throwing error
+```typescript
+
+let folders: Folder[];
+let user: User;
+
+// no one will know where is folders & users
+// need to scroll and trace back
+// scrolling upward can be super time consuming
+// if the file is lengthy
+beforeAll() {
+  ...
+  folders = ...;
+  user = ...;
+}
+
+...
+
+
+test('works with search', () => {
+  expect(getPermission(folders, user)).toEqual([
+    'edit',
+    'delete',
+    'new',
+    'upload',
+  ]);
+});
+
+```
+
+```typescript
+
+test('works with search', () => {
+  // better scoping
+  const { folders, user } = setup();
+  expect(getPermission(folders, user)).toEqual([
+    'edit',
+    'delete',
+    'new',
+    'upload',
+  ]);
+});
+
+setup() {
+  ...
+  folders = ...;
+  user = ...;
+
+  return {
+    folders,
+    user,
+  }
+}
+```
+
+9. How to test a throwing error?
 
 ```typescript
 test("verify, with no rules, throws exception", () => {
@@ -120,9 +183,35 @@ test("verify, with no rules, throws exception", () => {
 });
 ```
 
-10. [Nock Recording](https://github.com/nock/nock#recording "https://github.com/nock/nock#recording") (Set up the real integration to call the APIs, and then capture the response for mock testing)
+10. Consider grouping the result and test in one go
 
-11. How to mock data (OOP vs Functional)
+```typescript
+test("get prime numbers", () => {
+  const result = getPrimesUnder(10);
+
+  // you need to fix length to see 6 is not one of the results
+  expect(result.total.length).toBe(3);
+  expect(result.numbers[0]).toBe(2);
+  expect(result.numbers[0]).toBe(3);
+
+  expect(result.numbers[0]).toBe(6);
+  expect(result.numbers[0]).toBe(7);
+});
+```
+
+```typescript
+test("get prime numbers", () => {
+  // can see wrong result in one go
+  expect(getPrimesUnder(10)).toEqual({
+    total: 3,
+    numbers: [2, 3, 6, 7],
+  });
+});
+```
+
+11. [Nock Recording](https://github.com/nock/nock#recording "https://github.com/nock/nock#recording") (Set up the real integration to call the APIs, and then capture the response for mock testing)
+
+12. How to mock data (OOP vs Functional)
 
     a. Functional approaches
 
@@ -134,15 +223,15 @@ test("verify, with no rules, throws exception", () => {
 
     - Class Constructor Injection
     - Object as Parameter (a.k.a ‘duck typing’)
-    - Common Interface as Parameter (for this we’ll use TypeScript)”
+    - Common Interface as Parameter (for this we’ll use TypeScript)
 
-12. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
+13. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
 
-13. Use `toEqual` rather than `toBe`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
+14. Use `toEqual` rather than `toBe`. Similarly, use `toEqual` rather than `toMatchObject`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
 
 ## Reference
 
 - [The Art of Unit Testing](https://www.manning.com/books/the-art-of-unit-testing-third-edition "https://www.manning.com/books/the-art-of-unit-testing-third-edition")
 - [The Art of Unit Testing (GOTO 2021)](https://www.youtube.com/watch?v=6ndAWzc2F-I "https://www.youtube.com/watch?v=6ndAWzc2F-I")
 - [XUnit Patterns.com](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html "http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html")
-- [Better Spec](https://www.betterspecs.org "https://www.betterspecs.org")
+- [Better Specs](https://www.betterspecs.org "https://www.betterspecs.org")

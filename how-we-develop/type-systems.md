@@ -1,14 +1,14 @@
-# Type System <!-- omit in toc -->
+# Type Systems <!-- omit in toc -->
 
 **Table of Contents**
 
-- [Type Systems](#type-systems)
+- [Categories of Type Systems](#categories-of-type-systems)
 - [Specify the return type when](#specify-the-return-type-when)
 - [When to bypass typing](#when-to-bypass-typing)
 - [Tips](#tips)
 - [Reference](#reference)
 
-## Type Systems
+## Categories of Type Systems
 
 - Structural Typing
 - Nominal Typing
@@ -25,10 +25,11 @@
 ## When to bypass typing
 
 1. the original type is `unknown`
+
    1. it is very `complex`
    2. you are 100% about the structure
 
-2. the input of test cases and 
+2. the input of test cases and
    1. it is very complex
    2. the other attributes are `irrelevant` to the output
 
@@ -47,24 +48,29 @@
 6. Narrow down the scope by type annotation, e.g. tuple, or value collections
 
 7. Discriminated Union Types
+
    - make use of an additional property to match `struct`
    - `kind` is a popular attribute name
 
 8. Align types in runtime by validation
+
    - Receive data from interfaces
    - Fetch data from remote call
    - Fetch data from database
 
 9. Use Javascript Feature to differentiate objects / `structs`
-    - `isInstanceof` for class naming
-    - `typeOf` for primitive types
+
+   - `isInstanceof` for class naming
+   - `typeOf` for primitive types
 
 10. Use branded types to differentiate classes with same attributes (nominal types)
 
 11. Prefer Pattern Matching rather than Index Signature
 
 12. Be avoid to use `!`
- 
+
+13. Inlay Hints is a great feature in VSCode. It can show the types inferred. Check [here](../what-we-use/vs-code.md#settings)
+
 ## Reference
 
 - [Typescript Cookbook](https://www.oreilly.com/library/view/typescript-cookbook/9781098136642)

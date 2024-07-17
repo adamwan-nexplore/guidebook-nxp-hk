@@ -113,7 +113,7 @@
 - Get help if necessary
 - Errors
   - Fix those only if it a critical blockers
-  - Avoid to add something not on the scope
+  - Be avoid to add something not on the scope
 
 ## Follow-ups
 

@@ -1,7 +1,6 @@
 # REST API Design <!-- omit in toc -->
 
 **Table of Contents**
-[REST](https://en.wikipedia.org/wiki/Representational_state_transfer "https://en.wikipedia.org/wiki/Representational_state_transfer") = REpresentational State Transfer
 
 - [Concepts](#concepts)
   - [Six Constraints](#six-constraints)
@@ -10,15 +9,15 @@
     - [Non REST](#non-rest)
     - [REST (1)](#rest-1)
     - [REST (2)](#rest-2)
-    - [HTTP Verb:](#http-verb)
+    - [HTTP Verbs](#http-verbs)
   - [Output](#output)
     - [Status Code](#status-code)
-    - [Example of REST endpoint collection](#example-of-rest-endpoint-collection)
+    - [Examples](#examples)
 - [Discussion (1)](#discussion-1)
   - [All actions with side effect target one resource at one call. WHY???](#all-actions-with-side-effect-target-one-resource-at-one-call-why)
   - [Is it possible to handle multiple different resources / same resource with different types at one call?](#is-it-possible-to-handle-multiple-different-resources--same-resource-with-different-types-at-one-call)
   - [If supporting multiple resources in a single call, think about:](#if-supporting-multiple-resources-in-a-single-call-think-about)
-- [Standard \& Frameworks](#standard--frameworks)
+- [Standard \& Framework](#standard--framework)
   - [Richardson Maturity Model](#richardson-maturity-model)
   - [JSON::API](#jsonapi)
 - [Discussion (2)](#discussion-2)
@@ -33,6 +32,8 @@
 - [Reference](#reference)
 
 ## Concepts
+
+- [REST](https://en.wikipedia.org/wiki/Representational_state_transfer "https://en.wikipedia.org/wiki/Representational_state_transfer") = REpresentational State Transfer
 
 - Safe API
 
@@ -53,23 +54,23 @@
 
 #### Non REST
 
-- GET https://api.control.nexplore.com/core/ + getEntity/:id
+- `GET https://api.control.nexplore.com/core/ + getEntity/:id`
 - HTTP Verb: (no use)
 - URI: (directory) + action + resource + identifier
 
 #### REST (1)
 
-- GET https://api.control.nexplore.com/core/ + entities/:id
+- `GET https://api.control.nexplore.com/core/ + entities/:id`
 - HTTP Verb: action
 - URI: (directory) + resource + identifier
 
 #### REST (2)
 
-- GET https://api.control.nexplore.com/core/ + entities
+- `GET https://api.control.nexplore.com/core/ + entities`
 - HTTP Verb: action
 - URI: (directory) + resource (collection)
 
-#### HTTP Verb:
+#### HTTP Verbs
 
 **ONLY use the followings**
 
@@ -92,13 +93,13 @@
 - (User Errors): 4XX
 - (System Errors): 5XX
 
-#### Example of REST endpoint collection
+#### Examples
 
-- Retrieve one: GET /entities/:id
-- Retrieve all: GET /entities
-- Create: POST /entities
-- Update/Replace: PATCH or PUT /entities/:id
-- Remove: DELETE /entities/:id
+- Retrieve one: `GET /entities/:id`
+- Retrieve all: `GET /entities`
+- Create: `POST /entities`
+- Update/Replace: `PATCH or PUT /entities/:id`
+- Remove: `DELETE /entities/:id`
 
 ## Discussion (1)
 
@@ -113,9 +114,9 @@
 ### If supporting multiple resources in a single call, think about:
 
 - How to manage transaction when more than one resources?
-- How to manage failures? / rollback? / atomic? / best effort?
+- How to manage failures? rollback / atomic / best effort
 
-## Standard & Frameworks
+## Standard & Framework
 
 ### [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html "https://martinfowler.com/articles/richardsonMaturityModel.html")
 
@@ -132,33 +133,45 @@
 
 ### Singular resource vs Plural resource(s)?
 
-It depends - in general it is always plural (opinionated)
+- De facto standard: plural (but opinionated)
 
 ### How to configure different shape of the output?
 
-Use of query as the additional parameters
+- use of query as the additional parameters
 
 ### How to add some additional checking?
 
-Put those information to header
+- put those information to header?
 
 ## Issues on REST
 
 ### If working for multiple resources
 
-how to make it transactional?
+- how to make it transactional?
 
 ### Hard to describe some endpoints accurately through REST
 
-too little operations allowed (verbs) - upload / send / deliver?
+- too little operations allowed (verbs)
+
+e.g.
+
+- upload
+- send
+- deliver
 
 ### Very hard to describe non-data status change
 
-lock / unlock / approved?
+- lock / unlock / approved?
 
 ### Filter collection data can be very very hard
 
-and query parameter is hard to specify data with types (null vs 'null' vs undefined vs '' (empty string)) -> Graphql
+- Query parameter is hard to specify data with types (string based)
+
+e.g.
+
+- null vs 'null' vs undefined vs '' (empty string)
+
+-> Graphql
 
 ## Reference
 

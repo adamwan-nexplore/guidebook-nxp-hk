@@ -1,22 +1,32 @@
 {
   "cSpell.words": [
     "allctx",
-    "autojump",
+    "autohide",
+    "azurecr",
     "behaviours",
-    "ccat",
+    "brotli",
+    "certificaterequest",
+    "Cond",
     "Containerisation",
+    "Contentful",
     "Coursera",
     "CPCS",
     "customisation",
+    "datname",
     "dockerized",
+    "errorlens",
     "Fira",
+    "smartboy",
     "HATEOAS",
+    "helloworld",
     "HOCHTIEF",
     "iexec",
     "Instanceof",
+    "jetstack",
     "Karlton",
     "Keycloak",
     "krew",
+    "kubecolor",
     "kubectx",
     "kubens",
     "kubescape",
@@ -37,10 +47,27 @@
     "Postico",
     "powerlevel",
     "Pulumni",
+    "QUIC",
+    "sleepyday",
+    "smalltown",
+    "sonarlint",
     "sonarqube",
     "struct",
     "structs",
     "Structurizr",
-    "vimtutor"
-  ]
+    "vimtutor",
+    "zoxide"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  },
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "[dart]": {
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  }
 }

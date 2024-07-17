@@ -43,16 +43,16 @@ stateDiagram-v2
 
   [*] --> ToDo: (sprint) starts
   ToDo --> InProgress: (dev) starts
-  InProgress --> ReadyForReview: (dev) submit \n change
-  ReadyForReview --> ToDev: (dev) approve change \n & deploy
+  InProgress --> ReadyForReview: (dev) submit<br />change
+  ReadyForReview --> ToDev: (dev) approve change<br />& deploy
   ReadyForReview --> InProgress: (dev) reject
 
-  ToDev --> QATesting: (qa) start \n testing
-  QATesting --> ReleaseReady: (qa) verify \n working
-  QATesting --> InProgress: (qa) discover \n defects
+  ToDev --> QATesting: (qa) start<br />testing
+  QATesting --> ReleaseReady: (qa) verify<br />working
+  QATesting --> InProgress: (qa) discover<br />defects
 
   ReleaseReady --> ToUAT: (dev) deploy
-  ToUAT --> Done: (owner) sign off \n & (dev) deploy
+  ToUAT --> Done: (owner) sign off<br />& (dev) deploy
   Done --> [*]
 
   note right of ToDev

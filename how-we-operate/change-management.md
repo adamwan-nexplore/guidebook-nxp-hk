@@ -22,6 +22,7 @@
 - Health check after the release to production has done
 - Make sure the tasks in JIRA do flow if they have stayed without any reasons (usually less than two days)
 - Handle and communicate between the operators if necessary
+- **Make sure the smoke tests are passed before confirming the deployment succeeds**
 
 ## Risk Analysis
 
@@ -32,7 +33,7 @@
 - DB Schema Change
 - Seed Data
 - Incompatible Endpoint Interfaces (Params, Query, Body)
-- Huge Code Change
+- Large Code Change
 - Deploy during Peak Hours?
 
 ### General Guide

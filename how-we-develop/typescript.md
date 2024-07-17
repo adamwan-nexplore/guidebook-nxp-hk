@@ -22,7 +22,7 @@ const {
 
 > Discussion: [The advantage of the Destructuring assignment in JavaScript/React](https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871 "https://medium.com/@valentinemaillard1/the-advantage-of-the-destructuring-assignment-in-javascript-react-d4868ad42871")
 
-## Avoid to mutate objects
+## Be avoid to mutate objects
 
 ```typescript
 delete group.id;
@@ -134,3 +134,7 @@ Iterate using `map`, `reduce` and `filter`:
 ## Return something
 
 Return something meaningful when writing a function
+
+# More
+
+- [VS Code Tips and Tricks for TypeScript Wizards](https://www.youtube.com/watch?v=HalycM9tSNM)

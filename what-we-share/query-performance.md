@@ -23,8 +23,8 @@
     - [Micro-optimization](#micro-optimization)
 - [Monitoring](#monitoring)
 - [To be Extreme](#to-be-extreme)
-    - [No code](#no-code)
-    - [No Database queries](#no-database-queries)
+  - [No code](#no-code)
+  - [No Database queries](#no-database-queries)
 - [Reference](#reference)
 
 ## What will cover

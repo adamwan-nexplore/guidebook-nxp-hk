@@ -16,42 +16,44 @@
 
 ## DB – Postgres
 
-- [Postgres.app](https://postgresapp.com "https://postgresapp.com") (Mac)
-- [Postico](https://eggerapps.at/postico2 "https://eggerapps.at/postico2") (Mac)
+- [Azure Data Studio](https://azure.microsoft.com/en-us/products/data-studio "https://azure.microsoft.com/en-us/products/data-studio")
 - [DBeaver](https://dbeaver.io "https://dbeaver.io")
 - [pgAdmin4](https://https://www.pgadmin.org "https://https://www.pgadmin.org")
-- [Azure Data Studio](https://azure.microsoft.com/en-us/products/data-studio "https://azure.microsoft.com/en-us/products/data-studio")
+- [Postgres.app](https://postgresapp.com "https://postgresapp.com") (Mac)
+- [Postico](https://eggerapps.at/postico2 "https://eggerapps.at/postico2") (Mac)
 
 ## Editor
 
-- [Visual Studio Code](https://code.visualstudio.com "https://code.visualstudio.com")
 - [Neovim](https://neovim.io "https://neovim.io")
+- [Visual Studio Code](https://code.visualstudio.com "https://code.visualstudio.com")
 
 ## Terminal
 
 - `zsh` - instead of bash
-- [oh-my-zsh](https://ohmyz.sh "https://ohmyz.sh")
-- tree - `brew install tree`
-- [AutoJump](https://github.com/wting/autojump "https://github.com/wting/autojump")
-- [Github Cli](https://github.com/github/homebrew-gh "https://github.com/github/homebrew-gh")
 - [Azure Cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli")
-- [kubectl](https://kubernetes.io/docs/tasks/tools "https://kubernetes.io/docs/tasks/tools")
+- [bat](https://github.com/sharkdp/bat)
+- [oh-my-zsh](https://ohmyz.sh "https://ohmyz.sh")
+- [fzf](https://github.com/junegunn/fzf "https://github.com/junegunn/fzf")
+- [Github Cli](https://github.com/github/homebrew-gh "https://github.com/github/homebrew-gh")
 - [Helm](https://helm.sh/docs/intro/install "https://helm.sh/docs/intro/install")
-- [yq](https://github.com/mikefarah/yq "https://github.com/mikefarah/yq")
 - [jq](https://github.com/stedolan/jq "https://github.com/stedolan/jq")
+- [kubectl](https://kubernetes.io/docs/tasks/tools "https://kubernetes.io/docs/tasks/tools")
+- tree - `brew install tree`
+- [yq](https://github.com/mikefarah/yq "https://github.com/mikefarah/yq")
+- [zoxide](https://github.com/ajeetdsouza/zoxide "https://github.com/ajeetdsouza/zoxide")
 
 ## UML & C4
 
 - [MermaidJS](https://mermaid.js.org "https://mermaid.js.org")
-- [PlantUML](https://plantuml.com "https://plantuml.com")
 - [mermerd](https://github.com/KarnerTh/mermerd "https://github.com/KarnerTh/mermerd")
+- [PlantUML](https://plantuml.com "https://plantuml.com")
 
 ## Miscellaneous
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop "https://www.docker.com/products/docker-desktop")
-- [Android Studio](https://developer.android.com/studio "https://developer.android.com/studio")
-- [Postman](https://www.postman.com "https://www.postman.com")
-- [MS Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software")
 - [Act](https://github.com/nektos/act "https://github.com/nektos/act") (Testing GitHub Action locally)
-- [Terraform](https://www.terraform.io "https://www.terraform.io")
+- [Android Studio](https://developer.android.com/studio "https://developer.android.com/studio")
+- [Docker Desktop](https://www.docker.com/products/docker-desktop "https://www.docker.com/products/docker-desktop")
+- [MS Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software")
+- [Postman](https://www.postman.com "https://www.postman.com")
 - [SonarQube(Docker Version)](https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker "https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker")
+- [Terraform](https://www.terraform.io "https://www.terraform.io")

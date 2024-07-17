@@ -25,48 +25,49 @@ In 2019, Life as a Service (LaaS) was initiated by NEXPLORE acting as the collab
 
 You know what tools to be used. You know what access you need to have. And you know our tech stack.
 
-- [Software Needed](what-we-use/software.md)
 - [Platform Access](what-we-use/platform.md)
+- [Software Needed](what-we-use/software.md)
 - [Tech Stack](what-we-use/techstack.md)
 - [Visual Studio Code](what-we-use/vs-code.md)
 
 ## How we support our clients
 
-- [Escalation Procedure](how-we-operate/escalation.md)
 - [Change Management](how-we-operate/change-management.md)
-- [krew plugins recommended](how-we-operate/kubernetes-admin.md)
+- [Escalation Procedure](how-we-operate/escalation.md)
+- [Kubernetes Administration](how-we-operate/kubernetes-admin.md)
 
 ## How we develop
 
 You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
 
 - [General](how-we-develop/general.md)
-- [Application Development](how-we-develop/application-development.md)
 - [Application Architecture](how-we-develop/application-architecture.md)
+- [Application Development](how-we-develop/application-development.md)
 
 ### Development Cycle
 
-- [GitHub](how-we-develop/github.md)
-- [ChatOps](how-we-develop/chatops.md)
 - [Code Review](how-we-develop/code-review.md)
-- [Scrum](how-we-develop/scrum.md)
-  - [Backlog Refinement](how-we-develop/backlog-refinement.md)
-- [PR Checklist](how-we-develop/pr-checklist.md)
+- [ChatOps](how-we-develop/chatops.md)
+- [Data Management](how-we-develop/data-management.md)
+- [Database Design](how-we-develop/database-design.md)
 - [DevOps - The Three Ways](how-we-develop/devops.md)
 - [Git Workflow](how-we-develop/git-workflow.md)
-- [Database Design](how-we-develop/database-design.md)
-- [Data Management](how-we-develop/data-management.md)
+- [GitHub](how-we-develop/github.md)
+- [PR Checklist](how-we-develop/pr-checklist.md)
+- [Smoke Tests](how-we-develop/smoke-tests.md)
+- [Scrum](how-we-develop/scrum.md)
+  - [Backlog Refinement](how-we-develop/backlog-refinement.md)
 
 ### Engineering Practices
 
-- [TypeScript](how-we-develop/typescript.md)
-- [Type System](how-we-develop/type-system.md)
-- [NestJS](how-we-develop/nestjs.md)
+- [Application Logging](how-we-develop/app-log.md)
 - [Developer Testing](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
-- [Application Logging](how-we-develop/app-log.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
+- [NestJS](how-we-develop/nestjs.md)
+- [TypeScript](how-we-develop/typescript.md)
+- [Type Systems](how-we-develop/type-systems.md)
 
 ## How we learn and share
 
@@ -78,21 +79,21 @@ You know how to learn from others, give your feedback and share what you have le
 
 Catch-up Material
 
-- [REST API](what-we-share/rest-api.md)
-- [Tacit Programming](what-we-share/tacit-programming.md)
-- [Microservices](what-we-share/microservices.md)
-- [Schema First API Design](what-we-share/schema-first-api-design.md)
 - [Data Migration](what-we-share/data-migration.md)
-- [Lean Software Development](what-we-share/lean.md)
-- [Introduction to Query Performance](what-we-share/query-performance.md)
 - [Developer Productivity](what-we-share/developer-productivity.md)
+- [Introduction to Query Performance](what-we-share/query-performance.md)
+- [Lean Software Development](what-we-share/lean.md)
+- [Microservices](what-we-share/microservices.md)
+- [REST API](what-we-share/rest-api.md)
+- [Schema First API Design](what-we-share/schema-first-api-design.md)
+- [Tacit Programming](what-we-share/tacit-programming.md)
 
 ## How we hire
 
 You know how to evaluate candidates applying to engineering positions.
 
-- [The Process](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-hire/hiring-engineers.md)
 - [Job Openings](https://hk.jobsdb.com/hk/search-jobs/nexplore/1)
+- [The Process](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-hire/hiring-engineers.md)
 
 ### Assignments
 

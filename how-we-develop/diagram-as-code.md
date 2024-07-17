@@ -3,8 +3,8 @@
 **Table of Contents**
 
 - [Choice of toolings](#choice-of-toolings)
-- [Before drawing, ask:](#before-drawing-ask)
-- [After drawn, think about:](#after-drawn-think-about)
+- [Before drawing, ask](#before-drawing-ask)
+- [After drawn, think about](#after-drawn-think-about)
 - [Advanced Use](#advanced-use)
 - [Legends](#legends)
   - [Flowcharts](#flowcharts)
@@ -17,9 +17,9 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 
 ## Choice of toolings
 
-[MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview  
-[PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams  
-[Structurizr DSL](https://structurizr.com "https://structurizr.com")  
+[MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview
+[PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams
+[Structurizr DSL](https://structurizr.com "https://structurizr.com")
 [mermerd](https://github.com/KarnerTh/mermerd "https://github.com/KarnerTh/mermerd") - ERD from Database
 
 ```bash
@@ -30,7 +30,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
   --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
 ```
 
-## Before drawing, ask:
+## Before drawing, ask
 
 - (People) Who read the diagrams?
 - (People) Who can help maintaining the diagrams?
@@ -43,7 +43,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
   - Use Case Diagrams
   - Flow Charts
 
-## After drawn, think about:
+## After drawn, think about
 
 - (People) Who can help reviewing the diagrams?
 - (Context) Can readers search the context?
@@ -56,6 +56,7 @@ For compatibility / auditing reasons, we should draw our diagrams by code
 ---
 title: Hello Title
 ---
+
 flowchart
   Hello --> World
 ```
@@ -93,14 +94,15 @@ flowchart
 ---
 title: Typical Use of Shapes
 ---
+
 flowchart
   rectangle[Process]
   diamond{Decision}
   stadium([Start or End Point])
-  circle((Shortcut to \n another \n flowchart))
+  circle((Shortcut to<br />another<br />flowchart))
 
   parallelogram[/Input or output of data/]
-  subroutine[[Refer to\nanother flowchart]]
+  subroutine[[Refer to<br />another flowchart]]
   roundedRectangle(Alternate Process)
   hexagon{{Alternate Decision}}
 
@@ -118,10 +120,10 @@ flowchart
 	rectangle[Process]
   diamond{Decision}
   stadium([Start or End Point])
-  circle((Shortcut to \n another \n flowchart))
+  circle((Shortcut to<br />another<br />flowchart))
 
   parallelogram[/Input or output of data/]
-  subroutine[[Refer to\nanother flowchart]]
+  subroutine[[Refer to<br />another flowchart]]
   roundedRectangle(Alternate Process)
   hexagon{{Alternate Decision}}
 
@@ -133,8 +135,8 @@ flowchart
 
 ### Remarks
 
-**Diamond**: Should make the text short  
-**Rounded Rectangle**: Dashed edge to the shape  
+**Diamond**: Should make the text short
+**Rounded Rectangle**: Dashed edge to the shape
 **Hexagon**: Alternate shape for decision - a longer text is provided
 
 ## Edges
@@ -143,6 +145,7 @@ flowchart
 ---
 title: Typical Use of Edges
 ---
+
 flowchart
   C --> C1 & C2 --> A %% Chaining & Cross Mapping
   A --> B1 %% arrow, data / process flow
@@ -187,13 +190,14 @@ Style
 ---
 title: Flowchart on Support & Operation Escalation
 ---
+
 %% 1. Events
 
 %% start point / termination points
 issue([Receive an issue])
 
 %% process
-support-ticket[Create a\nSupport Ticket]
+support-ticket[Create a<br />Support Ticket]
 
 %% decision
 categorize{Categorize}

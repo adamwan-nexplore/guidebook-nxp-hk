@@ -67,6 +67,7 @@ We will stream most notifications to [Microsoft Teams](https://www.microsoft.com
 #### Benefits <!-- omit in toc -->
 
 - Service Availability updates of different platforms we use
+
 > Check [Server Status](serverrss.md)
 
 ---

@@ -1,4 +1,4 @@
-# Administration in Kubernetes <!-- omit in toc -->
+# Kubernetes Administration <!-- omit in toc -->
 
 **Table of Contents**
 
@@ -17,6 +17,8 @@
     - [kubescape](#kubescape)
     - [kubespy](#kubespy)
     - [kurt](#kurt)
+    - [outdated](#outdated)
+  - [Short Names](#short-names)
 
 ## Tools
 
@@ -26,6 +28,8 @@
   - to interact with all Azure Resources
 - [krew](https://github.com/kubernetes-sigs/krew "https://github.com/kubernetes-sigs/krew")
   - to install convenient plugins for kubectl
+- [kubecolor](https://kubecolor.github.io "https://kubecolor.github.io")
+  - to colorize the output of kubectl
 
 ## Plugins in Krew
 
@@ -35,16 +39,33 @@
 alias k="kubectl"
 alias kk="kubectl krew"
 
-kk install ctx # a friendly context switcher
-kk install ns # a friendly namespace switcher
+# or
+
+alias k="kubecolor"
+alias kk="kubecolor krew"
+alias kgp="kubecolor get pod"
+alias kgd="kubecolor get deployment"
+alias kgcr="kubecolor get certificaterequest"
+alias kgs="kubecolor get service"
+alias kgi="kubecolor get ingress"
+
+alias kdp="kubecolor describe pod"
+alias kdd="kubecolor describe deployment"
+alias kdcr="kubecolor describe certificaterequest"
+alias kds="kubecolor describe service"
+alias kdi="kubecolor describe ingress"
+
+kk install ctx # switch between contexts easily
+kk install ns # switch between namespaces easily
 kk install stern # log tailing of multiple pods
-kk install score # static manifest analyzer, can be used with CI/CD
+kk install score # static manifest analyzer (good on CI/CD)
 kk install allctx # fire commands to multiple contexts
 kk install iexec # search and exec pod
 kk install kor # discover unused resources
-kk install kubescape # security scanner
+kk install kubescape # scan security vulnerability on resources (good on CI/CD)
 kk install kubespy # temporarily add more libraries to the pod for debugging
-kk install kurt # shortcut command to see what pods are recently restarted
+kk install kurt # show all restarted resources
+kk install outdated # detect what resources are outdated and show the latest version available
 ```
 
 ### Set up
@@ -57,7 +78,7 @@ PROMPT=$PROMPT'$(kube_ps1)'
 
 #### [kubectx](https://github.com/ahmetb/kubectx "https://github.com/ahmetb/kubectx")
 
-- a friendly context switcher
+- switch between contexts easily
 
 ```bash
 k ctx # list all contexts
@@ -73,7 +94,7 @@ k ctx - # switch to the previous context
 
 #### [kubens](https://github.com/ahmetb/kubectx "https://github.com/ahmetb/kubectx")
 
-- a friendly namespace switcher
+- switch between namespaces easily
 
 ```bash
 k ns # list all namespaces
@@ -131,7 +152,7 @@ k kor all
 
 #### [kubescape](https://github.com/kubescape/kubescape "https://github.com/kubescape/kubescape")
 
-- security scanner, operator is also available
+- scan security vulnerability on resources, operator is also available
 
 ```bash
 k kubescape scan
@@ -142,13 +163,92 @@ k kubescape scan
 - temporarily add more libraries to the pod for debugging
 
 ```bash
-kubectl spy my-app -n app
+k spy my-app -n app
 ```
 
 #### [kurt](https://github.com/soraro/kurt "https://github.com/soraro/kurt")
 
-- a quick way to show all restarted resources
+- show all restarted resources
 
 ```bash
-kubectl kurt all
+k kurt all
+
+# kurt: KUbernetes Restart Tracker
+
+# ==========
+
+#  Namespace	Restarts
+
+#  datadog	3
+#  helloworld	1
+#  sci		0
+#  core		0
+#  keycloak	0
+
+# ==========
+
+#  Node				Restarts
+
+#  aks-d4sv5-29292033-vmss000000	4
+#  aks-d4sv5-29292033-vmss00000a	0
+#  aks-d4sv5-29292033-vmss000002	0
+#  aks-d4sv5-29292033-vmss000004	0
+
+# ==========
+
+#  Label						Restarts
+
+#  pod-template-generation:2			3
+#  app.kubernetes.io/instance:datadog-agent	3
+#  app.kubernetes.io/name:datadog-agent		3
+#  app.kubernetes.io/managed-by:Helm		3
+#  app.kubernetes.io/component:agent		3
+
+# ==========
+
+#  Pod						Namespace	Restarts
+
+#  datadog-agent-zwhd9				datadog		3
+#  helloworld-backend-7576dcc5cd-g7tpp		helloworld	1
+#  foobar-backend-7bd76cbbc5-jsjsz			foobar		0
+#  smalltown-backend-769555d79c-7qwlm		smalltown	0
+#  sleepyday-backend-6499b67b87-r96x8	sleepyday		0
 ```
+
+#### [outdated](https://github.com/replicatedhq/outdated "https://github.com/replicatedhq/outdated")
+
+- detect what resources are outdated and show the latest version available
+
+```bash
+k outdated
+
+# Image                                                  Current               Latest               Behind
+# nexplore.azurecr.io/flagship/inspection-b...     prod-26           Unable to get image data
+# quay.io/jetstack/cert-manager-controller               v1.11.1               4.0.0-c875c7         3
+# quay.io/jetstack/cert-manager-cainjector               v1.11.1               4.0.0-f67c80         3
+# quay.io/jetstack/cert-manager-webhook                  v1.11.1               4.0.0-c875c7         3
+```
+
+### Short Names
+
+```shell
+kubectl api-resources
+
+# NAME                                SHORTNAMES          APIVERSION                             NAMESPACED   KIND
+# bindings                                                v1                                     true         Binding
+# componentstatuses                   cs                  v1                                     false        ComponentStatus
+# configmaps                          cm                  v1                                     true         ConfigMap
+# endpoints                           ep                  v1                                     true         Endpoints
+# events                              ev                  v1                                     true         Event
+# limitranges                         limits              v1                                     true         LimitRange
+```
+
+e.g.
+
+- `deploy` - deployment
+- `po` - pod
+- `cr` - certificaterequest
+- `ing` - ingress
+- `svc` - service
+- `ns` - namespace
+- `no` - node

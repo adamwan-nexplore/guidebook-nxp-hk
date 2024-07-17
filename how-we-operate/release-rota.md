@@ -19,9 +19,9 @@
 
 # 2. Old School Jargons
 
+- Continuous Exploration
 - Continuous Integration
 - Continuous Deployment
-- Continuous Exploration
 
 You might check the full explanation by SAFe Studio [here](https://scaledagileframework.com/continuous-delivery-pipeline "https://scaledagileframework.com/continuous-delivery-pipeline")
 
@@ -79,12 +79,12 @@ There are many cases to cause the delivery blocking
   - Automated Data Migration Tests
   - Realtime Monitoring on Production Environments
   - Code Review from Peers
-- We might probably need further investigation, confirmation and deployment to promote the features
-- That is why we have release manager to focus on those stuff.
+- We might probably need further investigation, confirmation
+- That is why we have release manager to focus on those stuff
 
-- Dedicated to review the issues from APM, Pipelines sit in ChatOps
+- Dedicated to review the issues from APM, pipelines sit in chatOps
 - If issues appears and blocks the delivery flow, `Release Manager` should be aware of those and fix those ASAP
-- `Release Manager` is a a diffused responsibility. Every engineer should take part of it
+- `Release Manager` is a shared responsibility, i.e. every engineer should take part of it
 
 # 4. Reference
 

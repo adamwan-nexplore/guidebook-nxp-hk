@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "eamodio.gitlens",
+    "DavidAnson.vscode-markdownlint",
+    "formulahendry.code-runner",
+    "JannisX11.batch-rename-extension",
+    "jeff-hykin.polacode-2019",
+    "mrmlnc.vscode-duplicate",
+    "richie5um2.vscode-sort-json",
+    "streetsidesoftware.code-spell-checker",
+    "yzhang.markdown-all-in-one",
+  ]
+}
