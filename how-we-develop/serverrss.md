@@ -4,3 +4,4 @@
 - [GitHub](https://www.githubstatus.com/history.rss "https://www.githubstatus.com/history.rss")
 - [DataDog (Europe)](https://status.datadoghq.eu "https://status.datadoghq.eu")
 - [Atlassian](https://status.atlassian.com "https://status.atlassian.com")
+- [Cloudflare](https://www.cloudflarestatus.com "https://www.cloudflarestatus.com")
