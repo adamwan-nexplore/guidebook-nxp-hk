@@ -1,5 +1,17 @@
 # Web Performance
 
+Table of Contents
+
+- [Web Performance](#web-performance)
+  - [Modern Web Application Architecture](#modern-web-application-architecture)
+    - [Static Assets](#static-assets)
+      - [Public](#public)
+      - [Private](#private)
+    - [Dynamic Serving](#dynamic-serving)
+  - [Blocking on being fast](#blocking-on-being-fast)
+  - [General Approaches on Optimizing](#general-approaches-on-optimizing)
+  - [Modern Expectation on Fast Web](#modern-expectation-on-fast-web)
+
 ## Modern Web Application Architecture
 
 ### Static Assets
@@ -41,13 +53,13 @@
 - Bored by nothing to do
 
 Web Vitals
+
 - Chrome LightHouse
--
+
 - FCP (First Contentful Paint) - Respond Quick
 - LCP (Largest Contentful Paint) - Get to the point
 - CLS (Cumulative Layout Shift) - Don't move stuff
 - FID (First Input Delay) - Don't load too much
-
 
 - First Time Load
 - Non-first Time Load

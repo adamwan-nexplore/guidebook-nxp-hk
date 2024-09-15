@@ -1,6 +1,6 @@
 # Schema First API Design <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Problem Statement](#problem-statement)
 - [Unblocking Teams](#unblocking-teams)

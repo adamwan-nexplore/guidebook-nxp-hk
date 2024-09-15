@@ -1,6 +1,6 @@
 # Developer Testing (2) <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [The objective of writing test cases](#the-objective-of-writing-test-cases)
 - [The bottom line](#the-bottom-line)

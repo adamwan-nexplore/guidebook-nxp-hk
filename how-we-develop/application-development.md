@@ -1,6 +1,6 @@
 # Application Development <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Interface](#interface)
 - [Database](#database)
@@ -25,7 +25,7 @@
   - data input
   - unauthorized action
   - unauthenticated
-- categorize System ERROR correctly (5xx status code), it could be helpful on DataDog
+- categorize System ERROR correctly (5xx status code). It could be helpful on DataDog
   - database queries
   - connection errors
   - logic

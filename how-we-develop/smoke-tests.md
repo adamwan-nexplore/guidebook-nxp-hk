@@ -129,18 +129,19 @@ Sometime we only want to run some actions once through the test execution. e.g. 
    ```
 
 3. Exclude the auth session file in git
+
    ```bash
    mkdir -p playwright/.auth
    echo $'\nplaywright/.auth' >> .gitignore
    ```
 
-Extract from: https://playwright.dev/docs/auth
+Extract from: [https://playwright.dev/docs/auth](https://playwright.dev/docs/auth "https://playwright.dev/docs/auth")
 
-# How other people do the smoke tests
+## How other people do the smoke tests
 
 - [VS Code](https://github.com/microsoft/vscode/wiki/Smoke-Test "https://github.com/microsoft/vscode/wiki/Smoke-Test")
 
-# Reference
+## Reference
 
 - [MS Playwright Tutorial](https://learn.microsoft.com/en-us/training/modules/build-with-playwright "https://learn.microsoft.com/en-us/training/modules/build-with-playwright")
 - [Playwright Youtube Channel](https://www.youtube.com/@Playwrightdev "https://www.youtube.com/@Playwrightdev")

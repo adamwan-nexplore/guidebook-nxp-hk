@@ -1,6 +1,6 @@
 # Application Architecture <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Overview](#overview)
 - [Purpose](#purpose)
@@ -11,7 +11,7 @@
   - [Core (II)](#core-ii)
   - [Complimentary (I)](#complimentary-i)
   - [Complimentary (II)](#complimentary-ii)
-- [When to have a new...](#when-to-have-a-new)
+- [When to have a new](#when-to-have-a-new)
   - [Controller](#controller)
   - [Service](#service)
   - [Helper](#helper)
@@ -100,42 +100,42 @@ flowchart
 
 - filename = resource name
 
-* messages.module.ts (plural, single class)
-* messages.controller.ts (plural, single class)
-* messages.service.ts (plural, single class)
-* message.entity.ts (singular, single class)
-* messages.types.ts (plural, multiple types)
-* messages.interfaces.ts (plural, multiple interfaces)
+- messages.module.ts (plural, single class)
+- messages.controller.ts (plural, single class)
+- messages.service.ts (plural, single class)
+- message.entity.ts (singular, single class)
+- messages.types.ts (plural, multiple types)
+- messages.interfaces.ts (plural, multiple interfaces)
 
 ### Core (II)
 
 - filename = same to the class inside
 
-* create-message-request.dto.ts (single class)
-* create-message-response.dto.ts (single class)
+- create-message-request.dto.ts (single class)
+- create-message-response.dto.ts (single class)
 
 ### Complimentary (I)
 
 - filename = resource name
 - might further group helpers / components if necessary
 
-* messages.helpers.ts (plural, multiple functions)
-* messages.queries.ts (plural, multiple functions)
-* messages.repositories.ts (plural, multiple functions)
-* messages.components.ts (plural, multiple functions)
-* messages.enums.ts (plural, multiple enums)
-* messages.constants.ts (plural, multiple constants)
+- messages.helpers.ts (plural, multiple functions)
+- messages.queries.ts (plural, multiple functions)
+- messages.repositories.ts (plural, multiple functions)
+- messages.components.ts (plural, multiple functions)
+- messages.enums.ts (plural, multiple enums)
+- messages.constants.ts (plural, multiple constants)
 
 ### Complimentary (II)
 
 - filename = same to the name of constant / enum / function inside
 
-* default-decimal-format.constant.ts (one constant, filename = constant name)
-* get-to-know-who.helper.ts (one function, filename = name of function name)
-* language-switches.component.ts (one function, filename = name of function name)
-* subjects.enum.ts (one enum, filename = enum name)
+- default-decimal-format.constant.ts (one constant, filename = constant name)
+- get-to-know-who.helper.ts (one function, filename = name of function name)
+- language-switches.component.ts (one function, filename = name of function name)
+- subjects.enum.ts (one enum, filename = enum name)
 
-## When to have a new...
+## When to have a new
 
 ### Controller
 

@@ -1,6 +1,6 @@
 # A guidebook for Nexplore HK Engineers <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Who we are](#who-we-are)
 - [What we do](#what-we-do)
@@ -63,6 +63,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [Application Logging](how-we-develop/app-log.md)
 - [Developer Testing](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
+- [Developer Testing (3)](how-we-develop/dev-testing-3.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 - [NestJS](how-we-develop/nestjs.md)
@@ -73,7 +74,7 @@ You know our development process, our conventions, and the ways we communicate b
 
 You know how to learn from others, give your feedback and share what you have learnt with peers.
 
-- [30/30 Meeting](how-we-share/30-30.md)
+- [30-30 Meeting](how-we-share/30-30.md)
 - [Backend Catch-up](how-we-share/backend-catch-up.md)
 - Technology & Product Reviews
 

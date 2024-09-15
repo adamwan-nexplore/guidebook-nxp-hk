@@ -1,6 +1,6 @@
 # REST API Design <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Concepts](#concepts)
   - [Six Constraints](#six-constraints)
@@ -16,7 +16,7 @@
 - [Discussion (1)](#discussion-1)
   - [All actions with side effect target one resource at one call. WHY???](#all-actions-with-side-effect-target-one-resource-at-one-call-why)
   - [Is it possible to handle multiple different resources / same resource with different types at one call?](#is-it-possible-to-handle-multiple-different-resources--same-resource-with-different-types-at-one-call)
-  - [If supporting multiple resources in a single call, think about:](#if-supporting-multiple-resources-in-a-single-call-think-about)
+  - [If supporting multiple resources in a single call, think about -](#if-supporting-multiple-resources-in-a-single-call-think-about--)
 - [Standard \& Framework](#standard--framework)
   - [Richardson Maturity Model](#richardson-maturity-model)
   - [JSON::API](#jsonapi)
@@ -50,7 +50,7 @@
 
 ### Input
 
-**Resource must be noun, no verbs in URI**
+- Resource must be noun, no verbs in URI
 
 #### Non REST
 
@@ -72,7 +72,7 @@
 
 #### HTTP Verbs
 
-**ONLY use the followings**
+- ONLY use the followings
 
 - Create: Post
 - Retrieve: Get
@@ -111,7 +111,7 @@
 - mGET?
 - mPUT?
 
-### If supporting multiple resources in a single call, think about:
+### If supporting multiple resources in a single call, think about -
 
 - How to manage transaction when more than one resources?
 - How to manage failures? rollback / atomic / best effort

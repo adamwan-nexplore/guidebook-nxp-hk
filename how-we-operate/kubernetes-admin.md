@@ -1,6 +1,6 @@
 # Kubernetes Administration <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Tools](#tools)
 - [Plugins in Krew](#plugins-in-krew)
@@ -173,46 +173,46 @@ k spy my-app -n app
 ```bash
 k kurt all
 
-# kurt: KUbernetes Restart Tracker
+# kurt: Kubernetes Restart Tracker
 
 # ==========
 
-#  Namespace	Restarts
+#  Namespace Restarts
 
-#  datadog	3
-#  helloworld	1
-#  sci		0
-#  core		0
-#  keycloak	0
-
-# ==========
-
-#  Node				Restarts
-
-#  aks-d4sv5-29292033-vmss000000	4
-#  aks-d4sv5-29292033-vmss00000a	0
-#  aks-d4sv5-29292033-vmss000002	0
-#  aks-d4sv5-29292033-vmss000004	0
+#  datadog  3
+#  helloworld  1
+#  sci  0
+#  core 0
+#  keycloak  0
 
 # ==========
 
-#  Label						Restarts
+#  Node Restarts
 
-#  pod-template-generation:2			3
-#  app.kubernetes.io/instance:datadog-agent	3
-#  app.kubernetes.io/name:datadog-agent		3
-#  app.kubernetes.io/managed-by:Helm		3
-#  app.kubernetes.io/component:agent		3
+#  aks-d4sv5-29292033-vmss000000  4
+#  aks-d4sv5-29292033-vmss00000a  0
+#  aks-d4sv5-29292033-vmss000002  0
+#  aks-d4sv5-29292033-vmss000004  0
 
 # ==========
 
-#  Pod						Namespace	Restarts
+#  Label       Restarts
 
-#  datadog-agent-zwhd9				datadog		3
-#  helloworld-backend-7576dcc5cd-g7tpp		helloworld	1
-#  foobar-backend-7bd76cbbc5-jsjsz			foobar		0
-#  smalltown-backend-769555d79c-7qwlm		smalltown	0
-#  sleepyday-backend-6499b67b87-r96x8	sleepyday		0
+#  pod-template-generation:2    3
+#  app.kubernetes.io/instance:datadog-agent 3
+#  app.kubernetes.io/name:datadog-agent  3
+#  app.kubernetes.io/managed-by:Helm   3
+#  app.kubernetes.io/component:agent   3
+
+# ==========
+
+#  Pod      Namespace Restarts
+
+#  datadog-agent-zwhd9 datadog  3
+#  helloworld-backend-7576dcc5cd-g7tpp  helloworld  1
+#  foobar-backend-7bd76cbbc5-jsjsz   foobar  0
+#  smalltown-backend-769555d79c-7qwlm  smalltown  0
+#  sleepyday-backend-6499b67b87-r96x8 sleepyday  0
 ```
 
 #### [outdated](https://github.com/replicatedhq/outdated "https://github.com/replicatedhq/outdated")

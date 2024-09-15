@@ -1,6 +1,6 @@
 # The Nature of React <!-- omit in toc -->
 
-# 0. The Objective
+## 0. The Objective
 
 Native Browser
 
@@ -60,34 +60,51 @@ Native Browser
 
 1. Libraries
 
-- react
-- react-dom
-- babel / typescript
+   - react
+   - react-dom
+   - babel / typescript
 
 2. JSX
 
-- A replacement of React.createElement
+   - A replacement of React.createElement
 
-1. Hooks
+3. Hooks
 
-- props & states
+   - props & states
 
-2. Components
+4. Components
 
-- class-based & functional-based
-- stateful & stateless
+   - class-based & functional-based
+   - stateful & stateless
 
-3. Testing
-4. Extra
+5. Testing
+6. Extra
 
 - prop-drilling
 
-https://tkdodo.eu/blog/dont-over-use-state
-https://tkdodo.eu/blog/putting-props-to-use-state
-https://tkdodo.eu/blog/things-to-know-about-use-state
-https://tkdodo.eu/blog/use-state-for-one-time-initializations
-https://tkdodo.eu/blog/use-state-vs-use-reducer
+  https://tkdodo.eu/blog/dont-over-use-state
+  https://tkdodo.eu/blog/putting-props-to-use-state
+  https://tkdodo.eu/blog/things-to-know-about-use-state
+  https://tkdodo.eu/blog/use-state-for-one-time-initializations
+  https://tkdodo.eu/blog/use-state-vs-use-reducer
 
-https://2019.wattenberger.com/blog/react-hooks
+  https://2019.wattenberger.com/blog/react-hooks
 
----
+## Gotchas
+
+1. ~~Strange~~ String conversion in JSX - `(empty string)`, `false`, `null`, `undefined` will render as `(empty string)`, while 0 renders as `0`
+
+```typescript
+  // correct
+  const showDialog = values.length > 0;
+  render (
+    showDialog && <Dialog ...values />
+  );
+```
+
+```typescript
+render (
+  // wrong, will always show `0` and the dialog
+  values.length && <Dialog ...values />
+);
+```

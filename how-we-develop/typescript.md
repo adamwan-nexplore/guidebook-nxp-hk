@@ -51,7 +51,7 @@ return {
 };
 ```
 
-## Do not use anonymous function if it is very lengthy.
+## Do not use anonymous function if it is very lengthy
 
 Treat the name of the function as a little comment
 
@@ -135,6 +135,6 @@ Iterate using `map`, `reduce` and `filter`:
 
 Return something meaningful when writing a function
 
-# More
+## More
 
 - [VS Code Tips and Tricks for TypeScript Wizards](https://www.youtube.com/watch?v=HalycM9tSNM)

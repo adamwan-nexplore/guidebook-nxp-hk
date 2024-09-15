@@ -25,6 +25,7 @@
 - Check Performance Tips from [PG Documentations](https://www.postgresql.org/docs/16/performance-tips.html "https://www.postgresql.org/docs/16/performance-tips.html")
 - B-Tree Index can help both sorting & range search
 - To index text for prefix search, use pattern operator
+
   ```sql
   CREATE INDEX ON customer.customers (name text_pattern_ops);
   ```

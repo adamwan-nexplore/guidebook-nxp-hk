@@ -2,7 +2,7 @@
 
 ## on PostgreSQL <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [What will cover](#what-will-cover)
 - [Good Performance](#good-performance)
@@ -210,9 +210,7 @@
 - [Scan Nodes](https://pganalyze.com/docs/explain/scan-nodes "https://pganalyze.com/docs/explain/scan-nodes")
 
 > Advanced Topic(s):
-
 > [What does "Recheck Cond" in Explain result mean?](https://stackoverflow.com/questions/50959814/what-does-recheck-cond-in-explain-result-mean "https://stackoverflow.com/questions/50959814/what-does-recheck-cond-in-explain-result-mean")
-
 > ["Recheck Cond:" line in query plans with a bitmap index scan](https://dba.stackexchange.com/questions/106264/recheck-cond-line-in-query-plans-with-a-bitmap-index-scan "https://dba.stackexchange.com/questions/106264/recheck-cond-line-in-query-plans-with-a-bitmap-index-scan")
 
 #### The Concept
@@ -228,9 +226,7 @@
 - `GIST & GIN` for JSON data
 
 > Advanced Topic(s):
-
 > [How is it possible for Hash Index not to be faster than Btree for equality lookups?](https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku "https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku")
-
 > [POSTGRESQL HASH INDEX PERFORMANCE](https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance "https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance")
 
 #### Micro-optimization
@@ -256,11 +252,11 @@ CREATE INDEX IF NOT EXISTS project_directory_idx ON "projects"(SUBSTRING(directo
 
 ## To be Extreme
 
-#### [No code](https://github.com/kelseyhightower/nocode "https://github.com/kelseyhightower/nocode")
+### [No code](https://github.com/kelseyhightower/nocode "https://github.com/kelseyhightower/nocode")
 
 > No code is the best way to write secure and reliable applications. Write nothing; deploy nowhere.
 
-#### No Database queries
+### No Database queries
 
 > No queries is the best way to make the database performing good.
 

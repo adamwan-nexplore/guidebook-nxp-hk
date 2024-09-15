@@ -1,20 +1,28 @@
 # Developer Testing (3) <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
-- [The objective of writing test cases](#the-objective-of-writing-test-cases)
+- [Generate Feedback by tests](#generate-feedback-by-tests)
+- [Protectiveness](#protectiveness)
+- [Effectiveness](#effectiveness)
+- [Readability](#readability)
+- [Reference](#reference)
 
-## Objectives
+## Generate Feedback by tests
 
-There are a lot of tests developer can write.
-However, developer testing should give instant feedback on the change of SUT as much as possible.
-Tests itself should be very simple and straight forward and handy enough without having a lot of dependency. (Usually with test database in integration tests, but that is all)
+- There are a lot of different types of testing
+- To write developer tests:
+- the tests should
+  - provide instant feedback on any change
+  - be simple
+  - be straight forward
+  - be handy without a lot of dependencies
+- i.e. integration tests on developer tests often require real database setup
 
-### Protectiveness
+## Protectiveness
 
-- If the interfaces have changed, the respective test cases break
-- It is the MOST important
-- In most cases, you should not selectively test SOMETHING. Just test EVERYTHING
+- **If the interfaces have changed, some test cases will break**
+- Never test SOMETHING selectively - just test EVERYTHING
 
 ```typescript
 interface Animal {
@@ -29,16 +37,15 @@ function getAnimalNames(animals: Animal[]) {
 }
 
 // new
-function getAnimalData(animals: Animal[], largest = 2, weights = true) {
+function getAnimalData(animals: Animal[], largest = 2, hasWeight = true) {
   return animals
     .sort((a, b) => b.weightInKg - a.weightInKg)
-    .map(({ name, weightInKg }) => ({ name, weights ? weightInKg : undefined }))
-    .splice(0, 2)
+    .map(({ name, weightInKg }) => ({ name, hasWeight ? weightInKg : undefined }))
+    .splice(0, largest)
     ;
 }
 
-// bad tests
-const animals: Animal[] = [
+const ANIMALS: Animal[] = [
   {
     id: 1,
     name: 'Unicorn',
@@ -60,41 +67,28 @@ const animals: Animal[] = [
     weightInKg: 1,
   },
 ];
-```
 
-
-
-1. Useless, 99% can be covered by other assertions
-2. Why only select some inputs?
-3. If the first one and second one both fail, need to wait until the first one has fixed
-
-```typescript
+// bad tests
 describe('#getAnimalData', () => {
-  // Tests would pass even you change the logic
+  // Tests would pass even the output has changed
   describe('bad test', () => {
     it('always works', () => {
-      const result = getAnimalData(animals);
+      const result = getAnimalData(ANIMALS);
 
-      expect(result).toBeDefined();
-      expect(result[0].name).toBe('Unicorn');
-      expect(result[1].name).toBe('Horse');
+      expect(result).toBeDefined(); // 1: ❎ See below
+      expect(result[0].name).toBe('Unicorn'); // 2: ❎ See below
+      expect(result[1].name).toBe('Horse'); // 3: ❎ See below
     });
   });
-```
 
-
-- No need to explicitly assert the change of length
-- Cover the exit point ENTIRELY
-- Instead of a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions). It could be a good alternative.
-
-```typescript
   // Resistent enough to flag ANY interface change and SOME logical change
   describe('good test', () => {
-    it('breaks', () => {ood alternative.
-      expect(getAnimalData(animals)).toEqual([
-        { name: 'Unicorn' }, // flagged because of the interface change
+    it('breaks', () => {
+      // 1: ✅ See below
+      expect(getAnimalData(ANIMALS)).toEqual([ // 2: ✅ See below
+        { name: 'Unicorn' },
         { name: 'Horse' },
-        { name: 'Snake' }, // flagged because of the logical change
+        { name: 'Snake' },
         { name: 'Goose' },
       ]);
     });
@@ -102,10 +96,20 @@ describe('#getAnimalData', () => {
 });
 ```
 
-### Effectiveness
+1. ❎ `toBeDefined` is useless. This case can be covered basically by any tests on output
+2. ❎ Randomly select an attribute does not guarantee the program is correct
+3. ❎ `Horse` can be found as wrong only if the previous line is fixed - this is an inefficient tests
 
-- Test only the code you write, not by others
-- To find out those redundant tests, those often will not improve any code coverage metrics
+---
+
+1. ✅ No need to explicitly assert something arbitrary
+2. ✅ Cover the exit point ENTIRELY
+3. ✅ Instead of a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions).
+
+## Effectiveness
+
+- Test only your own code
+- Ineffective tests do not improve any code coverage
 
 ```typescript
 function getNotice(dateString: string) {
@@ -113,26 +117,32 @@ function getNotice(dateString: string) {
 }
 
 describe('#getNotice', () => {
-  // The parser is implemented natively
+  // ❎ The parser is implemented natively
   describe('bad test', () => {
-    it('overkills 1', () => {
+    it('is a standard test', () => {
       expect(getNotice('2019-01-01')).toEqual('Now is 1546300800000 second');
     });
 
-    it('overkills 2', () => {
+    it('overkills 1', () => { // ❎ Will not improve the code coverage
       expect(getNotice('2019-01-01T00:00:00.000Z')).toEqual('Now is 1546300800000 second');
     });
 
-    it('overkills 3', () => {
+    it('overkills 2', () => { // ❎ Will not improve the code coverage
       expect(getNotice('2019-01-01T00:00:00.000+00:00')).toEqual('Now is 1546300800000 second');
     });
   });
 });
 ```
 
-### Readability
+## Readability
 
-- Apply common test patterns like AAA and / or USE
-- Most the variables should be found within the test scope
-- Hide the set up if it is very complicated by extracting to functions
+- Apply common test patterns
+  - Arrange Act Assert (AAA)
+  - USE
+- Only share application set up on each test. Never share test set up on each test
+- To keep tests clean, extract the logic statements into functions
 
+## Reference
+
+- [Developer Testing](https://developertesting.rocks "https://developertesting.rocks")
+- [Development Testing](https://en.wikipedia.org/wiki/Development_testing "https://en.wikipedia.org/wiki/Development_testing")

@@ -1,6 +1,6 @@
 # Scripting <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [The Nature](#the-nature)
 - [Bear in mind](#bear-in-mind)

@@ -48,7 +48,7 @@ stateDiagram-v2
   ReadyForReview --> InProgress: (dev) reject
 
   ToDev --> QATesting: (qa) start<br />testing
-  QATesting --> ReleaseReady: (qa) verify<br />working
+  QATesting --> ReleaseReady: (qa) verify<br />the work
   QATesting --> InProgress: (qa) discover<br />defects
 
   ReleaseReady --> ToUAT: (dev) deploy

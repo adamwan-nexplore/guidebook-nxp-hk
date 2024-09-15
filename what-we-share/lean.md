@@ -1,6 +1,6 @@
 # Lean Software Development <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [In short](#in-short)
 - [What is WASTE](#what-is-waste)
@@ -78,7 +78,7 @@
   - low velocity
   - poor quality
 
-  * Always review those at the end of each cycle
+  - Always review those at the end of each cycle
 
 - Decide later DOES NOT mean doing MVP. The quality actually still keeps it (very) HIGH. We deliver FEATURES that customers WANT at this moment ONLY
 
@@ -87,7 +87,7 @@
 - Just-In-Time to prevent `overproduction` is GOOD. How about `under-production`?
   - Need to align
 - Eliminate waste is the core concept on Lean, but who to execute?
-- In practice a lot of work expects to be necessary waste. That is why we do it.
+- In practice we expect a lot of work to be necessary waste. That is why we do it.
   - How to figure out those are actually PURE waste?
 - The stakeholder can delay the decision making ONLY IF the system is FLEXIBLE. Flexibility introduces complexity.
   - Who and by What to decide?

@@ -1,6 +1,6 @@
 # Scrum <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [3 Keys elements](#3-keys-elements)
   - [Roles](#roles)
@@ -96,10 +96,11 @@ In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD be
 - Designed for development
 - Visualize every movement of tasks across system
 
-<img width="1467" alt="Screenshot 2024-01-31 at 6 59 18 AM" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/2f12dc3a-07d3-4fdd-9a55-1b33694a6b5c">
+  ![Development Board](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/2f12dc3a-07d3-4fdd-9a55-1b33694a6b5c)
 
 ### Board 2 - Product Board
 
 - It is a KanBan board
 - Designed for product end-to-end journey from ideas to completion
-  <img width="1500" alt="Screenshot 2023-05-25 at 5 31 30 PM" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/26caa680-e86c-4d10-981c-c958736b4571">
+
+  ![Product Board](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/26caa680-e86c-4d10-981c-c958736b4571)

@@ -1,6 +1,6 @@
 # Data Migration <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Requirements](#requirements)
   - [Types of Data](#types-of-data)

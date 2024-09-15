@@ -1,6 +1,6 @@
 # Data Management <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Handle production data](#handle-production-data)
 - [Data Backup](#data-backup)

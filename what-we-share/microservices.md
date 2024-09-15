@@ -1,6 +1,6 @@
 # Microservices <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Unpopular Opinion](#unpopular-opinion)
 - [Introduction](#introduction)

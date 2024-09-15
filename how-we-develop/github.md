@@ -13,34 +13,38 @@
 
 ## Pull Request & Branching
 
-1.  `rebase` rather than `merge`
+1. `rebase` rather than `merge`
 
     ```bash
     git rebase <target-branch>
     ```
 
-2.  Less than 5 commits per Pull Request.
+2. Less than 5 commits per Pull Request.
     Having _Atomic Commit_ per Pull Request is great but not a must.
 
     a. Keep amending your first commit
 
-        git commit --amend && git push origin --force <your-branch>
+      ```bash
+      git commit --amend && git push origin --force <your-branch>
+      ```
 
     b. (GitHub Pull Request) Squash your Pull Request when merged
 
     c. (local) Squash against your target branch
 
-        git reset $(git merge-base <target-branch> $(git rev-parse --abbrev-ref HEAD)) # way 1
-        git commit -m 'chore: I go to school by bus' # way 2
+      ```bash
+      git reset $(git merge-base <target-branch> $(git rev-parse --abbrev-ref HEAD)) # way 1
+      git commit -m 'chore: I go to school by bus' # way 2
+      ```
 
-3.  Consider Auto-Merge
-4.  Branch out from default branch, merge back to default branch
-5.  Follow [Conventional Commits](https://www.conventionalcommits.org "https://www.conventionalcommits.org")
+3. Consider Auto-Merge
+4. Branch out from default branch, merge back to default branch
+5. Follow [Conventional Commits](https://www.conventionalcommits.org "https://www.conventionalcommits.org")
     - FORMAT: `type: [TICKET-NUMBER] commit messages`
     - REGEX: `^(promote|back|build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: \[CPCS\-[0-9]+\] ([\w ])+([\s\S]*)`
     - e.g. `feat: [CPCS-1234] add user endpoint`
-6.  Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources") for tracking back JIRA Tasks
-7.  Each repository has a couple of topics (= #hashtag). It provides accurate information of the nature of the codebase
+6. Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources") for tracking back JIRA Tasks
+7. Each repository has a couple of topics (= #hashtag). It provides accurate information of the nature of the codebase
     | **topic** | **meaning** |
     | ------------------------- | ----------------- |
     | #api | backend |
@@ -51,7 +55,7 @@
     | #web | web |
     | _topics other than above_ | which product |
 
-8.  Continuous Integration
+8. Continuous Integration
     - Pull Request
       - Code Check
         - Build Check

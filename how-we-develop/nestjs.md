@@ -4,13 +4,15 @@
 
 1. Remote Schema
 
-   https://{DOMAIN}/api-json (Swagger json)  
+   https://{DOMAIN}/api-json (Swagger json)
    https://{DOMAIN}/api (Swagger Documentation)
 
 2. Generate locally
+
    ```bash
    yarn generate:openapi
    ```
+
    A json file will be generated in openapi/swagger.spec.json
 
 ## Naming convention

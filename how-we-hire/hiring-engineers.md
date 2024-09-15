@@ -1,6 +1,6 @@
 # Hiring <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Philosophy](#philosophy)
 - [Process](#process)

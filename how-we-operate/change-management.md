@@ -1,6 +1,6 @@
 # Change Management <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [The Key Person](#the-key-person)
   - [Responsibilities](#responsibilities)

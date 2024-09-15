@@ -2,7 +2,7 @@
 
 (Put here)
 
-# :eyes: Be aware of
+## :eyes: Be aware of
 
 - [ ] Infrastructure Change
 - [ ] New Environment Variables
@@ -14,7 +14,7 @@
 - [ ] New libraries
 - [ ] More than 5 commits per PRs
 
-# :kiss: Consider
+## :kiss: Consider
 
 - [ ] Feature Toggles
 - [ ] Unit Tests
@@ -22,7 +22,7 @@
 - [ ] Atomic Commit
 - [ ] Split into smaller PRs
 
-# :books: Resources
+## :books: Resources
 
 - [SmartBear - Best Practices for Code Review](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review "https://smartbear.com/learn/code-review/best-practices-for-peer-code-review")
 - [Google - Code Review Developer Guide](https://google.github.io/eng-practices/review "https://google.github.io/eng-practices/review")

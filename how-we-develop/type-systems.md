@@ -1,6 +1,6 @@
 # Type Systems <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Categories of Type Systems](#categories-of-type-systems)
 - [Specify the return type when](#specify-the-return-type-when)

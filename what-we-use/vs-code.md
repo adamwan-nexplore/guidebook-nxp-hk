@@ -1,6 +1,6 @@
 # Visual Studio Code <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Tutorial](#tutorial)
 - [Extensions](#extensions)
@@ -166,7 +166,7 @@
   - After selected the text and do a right-click, the menu on the selected text and number bar is completely different
 - Dart Refactoring, check [here](https://dartcode.org/docs/refactorings-and-code-fixes "https://dartcode.org/docs/refactorings-and-code-fixes")
 
-- https://code.visualstudio.com/docs/editor/refactoring
+- [Refactoring Tips](https://code.visualstudio.com/docs/editor/refactoring "https://code.visualstudio.com/docs/editor/refactoring")
 - open `Settings` - `cmd` + `,`
 - Split editor: `cmd` + `\`
 - Move across editor: `cmd` + `option` + `<` / `>`
@@ -259,16 +259,16 @@
 - Word Wrap
 - Autosave
 
-- https://code.visualstudio.com/docs/typescript/typescript-editing
+- [Typescript Editing](https://code.visualstudio.com/docs/typescript/typescript-editing "https://code.visualstudio.com/docs/typescript/typescript-editing")
 
 ## Markdown
 
 1. Shortcuts
 
-```markdown
-// bang bang will show all the headers in workspace to be selected
-[here](##)
-```
+    ```markdown
+    // bang bang will show all the headers in workspace to be selected
+    [here](##)
+    ```
 
 2. Drag the image / video to the editor AND hold `shift` to link it
 
@@ -313,7 +313,7 @@
 
 #### Sidebar Chat
 
-<img width="393" alt="sidebar chat" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/dd9325eb-6988-4a78-94cf-140c36df84f2">
+![sidebar chat](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/dd9325eb-6988-4a78-94cf-140c36df84f2)
 
 - Code copilot in the terminal
 
@@ -326,7 +326,7 @@
 
 #### Voice Chat
 
-<img width="870" alt="voice chat" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/d652878d-ea82-4e35-9042-bd4065cb78a4">
+![voice chat](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/d652878d-ea82-4e35-9042-bd4065cb78a4)
 
 - `ctrl` / `cmd` + `I` AND `ctrl` / `cmd` + `I`
 
@@ -339,8 +339,8 @@
 - Short
   - only one to two sentences each time and words in each sentence should be minimal
 
-* copilot will give more score to files you open
-* highlight the code
+- copilot will give more score to files you open
+- highlight the code
 
 ## Recommended set up on repositories
 

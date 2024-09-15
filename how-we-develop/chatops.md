@@ -1,6 +1,6 @@
 # ChatOps <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Objectives](#objectives)
 - [Implementation](#implementation)
@@ -20,7 +20,7 @@
 
 ## Implementation
 
-We will stream most notifications to [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software")
+Stream most notifications to [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software")
 
 ## Tools
 
@@ -54,19 +54,19 @@ We will stream most notifications to [Microsoft Teams](https://www.microsoft.com
 
 ### RSS
 
-#### Channels <!-- omit in toc -->
+#### RSS - Channels <!-- omit in toc -->
 
 - `[Backend] Platform Status Alert`
 
-* Please ask your engineering lead for the access to those channels
+- Please ask your engineering lead for the access to those channels
 
-#### Setup <!-- omit in toc -->
+#### RSS - Setup <!-- omit in toc -->
 
 - N/A
 
-#### Benefits <!-- omit in toc -->
+#### RSS - Benefits <!-- omit in toc -->
 
-- Service Availability updates of different platforms we use
+- Service Availability updates of different platforms
 
 > Check [Server Status](serverrss.md)
 
@@ -78,13 +78,13 @@ We will stream most notifications to [Microsoft Teams](https://www.microsoft.com
 
 - Jira Cloud
 
-#### Setup <!-- omit in toc -->
+#### Jira - Setup <!-- omit in toc -->
 
 - Search `Jira Cloud`
 - Sign in your Atlassian account
 - Pin Jira Cloud in MS Teams
 
-#### Benefits <!-- omit in toc -->
+#### Jira - Benefits <!-- omit in toc -->
 
 - Notifications from all the tickets in Jira you have tagged and involved
 
@@ -92,16 +92,18 @@ We will stream most notifications to [Microsoft Teams](https://www.microsoft.com
 
 ### DataDog
 
-#### Channels <!-- omit in toc -->
+#### DataDog - Channels <!-- omit in toc -->
 
 - channels in the team `DataDog Monitor`
   > Please ask your engineering lead for the access to those channels / Teams
 
-#### Setup <!-- omit in toc -->
+- Check [here](https://docs.datadoghq.com/integrations/microsoft_teams "https://docs.datadoghq.com/integrations/microsoft_teams") for the integration guide
+
+#### DataDog - Setup <!-- omit in toc -->
 
 - N/A
 
-#### Benefits <!-- omit in toc -->
+#### DataDog - Benefits <!-- omit in toc -->
 
 - Notifications from the running backend APIs in case there are any errors
 
@@ -114,19 +116,19 @@ We will stream most notifications to [Microsoft Teams](https://www.microsoft.com
 - Follow the prompts to connect your Figma account
 - Once connected, type `On` into the chat box and send the message to enable notifications.
 
-#### Setup <!-- omit in toc -->
+#### Figma - Setup <!-- omit in toc -->
 
 Check [here](https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Microsoft-Teams "https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Microsoft-Teams")
 
-#### Benefits <!-- omit in toc -->
+#### Figma - Benefits <!-- omit in toc -->
 
 - Notifications from all the comments in Figma you have tagged and involved
 
 - Illustrations
 
-<img width="600" alt="figma set up" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/8ba28515-17a7-403f-a8db-37e4a8333ea0">
+![figma set up](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/8ba28515-17a7-403f-a8db-37e4a8333ea0){width=600}
 
-<img width="600" alt="figma ChatOps" src="https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/f0a5dc82-a73a-4208-ae59-c0a454f66058">
+![figma ChatOps](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/f0a5dc82-a73a-4208-ae59-c0a454f66058){width=600}
 
 ## Reference
 

@@ -1,6 +1,6 @@
 # Diagram as Code <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Choice of toolings](#choice-of-toolings)
 - [Before drawing, ask](#before-drawing-ask)
@@ -13,7 +13,7 @@
 - [Edges](#edges)
 - [Reference](#reference)
 
-For compatibility / auditing reasons, we should draw our diagrams by code
+For compatibility / auditing reasons, draw our diagrams by code
 
 ## Choice of toolings
 
@@ -66,7 +66,7 @@ flowchart
 title: Hello Title
 ---
 flowchart
-	Hello --> World
+  Hello --> World
 ```
 
 ## Advanced Use
@@ -117,7 +117,7 @@ flowchart
 title: Typical Use of Shapes
 ---
 flowchart
-	rectangle[Process]
+  rectangle[Process]
   diamond{Decision}
   stadium([Start or End Point])
   circle((Shortcut to<br />another<br />flowchart))

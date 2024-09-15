@@ -1,10 +1,10 @@
 # Developer Testing (1) <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Some important terms](#some-important-terms)
-- [The Ultimate Goal](#the-ultimate-goal)
-- [Rephrase the statement](#rephrase-the-statement)
+- [The Goal](#the-goal)
+- [~~The Goal~~ The Ultimate Goals](#the-goal-the-ultimate-goals)
 - [Tips to write Unit Tests in Jest](#tips-to-write-unit-tests-in-jest)
 - [Reference](#reference)
 
@@ -21,36 +21,29 @@ Before it starts, can you tell
 
 **SUT** - System Under Test
 
-**Unit test** - Usually we verify the `output` of a `function` (unit). We might test against an object, but it is not common
+**Unit test** - Usually verify the `output` of a `function` (unit). We might test against an object, but it is not common
 
 **Entry Point** - The way we `use` the unit to work. Usually, it refers to the input parameters of a function
 
 **Exit Point(s)** - The effect / output after the input was applied to the SUT
 
-## The Ultimate Goal
+## The Goal
 
-We should `write more pure functions`. It will help making our codes to be more testable
+`Write more pure functions`. It will help making our codes to be more testable.
 
-a. pure functions
+- Pure functions:
+  - Return value / error (easiest, check the output directly)
 
-> return value / error (the easiest way to observe the change)
+- Impure functions:
+  - change of states (hard, listen to the state change)
+  - call third party dependencies (very hard, might need to inject some codes to test)
 
-b. impure functions
+## ~~The Goal~~ The Ultimate Goals
 
-> change of states (need to check the implementation to find out the state)
-
-> by stricter scoping
-
-> call third party dependencies (very hard to observe)
-
-## Rephrase the statement
-
-> We should reduce the number of impure functions
-
-> We should group those impure functions together, or at least in a managed way
-
-> Do not dream of eliminate those entirely.
-> We need to store the data in our disk by the use of impure functions
+1. Reduce the number of impure functions
+2. Group those impure functions together, or at least in a managed way
+3. Do not dream of eliminate those entirely
+4. We need to store the data in our disk by the use of impure functions
 
 ## Tips to write Unit Tests in Jest
 
@@ -67,147 +60,145 @@ b. impure functions
    - Plugin Recommended for VSCode: `Jest Runner`
    - Can run the spec files immediately when you save the `.spec.ts` files
 
-5. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing "https://jestjs.io/docs/snapshot-testing")
+4. Learn what is [snapshot testing](https://jestjs.io/docs/snapshot-testing "https://jestjs.io/docs/snapshot-testing")
 
    - Try `toMatchInlineSnapshot()` (similar one is `toMatchSnapshot()`)
 
-6. Arrange Act Assert
+5. Arrange Act Assert
 
-7. U.S.E. the way to describe the test
+6. U.S.E. the way to describe the test
 
    - Describing the `unit` (filename + function name)
    - `Situation` (the input you are going for)
    - `Expectation` (expected observed change to be)
 
-```typescript
-// describe file
-describe('@password.ts', () => {
+    ```typescript
+    // describe file
+    describe('@password.ts', () => {
 
-  // describe function
-  describe('#verifyPassword', () => {
+      // describe function
+      describe('#verifyPassword', () => {
 
-    // describe condition
-    describe('given a failing rule', () => {
+        // describe condition
+        describe('given a failing rule', () => {
 
-      // mark expected output ONLY
-      it('returns errors', () => {
-        const fakeRule = input => ({ passed: false, reason: ‘fake reason’ });
-        const [firstError] = verifyPassword('any value', [fakeRule]);
-        expect(firstError).toContain('fake reason');
+          // mark expected output ONLY
+          it('returns errors', () => {
+            const fakeRule = input => ({ passed: false, reason: ‘fake reason’ });
+            const [firstError] = verifyPassword('any value', [fakeRule]);
+            expect(firstError).toContain('fake reason');
+          });
+        });
       });
     });
-  });
-});
-```
+    ```
 
-- Make use of Arbitrary Matcher (Try `jest.any(Date)`)
+7. Make use of Arbitrary Matcher (Try `jest.any(Date)`)
 
-```typescript
-describe("#funcA", () => {
-  it("returns the correct structure", () => {
-    expect(funcA("abc")).toEqual({
-      abc: "abc",
-      id: "id",
-      createdOn: "2023-01-31", // keeping changing
+    ```typescript
+    describe("#funcA", () => {
+      it("returns the correct structure", () => {
+        expect(funcA("abc")).toEqual({
+          abc: "abc",
+          id: "id",
+          createdOn: "2023-01-31", // keeping changing
+        });
+      });
     });
-  });
-});
-```
+    ```
 
 8. Scrolling fatigue
    - If there are a lot of variables initialize in `beforeEach` function, reader needs to scroll up a lot to understand the set up.
      To be more intuitively, consider creating a setup function with a proper name for readability.
 
-```typescript
+    ```typescript
+    let folders: Folder[];
+    let user: User;
 
-let folders: Folder[];
-let user: User;
-
-// no one will know where is folders & users
-// need to scroll and trace back
-// scrolling upward can be super time consuming
-// if the file is lengthy
-beforeAll() {
-  ...
-  folders = ...;
-  user = ...;
-}
-
-...
+    // no one will know where is folders & users
+    // need to scroll and trace back
+    // scrolling upward can be super time consuming
+    // if the file is lengthy
+    beforeAll() {
+      ...
+      folders = ...;
+      user = ...;
+    }
+    ...
 
 
-test('works with search', () => {
-  expect(getPermission(folders, user)).toEqual([
-    'edit',
-    'delete',
-    'new',
-    'upload',
-  ]);
-});
+    test('works with search', () => {
+      expect(getPermission(folders, user)).toEqual([
+        'edit',
+        'delete',
+        'new',
+        'upload',
+      ]);
+    });
 
-```
+    ```
 
-```typescript
+    ```typescript
 
-test('works with search', () => {
-  // better scoping
-  const { folders, user } = setup();
-  expect(getPermission(folders, user)).toEqual([
-    'edit',
-    'delete',
-    'new',
-    'upload',
-  ]);
-});
+    test('works with search', () => {
+      // better scoping
+      const { folders, user } = setup();
+      expect(getPermission(folders, user)).toEqual([
+        'edit',
+        'delete',
+        'new',
+        'upload',
+      ]);
+    });
 
-setup() {
-  ...
-  folders = ...;
-  user = ...;
+    setup() {
+      ...
+      folders = ...;
+      user = ...;
 
-  return {
-    folders,
-    user,
-  }
-}
-```
+      return {
+        folders,
+        user,
+      }
+    }
+    ```
 
 9. How to test a throwing error?
 
-```typescript
-test("verify, with no rules, throws exception", () => {
-  const verifier = makeVerifier();
-  expect(() => verifier.verify("any input")).toThrowError(
-    /no rules configured/,
-  );
-});
-```
+    ```typescript
+    test("verify, with no rules, throws exception", () => {
+      const verifier = makeVerifier();
+      expect(() => verifier.verify("any input")).toThrowError(
+        /no rules configured/,
+      );
+    });
+    ```
 
 10. Consider grouping the result and test in one go
 
-```typescript
-test("get prime numbers", () => {
-  const result = getPrimesUnder(10);
+    ```typescript
+    test("get prime numbers", () => {
+      const result = getPrimesUnder(10);
 
-  // you need to fix length to see 6 is not one of the results
-  expect(result.total.length).toBe(3);
-  expect(result.numbers[0]).toBe(2);
-  expect(result.numbers[0]).toBe(3);
+      // you need to fix length to see 6 is not one of the results
+      expect(result.total.length).toBe(3);
+      expect(result.numbers[0]).toBe(2);
+      expect(result.numbers[0]).toBe(3);
 
-  expect(result.numbers[0]).toBe(6);
-  expect(result.numbers[0]).toBe(7);
-});
-```
+      expect(result.numbers[0]).toBe(6);
+      expect(result.numbers[0]).toBe(7);
+    });
+    ```
 
-```typescript
-test("get prime numbers", () => {
-  // can see wrong result in one go
-  expect(getPrimesUnder(10)).toEqual({
-    total: 3,
-    numbers: [2, 3, 6, 7],
-  });
-});
-```
+    ```typescript
+    test("get prime numbers", () => {
+      // can see wrong result in one go
+      expect(getPrimesUnder(10)).toEqual({
+        total: 3,
+        numbers: [2, 3, 6, 7],
+      });
+    });
+    ```
 
 11. [Nock Recording](https://github.com/nock/nock#recording "https://github.com/nock/nock#recording") (Set up the real integration to call the APIs, and then capture the response for mock testing)
 

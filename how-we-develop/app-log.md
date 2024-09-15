@@ -36,6 +36,6 @@
 
 - [Pino](https://github.com/pinojs/pino "https://github.com/pinojs/pino"). It is one of the most popular log libraries supporting `NestJS`
 
-# Reference
+## Reference
 
 - [What Is Structured Logging?](https://sematext.com/glossary/structured-logging "https://sematext.com/glossary/structured-logging")

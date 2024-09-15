@@ -1,6 +1,6 @@
 # DevOps <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Definition](#definition)
   - [Simple Definition](#simple-definition)

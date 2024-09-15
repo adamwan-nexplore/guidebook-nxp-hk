@@ -1,6 +1,6 @@
 # Backlog Refinement / Review <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [Agenda](#agenda)
 - [Story points](#story-points)
@@ -39,13 +39,13 @@ Assign the number of story points to a task by:
 - 3 (medium, expected to spend around 1 day to finish it)
 - 5 (complicated, expected days)
 
-** Break down the task if larger than 5 **
+Break down the task if larger than 5
 
 - 8 (very complicated, expected a week)
 - 13 (it will be super huge that we cannot imagine, even cant estimate the timeline)
 - [spike](https://www.visual-paradigm.com/scrum/what-is-scrum-spike "https://www.visual-paradigm.com/scrum/what-is-scrum-spike")
 
-It is possible we say it is a `spike`, which means we do not have any ideas how it is going to implement.
+It is possible to say the task is a `spike`, which means we do not know how to implement it
 
 ## Reference
 
