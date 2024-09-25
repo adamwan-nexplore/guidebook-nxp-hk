@@ -3,17 +3,16 @@
 ## General
 
 - [Typescript](https://www.typescriptlang.org "https://www.typescriptlang.org")
-- [Dart](https://dart.dev "https://dart.dev")
 - [yarn](https://yarnpkg.com "https://yarnpkg.com")
 
 ## Backend
 
-- [NodeJS](https://nodejs.org "https://nodejs.org")
-- [NestJS](https://nestjs.com "https://nestjs.com")
 - [Jest](https://jestjs.io "https://jestjs.io")
-- [TypeORM](https://typeorm.io "https://typeorm.io")
-- [Swagger](https://swagger.io "https://swagger.io")
 - [Keycloak](https://www.keycloak.org "https://www.keycloak.org")
+- [NestJS](https://nestjs.com "https://nestjs.com")
+- [NodeJS](https://nodejs.org "https://nodejs.org")
+- [Swagger](https://swagger.io "https://swagger.io")
+- [TypeORM](https://typeorm.io "https://typeorm.io")
 
 ## Database
 
@@ -28,9 +27,11 @@
 
 ## Frontend
 
-- [ReactJS](https://reactjs.org "https://reactjs.org")
 - [Ant Design](https://ant.design "https://ant.design")
+- [Playwright](https://playwright.dev "https://playwright.dev")
+- [ReactJS](https://reactjs.org "https://reactjs.org")
 
 ## Mobile
 
+- [Dart](https://dart.dev "https://dart.dev")
 - [Flutter](https://flutter.dev "https://flutter.dev")

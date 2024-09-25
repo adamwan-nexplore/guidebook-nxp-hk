@@ -31,6 +31,8 @@ Table of Contents
 - [kubecolor](https://kubecolor.github.io "https://kubecolor.github.io")
   - to colorize the output of kubectl
 
+![kubecolor](../what-we-share/kubecolor.png)
+
 ## Plugins in Krew
 
 ### Set up & Installation
@@ -181,7 +183,7 @@ k kurt all
 
 #  datadog  3
 #  helloworld  1
-#  sci  0
+#  foobar  0
 #  core 0
 #  keycloak  0
 

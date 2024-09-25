@@ -180,6 +180,11 @@ Table of Contents
   - `Transform to Pascal Case` - SmartBoy
   - `Transform to Title Case` - Smartboy
 
+- `cmd` + `p` AND
+  - `>` - Command mode
+  - `@` - local symbol search
+  - `#` - global symbol search
+
 ## Settings
 
 ```json
@@ -243,6 +248,9 @@ Table of Contents
   // * Auto Save
   "files.autoSaveWhenNoErrors": true,
   "files.autoSave": "onFocusChange",  // Save if lose focus
+
+  // save space
+  "workbench.tree.indent": 4,
 }
 ```
 
