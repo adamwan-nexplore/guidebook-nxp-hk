@@ -7,10 +7,9 @@ Table of Contents
 - [Simulating behaviours \& Practical definition](#simulating-behaviours--practical-definition)
 - [Test strategies](#test-strategies)
   - [Developer - Unit Test](#developer---unit-test)
-  - [Developer - End-to-End Test](#developer---end-to-end-test)
-  - [Developer - Component Test](#developer---component-test)
-  - [Quality Assurance - Smoke Test](#quality-assurance---smoke-test)
-  - [Quality Assurance - Regression Pack](#quality-assurance---regression-pack)
+  - [Developer - Integration Test](#developer---integration-test)
+  - [Functional - Smoke Test](#functional---smoke-test)
+  - [Functional - End-to-End Test](#functional---end-to-end-test)
 - [Reference](#reference)
 
 ## The objective of writing test cases
@@ -44,33 +43,40 @@ Table of Contents
 - `When` test against the pure functions
 - `Verify` the output, period
 - Give you `confidence` on logics
+- Tools: Jest
 
-### Developer - End-to-End Test
+### Developer - Integration Test
+
+(1)
 
 - `When` test against the APIs
 - `Verify` the output and sometimes the cache hit
 - DO NOT mock ANY implementations other than configurations. if needed, DO NO WRITE
 - Give you `confidence` on part of logics, database query, cache
+- Tools: Jest, Supertest
 
-### Developer - Component Test
+(2)
 
 - `When` test against the functions that are NOT exposed to APIs, e.g. background jobs
 - `Verify` the output and sometimes the cache hit
 - Be avoid to mock the implementations
 - Give you `confidence` on part of logics, database query, cache
+- Tools: Jest
 
-### Quality Assurance - Smoke Test
+### Functional - Smoke Test
 
 - `When` test against the client end
 - `Verify` UI display with minimized interactions
 - Give you `confidence` on part of logics, part of database query, part of cache
+- Tools: Playwright
 
-### Quality Assurance - Regression Pack
+### Functional - End-to-End Test
 
 - `When` test against the client end
 - `Verify` UI display with REAL user stories
 - Give you `confidence` on part of logics, part of database query, part of cache and usability
 - They are disposable tests. QA Engineers will review those regularly and decide whether we need a better ones
+- Tools: Playwright
 
 ## Reference
 

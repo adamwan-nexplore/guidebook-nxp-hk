@@ -29,18 +29,18 @@
 
 ## Terminal
 
-- `zsh` - instead of bash
 - [Azure Cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli")
 - [bat](https://github.com/sharkdp/bat)
-- [oh-my-zsh](https://ohmyz.sh "https://ohmyz.sh")
 - [fzf](https://github.com/junegunn/fzf "https://github.com/junegunn/fzf")
 - [Github Cli](https://github.com/github/homebrew-gh "https://github.com/github/homebrew-gh")
 - [Helm](https://helm.sh/docs/intro/install "https://helm.sh/docs/intro/install")
 - [jq](https://github.com/stedolan/jq "https://github.com/stedolan/jq")
 - [kubectl](https://kubernetes.io/docs/tasks/tools "https://kubernetes.io/docs/tasks/tools")
-- tree - `brew install tree`
+- [oh-my-zsh](https://ohmyz.sh "https://ohmyz.sh")
 - [yq](https://github.com/mikefarah/yq "https://github.com/mikefarah/yq")
 - [zoxide](https://github.com/ajeetdsouza/zoxide "https://github.com/ajeetdsouza/zoxide")
+- `zsh` - instead of bash
+- tree - `brew install tree`
 
 ## UML & C4
 

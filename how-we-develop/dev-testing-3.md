@@ -2,13 +2,13 @@
 
 Table of Contents
 
-- [Generate Feedback by tests](#generate-feedback-by-tests)
+- [Generate feedback by tests](#generate-feedback-by-tests)
 - [Protectiveness](#protectiveness)
 - [Effectiveness](#effectiveness)
 - [Readability](#readability)
 - [Reference](#reference)
 
-## Generate Feedback by tests
+## Generate feedback by tests
 
 - There are a lot of different types of testing
 - To write developer tests:
@@ -68,24 +68,24 @@ const ANIMALS: Animal[] = [
   },
 ];
 
-// bad tests
+// good vs bad tests
 describe('#getAnimalData', () => {
   // Tests would pass even the output has changed
-  describe('bad test', () => {
+  describe('a bad test', () => {
     it('always works', () => {
       const result = getAnimalData(ANIMALS);
 
-      expect(result).toBeDefined(); // 1: ❎ See below
-      expect(result[0].name).toBe('Unicorn'); // 2: ❎ See below
-      expect(result[1].name).toBe('Horse'); // 3: ❎ See below
+      expect(result).toBeDefined(); // 1: 👎 See below
+      expect(result[0].name).toBe('Unicorn'); // 2: 👎 See below
+      expect(result[1].name).toBe('Horse'); // 3: 👎 See below
     });
   });
 
   // Resistent enough to flag ANY interface change and SOME logical change
-  describe('good test', () => {
+  describe('a good test', () => {
     it('breaks', () => {
-      // 1: ✅ See below
-      expect(getAnimalData(ANIMALS)).toEqual([ // 2: ✅ See below
+      // 1: 👍 See below
+      expect(getAnimalData(ANIMALS)).toEqual([ // 2: 👍 See below
         { name: 'Unicorn' },
         { name: 'Horse' },
         { name: 'Snake' },
@@ -96,20 +96,20 @@ describe('#getAnimalData', () => {
 });
 ```
 
-1. ❎ `toBeDefined` is useless. This case can be covered basically by any tests on output
-2. ❎ Randomly select an attribute does not guarantee the program is correct
-3. ❎ `Horse` can be found as wrong only if the previous line is fixed - this is an inefficient tests
+1. 👎 `toBeDefined` is useless. This case can be covered basically by any tests on output
+2. 👎 Randomly select an attribute does not guarantee the program is correct
+3. 👎 `Horse` can be found as wrong only if the previous line is fixed - this is an inefficient test
 
 ---
 
-1. ✅ No need to explicitly assert something arbitrary
-2. ✅ Cover the exit point ENTIRELY
-3. ✅ Instead of a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions).
+1. 👍 No need to explicitly assert something arbitrary
+2. 👍 Cover the exit point ENTIRELY
+3. 👍 Instead of a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions).
 
 ## Effectiveness
 
 - Test only your own code
-- Ineffective tests do not improve any code coverage
+- Ineffective tests do not improve any code coverage (e.g. [ABC Metric](https://en.wikipedia.org/wiki/ABC_Software_Metric))
 
 ```typescript
 function getNotice(dateString: string) {
@@ -117,17 +117,17 @@ function getNotice(dateString: string) {
 }
 
 describe('#getNotice', () => {
-  // ❎ The parser is implemented natively
-  describe('bad test', () => {
+  // 👎 The parser is implemented natively
+  describe('a bad test', () => {
     it('is a standard test', () => {
       expect(getNotice('2019-01-01')).toEqual('Now is 1546300800000 second');
     });
 
-    it('overkills 1', () => { // ❎ Will not improve the code coverage
+    it('overkills 1', () => { // 👎 Will not improve the code coverage
       expect(getNotice('2019-01-01T00:00:00.000Z')).toEqual('Now is 1546300800000 second');
     });
 
-    it('overkills 2', () => { // ❎ Will not improve the code coverage
+    it('overkills 2', () => { // 👎 Will not improve the code coverage
       expect(getNotice('2019-01-01T00:00:00.000+00:00')).toEqual('Now is 1546300800000 second');
     });
   });
@@ -139,7 +139,7 @@ describe('#getNotice', () => {
 - Apply common test patterns
   - Arrange Act Assert (AAA)
   - USE
-- Only share application set up on each test. Never share test set up on each test
+- Only share **application set up** across tests on hooks. Never share **test set up** on hooks. Consider factory functions
 - To keep tests clean, extract the logic statements into functions
 
 ## Reference

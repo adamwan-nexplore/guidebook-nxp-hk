@@ -1,9 +1,10 @@
 {
   "recommendations": [
     "aaron-bond.better-comments",
-    "eamodio.gitlens",
     "DavidAnson.vscode-markdownlint",
+    "eamodio.gitlens",
     "formulahendry.code-runner",
+    "hnw.vscode-auto-open-markdown-preview",
     "JannisX11.batch-rename-extension",
     "jeff-hykin.polacode-2019",
     "mrmlnc.vscode-duplicate",

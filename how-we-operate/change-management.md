@@ -64,7 +64,7 @@ High Risk
 
 ### Deployment Check
 
-- An engineer who deploy the change should do at least a health check in the test entity on the production environments
+- An engineer who deploys the change should do at least a health check in the test entity on the production environments
 - Please make sure you have the access to the test entity before the deployment
 - If you do not have it, please ask your engineering lead
 

@@ -9,4 +9,4 @@ function main(stringText: string, anyArg) {
   console.log("Inlay.NUMBER_INLAY:", Inlay.NUMBER_INLAY, stringText, anyArg);
 }
 
-[1, 2, 3].map((_number) => main("Hello", new Inlay()));
+[1, 2, 3].forEach((_number) => main("Hello", new Inlay()));

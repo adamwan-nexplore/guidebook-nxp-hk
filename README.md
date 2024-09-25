@@ -46,29 +46,29 @@ You know our development process, our conventions, and the ways we communicate b
 
 ### Development Cycle
 
-- [Code Review](how-we-develop/code-review.md)
 - [ChatOps](how-we-develop/chatops.md)
+- [Code Review](how-we-develop/code-review.md)
 - [Data Management](how-we-develop/data-management.md)
 - [Database Design](how-we-develop/database-design.md)
 - [DevOps - The Three Ways](how-we-develop/devops.md)
 - [Git Workflow](how-we-develop/git-workflow.md)
 - [GitHub](how-we-develop/github.md)
 - [PR Checklist](how-we-develop/pr-checklist.md)
-- [Smoke Tests](how-we-develop/smoke-tests.md)
 - [Scrum](how-we-develop/scrum.md)
   - [Backlog Refinement](how-we-develop/backlog-refinement.md)
+- [Smoke Tests](how-we-develop/smoke-tests.md)
 
 ### Engineering Practices
 
 - [Application Logging](how-we-develop/app-log.md)
-- [Developer Testing](how-we-develop/dev-testing.md)
+- [Developer Testing (1)](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
 - [Developer Testing (3)](how-we-develop/dev-testing-3.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 - [NestJS](how-we-develop/nestjs.md)
-- [TypeScript](how-we-develop/typescript.md)
 - [Type Systems](how-we-develop/type-systems.md)
+- [TypeScript](how-we-develop/typescript.md)
 
 ## How we learn and share
 
@@ -82,7 +82,9 @@ Catch-up Material
 
 - [Data Migration](what-we-share/data-migration.md)
 - [Developer Productivity](what-we-share/developer-productivity.md)
+- [Introduction to Kubernetes](what-we-share/intro-to-k8s.md#introduction-to-kubernetes)
 - [Introduction to Query Performance](what-we-share/query-performance.md)
+- [Introduction to Web Performance](what-we-share/web-performance.md)
 - [Lean Software Development](what-we-share/lean.md)
 - [Microservices](what-we-share/microservices.md)
 - [REST API](what-we-share/rest-api.md)

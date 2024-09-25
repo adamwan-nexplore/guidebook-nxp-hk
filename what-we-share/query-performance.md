@@ -63,8 +63,8 @@ Table of Contents
 3. Queries inside a transaction should be a constant
 4. Locks that blocks other queries should be avoided (Especially `Table-level Locks`)
 
-- optimistic lock - concurrent read is allowed, write is not allowed
-- pessimistic lock - concurrent read nor write not allowed
+- optimistic lock - concurrent read is allowed; write is not allowed
+- pessimistic lock - concurrent read nor write allowed
 
 > Advanced Topic: [Locks, Latches, Enqueues and Mutex](https://minervadb.xyz/postgresql-locks-latches-enqueues-and-mutex "https://minervadb.xyz/postgresql-locks-latches-enqueues-and-mutex")
 
@@ -188,7 +188,7 @@ Table of Contents
 ### What should know
 
 0. [Query Plan](https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan "https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan")
-1. Be avoid to query with complicated conditions that requires `Full Table search` on several tables
+1. Be avoid to query with complicated conditions that requires `Full Table Scan` on several tables
 2. Be aware of queries on Critical Tables (User Table, `Modules` Tables)
 3. For each query, indices should be used for tables > 1k records
 
@@ -196,7 +196,7 @@ Table of Contents
 
 ### The Nature
 
-- Indices are a separate store that can help running the queries faster
+- Indices are a separate store that can help running the queries faster (no clustered indices support in PG)
 
 - Good - Make some DDL queries faster while it makes a small portions of DDL queries slower
 - Bad - Require more storage, DML queries slower

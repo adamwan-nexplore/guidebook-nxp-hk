@@ -1,6 +1,6 @@
 # Github <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [General Recommendation](#general-recommendation)
 - [Pull Request \& Branching](#pull-request--branching)
@@ -45,15 +45,16 @@
     - e.g. `feat: [CPCS-1234] add user endpoint`
 6. Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources") for tracking back JIRA Tasks
 7. Each repository has a couple of topics (= #hashtag). It provides accurate information of the nature of the codebase
-    | **topic** | **meaning** |
+
+    | **topic**                 | **meaning**       |
     | ------------------------- | ----------------- |
-    | #api | backend |
-    | #devops | cloud / pipelines |
-    | #keycloak | keycloak (login) |
-    | #mobile | mobile |
-    | #qa | quality assurance |
-    | #web | web |
-    | _topics other than above_ | which product |
+    | #api                      | backend           |
+    | #devops                   | cloud / pipelines |
+    | #keycloak                 | keycloak (login)  |
+    | #mobile                   | mobile            |
+    | #qa                       | quality assurance |
+    | #web                      | web               |
+    | _topics other than above_ | which product     |
 
 8. Continuous Integration
     - Pull Request

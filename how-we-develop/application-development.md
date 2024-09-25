@@ -12,7 +12,7 @@ Table of Contents
 ## Interface
 
 - interface IS very IMPORTANT. Keep it clean, un-surprised, focused
-  - REST is NOT necessary. However, we should apply some of constraints to make our APIs consistent
+  - REST is NOT necessary. However, we should apply some of constraints to make our API style consistent
   - If you do not know what is REST - check [here](../what-we-share/rest-api.md)
 - input validation IS very very IMPORTANT (sanitization). Wrong interfaces can crash the app and introduce un-expected bugs
   - set default values if necessary

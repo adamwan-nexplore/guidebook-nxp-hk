@@ -1,108 +1,124 @@
-# Web Performance
+# Introduction to Web Performance <!-- omit in toc -->
 
 Table of Contents
 
-- [Web Performance](#web-performance)
-  - [Modern Web Application Architecture](#modern-web-application-architecture)
-    - [Static Assets](#static-assets)
-      - [Public](#public)
-      - [Private](#private)
-    - [Dynamic Serving](#dynamic-serving)
-  - [Blocking on being fast](#blocking-on-being-fast)
-  - [General Approaches on Optimizing](#general-approaches-on-optimizing)
-  - [Modern Expectation on Fast Web](#modern-expectation-on-fast-web)
+- [How slow is slow?](#how-slow-is-slow)
+- [Tool](#tool)
+- [How to make it faster](#how-to-make-it-faster)
+- [Modern Web Application Architecture](#modern-web-application-architecture)
+- [1. Cache assets as much as possible](#1-cache-assets-as-much-as-possible)
+  - [Cache on browsers](#cache-on-browsers)
+  - [Cache on Servers](#cache-on-servers)
+- [2. Compression](#2-compression)
+- [3. Reduce overhead on browsers](#3-reduce-overhead-on-browsers)
+  - [Consider HTTP3](#consider-http3)
+  - [Be avoid to generate CORS](#be-avoid-to-generate-cors)
+- [Recommended Readings](#recommended-readings)
+
+## How slow is slow?
+
+- [Core Web Vitals](https://web.dev/articles/vitals)
+
+  - FCP (First Contentful Paint) - Respond quickly
+  - LCP (Largest Contentful Paint) - Get to the point
+  - CLS (Cumulative Layout Shift) - Don't move stuff
+  - FID (First Input Delay) - Don't load too much
+
+## Tool
+
+- [lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - a built-in tool in Google Chrome provides **Core Web Vitals** and advices on the website
+
+## How to make it faster
+
+1. Reduce requests to servers
+2. Reduce size of each request
+3. Make requests as early as possible
+4. Make requests as much as possible concurrently
+5. Make the web server faster
 
 ## Modern Web Application Architecture
 
-### Static Assets
+- Modern Web Application often consists of three major components
+  - **Single Page Application** (Public and Static)
+  - **API** (Authenticated and Dynamic), and
+  - **Downloadable Content** (Authenticated but Static)
 
-#### Public
+## 1. Cache assets as much as possible
 
-- can be cached
+### Cache on browsers
 
+Caution: It does not work for the first time load
+
+1a. What can be cached
+
+- HTML file
 - Javascript files
 - CSS files
 - AOB - images, fonts, robot.txt, favicon
 
-- Do not load
-- Load Less
-- Load Together
-- Do not load (again)
+1b. add HTTP headers to web server
 
-#### Private
+- `Cache-Control "private, max-age=31536000"` (local cache)
+- `Cache-Control "public, max-age=31536000"` (shared cache)
 
-- cannot be cached
+2a. What cannot be cached
 
-- documents
+- API response json
+- documents uploaded
 
-### Dynamic Serving
+2b. to secure private content, consider
 
-- JSON data from API
+- `Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"`
 
-## Blocking on being fast
+### Cache on Servers
 
-- CORS - Cross-Origin Resource Sharing - generate a lot of preflight requests
-- Server distance from requestors
-- Network Speed
+- Consider applying cache on API Requests
+- It could be very hard if it is on RPC design
+- If you stick on REST and make each api stateless, the cache key can be defined pretty easily (by resource url)
 
-## General Approaches on Optimizing
+## 2. Compression
 
-- Perceived performance
-- Keep the skeleton of the page
-- Do not show only a loading icon
-- Bored by nothing to do
+- Text Files
+  - Web Server can always compress data before it sends
+  - Common compression type - gzip, br (brotli), deflate
+  - Generally, the compression rate of br is the best
+  - Can be quite effective on text data (e.g. json, js, css, html etc)
+  - nodejs - [compression](https://github.com/expressjs/compression)
+  - nginx in `default.conf`
 
-Web Vitals
+    ```bash
+    server {
+        listen {{ .Values.service.port }};
+        root /usr/share/nginx/html;
 
-- Chrome LightHouse
+        gzip on;
+        gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript image/svg+xml image/x-icon;
 
-- FCP (First Contentful Paint) - Respond Quick
-- LCP (Largest Contentful Paint) - Get to the point
-- CLS (Cumulative Layout Shift) - Don't move stuff
-- FID (First Input Delay) - Don't load too much
+        ...
+    }
+    ```
 
-- First Time Load
-- Non-first Time Load
+- Multimedia files
 
-- Maximize concurrent load of requests
+  - consider a good format
+    - `jpeg`, `jpg`, `gif`, `png` - consider switching to `webp`, you might check on [squoosh](https://squoosh.app) by google
+    - `svg` - optimize by [svgo](https://github.com/svg/svgo)
+    - to make it more automatic, consider vite [plugin](https://github.com/FatehAK/vite-plugin-image-optimizer)
 
-  - Reduce blocking loads on SAP Assets (Vite, React)
-  - Reduce blocking loads on API (NodeJS & Databases)
+## 3. Reduce overhead on browsers
 
-- Reducing the number of requests to the server
+### Consider [HTTP3](https://www.cloudflare.com/learning/performance/what-is-http3)
 
-  - make non-shared resources inline in JS files (Vite)
-  - Cache something not private (Nginx)
+- Make sure your web content supports at least HTTP2, upgrade your infrastructure to support HTTP3
+- [How to check which protocol I am using?](https://stackoverflow.com/questions/78246219/azure-application-gateway-http-2-not-working)
 
-- Make assets smaller while delivering
+### Be avoid to generate [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
-  - Compress assets (Nginx / NestJS) - gzip, br (brotli)
-  - Minimize assets (Nginx)
+- if the website calls foreign websites, it will generate an additional calls (preflight requests) before it starts
+- consider having proxy server so that the browsers make calls under the **SAME** domain on the website
 
-- Make API faster (Developer Brains, better hardware)
+## Recommended Readings
 
-- Reduce CORS / CSP
-
-  - Use same domain for Web Sites and APIs (Better Infrastructure design)
-
-- HTTP 1.1 / HTTP 2 -> HTTP3 (QUIC)
-- https://www.cloudflare.com/learning/performance/what-is-http3/ (Cloudflare)
-- https://nginx.org/en/docs/quic.html (Nginx)
-- https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners#http2-support (Application Gateway)
-- How to check? https://stackoverflow.com/questions/78246219/azure-application-gateway-http-2-not-working
-- Need to enable both
-
-## Modern Expectation on Fast Web
-
-- Page Load should be 3 seconds or less
-- Website Load should be 5 seconds or less
-- Will harm SEO in Search Engine (not related to us)
-
-- https://www.cloudflare.com/learning/performance/speed-up-a-website
-- https://wp-rocket.me/blog/website-load-time-speed-statistics
-- https://vite-workshop.vercel.app/json-named-exports
-
-- https://frontendmasters.com/courses/web-perf/
-- https://frontendmasters.com/courses/react-performance/
-- https://frontendmasters.com/courses/dev-tools/
-- https://frontendmasters.com/courses/web-app-performance/
+- [Tips to improve website speed | How to speed up websites](https://www.cloudflare.com/learning/performance/speed-up-a-website)
+- [Website Load Time & Speed Statistics: Is Your Site Fast Enough?](https://wp-rocket.me/blog/website-load-time-speed-statistics)
+- [NGINX Performance Tuning Tips and Optimization Strategies](https://www.cloudpanel.io/blog/nginx-performance)
