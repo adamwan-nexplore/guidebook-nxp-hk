@@ -41,7 +41,8 @@ You know what tools to be used. You know what access you need to have. And you k
 You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
 
 - [General](how-we-develop/general.md)
-- [Application Architecture](how-we-develop/application-architecture.md)
+- [Application Architecture (NestJS)](how-we-develop/application-architecture.md)
+- [Application Architecture (React)](how-we-develop/application-architecture-fe.md)
 - [Application Development](how-we-develop/application-development.md)
 
 ### Development Cycle

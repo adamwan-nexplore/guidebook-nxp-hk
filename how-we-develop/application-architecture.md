@@ -172,7 +172,7 @@ flowchart
 ## Checklist
 
 - [ ] Are `Business Logics` resolved as pure functions?
-- [ ] Are the dependencies resolved among interfaces of the functions?
+- [ ] Are services too hard to read and understand?
 - [ ] Is Side Effect applied at the end?
 - [ ] Is Side Effect visible?
 - [ ] Does the code with similar `Business Logics` grouped in the similar way?

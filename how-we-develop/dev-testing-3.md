@@ -2,13 +2,13 @@
 
 Table of Contents
 
-- [Generate feedback by tests](#generate-feedback-by-tests)
+- [Generate instant feedback by tests](#generate-instant-feedback-by-tests)
 - [Protectiveness](#protectiveness)
 - [Effectiveness](#effectiveness)
 - [Readability](#readability)
 - [Reference](#reference)
 
-## Generate feedback by tests
+## Generate instant feedback by tests
 
 - There are a lot of different types of testing
 - To write developer tests:
