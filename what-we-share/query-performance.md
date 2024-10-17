@@ -50,7 +50,7 @@ Table of Contents
 
 > It is IMPOSSIBLE to avoid Randomly-Slow Queries
 >
-> There are factors cannot be under full controlled
+> Not all factors we are able to control
 >
 > - networking
 > - connection pools
@@ -59,12 +59,12 @@ Table of Contents
 ## Principles
 
 1. Transactional queries should be FAST (<500ms)
-2. Number of concurrently queries in the same sessions should be less than 5
-3. Queries inside a transaction should be a constant
-4. Locks that blocks other queries should be avoided (Especially `Table-level Locks`)
+2. Number of concurrently queries of the same sessions should be less than 5
+3. Queries inside a transaction should be a constant in most cases
+4. Locks that blocks other queries should be avoided (Especially `Table-level Locking`)
 
-- optimistic lock - concurrent read is allowed; write is not allowed
-- pessimistic lock - concurrent read nor write allowed
+   - optimistic lock - concurrent read is allowed; write is not allowed
+   - pessimistic lock - concurrent read nor write allowed
 
 > Advanced Topic: [Locks, Latches, Enqueues and Mutex](https://minervadb.xyz/postgresql-locks-latches-enqueues-and-mutex "https://minervadb.xyz/postgresql-locks-latches-enqueues-and-mutex")
 
@@ -115,7 +115,7 @@ Table of Contents
 - De-normalization
 
   - store module key on tables under the module
-  - store the number of sum / average result of certain tables in parent table
+  - store the number of sum / average result of certain table in its parent table
 
 ## Queries
 
@@ -148,7 +148,7 @@ Table of Contents
 3. [N+1 Queries](https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries "https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries")
 
    - Affect Concurrent Connections, Randomly-Slow Queries
-   - when doing CRUD to the grand-children tables (companies -> projects -> records)
+   - while fetching data from the grand-children tables (companies -> projects -> records)
 
    ```sql
    SELECT id, "name" FROM classes WHERE school_code = 'LSC';

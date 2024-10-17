@@ -108,3 +108,11 @@ render (
   values.length && <Dialog ...values />
 );
 ```
+
+- props of primitive data vs component
+
+## Reference
+
+- https://www.youtube.com/playlist?list=PL6dw1BPCcLC4n-4o-t1kQZH0NJeZtpmGp
+
+- Make sure your component is as small as possible (if with UI state)
