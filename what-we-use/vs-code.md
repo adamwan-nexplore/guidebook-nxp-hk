@@ -231,14 +231,14 @@ Table of Contents
   "editor.guides.bracketPairs": true
 
   // * Ruler
-  "editor.rulers": [100], // can have multiple ruler
+  "editor.rulers": [100, 150], // can have multiple rulers
 
   // * Sticky Scroll
   "editor.stickyScroll.scrollWithEditor": true, // on editor
   "workbench.tree.enableStickyScroll": true, // on document ree
 
   // * Auto-hide on Mini-map
-  "editor.minimap.autohide": true, // might not be very useful to someone, need to set folding markers
+  "editor.minimap.autohide": true, // might not be very useful to everyone; need to set folding markers
   "editor.minimap.size": "fill",
 
   // * Auto newline

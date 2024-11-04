@@ -2,25 +2,28 @@
 
 Table of Contents
 
-- [Interface](#interface)
+- [Interfaces](#interfaces)
 - [Database](#database)
 - [Quality Assurance](#quality-assurance)
 - [Pull Request \& Code Review](#pull-request--code-review)
 - [Refactoring](#refactoring)
 - [Reference](#reference)
 
-## Interface
+## Interfaces
 
-- interface IS very IMPORTANT. Keep it clean, un-surprised, focused
-  - REST is NOT necessary. However, we should apply some of constraints to make our API style consistent
+- interface IS very IMPORTANT.
+  - keep it clean, un-surprised, focused
+- REST is NOT necessary
+  - However, we should apply some of constraints to make our API style consistent
   - If you do not know what is REST - check [here](../what-we-share/rest-api.md)
-- input validation IS very very IMPORTANT (sanitization). Wrong interfaces can crash the app and introduce un-expected bugs
-  - set default values if necessary
-  - In REST, PUT is often simpler to implement than PATCH
-  - All ids referencing need to check carefully
-    - Is ID the expected type? (integer vs uuid)
-    - Does ID actually exist?
-    - Does ID belong to the same module?
+- input validation IS very very IMPORTANT (sanitization).
+  - wrong interfaces can crash the app and introduce un-expected bugs
+- set default values if necessary
+- in REST, PUT is often simpler to implement than PATCH
+- All ids referencing need to check carefully
+  - Is ID the expected type? (integer vs uuid)
+  - Does ID actually exist?
+  - Does ID belong to the same module?
 - categorize User ERROR correctly (4xx status code)
   - data input
   - unauthorized action

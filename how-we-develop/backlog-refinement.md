@@ -5,6 +5,7 @@ Table of Contents
 - [Agenda](#agenda)
 - [Story points](#story-points)
   - [Meaning of each number](#meaning-of-each-number)
+- [Best Practices](#best-practices)
 - [Reference](#reference)
 
 ## Agenda
@@ -24,7 +25,7 @@ Table of Contents
 
 **We should `NOT` start any development if there are no estimation in the tasks**
 
-`Fibonacci number` will be a [good](https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating "https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating") tool to follow:
+Scale: `Fibonacci number` is a [good](https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating "https://www.mountaingoatsoftware.com/blog/why-the-fibonacci-sequence-works-well-for-estimating") tool to follow
 
 Assign the number of story points to a task by:
 
@@ -46,6 +47,12 @@ Break down the task if larger than 5
 - [spike](https://www.visual-paradigm.com/scrum/what-is-scrum-spike "https://www.visual-paradigm.com/scrum/what-is-scrum-spike")
 
 It is possible to say the task is a `spike`, which means we do not know how to implement it
+
+## Best Practices
+
+- Before the sprint starts:
+  - Only Bugs / Tasks tickets have story points
+  - Do not put tasks that exceeds the agreed capacity in any cases
 
 ## Reference
 

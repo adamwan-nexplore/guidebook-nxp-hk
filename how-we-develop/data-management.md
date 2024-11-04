@@ -37,17 +37,17 @@ ROLLBACK;
 
 ### Patch Data: A few Records
 
-simply export the whole rows in a CSV file
+- simply export the whole rows in a CSV file
 
 ### Patch Data: Whole Table / A few Tables
 
-try to back up the original data in-place
+- try to back up the original data in-place
 
-```sql
-CREATE TABLE users_20240227 AS
-SELECT * FROM users;
-```
+  ```sql
+  CREATE TABLE users_20240227 AS
+  SELECT * FROM users;
+  ```
 
 ### Patch Data: Several Tables
 
-dump the whole database
+- dump the whole database

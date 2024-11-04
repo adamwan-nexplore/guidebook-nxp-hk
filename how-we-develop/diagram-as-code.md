@@ -17,18 +17,18 @@ For compatibility / auditing reasons, draw our diagrams by code
 
 ## Choice of toolings
 
-[MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview
-[PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams
-[Structurizr DSL](https://structurizr.com "https://structurizr.com")
-[mermerd](https://github.com/KarnerTh/mermerd "https://github.com/KarnerTh/mermerd") - ERD from Database
+- [MermaidJS](https://mermaid.js.org "https://mermaid.js.org") - C4 Diagrams / ERD, Github supports preview
+- [PlantUML](https://plantuml.com "https://plantuml.com") - A more flexible layout / advanced diagrams
+- [Structurizr DSL](https://structurizr.com "https://structurizr.com")
+- [mermerd](https://github.com/KarnerTh/mermerd "https://github.com/KarnerTh/mermerd") - ERD from Database
 
-```bash
-./mermerd \
-  --useAllTables \
-  --schema public \
-  --outputFileName "erd.mmd" \
-  --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
-```
+  ```bash
+  ./mermerd \
+    --useAllTables \
+    --schema public \
+    --outputFileName "erd.mmd" \
+    --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
+  ```
 
 ## Before drawing, ask
 
@@ -135,9 +135,10 @@ flowchart
 
 ### Remarks
 
-**Diamond**: Should make the text short
-**Rounded Rectangle**: Dashed edge to the shape
-**Hexagon**: Alternate shape for decision - a longer text is provided
+- **Diamond**: Should make the text short
+- **Rounded Rectangle**: Dashed edge to the shape
+- **Hexagon**: Alternate shape for decision
+  - a longer text is provided
 
 ## Edges
 

@@ -1,4 +1,4 @@
-# A guidebook for Nexplore HK Engineers <!-- omit in toc -->
+# A guidebook for Nexplore HK Projects <!-- omit in toc -->
 
 Table of Contents
 

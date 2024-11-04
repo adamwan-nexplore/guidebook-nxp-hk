@@ -9,7 +9,7 @@ Table of Contents
   - [Developer - Unit Test](#developer---unit-test)
   - [Developer - Integration Test](#developer---integration-test)
   - [Functional - Smoke Test](#functional---smoke-test)
-  - [Functional - End-to-End Test](#functional---end-to-end-test)
+  - [Acceptance - End-to-End Test](#acceptance---end-to-end-test)
 - [Reference](#reference)
 
 ## The objective of writing test cases
@@ -70,7 +70,7 @@ Table of Contents
 - Give you `confidence` on part of logics, part of database query, part of cache
 - Tools: Playwright
 
-### Functional - End-to-End Test
+### Acceptance - End-to-End Test
 
 - `When` test against the client end
 - `Verify` UI display with REAL user stories

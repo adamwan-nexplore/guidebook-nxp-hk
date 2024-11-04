@@ -2,7 +2,8 @@
 
 Table of Contents
 
-- [3 Keys elements](#3-keys-elements)
+- [4 Keys elements](#4-keys-elements)
+  - [Values](#values)
   - [Roles](#roles)
   - [Artifacts](#artifacts)
   - [5 (+1) Events](#5-1-events)
@@ -15,7 +16,15 @@ Table of Contents
   - [Board 1 - Development Board](#board-1---development-board)
   - [Board 2 - Product Board](#board-2---product-board)
 
-## 3 Keys elements
+## 4 Keys elements
+
+### Values
+
+- Commitment
+- Courage
+- Openness
+- Focus
+- Respect
 
 ### Roles
 

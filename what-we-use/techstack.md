@@ -30,6 +30,7 @@
 - [Ant Design](https://ant.design "https://ant.design")
 - [Playwright](https://playwright.dev "https://playwright.dev")
 - [ReactJS](https://reactjs.org "https://reactjs.org")
+- [Vite](https://vite.dev "https://vite.dev")
 
 ## Mobile
 

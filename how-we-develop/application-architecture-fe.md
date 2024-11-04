@@ -41,52 +41,44 @@ Table of Contents
   - e.g. route: `projects/:projectId/detail`
   - filename: `ProjectsDetailPage` (ignore `projectId`)
   - single `component`
-  - file suffix: `Page`
-  - extensions: `tsx`
+  - file suffix: `Page.tsx`
 
 - components
   - `UI` not imported to router
   - single `component`
-  - file suffix: no suffix
-  - extensions: `tsx`
+  - file suffix: `tsx`
 
 - routes
   - map the actual page `components` and `URL`
   - array of route `components`
-  - file suffix: `-routes`
-  - extensions: `tsx`
+  - file suffix: `-routes.tsx`
 
 ### Core - Logics & Dependencies
 
 - hooks
   - single custom hook `function`
   - might import logic from services
-  - file suffix: no suffix
-  - extensions: `ts`
+  - file suffix: `ts`
 - helpers
   - single / multiple pure `functions`
-  - file suffix: `-helper` or `-helpers`
-  - extensions: `ts`
+  - file suffix: `-helper.ts` or `-helpers.ts`
 - services
   - single / multiple `functions`
   - send requests to APIs
-  - file suffix: `-service` or `-services`
-  - extensions: `ts`
+  - file suffix: `-service.ts` or `-services.ts`
 
 ### Complimentary
 
 - utils
   - contains random calls
   - remote calls
-  - extensions: `ts`
+  - file suffix: `ts`
 - types
   - single / multiple `types` & `interfaces`
-  - file suffix: `-types`
-  - extensions: `ts`
+  - file suffix: `-types.ts`
 - constants
   - single / multiple `constants` & `enums`
-  - file suffix: `-consts`
-  - extensions: `ts`
+  - file suffix: `-consts.ts`
 
 <!-- ## When to have a new -->
 

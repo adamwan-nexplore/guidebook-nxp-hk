@@ -18,7 +18,7 @@ Table of Contents
     - [kubespy](#kubespy)
     - [kurt](#kurt)
     - [outdated](#outdated)
-  - [Short Names](#short-names)
+- [Short Names](#short-names)
 
 ## Tools
 
@@ -170,7 +170,7 @@ k spy my-app -n app
 
 #### [kurt](https://github.com/soraro/kurt "https://github.com/soraro/kurt")
 
-- show all restarted resources
+- show all restarted nodes and pods
 
 ```bash
 k kurt all
@@ -231,10 +231,10 @@ k outdated
 # quay.io/jetstack/cert-manager-webhook                  v1.11.1               4.0.0-c875c7         3
 ```
 
-### Short Names
+## Short Names
 
 ```shell
-kubectl api-resources
+k api-resources
 
 # NAME                                SHORTNAMES          APIVERSION                             NAMESPACED   KIND
 # bindings                                                v1                                     true         Binding

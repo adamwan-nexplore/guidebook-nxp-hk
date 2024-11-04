@@ -58,7 +58,7 @@ stateDiagram-v2
   note right of ToDev
     Developer in blue
     QA in orange
-    `Product Lead & Developer` in purple
+    Product Lead & Developer in purple
   end note
 
   class ToDo dev
