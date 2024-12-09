@@ -16,6 +16,50 @@ Table of Contents
 
 ## Overview
 
+```mermaid
+---
+title: Workflow Components
+---
+
+flowchart
+  request((request)) ==> route
+  route ==> page
+  page ==> component
+
+  page --> helper
+  page --> hook
+  page --> service
+
+  component --> helper
+  component --> hook
+  component --> service
+
+  style request fill:blue,stroke:#333,stroke-width:4px
+  style route fill:blue,stroke:#333,stroke-width:4px
+  style page fill:blue,stroke:#333,stroke-width:4px
+  style component fill:blue,stroke:#333,stroke-width:4px
+
+  style hook fill:orange,color:white
+  style service fill:orange,color:white
+
+  style helper fill:orange,color:white
+```
+
+```mermaid
+---
+title: Shared Components
+---
+
+flowchart
+  util{{util}}
+  constant{{constant}}
+  type{{type}}
+
+  style util fill:lightgray,color:green
+  style constant fill:lightgray,color:green
+  style type fill:lightgray,color:green
+```
+
 ## Purpose
 
 - Define a clear mapping between `URL` and `page`
