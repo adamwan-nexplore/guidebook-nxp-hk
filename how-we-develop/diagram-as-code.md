@@ -3,9 +3,7 @@
 Table of Contents
 
 - [Choice of toolings](#choice-of-toolings)
-- [Before drawing, ask](#before-drawing-ask)
-- [After drawn, think about](#after-drawn-think-about)
-- [Advanced Use](#advanced-use)
+- [Advanced Use of Mermaid Themes](#advanced-use-of-mermaid-themes)
 - [Legends](#legends)
   - [Flowcharts](#flowcharts)
 - [Shapes](#shapes)
@@ -30,46 +28,7 @@ For compatibility / auditing reasons, draw our diagrams by code
     --connectionString "postgresql://{USERNAME}:{PASSWORD}@{PATH}/{DATABASE}"
   ```
 
-## Before drawing, ask
-
-- (People) Who read the diagrams?
-- (People) Who can help maintaining the diagrams?
-- (Context) Technical vs Business?
-- (Context) How much information?
-- (Methodologies) What diagrams?
-  - Context Diagrams
-  - State Diagrams
-  - Sequence Diagrams
-  - Use Case Diagrams
-  - Flow Charts
-
-## After drawn, think about
-
-- (People) Who can help reviewing the diagrams?
-- (Context) Can readers search the context?
-- (Context) Check typos
-- (Context) Avoid to have more than 50 nodes & associations
-- (Context) Provide title if possible
-- (Context) Provide comments in CODE if necessary
-
-```markdown
----
-title: Hello Title
----
-
-flowchart
-  Hello --> World
-```
-
-```mermaid
----
-title: Hello Title
----
-flowchart
-  Hello --> World
-```
-
-## Advanced Use
+## Advanced Use of Mermaid Themes
 
 - themes
   - default - good in most cases

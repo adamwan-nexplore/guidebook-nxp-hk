@@ -65,6 +65,7 @@ You know our development process, our conventions, and the ways we communicate b
 - [Developer Testing (1)](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
 - [Developer Testing (3)](how-we-develop/dev-testing-3.md)
+- [Software visualization](how-we-develop/software-visualization.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 - [NestJS](how-we-develop/nestjs.md)
