@@ -23,7 +23,9 @@ In 2019, Life as a Service (LaaS) was initiated by NEXPLORE acting as the collab
 
 ## What we use
 
-You know what tools to be used. You know what access you need to have. And you know our tech stack.
+You know what tools are to be used.\
+You know what access you need to have.\
+And you know the tech stack.
 
 - [Platform Access](what-we-use/platform.md)
 - [Software Needed](what-we-use/software.md)
@@ -38,7 +40,9 @@ You know what tools to be used. You know what access you need to have. And you k
 
 ## How we develop
 
-You know our development process, our conventions, and the ways we communicate between engineers and stakeholders.
+You know the conventions.\
+You know the development processes.
+And you know how we communicate between engineers and stakeholders.
 
 - [General](how-we-develop/general.md)
 - [Application Architecture (NestJS)](how-we-develop/application-architecture.md)
@@ -57,7 +61,6 @@ You know our development process, our conventions, and the ways we communicate b
 - [PR Checklist](how-we-develop/pr-checklist.md)
 - [Scrum](how-we-develop/scrum.md)
   - [Backlog Refinement](how-we-develop/backlog-refinement.md)
-- [Smoke Tests](how-we-develop/smoke-tests.md)
 
 ### Engineering Practices
 
@@ -65,16 +68,17 @@ You know our development process, our conventions, and the ways we communicate b
 - [Developer Testing (1)](how-we-develop/dev-testing.md)
 - [Developer Testing (2)](how-we-develop/dev-testing-2.md)
 - [Developer Testing (3)](how-we-develop/dev-testing-3.md)
-- [Software visualization](how-we-develop/software-visualization.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 - [NestJS](how-we-develop/nestjs.md)
+- [Smoke Tests](how-we-develop/smoke-tests.md)
+- [Software visualization](how-we-develop/software-visualization.md)
 - [Type Systems](how-we-develop/type-systems.md)
 - [TypeScript](how-we-develop/typescript.md)
 
 ## How we learn and share
 
-You know how to learn from others, give your feedback and share what you have learnt with peers.
+You know how to learn from others, provide feedback and share what your insights with peers.
 
 - [30-30 Meeting](how-we-share/30-30.md)
 - [Backend Catch-up](how-we-share/backend-catch-up.md)
@@ -95,7 +99,7 @@ Catch-up Material
 
 ## How we hire
 
-You know how to evaluate candidates applying to engineering positions.
+You know how to evaluate candidates applying for engineering roles.
 
 - [Job Openings](https://hk.jobsdb.com/hk/search-jobs/nexplore/1)
 - [The Process](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-hire/hiring-engineers.md)

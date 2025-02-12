@@ -23,6 +23,10 @@ Like
 - `functions` expects that inputs and outputs are always present.
 - `pure` describes a function that will not change those `non-outputs`. In JS/TS, be aware of `Promise` and `async/await`, reading current time, or generating some random stuff.
 
+### Development Methodology
+
+We follow [Scrum](scrum.md) with a [lean](../how-we-share/lean.md) mindset.
+
 ### Development Flow
 
 ```mermaid

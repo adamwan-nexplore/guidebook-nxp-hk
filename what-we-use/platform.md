@@ -6,7 +6,6 @@
 - [Coursera](https://www.coursera.org "https://www.coursera.org") - Course Learning
 - [Datadog](https://app.datadoghq.eu "https://app.datadoghq.eu") - Logging & Monitoring
 - [Figma](https://www.figma.com "https://www.figma.com") - Design & Prototyping by Designers
-- [GitHub (Leighton Asia)](https://github.com/leightonasia "https://github.com/leightonasia") - Deprecated
 - [GitHub (NEXPLORE)](https://github.com/NexploreTechnology "https://github.com/NexploreTechnology") - Nexplore Source Codes & Repository
 - [Jira](https://nexplore.atlassian.net/jira "https://nexplore.atlassian.net/jira") - Development Planning, tracking and performance metrics
 - [Links](https://nexplore.linksinternational.com "https://nexplore.linksinternational.com") - Payroll & Leave
@@ -15,3 +14,4 @@
 - [Office 365 (NEXPLORE)](https://outlook.office365.com "https://outlook.office365.com")
 - [Phrase](https://eu.phrase.com "https://eu.phrase.com") - Translation Management Service
 - [Service Desk](https://nexplore.atlassian.net/servicedesk/customer/portals "https://nexplore.atlassian.net/servicedesk/customer/portals") - Submit requests for internal accesses & resources
+- [Userpilot](https://userpilot.com "https://userpilot.com") - provide on boarding setup
