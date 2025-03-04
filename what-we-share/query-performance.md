@@ -21,6 +21,7 @@ Table of Contents
     - [The Concept](#the-concept)
     - [Index Types](#index-types)
     - [Micro-optimization](#micro-optimization)
+    - [Good Use of Indices](#good-use-of-indices)
 - [Monitoring](#monitoring)
 - [To be Extreme](#to-be-extreme)
   - [No code](#no-code)
@@ -32,15 +33,20 @@ Table of Contents
 - Management Models
 
   - OLTP (Online Transaction Processing)
-    - store and query the transactions
+    - store and query data
   - ~~OLAP (Online Analytical Processing)~~
-    - report data, for planning and management
+    - report the summary of data, for planning and management
 
-- Vendors
+- Databases
   - Postgres
   - ~~MySQL~~
   - ~~OracleDB~~
   - ~~SQL Server~~
+
+- Cloud Vendors
+  - Azure
+  - ~~AWS~~
+  - ~~GCP~~
 
 ## Good Performance
 
@@ -59,7 +65,7 @@ Table of Contents
 ## Principles
 
 1. Transactional queries should be FAST (<500ms)
-2. Number of concurrently queries of the same sessions should be less than 5
+2. Number of concurrently queries of the same session should be less than 5
 3. Queries inside a transaction should be a constant in most cases
 4. Locks that blocks other queries should be avoided (Especially `Table-level Locking`)
 
@@ -80,8 +86,8 @@ Table of Contents
 ## Configurations & Tooling
 
 - [PgBouncer](https://www.pgbouncer.org "https://www.pgbouncer.org")
-  - Manage connection pool efficiently
-  - Azure Flexible Server provides the integration of PgBounder as an [addon](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer")
+  - Manage connections efficiently
+  - Azure Flexible Server provides the integration of PgBouncer as an [addon](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer")
 - [PgTune](https://pgtune.leopard.in.ua "https://pgtune.leopard.in.ua")
   - Optimize Postgres configuration file according to the hardware specification
 - [Performance Insights](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-query-performance-insight "https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-query-performance-insight")
@@ -188,7 +194,7 @@ Table of Contents
 ### What should know
 
 0. [Query Plan](https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan "https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan")
-1. Be avoid to query with complicated conditions that requires `Full Table Scan` on several tables
+1. Be avoid to query with complicated clauses that requires `Full Table Scan` (aka `Sequential Scan`) on several tables
 2. Be aware of queries on Critical Tables (User Table, `Modules` Tables)
 3. For each query, indices should be used for tables > 1k records
 
@@ -214,14 +220,19 @@ Table of Contents
 #### The Concept
 
 - Selectivity
+  - on `WHERE clause`, the degree of how much data can take out
+  - take out more = higher selectivity
 - Cardinality
+  - distinct values of a column
+  - limit number of values = higher cardinality
+
+- Learn more [here](https://minervadb.xyz/selectivity-and-cardinality-estimations-in-postgresql)
 
 #### Index Types
 
 - `B-tree` use by default - O(log n)
 - `Hash Index` could be a good choice UNDER a few circumstances - O(1)
-  - REQUIREMENT: Postgres Version > 11, not us
-- `GIST & GIN` for JSON data
+- `GIST & GIN` for JSON data / Full Text Search
 
 > Learn more on `Hash Index` [[1]](https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku "https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku") [[2]](https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance "https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance")
 
@@ -241,6 +252,11 @@ SELECT * FROM projects WHERE SUBSTRING(directory, 0, 6) = '00123>';
 CREATE INDEX IF NOT EXISTS project_directory_idx ON "projects"(SUBSTRING(directory, 0, 6));
 ```
 
+#### Good Use of Indices
+
+- `Sequential Scan` is fine for small tables (< 1000 records)
+- Otherwise, most of the queries (e.g. 80%) should be marked with `Index Scan` OR / AND `Index-Only Scan` in the query plans
+
 ## Monitoring
 
 - Alerts on Database Server Resource Usage
@@ -257,13 +273,13 @@ CREATE INDEX IF NOT EXISTS project_directory_idx ON "projects"(SUBSTRING(directo
 > No queries is the best way to make the database performing good.
 
 - Query the replica
-- Cache the result in application
+- Cache the result on application side
 - Do not store static configuration data
   - store in the services providing `strong consistency`
     - [S3](https://aws.amazon.com/tw/s3/consistency "https://aws.amazon.com/tw/s3/consistency")
     - [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/concurrency-manage "https://learn.microsoft.com/en-us/azure/storage/blobs/concurrency-manage")
 
-> ~~No~~ Only necessary queries to Master Database is the best way to make the database performing good
+> Only necessary queries to Master Database is the best way to make the database performing good
 
 ## Reference
 

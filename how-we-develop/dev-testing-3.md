@@ -10,7 +10,7 @@ Table of Contents
 
 ## Generate instant feedback by tests
 
-- There are a lot of different types of testing
+- There are a lot of different types of tests
 - To write developer tests:
 - the tests should
   - provide instant feedback on any change
@@ -81,7 +81,7 @@ describe('#getAnimalData', () => {
     });
   });
 
-  // Resistent enough to flag ANY interface change and SOME logical change
+  // Be resistant enough to flag ANY interface change and SOME logical change
   describe('a good test', () => {
     it('breaks', () => {
       // 1: 👍 See below
@@ -104,7 +104,7 @@ describe('#getAnimalData', () => {
 
 1. 👍 No need to explicitly assert something arbitrary
 2. 👍 Cover the exit point ENTIRELY
-3. 👍 Instead of a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions).
+3. 👍 Besides a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions).
 
 ## Effectiveness
 
