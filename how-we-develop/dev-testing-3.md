@@ -108,7 +108,7 @@ describe('#getAnimalData', () => {
 
 ## Effectiveness
 
-- Test only your own code
+Test only your own code
 - Ineffective tests do not improve any code coverage (e.g. [ABC Metric](https://en.wikipedia.org/wiki/ABC_Software_Metric))
 
 ```typescript
