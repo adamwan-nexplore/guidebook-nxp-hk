@@ -15,8 +15,8 @@ Get a list of photos
     "createdAt": "2023-03-31T05:08:38.768Z",
     "url": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/855.jpg",
     "description": "The Football Is Good For Training And Recreational Purposes",
-    "location": "Jorgeboro",
-    "createdBy": "Brandon Haley MD",
+    "location": "Hong Kong",
+    "createdBy": "Adam Wan",
     "takenAt": "2022-11-19T19:22:18.346Z",
     "id": "1"
   },

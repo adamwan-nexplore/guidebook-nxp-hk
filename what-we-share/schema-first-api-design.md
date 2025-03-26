@@ -13,7 +13,7 @@ Table of Contents
 
 ## Problem Statement
 
-- Some teams are more critical than the other teams to affect the overall delivery schedule
+Some teams are more critical than the other teams to affect the overall delivery schedule
 
 ```mermaid
 graph LR

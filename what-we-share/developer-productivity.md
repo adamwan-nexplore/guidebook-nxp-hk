@@ -11,6 +11,8 @@ Table of Contents
 
 ## Fonts
 
+Monospace fonts ensure consistent character width, improving code readability
+
 - [Monaspace](https://monaspace.githubnext.com/?fbclid=IwZXh0bgNhZW0CMTEAAR3EO3yFjT9oZzBcmbYgQ7dkhwHOFrXFaCvQpR525xZP11Z--8GXI3r4Yu4_aem_ZmFrZWR1bW15MTZieXRlcw "https://monaspace.githubnext.com/?fbclid=IwZXh0bgNhZW0CMTEAAR3EO3yFjT9oZzBcmbYgQ7dkhwHOFrXFaCvQpR525xZP11Z--8GXI3r4Yu4_aem_ZmFrZWR1bW15MTZieXRlcw")
 
 ![font-styles](./github-monospace.png)
@@ -30,6 +32,8 @@ Table of Contents
 ![font-styles](./vercel-geist.png)
 
 ## Terminal
+
+Modern terminals offer syntax highlighting, split panes, clipboard integration, and command autocompletion
 
 - [zsh](https://www.zsh.org "https://www.zsh.org") - original, fast
   - command + t (create tabs)

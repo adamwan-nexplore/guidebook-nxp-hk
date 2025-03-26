@@ -10,16 +10,21 @@ Table of Contents
 
 ## Agenda
 
-- Review what tasks remain
-- Review sprint statistics
-  - `BurnUp Chart`
-  - `Velocity Chart`
-  - `Control Chart`
-  - To understand _scope change_, _velocity shift_ and _reasons why not starting some tasks_
-- Introduce, discuss and estimate the tasks
-- Note uncertain things and assign someone responsible to clarify the requirements
-- AGREE on the [sprint goal(s)](https://www.scrum.org/resources/what-sprint-goal) - no more than three
-- Decide what should be done and what should not be done
+1. Review what tasks remain
+
+2. Review sprint statistics
+   - `BurnUp Chart`
+   - `Velocity Chart`
+   - `Control Chart`
+   - To understand _scope change_, _velocity shift_ and _reasons why not starting some tasks_
+
+3. Introduce, discuss and estimate the tasks
+
+4. Note uncertain things and assign someone responsible to clarify the requirements
+
+5. AGREE on the [sprint goal(s)](https://www.scrum.org/resources/what-sprint-goal)
+   - No more than three
+   - Decide what should be done and what should not be done
 
 ## Story points
 
@@ -35,24 +40,27 @@ Assign the number of story points to a task by:
 
 ### Meaning of each number
 
+Break down the tasks if the estimation is larger than 5
+
 - 1 (very easy, can be done in less than 1 hour)
 - 2 (easy, but need time to implement and verify, maybe need to spend 1 to several hours)
 - 3 (medium, expected to spend around 1 day to finish it)
 - 5 (complicated, expected days)
 
-Break down the task if larger than 5
-
 - 8 (very complicated, expected a week)
+
 - 13 (it will be super huge that we cannot imagine, even cant estimate the timeline)
+
 - [spike](https://www.visual-paradigm.com/scrum/what-is-scrum-spike "https://www.visual-paradigm.com/scrum/what-is-scrum-spike")
 
 It is possible to say the task is a `spike`, which means we do not know how to implement it
 
 ## Best Practices
 
-- Before the sprint starts:
-  - Only Bugs / Tasks tickets have story points
-  - Do not put tasks that exceeds the agreed capacity in any cases
+Before the sprint starts:
+
+- Only Bugs / Tasks tickets have story points
+- Do not put tasks that exceeds the agreed capacity in any cases
 
 ## Reference
 
