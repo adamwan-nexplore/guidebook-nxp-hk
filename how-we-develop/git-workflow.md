@@ -9,7 +9,7 @@ Table of Contents
 
 ## Introduction
 
-- We are currently on [GitLab Flow](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow).
+We use [GitLab Flow](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow).
 
 - We promote and aim at transiting to a linear flow based on `dev-deployment`
 - The change from `dev-deployment` to all `uat-deployment` MUST be done through `git merge`

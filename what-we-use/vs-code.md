@@ -39,7 +39,7 @@ Table of Contents
 
 ## Extensions
 
-- Most of the images are from the original plugin page
+Most of the images are from the original plugin page
 
 ### [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker")
 

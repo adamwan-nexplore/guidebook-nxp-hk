@@ -1,6 +1,6 @@
 # Code Review <!-- omit in toc -->
 
-- This is NOT a universal guide
+This is NOT a universal guide
 
 1. `[DB]`Transaction should ONLY apply when modifying data. Fetching data is not necessary.
 2. `[DB]`Do not include EMAIL actions in transaction
@@ -15,3 +15,7 @@
 
 6. `[API]` Promise.all should NOT be used with un-determinate array (e.g. `map()`)
 7. `[API]` Functions with too many arguments - consider changing from `positional arguments` to `keyword arguments`
+
+# Reference
+
+- ["Look Good to Me"](https://www.manning.com/books/looks-good-to-me)

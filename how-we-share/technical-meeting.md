@@ -15,15 +15,14 @@
 
 ## Objectives
 
-- Make decisions that require input from others
-- Share information that participants need to know
+- Make collaborative decisions requiring multiple stakeholders' input
+- Share critical information and updates with relevant team members
 
 ## Before the meeting
 
 ### Notify early
-
-- Unless urgent cases, most meetings should be announced as soon as they are planned
-- Late notice can lead to unprepared work, venue conflicts, and scheduling issues for participants, causing inefficiency
+- Announce meetings well in advance to allow proper preparation
+- Late notices risk poor preparation, venue unavailability, scheduling conflicts, and reduced meeting effectiveness
 
 ### Good meeting name
 

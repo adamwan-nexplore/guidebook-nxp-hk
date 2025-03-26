@@ -2,7 +2,7 @@
 
 ## Structural logging
 
-- Each log entry should be traceable
+Each log entry should be traceable
   1. when
   2. whom
   3. what key parameters
@@ -10,23 +10,23 @@
 
 ## Searchable
 
-- Each log entry should be searchable
+Each log entry should be searchable
   - Besides the attribute `msg`, please provide some key attributes for searching / filtering.
 
 ## Log Level
 
-- Each log entry should set the log level properly
+Each log entry should set the log level properly
   - Help any further analysis and in case there are something abnormal
 
 > It is fine to log something randomly for investigation but please make sure the log level is in `debug` / `verbose`
 
-## Law
+## Legal Compliance
 
-- All log entries in the cluster will sit into DataDog (Europe) due to [GDPR](https://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018 "https://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018")
+All log entries in the cluster will sit into DataDog (Europe) due to [GDPR](https://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018 "https://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018")
 
 ## Log Reference
 
-- Each log entry
+Each log entry
   - should have `at least one key attributes` to match the data
   - should NOT have too many attributes (i.e. keep it `less than 10`)
 

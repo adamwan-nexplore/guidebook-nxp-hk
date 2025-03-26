@@ -9,7 +9,8 @@ Table of Contents
 
 ## Why diagramming?
 
-- Provide a quick reference or even an index of a **COMPLEX** system in different aspect
+Provide a quick reference or even an index of a **COMPLEX** system in different aspect
+
 - Can focus on ONE or a few specific aspects of the systems, WHILE documentations or source code always provide the full pictures
 - Most people like to read diagrams before jumping into the lengthy documentation / source code
 
