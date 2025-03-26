@@ -3,6 +3,7 @@
 Table of Contents
 
 - [Tutorial](#tutorial)
+- [Add `code` command to the terminal](#add-code-command-to-the-terminal)
 - [Extensions](#extensions)
   - [Code Spell Checker](#code-spell-checker)
   - [Batch Rename](#batch-rename)
@@ -37,9 +38,16 @@ Table of Contents
 
 > Open the Welcome page from the Help > Editor Playground menu or use the Help: Interactive Editor Playground command from the Command Palette (⇧⌘P).
 
+## Add `code` command to the terminal
+
+1. Enter both CMD + P
+2. Select `Shell Command: Install 'code' command in PATH
+
+![Add Path](shell-command-add-path.png)
+
 ## Extensions
 
-- Most of the images are from the original plugin page
+Most of the images are from the original plugin page
 
 ### [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker")
 
@@ -167,7 +175,8 @@ Table of Contents
 - Dart Refactoring, check [here](https://dartcode.org/docs/refactorings-and-code-fixes "https://dartcode.org/docs/refactorings-and-code-fixes")
 
 - [Refactoring Tips](https://code.visualstudio.com/docs/editor/refactoring "https://code.visualstudio.com/docs/editor/refactoring")
-- open `Settings` - `cmd` + `,`
+- Open `Settings` - `cmd` + `,`
+- Show `Refactor` - `cmd` + `.`
 - Split editor: `cmd` + `\`
 - Move across editor: `cmd` + `option` + `<` / `>`
 
@@ -191,7 +200,6 @@ Table of Contents
 {
   // * TypeScript Inlay Hints
   // Show inference arguments & types in ghost text
-
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.variableTypes.enabled": true, // highly recommended
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
@@ -227,7 +235,7 @@ Table of Contents
   // Auto rename the closing tag when the open tag has updated
   "editor.linkedEditing": true,
 
-  // Brackets with color lines
+  // * Brackets with color lines
   "editor.guides.bracketPairs": true
 
   // * Ruler

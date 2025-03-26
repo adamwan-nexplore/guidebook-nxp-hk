@@ -2,11 +2,11 @@
 
 ## What is it?
 
-- A QUICK, SIMPLE and most critical test cases to verify the system is working properly
+A QUICK, SIMPLE and most critical test cases to verify the system is working properly
 
 ## [Playwright](https://playwright.dev "https://playwright.dev")
 
-- a test framework that can simulate how we interact with browsers automatically
+A test framework that can simulate how we interact with browsers automatically
 
 ## Playwright - what it offers
 

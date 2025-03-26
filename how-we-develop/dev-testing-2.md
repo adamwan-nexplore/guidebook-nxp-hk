@@ -14,7 +14,7 @@ Table of Contents
 
 ## The objective of writing test cases
 
-- Verify things working as `EXPECTED`
+Verify things working as `EXPECTED`
 
 ## The bottom line
 

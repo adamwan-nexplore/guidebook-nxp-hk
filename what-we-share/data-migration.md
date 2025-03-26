@@ -117,5 +117,6 @@ Table of Contents
 
 ## Follow-ups
 
-- Be mindful for data fix for one week after the migration
-- Discuss the priority and timeline of extra work found
+1. Monitor and fix critical data issues for 1 week post-migration
+
+2. Prioritize and schedule any additional tasks discovered

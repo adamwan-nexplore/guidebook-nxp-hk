@@ -13,9 +13,9 @@ Table of Contents
 
 ## What is it?
 
-- Kubernetes (K8S) automates administrative work that will make sure containerized applications running correctly
+Kubernetes (K8S) automates administrative work that will make sure containerized applications running correctly
 
-- K8S can:
+K8S can:
   - monitor applications
   - decide applications deploying to what server(s)
   - restart applications if they are not working
@@ -38,9 +38,11 @@ Table of Contents
 
 ## Declarative Design
 
-- Everything in K8S is a resource
-- Resource is defined by manifest file in yaml format
-- Resources can modify other resources by matching the annotations
+Everything in K8S is a resource
+
+Resource is defined by manifest file in yaml format
+
+Resources can modify other resources by matching the annotations
 
 ## Common Resources
 

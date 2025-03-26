@@ -50,7 +50,7 @@ Table of Contents
 
 ## Category
 
-1. Each repository should have a couple of topics (= #hashtag). It helps filtering and querying repository data by `gh`
+Each repository should have a couple of topics (= #hashtag). It helps filtering and querying repository data by `gh`
 
     | **topic**                 | **meaning**       |
     | ------------------------- | ----------------- |
@@ -83,9 +83,12 @@ Table of Contents
 
 ## Access Rights
 
-- Manage by Github Teams. Never manage by individual users
+Is managed with `Teams`.
 
-- Always have at least two teams `-devops` (owner) and `-developers`
+
+- Be avoid to grant accesses to individual users
+
+- Have at least two teams `-devops` (owners) and `-developers`
 
 ## Reference
 
