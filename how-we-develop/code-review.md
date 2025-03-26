@@ -1,17 +1,39 @@
 # Code Review <!-- omit in toc -->
 
-- This is NOT a universal guide
+## The Guide
 
-1. `[DB]`Transaction should ONLY apply when modifying data. Fetching data is not necessary.
-2. `[DB]`Do not include EMAIL actions in transaction
-3. `[API]` API interface is IMPORTANT. Always discuss with your teammates before you start
-4. `[API]` Input sanitization is VERY IMPORTANT. Relational KEYS can be a security issue for not handling properly
-5. `[API/DB]` TypeORM for complicated queries
+This is NOT a universal guide.
 
-   - provide raw query
-   - orWhere should be avoided (you need bracket sometime)
-   - Bracket should be avoided
-   - andWhere / orWhere use only if you have some conditions to work with
+1. `[DB]` Transactions should ONLY be used when modifying data. Fetching data does not require a transaction.
+2. `[DB]` Avoid including external actions within a transaction, such as:
+   - Sending emails
+   - Sending messages to a service bus
+   - Making remote API calls
+3. `[API]` API interface design is __CRUCIAL__. Always discuss with your teammates before starting work on the features.
+4. `[API]` Input sanitization is __CRITICAL__. Improper handling of relational KEYS can lead to security vulnerabilities.
+5. `[API/DB]` When using TypeORM for complex queries:
+   - Provide raw queries and query plans in Pull Requests.
+   - Avoid using `orWhere` unless absolutely necessary (it often requires brackets).
+   - Minimize the use of brackets in queries.
+   - Use `andWhere` or `orWhere` only if the conditions are optional.
 
-6. `[API]` Promise.all should NOT be used with un-determinate array (e.g. `map()`)
-7. `[API]` Functions with too many arguments - consider changing from `positional arguments` to `keyword arguments`
+      ```typescript
+      const photosRepo = getRepository(Photo);
+      let getPhotosQuery = photosRepo
+         .createQueryBuilder('p')
+         .where('p.projectId = :projectId', { projectId });
+
+      // Correct use
+      if (startDate) {
+         getPhotosQuery = getPhotosQuery.andWhere('p.startDate >= :startDate', { startDate });
+      }
+
+      const photos = await getPhotosQuery.getMany();
+      ```
+
+6. `[API]` Avoid using `Promise.all` with arrays of unknown or dynamic length (e.g., arrays created with `map()`).
+7. `[API]` For functions with many arguments, consider switching from `positional arguments` to `keyword arguments` for better readability and maintainability.
+
+## Reference
+
+- ["Look Good to Me"](https://www.manning.com/books/looks-good-to-me)

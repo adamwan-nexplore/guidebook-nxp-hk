@@ -17,7 +17,7 @@ Table of Contents
 
 ## How slow is slow?
 
-- [Core Web Vitals](https://web.dev/articles/vitals)
+[Core Web Vitals](https://web.dev/articles/vitals)
 
   - FCP (First Contentful Paint) - Respond quickly
   - LCP (Largest Contentful Paint) - Get to the point
@@ -26,7 +26,7 @@ Table of Contents
 
 ## Tool
 
-- [lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - a built-in tool in Google Chrome provides **Core Web Vitals** and advices on the website
+[lighthouse](https://developer.chrome.com/docs/lighthouse/overview) - a built-in tool in Google Chrome provides **Core Web Vitals** and advices on the website
 
 ## How to make it faster
 
@@ -38,7 +38,7 @@ Table of Contents
 
 ## Modern Web Application Architecture
 
-- Modern Web Application often consists of three major components
+Modern Web Application often consists of three major components
   - **Single Page Application** (Public and Static)
   - **API** (Authenticated and Dynamic), and
   - **Downloadable Content** (Authenticated but Static)

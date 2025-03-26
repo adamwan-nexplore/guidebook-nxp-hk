@@ -17,7 +17,7 @@ Table of Contents
 
 ## Unpopular Opinion
 
-- One new system should start from monolith unless you are 100% sure you have enough engineers and [C10k](https://en.wikipedia.org/wiki/C10k_problem "https://en.wikipedia.org/wiki/C10k_problem") traffic when you launch the system
+One new system should start from monolith unless you are 100% sure you have enough engineers and [C10k](https://en.wikipedia.org/wiki/C10k_problem "https://en.wikipedia.org/wiki/C10k_problem") traffic when you launch the system
 
 ## Introduction
 

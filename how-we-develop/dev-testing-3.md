@@ -4,6 +4,7 @@ Table of Contents
 
 - [Generate instant feedback by tests](#generate-instant-feedback-by-tests)
 - [Protectiveness](#protectiveness)
+- [Deterministic](#deterministic)
 - [Effectiveness](#effectiveness)
 - [Readability](#readability)
 - [Reference](#reference)
@@ -68,7 +69,7 @@ const ANIMALS: Animal[] = [
   },
 ];
 
-// good vs bad tests
+// good vs bad test
 describe('#getAnimalData', () => {
   // Tests would pass even the output has changed
   describe('a bad test', () => {
@@ -106,9 +107,37 @@ describe('#getAnimalData', () => {
 2. 👍 Cover the exit point ENTIRELY
 3. 👍 Besides a single assertion, some libraries offer [soft assertion](https://playwright.dev/docs/test-assertions#soft-assertions).
 
+## Deterministic
+
+- Some SUTs are non-deterministic at nature.
+- If just a small portion of the logic, ignore it / test in a high level
+- If affects most parts, DO not test it / refactor the code and take out the non-deterministic part
+
+- You can still verify with automated test cases. Just do not cover it in developer tests
+
+```typescript
+// This function checks if the current time is between 6 PM and 9 PM
+function isHappyHour() {
+  const now = new Date().getHours();
+  return now >= 18 && now < 21;
+} // DO NOT TEST this
+
+// refactor and upstream the getHour logic
+function isHappyHour(now: number) {
+  return now >= 18 && now < 21;
+}
+
+describe('#isHappyHour', () => {
+  it('works', () => {
+    expect(isHappyHour(20)).toEqual(true);
+  });
+});
+```
+
 ## Effectiveness
 
-- Test only your own code
+Test only your own code
+
 - Ineffective tests do not improve any code coverage (e.g. [ABC Metric](https://en.wikipedia.org/wiki/ABC_Software_Metric))
 
 ```typescript
@@ -118,17 +147,41 @@ function getNotice(dateString: string) {
 
 describe('#getNotice', () => {
   // 👎 The parser is implemented natively
-  describe('a bad test', () => {
+  describe('normal test', () => {
     it('is a standard test', () => {
       expect(getNotice('2019-01-01')).toEqual('Now is 1546300800000 second');
     });
+  });
 
+  describe('bad tests', () => {
     it('overkills 1', () => { // 👎 Will not improve the code coverage
       expect(getNotice('2019-01-01T00:00:00.000Z')).toEqual('Now is 1546300800000 second');
     });
 
     it('overkills 2', () => { // 👎 Will not improve the code coverage
       expect(getNotice('2019-01-01T00:00:00.000+00:00')).toEqual('Now is 1546300800000 second');
+    });
+  });
+});
+```
+
+```typescript
+interface Animal {
+  id: number;
+  name: string;
+  weightInKg: number;
+};
+
+function getAnimalNames(animals: Animal[]) {
+  return animals.map(({ name }) => ({ name }) );
+}
+
+// bad test
+describe('#getAnimalData', () => {
+  describe('a bad test', () => {
+    it('returns an empty array', () => {
+      const result = getAnimalData([]);
+      expect(result).toEqual([]); // 👎 Cannot test the new array with name as key
     });
   });
 });

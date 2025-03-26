@@ -28,8 +28,8 @@ flowchart
   categorize{Categorize}
   data-solution{Can fix on UI?}
   system-bugs{Can replicate<br />/illustrate?}
-  data-verify{Verify a patch}
-  verify{Verify a fix}
+  data-verify{Verify the patch}
+  verify{Verify the fix}
 
   %% change of operator
   ops-escalate[/To Ops/]

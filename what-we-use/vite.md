@@ -2,8 +2,7 @@
 
 ## What is it?
 
-- a QUICK build tool for web application development
-- support hot reload if code change
+A QUICK build tool for web application development. It supports hot reload if code change
 
 ## Components
 

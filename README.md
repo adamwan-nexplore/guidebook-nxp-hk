@@ -82,7 +82,7 @@ You know how to learn from others, provide feedback and share what your insights
 
 - [30-30 Meeting](how-we-share/30-30.md)
 - [Backend Catch-up](how-we-share/backend-catch-up.md)
-- [Technical Meeting](how-we-share/technical-meeting.md)
+- [Effective Meeting](how-we-share/effective-meeting.md)
 - Technology & Product Reviews
 
 Catch-up Material
