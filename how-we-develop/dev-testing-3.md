@@ -82,7 +82,7 @@ describe('#getAnimalData', () => {
     });
   });
 
-  // Be resistant enough to flag ANY interface change and SOME logical change
+  // Be resistant enough to flag ANY interface change and SOME data change
   describe('a good test', () => {
     it('breaks', () => {
       // 1: 👍 See below
@@ -110,7 +110,7 @@ describe('#getAnimalData', () => {
 ## Deterministic
 
 - Some SUTs are non-deterministic at nature.
-- If just a small portion of the logic, ignore it / test in a high level
+- If just a small portion of the business logic, ignore it / test in a high level
 - If affects most parts, DO not test it / refactor the code and take out the non-deterministic part
 
 - You can still verify with automated test cases. Just do not cover it in developer tests
@@ -122,7 +122,7 @@ function isHappyHour() {
   return now >= 18 && now < 21;
 } // DO NOT TEST this
 
-// refactor and upstream the getHour logic
+// refactor and upstream the getHour business logic
 function isHappyHour(now: number) {
   return now >= 18 && now < 21;
 }
@@ -193,7 +193,7 @@ describe('#getAnimalData', () => {
   - Arrange Act Assert (AAA)
   - USE
 - Only share **application set up** across tests on hooks. Never share **test set up** on hooks. Consider factory functions
-- To keep tests clean, extract the logic statements into functions
+- To keep tests clean, extract the business logic  into functions
 
 ## Reference
 

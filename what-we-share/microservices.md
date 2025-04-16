@@ -73,7 +73,7 @@ One new system should start from monolith unless you are 100% sure you have enou
 - Common Coupling
   - shared data, e.g. flipping global state
 - Content Coupling (Highest)
-  - shared logic together
+  - shared business logic together
 
 ## Communication Protocols
 

@@ -42,7 +42,7 @@ Verify things working as `EXPECTED`
 
 - `When` test against the pure functions
 - `Verify` the output, period
-- Give you `confidence` on logics
+- Give you `confidence` on business logic
 - Tools: Jest
 
 ### Developer - Integration Test
@@ -52,7 +52,7 @@ Verify things working as `EXPECTED`
 - `When` test against the APIs
 - `Verify` the output and sometimes the cache hit
 - DO NOT mock ANY implementations other than configurations. if needed, DO NO WRITE
-- Give you `confidence` on part of logics, database query, cache
+- Give you `confidence` on part of business logic, database query, cache
 - Tools: Jest, Supertest
 
 (2)
@@ -60,21 +60,21 @@ Verify things working as `EXPECTED`
 - `When` test against the functions that are NOT exposed to APIs, e.g. background jobs
 - `Verify` the output and sometimes the cache hit
 - Be avoid to mock the implementations
-- Give you `confidence` on part of logics, database query, cache
+- Give you `confidence` on part of business logic, database query, cache
 - Tools: Jest
 
 ### Functional - Smoke Test
 
 - `When` test against the client end
 - `Verify` UI display with minimized interactions
-- Give you `confidence` on part of logics, part of database query, part of cache
+- Give you `confidence` on part of business logic, part of database query, part of cache
 - Tools: Playwright
 
 ### Acceptance - End-to-End Test
 
 - `When` test against the client end
 - `Verify` UI display with REAL user stories
-- Give you `confidence` on part of logics, part of database query, part of cache and usability
+- Give you `confidence` on part of business logic, part of database query, part of cache and usability
 - They are disposable tests. QA Engineers will review those regularly and decide whether we need a better ones
 - Tools: Playwright
 

@@ -1,26 +1,34 @@
-# :star: Change Description <!-- omit in toc -->
+# :star: Change Description (BE) <!-- omit in toc -->
 
 (Put here)
 
+## :postbox: Change
+
+- [ ] New endpoints
+- [ ] Change existing business logic
+- [ ] DB schema change
+- [ ] Seed / patch data
+
 ## :eyes: Be aware of
 
-- [ ] Infrastructure Change
-- [ ] New Environment Variables
-- [ ] DB Schema Change
-- [ ] Seed Data
-- [ ] New / Modification External Service Calls
-- [ ] Incompatible Endpoint Interfaces (Params, Query, Body)
+- [ ] Infrastructure change
+- [ ] New environment variables
+- [ ] New / modification external service calls
+- [ ] Incompatible endpoint interfaces (params, query, body)
 - [ ] Size of PR (> 400 LOC)
 - [ ] New libraries
-- [ ] More than 5 commits per PRs
+- [ ] > 5 commits
 
-## :kiss: Consider
+## :kiss: Implement
 
-- [ ] Feature Toggles
-- [ ] Unit Tests
-- [ ] Integration Tests
-- [ ] Atomic Commit
-- [ ] Split into smaller PRs
+- [ ] Feature toggles
+- [ ] Unit tests
+- [ ] Integration tests
+
+## :tea: Be nice to have
+
+- [ ] Diagrams
+- [ ] Atomic commit
 
 ## :books: Resources
 

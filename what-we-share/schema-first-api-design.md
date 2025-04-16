@@ -44,7 +44,7 @@ One story can split into three types of tasks
    - how the fields changed
    - what indices added
    - what constraints applied
-3. Logic
+3. Business Logic
    - change of existing business logic, or replace mock implementation on mock APIs
 
 ## When to be ready?
@@ -75,3 +75,4 @@ One story can split into three types of tasks
 ## Reference
 
 - [Designing APIs with Swagger and OpenAPI](https://www.manning.com/books/designing-apis-with-swagger-and-openapi "https://www.manning.com/books/designing-apis-with-swagger-and-openapi")
+- [OpenAPI Initiative](https://www.openapis.org)

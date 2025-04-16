@@ -135,6 +135,31 @@ Iterate using `map`, `reduce` and `filter`:
 
 Return something meaningful when writing a function
 
+## Promise.all
+
+- Be avoid to use `Promise.all` with arrays of unknown or dynamic length (e.g., arrays created with `map()`). Consider a modified version like [this](https://stackoverflow.com/questions/37213316/execute-batch-of-promises-in-series-once-promise-all-is-done-go-to-the-next-bat)
+
+```typescript
+// can use up all the external resources
+function runTogether(arr: number[]) {
+  return Promise.all(arr.map(executeSomething));
+}
+```
+
+## Positional Arguments vs Keyword Arguments
+
+```typescript
+// same type, can use wrongly
+function sum(a: number, b: number, c: number, d: number, e: number) {
+  return a + b + c + d + e;
+}
+
+// better
+function sum({ a, b, c, d, e}: {a: number, b: number, c: number, d: number, e: number}) {
+  return a + b + c + d + e;
+}
+```
+
 ## More
 
 - [VS Code Tips and Tricks for TypeScript Wizards](https://www.youtube.com/watch?v=HalycM9tSNM)

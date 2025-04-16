@@ -8,6 +8,8 @@ Table of Contents
   - [Response](#response)
   - [Style](#style)
 - [Database](#database)
+  - [Transaction](#transaction)
+  - [TypeORM](#typeorm)
 - [Quality Assurance](#quality-assurance)
 - [Pull Request \& Code Review](#pull-request--code-review)
 - [Refactoring](#refactoring)
@@ -77,7 +79,7 @@ Interfaces of API are very IMPORTANT.
 
 - database queries
 - connection errors
-- logic
+- business logic
 
 ### Style
 
@@ -92,6 +94,40 @@ REST is NOT necessary
 
 - Review your database table structure, indexing, and queries carefully - check [here](database-design.md)
 
+### Transaction
+
+Make sure change from multiple SQL queries applied atomically and rollback the change if some errors occurs
+
+- Should ONLY be used when modifying data
+
+- Be AVOID to fetch data inside a transaction
+- Be AVOID to make external actions inside a transaction, such as:
+  - Sending emails
+  - Sending messages to a service bus
+  - Making remote API calls
+
+### TypeORM
+
+- Be AVOID to use `orWhere` unless absolutely necessary (it often requires brackets).
+- Minimize the use of brackets in queries.
+- Use `andWhere` or `orWhere` only if the conditions are optional.
+
+  ```typescript
+  const photosRepo = getRepository(Photo);
+  let getPhotosQuery = photosRepo
+     .createQueryBuilder('p')
+     .where('p.projectId = :projectId', { projectId });
+
+  // Correct use
+  if (startDate) {
+     getPhotosQuery = getPhotosQuery.andWhere('p.startDate >= :startDate', { startDate });
+  }
+
+  const photos = await getPhotosQuery.getMany();
+  ```
+
+- `Promise.all` [does not work well](https://github.com/medusajs/medusa/issues/5529) with `transaction`
+
 ## Quality Assurance
 
 - **Unit tests** are helpful - check [here](dev-testing.md)
@@ -105,9 +141,10 @@ REST is NOT necessary
 
 ## Refactoring
 
-Split logics into smaller pieces
+Be aware of the code smell
 
-- Be more manageable and easier to write
+- Be more manageable and easier to write and understand
+- There are tools available, e.g. [Sonarlint](../what-we-use/sonarqube.md)
 
 ## Reference
 

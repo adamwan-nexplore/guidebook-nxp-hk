@@ -159,7 +159,7 @@ flowchart
 ### Component
 
 - Is an extension to certain services
-- Simplify the logic in services
+- Simplify the business logic in services
 
 ## Design Principles
 
@@ -172,11 +172,11 @@ flowchart
 
 ## Checklist
 
-- [ ] Are `Business Logics` resolved as pure functions?
+- [ ] Is `Business Logic` resolved as pure functions?
 - [ ] Are services too hard to read and understand?
 - [ ] Is Side Effect applied at the end?
 - [ ] Is Side Effect visible?
-- [ ] Does the code with similar `Business Logics` grouped in the similar way?
+- [ ] Does the code with similar `Business Logic` grouped in the similar way?
 
 ## Reference
 

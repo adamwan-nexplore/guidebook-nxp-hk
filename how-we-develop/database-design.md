@@ -1,6 +1,6 @@
 # Database Design <!-- omit in toc -->
 
-**Table of Contents**
+Table of Contents
 
 - [General Advice](#general-advice)
 - [Performance](#performance)

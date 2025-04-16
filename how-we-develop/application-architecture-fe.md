@@ -8,7 +8,7 @@ Table of Contents
 - [Recommendations](#recommendations)
 - [Types of Files](#types-of-files)
   - [Core - UI](#core---ui)
-  - [Core - Logics \& Dependencies](#core---logics--dependencies)
+  - [Core - Business Logic \& Dependencies](#core---business-logic--dependencies)
   - [Complimentary](#complimentary)
 - [Design Principles](#design-principles)
 - [Checklist](#checklist)
@@ -64,7 +64,7 @@ flowchart
 
 - Define a clear mapping between `URL` and `page`
 - Do not overload `page` with **excessive** states, props and components
-- Define common file types that `can split the components` and refactor the logics the same way
+- Define common file types that `can split the components` and refactor the business logic the same way
 
 ## Constraints
 
@@ -97,11 +97,11 @@ flowchart
   - array of route `components`
   - file suffix: `-routes.tsx`
 
-### Core - Logics & Dependencies
+### Core - Business Logic & Dependencies
 
 - hooks
   - single custom hook `function`
-  - might import logic from services
+  - might import business logic from services
   - file suffix: `ts`
 - helpers
   - single / multiple pure `functions`
@@ -133,8 +133,8 @@ flowchart
 
 ## Checklist
 
-- [ ] Are `Business Logics` resolved as pure functions?
-- [ ] Can logic extract to be some separate functions?
+- [ ] Is `Business Logic` resolved as pure functions?
+- [ ] Can Business Logic extract to be some separate functions?
 - [ ] Do states bind to relevant components ONLY?
 - [ ] Do components extract as children if under a complicated layout?
 

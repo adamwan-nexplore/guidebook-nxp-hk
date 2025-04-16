@@ -30,17 +30,23 @@
 
 Be direct and clear
 
-- Meeting :x: no context
-- Sharing :x: is worth to join?
+- Meeting :x:
+  - Am I relevant to join?
+- Sharing :x:
+  - Should I learn it?
 - Inspection Print Form Analysis :o:
+  - I know this is related to a feature I need to work on
 - Team Panda Express Sprint 5 Review :o:
+  - This is a regular team meeting for arising issues on my team
 
 ### Good meeting time
 
 Ensure the meeting does not disrupt the normal work schedule
 
-- in the middle of work time :x: halfway through
-- very late in the day :x: overrun
+- in the middle of work time :x:
+  - halfway through
+- very late in the day :x:
+  - overrun will cause people work overtime
 - before lunchtime :o:
 - after lunchtime :o:
 - near the start of the day :o:
