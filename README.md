@@ -87,6 +87,7 @@ You know how to learn from others, provide feedback and share what your insights
 
 Catch-up Material
 
+- [Connection Pool on Postgres](what-we-share/connection-pool-in-postgres.md)
 - [Data Migration](what-we-share/data-migration.md)
 - [Developer Productivity](what-we-share/developer-productivity.md)
 - [Introduction to Kubernetes](what-we-share/intro-to-k8s.md#introduction-to-kubernetes)

@@ -2,9 +2,10 @@
 
 ## What is Cursor?
 
-[Cursor](https://www.cursor.com "https://www.cursor.com") is a code editor built on VSCode with AI. You can use Cursor to generate code for you with simple instructions.
+[Cursor](https://www.cursor.com "https://www.cursor.com") is a code editor built on VSCode with AI. You can let Cursor generate code for you with simple instructions.
 
-It is a VERY new tool. Today is 28th March 2025 and the version is
+Be careful!\
+It is a VERY new tool. Today is 17th April 2025 and the version is `0.48.9`.
 
 ## What it can do
 
@@ -48,18 +49,18 @@ Cursor's AI is designed to provide context-aware responses by:
 
 ## What is MCP
 
-[MCP](https://modelcontextprotocol.io) (Model Control Protocol) is a Open Protocol. LLM supports MCP can interact with **services** and **data sources** that support MCP directly.
+[MCP](https://modelcontextprotocol.io) (Model Control Protocol) is a Open Protocol. LLM supports MCP can interact with **services** and **data sources** that support MCP directly
 
-- Therefore, we can ask Cursor to perform tasks automatically & autonomously. What we need to do is provide **GOOD context**
+Therefore, we can ask Cursor to perform tasks automatically & autonomously. What we need to do is provide **GOOD context**
 
 ## Improvement
 
-- Auth does not include in MCP
-- We need to work on it separately (e.g. playwright?)
+MCP does not support Authentication natively\
+We need to work on it separately (e.g. playwright?)
 
 ## Danger Zone
 
-- You can try `auto-run mode` aka yolo mode
+You can try `auto-run mode` aka yolo mode
 
 ## Alternatives
 
