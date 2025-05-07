@@ -144,7 +144,7 @@ Make sure change from multiple SQL queries applied atomically and rollback the c
 Be aware of the code smell
 
 - Be more manageable and easier to write and understand
-- There are tools available, e.g. [Sonarlint](../what-we-use/sonarqube.md)
+- There are tools available, e.g. [SonarQube for IDE](../what-we-use/sonarqube.md)
 
 ## Reference
 

@@ -9,7 +9,7 @@ Table of Contents
   - [Batch Rename](#batch-rename)
   - [Error Lens](#error-lens)
   - [Pretty TypeScript Errors](#pretty-typescript-errors)
-  - [SonarLint](#sonarlint)
+  - [SonarQube for IDE](#sonarqube-for-ide)
   - [jwt-decode](#jwt-decode)
   - [Duplicate Action](#duplicate-action)
   - [GitLens](#gitlens)
@@ -81,9 +81,9 @@ Most of the images are from the original plugin page
 
 ---
 
-### [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode")
+### [SonarQube for IDE](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode")
 
-![SonarLint](https://raw.githubusercontent.com/SonarSource/sonarlint-vscode/b446efa174ad1bf03a3c98a2fe68c7fe6c74b45c/images/sonarlint-vscode.gif)
+![SonarQube for IDE](https://raw.githubusercontent.com/SonarSource/sonarlint-vscode/b446efa174ad1bf03a3c98a2fe68c7fe6c74b45c/images/sonarlint-vscode.gif)
 
 - Provide additional recommendations other than eslint
 - Further set up please refer to [here](./sonarqube.md "./sonarqube.md")

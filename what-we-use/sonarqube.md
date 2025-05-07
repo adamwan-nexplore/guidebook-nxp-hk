@@ -15,6 +15,6 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000
 1. Go to `http://localhost:9000`
 2. Type username `admin` and password `admin`
 
-### [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode")
+### [SonarQube for IDE](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode")
 
-SonarLint is a VSCode extension that provides real-time SonarQube linting and code analysis
+SonarQube for IDE is a VSCode extension that provides real-time SonarQube linting and code analysis
