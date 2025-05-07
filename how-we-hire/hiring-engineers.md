@@ -15,6 +15,7 @@ Table of Contents
 ## Philosophy
 
 We believe Nexplore is one of the technology-oriented companies
+
 - To us, coding ability will be an essential quality of engineers of ANY LEVELs
 - Candidates should expect to demonstrate the coding skills at some point
 

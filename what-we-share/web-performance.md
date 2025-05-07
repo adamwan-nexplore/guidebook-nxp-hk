@@ -19,10 +19,10 @@ Table of Contents
 
 [Core Web Vitals](https://web.dev/articles/vitals)
 
-  - FCP (First Contentful Paint) - Respond quickly
-  - LCP (Largest Contentful Paint) - Get to the point
-  - CLS (Cumulative Layout Shift) - Don't move stuff
-  - FID (First Input Delay) - Don't load too much
+- FCP (First Contentful Paint) - Respond quickly
+- LCP (Largest Contentful Paint) - Get to the point
+- CLS (Cumulative Layout Shift) - Don't move stuff
+- FID (First Input Delay) - Don't load too much
 
 ## Tool
 
@@ -39,9 +39,10 @@ Table of Contents
 ## Modern Web Application Architecture
 
 Modern Web Application often consists of three major components
-  - **Single Page Application** (Public and Static)
-  - **API** (Authenticated and Dynamic), and
-  - **Downloadable Content** (Authenticated but Static)
+
+- **Single Page Application** (Public and Static)
+- **API** (Authenticated and Dynamic), and
+- **Downloadable Content** (Authenticated but Static)
 
 ## 1. Cache assets as much as possible
 

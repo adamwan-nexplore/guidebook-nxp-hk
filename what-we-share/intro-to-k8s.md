@@ -16,13 +16,14 @@ Table of Contents
 Kubernetes (K8S) automates administrative work that will make sure containerized applications running correctly
 
 K8S can:
-  - monitor applications
-  - decide applications deploying to what server(s)
-  - restart applications if they are not working
-  - upscale applications based on cpu &  memory usage
-  - generate / re-new certificates for HTTPS
-  - provide manifests setting up virtual networks
-  - etc...
+
+- monitor applications
+- decide applications deploying to what server(s)
+- restart applications if they are not working
+- upscale applications based on cpu &  memory usage
+- generate / re-new certificates for HTTPS
+- provide manifests setting up virtual networks
+- etc...
 
 ## Prerequisites
 

@@ -126,9 +126,9 @@ Check [here](https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Mi
 
 - Illustrations
 
-![figma set up](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/8ba28515-17a7-403f-a8db-37e4a8333ea0){width=600}
+![figma set up](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/8ba28515-17a7-403f-a8db-37e4a8333ea0)
 
-![figma ChatOps](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/f0a5dc82-a73a-4208-ae59-c0a454f66058){width=600}
+![figma ChatOps](https://github.com/adamwan-nexplore/guidebook-nxp-hk/assets/124669872/f0a5dc82-a73a-4208-ae59-c0a454f66058)
 
 ## Reference
 

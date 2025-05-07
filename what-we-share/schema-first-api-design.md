@@ -6,7 +6,7 @@ Table of Contents
 - [Unblocking Teams](#unblocking-teams)
 - [Task Separation on Backend (For big tasks)](#task-separation-on-backend-for-big-tasks)
 - [When to be ready?](#when-to-be-ready)
-- [Work In Progress](#work-in-progress)
+- [Facilitator](#facilitator)
 - [Challenges](#challenges)
 - [Further Discussion](#further-discussion)
 - [Reference](#reference)
@@ -49,13 +49,15 @@ One story can split into three types of tasks
 
 ## When to be ready?
 
-- Before the sprint starts
+Before the sprint starts
 
-## Work In Progress
+## Facilitator
 
-- Set up the ChatOps for
-  - change of database structures
-  - change of API interfaces
+- change of API interfaces
+  - [Swagger Module](https://docs.nestjs.com/openapi/introduction) in NestJS can generate OpenAPI 3.0 Specification in JSON
+    - a script can generate the latest OpenAPI 3.0 Specification when a new commit has created locally
+- change of database structures
+  - [mermerd](https://github.com/KarnerTh/mermerd) will run daily to generate the latest schema and create a pull request
 
 ## Challenges
 

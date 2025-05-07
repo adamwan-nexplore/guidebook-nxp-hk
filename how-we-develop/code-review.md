@@ -7,26 +7,31 @@
 3. Share knowledge across the team
 4. Ensure consistency in coding standards
 
-## Remember
+## First Principle
 
-It is a collaborative process between the author and reviewers. We should focus on __improvement rather than criticism__.
+Both **author** and **reviewers** need to work together
 
 ## General Principles
 
 ### Author
 
-- Make sure the ticket number present
+- include the ticket number in the commit message
   - GitHub will link to the respective JIRA tickets
-- Do a self review first, you can also add comments to the pull requests
+- do a self review
+- comment to your pull request if necessary
 
-- More complex cases
-  - For complex database queries, request raw queries and query execution plans in the Pull Request description
-  - For complex logics, provide graphical illustrations
+- work with complex database queries
+  - request raw queries
+  - query execution plans
+
+- work with complex logics
+  - provide graphical illustrations
+  - be avoid to have lengthy description
 
 ### Reviewer
 
-- Approve working code ONLY
-- Facilitate more good code
+- approve working code ONLY
+- facilitate more good code
   - Do you understand the change?
   - Do you THINK you can code a similar change?
   - Do you THINK you can add features on top of this change applied?
@@ -36,11 +41,12 @@ It is a collaborative process between the author and reviewers. We should focus 
 This guide is specific to our team's practices and preferences.
 
 Check [here](../how-we-develop/application-development.md) for coding standards
+
 Check [here](../how-we-develop/database-design.md) for database design guidelines
 
 ## PR Checklist
 
-Using a consistent template for pull requests improves review efficiency.
+Using a consistent template for pull requests improves review efficiency
 
 On each repository: add your template to `.github/PULL_REQUEST_TEMPLATE.md`
 

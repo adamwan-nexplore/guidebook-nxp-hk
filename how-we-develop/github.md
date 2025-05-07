@@ -52,15 +52,15 @@ Table of Contents
 
 Each repository should have a couple of topics (= #hashtag). It helps filtering and querying repository data by `gh`
 
-    | **topic**                 | **meaning**       |
-    | ------------------------- | ----------------- |
-    | #api                      | backend           |
-    | #devops                   | cloud / pipelines |
-    | #keycloak                 | keycloak (login)  |
-    | #mobile                   | mobile            |
-    | #qa                       | quality assurance |
-    | #web                      | web               |
-    | _topics other than above_ | which product     |
+  | **topic**                 | **meaning**       |
+  | ------------------------- | ----------------- |
+  | #api                      | backend           |
+  | #devops                   | cloud / pipelines |
+  | #keycloak                 | keycloak (login)  |
+  | #mobile                   | mobile            |
+  | #qa                       | quality assurance |
+  | #web                      | web               |
+  | _topics other than above_ | which product     |
 
 ## Continuous Integration
 
@@ -85,9 +85,7 @@ Each repository should have a couple of topics (= #hashtag). It helps filtering 
 
 Is managed with `Teams`.
 
-
 - Be avoid to grant accesses to individual users
-
 - Have at least two teams `-devops` (owners) and `-developers`
 
 ## Reference

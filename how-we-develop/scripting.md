@@ -18,11 +18,13 @@ Table of Contents
 ## The Nature
 
 A procedural way to automate stuff
+
 - Usually with a bit of `hacks`. Can be very hard to understand
 
 ## Bear in mind
 
 A script is actually a program
+
 - It should be good enough so that you can maintain it, and read it later
 
 ## Tips

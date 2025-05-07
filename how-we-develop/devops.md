@@ -121,10 +121,10 @@ The CALMS (Culture, Automation, Lean, Measurement, Sharing) framework will be an
 
 ## Reference
 
-- [The DevOps Handbook, 2nd Edition](https://www.goodreads.com/book/show/26083308-the-devops-handbook "https://www.goodreads.com/book/show/26083308-the-devops-handbook")
-- [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project "https://www.goodreads.com/book/show/17255186-the-phoenix-project")
-- [The Unicorn Project](https://www.goodreads.com/book/show/44333183-the-unicorn-project "https://www.goodreads.com/book/show/44333183-the-unicorn-project")
+- [The DevOps Handbook, 2nd Edition](https://itrevolution.com/product/the-devops-handbook-second-edition "https://itrevolution.com/product/the-devops-handbook-second-edition")
+- [The Phoenix Project](https://itrevolution.com/product/the-phoenix-project "hthttps://itrevolution.com/product/the-phoenix-project")
+- [The Unicorn Project](https://itrevolution.com/product/the-unicorn-project "https://itrevolution.com/product/the-unicorn-project")
 - [What is DevOps?](https://resources.github.com/devops "https://resources.github.com/devops")
-- [Site Reliability Engineering](https://www.goodreads.com/book/show/27968891-site-reliability-engineering "https://www.goodreads.com/book/show/27968891-site-reliability-engineering")
+- [Site Reliability Engineering](https://www.oreilly.com/library/view/site-reliability-engineering "https://www.oreilly.com/library/view/site-reliability-engineering")
 - [The Lean Startup](https://theleanstartup.com "https://theleanstartup.com")
 - [GutLab and the three ways](https://about.gitlab.com/blog/2022/06/15/gitlab-and-the-three-ways-of-devops "https://about.gitlab.com/blog/2022/06/15/gitlab-and-the-three-ways-of-devops")

@@ -3,20 +3,23 @@
 ## Structural logging
 
 Each log entry should be traceable
-  1. when
-  2. whom
-  3. what key parameters
-  4. what correlation_id to find those related entries
+
+1. when
+2. whom
+3. what key parameters
+4. what correlation_id to find those related entries
 
 ## Searchable
 
 Each log entry should be searchable
-  - Besides the attribute `msg`, please provide some key attributes for searching / filtering.
+
+- Besides the attribute `msg`, please provide some key attributes for searching / filtering.
 
 ## Log Level
 
 Each log entry should set the log level properly
-  - Help any further analysis and in case there are something abnormal
+
+- Help any further analysis and in case there are something abnormal
 
 > It is fine to log something randomly for investigation but please make sure the log level is in `debug` / `verbose`
 
@@ -27,8 +30,9 @@ All log entries in the cluster will sit into DataDog (Europe) due to [GDPR](http
 ## Log Reference
 
 Each log entry
-  - should have `at least one key attributes` to match the data
-  - should NOT have too many attributes (i.e. keep it `less than 10`)
+
+- should have `at least one key attributes` to match the data
+- should NOT have too many attributes (i.e. keep it `less than 10`)
 
 > Sensitive Information like `password` and `JWT token` should be redacted
 
