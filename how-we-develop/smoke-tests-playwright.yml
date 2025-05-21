@@ -1,0 +1,103 @@
+name: Playwright Tests with Reports
+on:
+  workflow_dispatch:
+    inputs:
+      APP_NAME:
+        type: choice
+        description: "Select the application to test"
+        required: false
+        options:
+          - all
+          - app_core
+      ENVIRONMENT:
+        description: "Select the environment to test"
+        required: true
+        type: choice
+        options:
+          - dev
+          - sme
+          - uat
+          - anz-prod
+          - cus-prod
+          - weur-prod
+      GITHUB_RUN_NUMBER:
+        description: "Select the GitHub run number"
+        required: false
+        type: number
+
+run-name: Playwright (${{ github.event.inputs.APP_NAME }}/${{ github.event.inputs.ENVIRONMENT}}) - ${{ github.event.inputs.GITHUB_RUN_NUMBER  || github.run_number }}
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  REPORT_NAME: "playwright-report"
+  REPORT_DIR: "report-${{ github.run_id }}-${{ github.run_attempt }}"
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.ENVIRONMENT  || 'dev' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Show ENV
+        run: |
+          echo "APP_NAME: ${{ inputs.APP_NAME }}"
+      - name: Run Playwright tests
+        run: npm run test
+        env:
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+          APP_NAME: ${{ contains(github.event.inputs.APP_NAME,'all') && '*' || github.event.inputs.APP_NAME }}
+          NODE_ENV: ${{ github.event.inputs.ENVIRONMENT  || 'dev' }}
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+  publish_report:
+    # using always() is not ideal here, because it would also run if the workflow was cancelled
+    if: success() || needs.test.result == 'failure'
+    needs: [test]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: write
+    env:
+      TEST_NAME: Playwright (${{ github.event.inputs.APP_NAME }}/${{ github.event.inputs.ENVIRONMENT}}) - ${{ github.event.inputs.GITHUB_RUN_NUMBER  || github.run_number }}
+      TEST_RESULT: ${{ needs.test.result }}
+      # Unique URL path for each workflow run attempt
+      HTML_REPORT_URL_PATH: reports/${{ github.ref_name }}/${{ github.run_id }}/${{ github.run_attempt }}
+      FULL_HTML_REPORT_URL: https://nexplore.pages.github.io/reports/${{ github.ref_name }}/${{ github.run_id }}/${{ github.run_attempt }}
+    steps:
+      - name: Checkout GitHub Pages Branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - name: Download zipped HTML report
+        uses: actions/download-artifact@v4
+        with:
+          name: playwright-report
+          path: ${{ env.HTML_REPORT_URL_PATH }}
+
+      - name: Add Test Report Link to the landing page
+        run: |
+          echo -e "\n\n- [$TEST_NAME]($FULL_HTML_REPORT_URL) - $TEST_RESULT" >> README.md
+
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "test: [CPCS-0] Publish Playwright Test Report"
+      - name: Output Report URL as Workflow Annotation
+        run: |
+          echo "📋 Published Playwright Test Report $FULL_HTML_REPORT_URL" >> $GITHUB_STEP_SUMMARY

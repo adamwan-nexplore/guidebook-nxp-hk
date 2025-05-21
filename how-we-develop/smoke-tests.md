@@ -1,4 +1,16 @@
-# Smoke Tests
+# Smoke Tests <!-- omit in toc -->
+
+- [What is it?](#what-is-it)
+- [Playwright](#playwright)
+- [Test Workflow](#test-workflow)
+- [How do we execute the smoke tests?](#how-do-we-execute-the-smoke-tests)
+- [Playwright - what it offers](#playwright---what-it-offers)
+  - [Tips to write test cases](#tips-to-write-test-cases)
+  - [Be avoid to run same action to run for each test](#be-avoid-to-run-same-action-to-run-for-each-test)
+    - [Use Case: Authentication](#use-case-authentication)
+  - [How to publish test reports](#how-to-publish-test-reports)
+- [How other people do the smoke tests](#how-other-people-do-the-smoke-tests)
+- [Reference](#reference)
 
 ## What is it?
 
@@ -7,15 +19,6 @@ A QUICK, SIMPLE and most critical test cases to verify the system is working pro
 ## [Playwright](https://playwright.dev "https://playwright.dev")
 
 A test framework that can simulate how we interact with browsers automatically
-
-## Playwright - what it offers
-
-- provide nodejs runtime
-- be fast to start
-- can run in parallel
-- auto-wait until components are ready
-- support test execution recording & screen capture
-- support test recording
 
 ## Test Workflow
 
@@ -48,7 +51,18 @@ flowchart TB
 - Go to all the pages user will see and see if we can load the content without errors
 - Go through the typical flows and see if the functions are working properly
 
-## Tips to write test cases
+## Playwright - what it offers
+
+- provide nodejs runtime
+- be fast to start
+- can run in parallel
+- auto-wait until components are ready
+- support test execution recording & screen capture
+- support test recording
+- upload test reports to github pages with available [CI scripts](https://www.youtube.com/watch?v=F_nUVHBhrow&pp=ygUYI3Rlc3RyZXBvcnRzaW5wbGF5d3JpZ2h0)
+  - With an enterprise plan on github, the github pages can [set the visibility](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) as `private`
+
+### Tips to write test cases
 
 - Most locators are `contains`. If you check the exact value, use `exact: true`
 
@@ -78,13 +92,58 @@ flowchart TB
   npx playwright test --grep "(?=.*@fast)(?=.*@slow)"
   ```
 
+- [Aria Snapshots](https://playwright.dev/docs/aria-snapshots) can provide a structural look on DOM level.
+
+  ```typescript
+  await expect(page.locator('.nxp-app-header')).toMatchAriaSnapshot(
+    `
+  - img
+  - text: /NEXPLORE\\(v6\\.\\d+\\.\\d+\\)/
+  - combobox
+  - text: /\\w \\w/
+  - img
+  - button "menu":
+    - img "menu"
+  `,
+    { timeout: 2000 },
+  );
+  ```
+
+- A `test.step` can be used if better clarity
+
+  ```typescript
+  test.describe('NEXPLORE SYSTEM', () => {
+    test('Home', async ({ page }) => {
+      await test.step('go there', async () => {
+        await page.goto(`entities`);
+        await page.goto(`entities/${ENTITY_ID}/workspace`);
+      });
+      await test.step('check the content', async () => {
+        await expect.soft(page.getByText('Workspace').first()).toBeVisible();
+        await expect(page.locator('.nxp-app-header')).toMatchAriaSnapshot(
+          `
+        - img
+        - text: /NEXPLORE\\(v6\\.\\d+\\.\\d+\\)/
+        - combobox
+        - text: /\\w \\w/
+        - img
+        - button "menu":
+          - img "menu"
+      `,
+          { timeout: 2000 },
+        );
+      });
+    });
+  });
+  ```
+
 - Please check [Playwright Best Practices](https://playwright.dev/docs/best-practices "https://playwright.dev/docs/best-practices") for more information
 
-## Be avoid to run same action to run for each test
+### Be avoid to run same action to run for each test
 
 Sometime we only want to run some actions once through the test execution. e.g. Authentication
 
-### Use Case: Authentication
+#### Use Case: Authentication
 
 1. Update auth as a new `project` in `playwright.config.ts`
 
@@ -136,6 +195,12 @@ Sometime we only want to run some actions once through the test execution. e.g. 
    ```
 
 Extract from: [https://playwright.dev/docs/auth](https://playwright.dev/docs/auth "https://playwright.dev/docs/auth")
+
+### How to publish test reports
+
+We prefer [publishing from a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch") because it can combine the reports easier
+
+- Please refer to our [workflow](./smoke-tests-playwright.yml) file
 
 ## How other people do the smoke tests
 
