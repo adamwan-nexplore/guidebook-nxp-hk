@@ -16,6 +16,7 @@
 
 ## Database
 
+- [Metabase](https://www.metabase.com "https://www.metabase.com")
 - [Postgres](https://www.postgresql.org "https://www.postgresql.org")
 - [Redis](https://redis.io "https://redis.io")
 
@@ -24,6 +25,11 @@
 - [Azure](https://azure.microsoft.com "https://azure.microsoft.com")
 - [Docker](https://www.docker.com "https://www.docker.com")
 - [Kubernetes](https://kubernetes.io "https://kubernetes.io") (We use AKS)
+
+## DevOps
+
+- [DevLake](https://devlake.apache.org "https://devlake.apache.org")
+- [Grafana](https://grafana.com "https://grafana.com")
 
 ## Frontend
 

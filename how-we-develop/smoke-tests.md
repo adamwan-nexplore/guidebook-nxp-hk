@@ -198,7 +198,9 @@ Extract from: [https://playwright.dev/docs/auth](https://playwright.dev/docs/aut
 
 ### How to publish test reports
 
-We prefer [publishing from a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch") because it can combine the reports easier
+We prefer [publishing from a branch](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site "https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site") because it can combine the reports easier
+
+- Only enterprise version could set github pages visibility privately
 
 - Please refer to our [workflow](./smoke-tests-playwright.yml) file
 
