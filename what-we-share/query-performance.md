@@ -116,7 +116,7 @@ Table of Contents
 
 - Normalization
 
-  - design the schema so that any change of one field only affect one record
+  - design the schema so that any change of one data field only affect one record
 
 - De-normalization
 

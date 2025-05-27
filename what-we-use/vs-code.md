@@ -20,6 +20,7 @@ Table of Contents
   - [Markdown All in One](#markdown-all-in-one)
   - [Paste JSON as Code](#paste-json-as-code)
   - [Sort JSON Objects](#sort-json-objects)
+  - [Postgres](#postgres)
 - [Shortcuts](#shortcuts)
 - [Settings](#settings)
 - [Markdown](#markdown)
@@ -165,6 +166,12 @@ Most of the images are from the original plugin page
 - Sort JSON Objects
 
 ![Sort JSON Objects](https://raw.githubusercontent.com/richie5um/vscode-sort-json/6a2930b71ef8418b1bde43b554c5ef85b8ddba1f/resources/usage.gif "https://raw.githubusercontent.com/richie5um/vscode-sort-json/6a2930b71ef8418b1bde43b554c5ef85b8ddba1f/resources/usage.gif")
+
+### [Postgres](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-pgsql "https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-pgsql")
+
+- Postgres Client integrated with AI
+
+![Postgres](https://raw.githubusercontent.com/microsoft/vscode-pgsql/87a9668276562adb42ee5a242524b01c914459e9/img/intro-vid.gif "https://raw.githubusercontent.com/microsoft/vscode-pgsql/87a9668276562adb42ee5a242524b01c914459e9/img/intro-vid.gif")
 
 ## Shortcuts
 
@@ -376,6 +383,7 @@ API
     "JannisX11.batch-rename-extension",
     "jeff-hykin.polacode-2019",
     "mrmlnc.vscode-duplicate",
+    "ms-ossdata.vscode-pgsql",
     "MS-vsliveshare.vsliveshare",
     "orta.vscode-jest",
     "quicktype.quicktype",
