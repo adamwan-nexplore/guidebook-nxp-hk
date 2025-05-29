@@ -41,7 +41,7 @@ And you know the tech stack.
 ## How we develop
 
 You know the conventions.\
-You know the development processes.
+You know the development processes.\
 And you know how we communicate between engineers and stakeholders.
 
 - [General](how-we-develop/general.md)

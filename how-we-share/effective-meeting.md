@@ -56,19 +56,9 @@ Ensure the meeting does not disrupt the normal work schedule
 Include the meeting content
 
 - An agenda
-- Possible expected outcomes
+- Possible outcomes
 - Meeting materials (highly recommended)
-  - graphical illustrations
-    - Sketches
-    - UMLs
-    - Business Process Modeling Notation (BPMN)
-    - Mockups
-    - Wire frames
-    - etc
-  - actual figures
-    - charts
-    - summary tables
-  - real life samples
+  - documents / PowerPoints
 
 ### Relevant participants
 
@@ -77,7 +67,7 @@ Include the meeting content
 
 ### Duration of the meeting
 
-30 mins is the most ideal :blush:
+The most ideal duration of the meeting is around 30 ~ 60 mins :blush:
 
 - Be avoid to have meeting longer than 1 hour :tired_face:
 - Always prefer multiple short sessions instead :fast_forward:

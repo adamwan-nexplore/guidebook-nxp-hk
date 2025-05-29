@@ -141,7 +141,7 @@ flowchart TB
 
 ### Be avoid to run same action to run for each test
 
-Sometime we only want to run some actions once through the test execution. e.g. Authentication
+Sometimes we only want to run some actions once through the test execution. e.g. Authentication
 
 #### Use Case: Authentication
 
