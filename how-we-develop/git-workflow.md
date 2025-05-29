@@ -3,7 +3,7 @@
 Table of Contents
 
 - [Introduction](#introduction)
-- [Development](#development)
+- [Application Development](#application-development)
 - [Hotfix](#hotfix)
 - [Infrastructure Change](#infrastructure-change)
 
@@ -11,13 +11,14 @@ Table of Contents
 
 We use [GitLab Flow](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow).
 
-- We promote and aim at transiting to a linear flow based on `dev-deployment`
+- We use develop branch `dev-deployment` as the main branch
+- Each `deployment` branch must adhere to an actual environment
 - The change from `dev-deployment` to all `uat-deployment` MUST be done through `git merge`
 - The change from `uat-deployment` to all `prod-deployment` MUST be done through `git merge`
 
-*We might switch to `trunk-based development` IF there are more environments. Check [here](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development "Trunk-based development - Learn why this version control management practice is common practice among DevOps teams."), [here](https://trunkbaseddevelopment.com "Trunk Based Development: Introduction") and [here](https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development "Prevent merge-conflict hassles with trunk-based development practices")*
+*We might switch to `trunk-based development` IF there are more environments. Check how [Atlassian](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development "Trunk-based development - Learn why this version control management practice is common practice among DevOps teams."), [Trunk-based Development Official Site](https://trunkbaseddevelopment.com "Trunk Based Development: Introduction") and [Google](https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development "Prevent merge-conflict hassles with trunk-based development practices") think of it*
 
-## Development
+## Application Development
 
 ```mermaid
 ---
