@@ -71,7 +71,7 @@ flowchart TB
   page.getByRole("heading", { name: "Company", exact: true }); // Heading with EXACT text `Company`
   ```
 
-  - To see the details of locator, check [here](https://playwright.dev/docs/api/class-locator "https://playwright.dev/docs/api/class-locator")
+  - To see the details of locator, check [Class Locator](https://playwright.dev/docs/api/class-locator "https://playwright.dev/docs/api/class-locator")
 
 - Determine when to use `async matchers` and `generic matchers`
 

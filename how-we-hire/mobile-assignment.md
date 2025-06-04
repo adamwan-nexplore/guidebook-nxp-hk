@@ -26,7 +26,7 @@ Get a list of photos
 
 We are using mockAPI to provide the mock response
 
-You can check the manual [here](https://github.com/mockapi-io/docs/wiki "https://github.com/mockapi-io/docs/wiki")
+You can check the manual [MockAPI Documentation](https://github.com/mockapi-io/docs/wiki "https://github.com/mockapi-io/docs/wiki")
 
 ## Requirements
 

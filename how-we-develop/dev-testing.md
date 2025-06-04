@@ -84,7 +84,7 @@ Before it starts, can you tell
 
           // mark expected output ONLY
           it('returns errors', () => {
-            const fakeRule = input => ({ passed: false, reason: ‘fake reason’ });
+            const fakeRule = input => ({ passed: false, reason: 'fake reason' });
             const [firstError] = verifyPassword('any value', [fakeRule]);
             expect(firstError).toContain('fake reason');
           });
@@ -213,12 +213,12 @@ Before it starts, can you tell
     b. Object Oriented Approaches
 
     - Class Constructor Injection
-    - Object as Parameter (a.k.a ‘duck typing’)
-    - Common Interface as Parameter (for this we’ll use TypeScript)
+    - Object as Parameter (a.k.a 'duck typing')
+    - Common Interface as Parameter (for this we'll use TypeScript)
 
 13. Pay extra attention to the terms like `mocks`, `stubs`, `fake` and `double`. There are several different definitions.
 
-14. Use `toEqual` rather than `toBe`. Similarly, use `toEqual` rather than `toMatchObject`. Check [here](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
+14. Use `toEqual` rather than `toBe`. Similarly, use `toEqual` rather than `toMatchObject`. Check [Why you should never use toBe() in Jest](https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca").
 
 ## Reference
 

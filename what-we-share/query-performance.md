@@ -92,7 +92,7 @@ Table of Contents
   - Optimize Postgres configuration file according to the hardware specification
 - [Performance Insights](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-query-performance-insight "https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-query-performance-insight")
 
-  - All query statistics are stored in schema `azure_sys` - check [here](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-identify-slow-queries "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-identify-slow-queries")
+  - All query statistics are stored in schema `azure_sys` - check [MS Learn - Postgres to identify slow queries](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-identify-slow-queries "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-identify-slow-queries")
 
   ```sql
   SELECT
@@ -110,7 +110,7 @@ Table of Contents
   LIMIT 10 -- change top N based on preferences;
   ```
 
-> Reference is [here](https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-get-the-query-text-of-azure-database-for-postgresql/ba-p/3233322 "https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-get-the-query-text-of-azure-database-for-postgresql/ba-p/3233322")
+> Check [Azure Question](https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-get-the-query-text-of-azure-database-for-postgresql/ba-p/3233322 "https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-get-the-query-text-of-azure-database-for-postgresql/ba-p/3233322")
 
 ## Table Schemas
 
@@ -226,7 +226,7 @@ Table of Contents
   - distinct values of a column
   - limit number of values = higher cardinality
 
-- Learn more [here](https://minervadb.xyz/selectivity-and-cardinality-estimations-in-postgresql)
+- Learn more about [Selectivity & Cardinality](https://minervadb.xyz/selectivity-and-cardinality-estimations-in-postgresql)
 
 #### Index Types
 

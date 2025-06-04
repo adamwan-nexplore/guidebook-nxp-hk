@@ -48,7 +48,7 @@ Stream most notifications to [Microsoft Teams](https://www.microsoft.com/en-us/m
 - `Tagged` Notifications triggered when someone tags you in GitHub
 - Notifications of any kinds of changes / deployment has made to those repositories
 
-> To set up a new channel from scratch, please check it [here](https://github.com/integrations/microsoft-teams "https://github.com/integrations/microsoft-teams")
+> To set up a new channel from scratch, please check it [ChatOps for Microsoft Teams](https://github.com/integrations/microsoft-teams "https://github.com/integrations/microsoft-teams")
 
 ---
 
@@ -97,7 +97,7 @@ Stream most notifications to [Microsoft Teams](https://www.microsoft.com/en-us/m
 - channels in the team `DataDog Monitor`
   > Please ask your engineering lead for the access to those channels / Teams
 
-- Check [here](https://docs.datadoghq.com/integrations/microsoft_teams "https://docs.datadoghq.com/integrations/microsoft_teams") for the integration guide
+- Check [Integration with Microsoft Teams](https://docs.datadoghq.com/integrations/microsoft_teams "https://docs.datadoghq.com/integrations/microsoft_teams") for the integration guide
 
 #### DataDog - Setup <!-- omit in toc -->
 
@@ -118,7 +118,7 @@ Stream most notifications to [Microsoft Teams](https://www.microsoft.com/en-us/m
 
 #### Figma - Setup <!-- omit in toc -->
 
-Check [here](https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Microsoft-Teams "https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Microsoft-Teams")
+Check [ChatOps for Figma](https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Microsoft-Teams "https://help.figma.com/hc/en-us/articles/7405452518423-Figma-and-Microsoft-Teams")
 
 #### Figma - Benefits <!-- omit in toc -->
 

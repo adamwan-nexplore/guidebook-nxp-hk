@@ -20,7 +20,7 @@ Table of Contents
 - Have more than one `return`
 - Be very slow on TS compilation level
 - Expose a OpenAPI response with recursive nature
-- Check the video [here](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt Pocock
+- Check the video for [Don't use return types](https://www.totaltypescript.com/tips/dont-use-return-types-unless) by Matt Pocock
 
 ## When to bypass typing
 
@@ -69,7 +69,7 @@ Table of Contents
 
 12. Be avoid to use `!`
 
-13. Inlay Hints is a great feature in VSCode. It can show the types inferred. Check [here](../what-we-use/vs-code.md#settings)
+13. Inlay Hints is a great feature in VSCode. It can show the types inferred. Check [VS Code Settings](../what-we-use/vs-code.md#settings)
 
 ## Reference
 

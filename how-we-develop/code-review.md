@@ -40,9 +40,9 @@ Both **author** and **reviewers** need to work together
 
 This guide is specific to our team's practices and preferences.
 
-Check [here](../how-we-develop/application-development.md) for coding standards
+Check [Application Development](../how-we-develop/application-development.md) for coding standards
 
-Check [here](../how-we-develop/database-design.md) for database design guidelines
+Check [Database Design](../how-we-develop/database-design.md) for database design guidelines
 
 ## PR Checklist
 

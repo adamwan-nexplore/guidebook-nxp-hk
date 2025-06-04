@@ -23,7 +23,7 @@ Table of Contents
 - Continuous Integration
 - Continuous Deployment
 
-You might check the full explanation by SAFe Studio [here](https://scaledagileframework.com/continuous-delivery-pipeline "https://scaledagileframework.com/continuous-delivery-pipeline")
+You might check the full explanation by SAFe Studio [the documentation](https://scaledagileframework.com/continuous-delivery-pipeline "https://scaledagileframework.com/continuous-delivery-pipeline")
 
 ### 2.1. Practical Considerations
 

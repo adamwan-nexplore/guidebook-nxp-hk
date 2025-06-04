@@ -87,7 +87,7 @@ Most of the images are from the original plugin page
 ![SonarQube for IDE](https://raw.githubusercontent.com/SonarSource/sonarlint-vscode/b446efa174ad1bf03a3c98a2fe68c7fe6c74b45c/images/sonarlint-vscode.gif)
 
 - Provide additional recommendations other than eslint
-- Further set up please refer to [here](./sonarqube.md "./sonarqube.md")
+- Further set up please refer to [Sonarqube](./sonarqube.md "./sonarqube.md")
 
 ---
 
@@ -179,7 +179,7 @@ Most of the images are from the original plugin page
 - Rename Symbols
 - Text Selection
   - After selected the text and do a right-click, the menu on the selected text and number bar is completely different
-- Dart Refactoring, check [here](https://dartcode.org/docs/refactorings-and-code-fixes "https://dartcode.org/docs/refactorings-and-code-fixes")
+- Dart Refactoring, check [Documentation for Dart Extension](https://dartcode.org/docs/refactorings-and-code-fixes "https://dartcode.org/docs/refactorings-and-code-fixes")
 
 - [Refactoring Tips](https://code.visualstudio.com/docs/editor/refactoring "https://code.visualstudio.com/docs/editor/refactoring")
 - Open `Settings` - `cmd` + `,`

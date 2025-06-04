@@ -65,7 +65,7 @@ Table of Contents
 - Code/feature passes smoke testing
 - Code is documented
 - Help documentation is updated
-- Feature is OK’d by stakeholders
+- Feature is OK'd by stakeholders
 
 In NEXPLORE, DoD is `NOT universal`. Each project needs to define its own DoD before it starts
 

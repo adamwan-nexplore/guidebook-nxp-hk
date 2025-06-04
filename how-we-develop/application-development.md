@@ -86,13 +86,13 @@ Interfaces of API are very IMPORTANT.
 REST is NOT necessary
 
 - However, we should apply some of constraints to make our API style consistent
-- If you do not know what is REST - check [here](../what-we-share/rest-api.md)
+- If you do not know what is REST - check [REST API](../what-we-share/rest-api.md)
 
 - If using REST, PUT is often simpler to implement than PATCH
 
 ## Database
 
-- Review your database table structure, indexing, and queries carefully - check [here](database-design.md)
+- Review your database table structure, indexing, and queries carefully - check [Database Design](database-design.md)
 
 ### Transaction
 
@@ -130,7 +130,7 @@ Make sure change from multiple SQL queries applied atomically and rollback the c
 
 ## Quality Assurance
 
-- **Unit tests** are helpful - check [here](dev-testing.md)
+- **Unit tests** are helpful - check [Developer Testing](dev-testing.md)
 - **Integration tests** can expose a lot of issues
 - **Smoke tests** can ensure the system is working in a timely manner
 

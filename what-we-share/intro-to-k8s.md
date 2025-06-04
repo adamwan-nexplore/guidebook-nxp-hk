@@ -76,7 +76,7 @@ Resources can modify other resources by matching the annotations
   - a command line tool for administration
   - provide commands to work with K8S clusters for administrative purpose
   - provide extended features through plugin systems (krew)
-  - check [here](../how-we-operate/kubernetes-admin.md#kubernetes-administration)
+  - check [K8S Administration](../how-we-operate/kubernetes-admin.md#kubernetes-administration)
 
   ![kubecolor](./kubecolor.png)
 
@@ -91,7 +91,7 @@ Resources can modify other resources by matching the annotations
 - **[VSCode Plugin - Azure Kubernetes Service](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools)**
   - a plugin for VSCode & AKS for debugging
   - provide features with **UIs**
-  - check [here](https://code.visualstudio.com/docs/azure/aksextensions)
+  - check [AKS Extensions](https://code.visualstudio.com/docs/azure/aksextensions)
 
   ![AKS UIs](vscode-aks.png)
 
@@ -111,7 +111,7 @@ Resources can modify other resources by matching the annotations
 - [nelm](https://github.com/werf/nelm)
   - the new kid (Year 2024 Sept)
   - aim at replacing `helm`
-  - check [here](https://itnext.io/finally-a-viable-helm-replacement-388d538f9e1f)
+  - check [Nelm](https://itnext.io/finally-a-viable-helm-replacement-388d538f9e1f)
 
 ## AOB
 

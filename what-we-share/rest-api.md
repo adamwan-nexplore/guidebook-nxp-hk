@@ -40,7 +40,7 @@ Table of Contents
 ### Six Constraints
 
 - Uniform interface
-- Client–server
+- Client-server
 - Stateless
 - Cache-able
 - Layered system

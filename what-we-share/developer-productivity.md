@@ -72,7 +72,7 @@ code $(fzf)
 
 ## Git
 
-- check [here](../how-we-develop/github.md) and [here](../how-we-develop/git-workflow.md)
+- check [Github](../how-we-develop/github.md) and [Git Workflow](../how-we-develop/git-workflow.md)
 
 - [git](https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index "https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index")
 

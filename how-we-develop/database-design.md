@@ -32,7 +32,7 @@ Table of Contents
 
 ## Schema Change & Table Lock
 
-- Check [here](https://www.thatguyfromdelhi.com/2020/12/what-postgres-sql-causes-table-rewrite.html "https://www.thatguyfromdelhi.com/2020/12/what-postgres-sql-causes-table-rewrite.html")
+- Check [SQL & Locks](https://www.thatguyfromdelhi.com/2020/12/what-postgres-sql-causes-table-rewrite.html "https://www.thatguyfromdelhi.com/2020/12/what-postgres-sql-causes-table-rewrite.html")
 
 ## Reference
 

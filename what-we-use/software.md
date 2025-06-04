@@ -14,7 +14,7 @@
 - [n](https://github.com/tj/n "https://github.com/tj/n") (recommended)
 - [nvm](https://github.com/nvm-sh/nvm "https://github.com/nvm-sh/nvm")
 
-## DB – Postgres
+## DB - Postgres
 
 - [Azure Data Studio](https://azure.microsoft.com/en-us/products/data-studio "https://azure.microsoft.com/en-us/products/data-studio")
 - [DBeaver](https://dbeaver.io "https://dbeaver.io")
