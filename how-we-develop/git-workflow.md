@@ -130,3 +130,5 @@ flowchart TD
     uat -..->|deploy| uat-env
     prod -..->|deploy| prod-env
 ```
+
+- We believe in [infrastructure as product](https://www.thoughtworks.com/insights/articles/infrastructure-as-product). `sandbox` branch will be the development environment for DevOps. All other branches are treated as `production` environments.
