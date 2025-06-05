@@ -1,4 +1,4 @@
-# Developer Testing (1) <!-- omit in toc -->
+# Developer Testing (1) - Introduction and Patterns <!-- omit in toc -->
 
 Table of Contents
 

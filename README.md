@@ -65,9 +65,9 @@ And you know how we communicate between engineers and stakeholders.
 ### Engineering Practices
 
 - [Application Logging](how-we-develop/app-log.md)
-- [Developer Testing (1)](how-we-develop/dev-testing.md)
-- [Developer Testing (2)](how-we-develop/dev-testing-2.md)
-- [Developer Testing (3)](how-we-develop/dev-testing-3.md)
+- [Developer Testing (1) - Introduction and Patterns](how-we-develop/dev-testing.md)
+- [Developer Testing (2) - Strategies](how-we-develop/dev-testing-2.md)
+- [Developer Testing (3) - Pitfalls](how-we-develop/dev-testing-3.md)
 - [Diagram as Code](how-we-develop/diagram-as-code.md)
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 - [NestJS](how-we-develop/nestjs.md)

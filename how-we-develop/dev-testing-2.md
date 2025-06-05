@@ -1,4 +1,4 @@
-# Developer Testing (2) <!-- omit in toc -->
+# Developer Testing (2) - Strategies <!-- omit in toc -->
 
 Table of Contents
 

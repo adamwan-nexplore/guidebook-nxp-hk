@@ -3,7 +3,7 @@
 Table of Contents
 
 - [Problem Statement](#problem-statement)
-- [Unblocking Teams](#unblocking-teams)
+- [Unblock downstream Teams](#unblock-downstream-teams)
 - [Task Separation on Backend (For big tasks)](#task-separation-on-backend-for-big-tasks)
 - [When to be ready?](#when-to-be-ready)
 - [Facilitator](#facilitator)
@@ -27,11 +27,12 @@ graph LR
     back & front --blocks--> qa
 ```
 
-## Unblocking Teams
+## Unblock downstream Teams
 
-- To Backend teams, API is the Final Product
+- To backend teams, API is the Final Product
+- To DevOps teams, always work on sandbox environment first, if the change has verified, go to other environments ([Infrastructure as Product](https://www.thoughtworks.com/insights/articles/infrastructure-as-product "https://www.thoughtworks.com/insights/articles/infrastructure-as-product"))
 - To shorten the lifecycle, we provide Mock APIs with the agreed interfaces
-- Teams can work on the expected deliveries together
+- Teams can work on the expected deliveries setup together
 
 ## Task Separation on Backend (For big tasks)
 

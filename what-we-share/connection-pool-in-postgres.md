@@ -102,7 +102,7 @@ pool.end(); // 8. Close all connections when done
 
 ## [PgBouncer](https://www.pgbouncer.org)
 
-- `PgBouncer` is a lightweight server-side connection pool for Postgres.
+- `PgBouncer` is a lightweight connection pool for Postgres.
 - It is a standalone program
 - It can facilitate the re-use per application, a group of applications, or even for all the connections to the database - depending on the architecture
 - It acts as an intermediary between the application and the database, managing connections efficiently.

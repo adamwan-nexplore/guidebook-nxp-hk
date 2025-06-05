@@ -58,7 +58,7 @@ Resources can modify other resources by matching the annotations
 - jobs
   - an containerized application that will run once only
 - namespaces
-  - isolate different resources in a logical way
+  - acts as a container to group resources logically
 - nodes
   - refers to actual servers / virtual machines
 - pods

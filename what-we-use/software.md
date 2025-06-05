@@ -28,10 +28,10 @@
 
 ## Terminal
 
-- [Azure Cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli")
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli")
 - [bat](https://github.com/sharkdp/bat)
 - [fzf](https://github.com/junegunn/fzf "https://github.com/junegunn/fzf")
-- [Github Cli](https://github.com/github/homebrew-gh "https://github.com/github/homebrew-gh")
+- [Github CLI](https://github.com/github/homebrew-gh "https://github.com/github/homebrew-gh")
 - [Helm](https://helm.sh/docs/intro/install "https://helm.sh/docs/intro/install")
 - [jq](https://github.com/stedolan/jq "https://github.com/stedolan/jq")
 - [kubectl](https://kubernetes.io/docs/tasks/tools "https://kubernetes.io/docs/tasks/tools")

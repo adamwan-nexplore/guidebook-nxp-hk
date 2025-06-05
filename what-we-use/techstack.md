@@ -30,6 +30,7 @@
 
 - [DevLake](https://devlake.apache.org "https://devlake.apache.org")
 - [Grafana](https://grafana.com "https://grafana.com")
+- [n8n](https://n8n.io "https://n8n.io")
 
 ## Frontend
 
