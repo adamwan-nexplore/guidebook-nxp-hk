@@ -30,6 +30,7 @@ Table of Contents
   - [Very hard to describe non-data status change](#very-hard-to-describe-non-data-status-change)
   - [Filter collection data can be very very hard](#filter-collection-data-can-be-very-very-hard)
 - [Reference](#reference)
+- [Further Reading](#further-reading)
 
 ## Concepts
 
@@ -179,3 +180,7 @@ e.g.
 - [Web API的设计与开发(Chinese)](https://book.douban.com/subject/27054104 "https://book.douban.com/subject/27054104") or [Web API: The Good Parts (Japanese)](https://www.amazon.co.jp/Web-API-Parts-%E6%B0%B4%E9%87%8E-%E8%B2%B4%E6%98%8E/dp/4873116864 "https://www.amazon.co.jp/Web-API-Parts-%E6%B0%B4%E9%87%8E-%E8%B2%B4%E6%98%8E/dp/4873116864")
 - [REST API Tutorial](https://restfulapi.net "https://restfulapi.net")
 - [Dissertation - Architectural Styles and the Design of Network-based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf "https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf")
+
+## Further Reading
+
+- [Architectural Styles and the Design of Network-based Software Architectures - Roy Fielding](https://ics.uci.edu/~fielding/pubs/dissertation/top.htm "https://ics.uci.edu/~fielding/pubs/dissertation/top.htm")

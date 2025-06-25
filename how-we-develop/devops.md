@@ -17,6 +17,7 @@ Table of Contents
     - [Learning](#learning)
 - [FOUR Domains (Roles) on DevOps](#four-domains-roles-on-devops)
 - [Side Note](#side-note)
+- [Metrics](#metrics)
 - [Reference](#reference)
 
 ## Definition
@@ -118,6 +119,13 @@ DevOps = Automation through (Infrastructure as Code + ChatOps + APM)
 ## Side Note
 
 The CALMS (Culture, Automation, Lean, Measurement, Sharing) framework will be another approach to set up the DevOps Culture.
+
+## Metrics
+
+[DORA - DevOps Research and Assessment](https://dora.dev "https://dora.dev") is one of the favourite tools to illustrate the different aspect of software delivery keys
+
+[Github ESSP - GitHub's Engineering System Success Playbook](https://resources.github.com/engineering-system-success-playbook "https://resources.github.com/engineering-system-success-playbook") is a practical framework with Github to maintain a good software delivery process
+
 
 ## Reference
 

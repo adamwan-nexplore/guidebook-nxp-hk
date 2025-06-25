@@ -102,7 +102,7 @@ flowchart
 - hooks
   - single custom hook `function`
   - might import business logic from services
-  - file suffix: `ts`
+  - file suffix: `use(.*).ts`
 - helpers
   - single / multiple pure `functions`
   - file suffix: `-helper.ts` or `-helpers.ts`
@@ -139,3 +139,6 @@ flowchart
 - [ ] Do components extract as children if under a complicated layout?
 
 ## Reference
+
+- [react.dev - Describing the UI](https://react.dev/learn/describing-the-ui "https://react.dev/learn/describing-the-ui")
+- [react.dev - Escape Hatches](https://react.dev/learn/escape-hatches "https://react.dev/learn/escape-hatches")

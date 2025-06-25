@@ -32,11 +32,11 @@ Before it starts, can you tell
 `Write more pure functions`. It will help making our codes to be more testable.
 
 - Pure functions:
-  - Return value / error (easiest, check the output directly)
+  - Returns value / error (easiest, check the output directly)
 
 - Impure functions:
-  - change of states (hard, listen to the state change)
-  - call third party dependencies (very hard, might need to inject some codes to test)
+  - Change the internal states (hard, listen to the state change)
+  - Invoke external dependencies (very hard, might need to inject some codes to test)
 
 ## ~~The Goal~~ The Ultimate Goals
 

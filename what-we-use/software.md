@@ -8,6 +8,7 @@
 ## Dependency Manager
 
 - [yarn](https://yarnpkg.com "https://yarnpkg.com")
+- [fvm](https://fvm.app "https://fvm.app")
 
 ## Node Version Manager
 

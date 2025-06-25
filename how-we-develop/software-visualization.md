@@ -76,12 +76,12 @@ A. Technical
 - Data flow
 - System flow
 - Data relationship
-- Components Diagrams
+- Components relationship
 
 A. Business
 
 - System flow
-- Business Processes flow
+- Business Process flow
 - System-Business mapping
 
 ---
@@ -99,9 +99,13 @@ A. In general, diagrams should focus on one OR a few aspects of the systems - it
 Q. (Methodologies) What diagrams?
 
 A. Context Diagrams
+
 A. State Diagrams
+
 A. Sequence Diagrams
+
 A. Use Case Diagrams
+
 A. Flow Charts
 
 ## After a diagram is drawn, think about

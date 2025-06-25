@@ -41,14 +41,14 @@ Table of Contents
 
 ## Add `code` command to the terminal
 
-1. Enter both CMD + P
-2. Select `Shell Command: Install 'code' command in PATH
+1. Enter both `CMD + P`
+2. Select `Shell Command: Install 'code' command in PATH`
 
 ![Add Path](shell-command-add-path.png)
 
 ## Extensions
 
-Most of the images are from the original plugin page
+Most of the images are soft-linked from the original plugin page
 
 ### [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker")
 

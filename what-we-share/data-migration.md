@@ -10,7 +10,7 @@ Table of Contents
   - [Scripting](#scripting)
   - [Actual amount of work](#actual-amount-of-work)
   - [Time](#time)
-  - [Engineers input](#engineers-input)
+  - [Engineers Input](#engineers-input)
   - [Data Quality](#data-quality)
   - [Drill](#drill)
   - [Manual Data \& Configuration](#manual-data--configuration)
@@ -61,7 +61,7 @@ Table of Contents
 
 - Estimate the execution time
 
-### Engineers input
+### Engineers Input
 
 - Enough engineers
 

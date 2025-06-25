@@ -3,6 +3,7 @@
     "allctx",
     "autohide",
     "azurecr",
+    "Balsamiq",
     "Behavioural",
     "behaviours",
     "brotli",
@@ -17,6 +18,7 @@
     "datname",
     "dockerized",
     "errorlens",
+    "favourite",
     "Fira",
     "HATEOAS",
     "helloworld",
@@ -69,6 +71,7 @@
     "vimtutor",
     "vmss",
     "webp",
+    "wireframing",
     "zoxide"
   ],
   "editor.codeActionsOnSave": {

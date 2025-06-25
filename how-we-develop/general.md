@@ -25,7 +25,7 @@ Like
 
 ### Development Methodology
 
-We follow [Scrum](scrum.md) with a [lean](../how-we-share/lean.md) mindset.
+We follow [Scrum](scrum.md) with a [lean](../what-we-share/lean.md) mindset.
 
 ### Development Flow
 
