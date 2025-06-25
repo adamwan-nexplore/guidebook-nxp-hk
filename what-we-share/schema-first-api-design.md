@@ -47,6 +47,10 @@ One story can split into three types of tasks
    - what constraints applied
 3. Business Logic
    - change of existing business logic, or replace mock implementation on mock APIs
+4. Producer Logic
+   - change of existing business logic, or replace mock implementation on producer
+5. Consumer Logic
+   - change of existing business logic, or replace mock implementation on consumer
 
 ## When to be ready?
 

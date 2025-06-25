@@ -19,7 +19,7 @@ Table of Contents
 
 ## What we do
 
-In 2019, Life as a Service (LaaS) was initiated by NEXPLORE acting as the collaborative network and research platform to invent tomorrow’s cities, villages and landscapes by holistically connecting digital services to human values.
+In 2019, Life as a Service (LaaS) was initiated by NEXPLORE acting as the collaborative network and research platform to invent tomorrow's cities, villages and landscapes by holistically connecting digital services to human values.
 
 ## What we use
 
@@ -35,7 +35,7 @@ And you know the tech stack.
 ## How we support our clients
 
 - [Change Management](how-we-operate/change-management.md)
-- [Escalation Procedure](how-we-operate/escalation.md)
+- [Escalation Procedures](how-we-operate/escalation.md)
 - [Kubernetes Administration](how-we-operate/kubernetes-admin.md)
 
 ## How we develop
@@ -72,7 +72,7 @@ And you know how we communicate between engineers and stakeholders.
 - [Naming](https://github.com/adamwan-nexplore/guidebook-nxp-hk/blob/main/how-we-develop/naming.md)
 - [NestJS](how-we-develop/nestjs.md)
 - [Smoke Tests](how-we-develop/smoke-tests.md)
-- [Software visualization](how-we-develop/software-visualization.md)
+- [Software Visualization](how-we-develop/software-visualization.md)
 - [Type Systems](how-we-develop/type-systems.md)
 - [TypeScript](how-we-develop/typescript.md)
 
